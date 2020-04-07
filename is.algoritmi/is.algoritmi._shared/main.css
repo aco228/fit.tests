@@ -1,0 +1,121 @@
+body, html{
+  padding:0px; margin:0px;
+  font-family: 'Roboto', sans-serif;
+  font-size:12px;
+  padding:5px;
+}
+
+input, button{
+  font:inherit;
+  font-size:inherit;
+}
+
+#template{
+  display: none; pointer-events: none;
+}
+#content{
+  position:relative;
+  width:850px; height:850px;
+}
+
+/*
+  +=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=
+  NODE
+*/  
+
+.node_container{
+  display:inline-block;
+  position:relative;
+  height:60px; 
+}
+.node:hover{ opacity:1;}
+.node{
+  left: calc(50% - 17.5px);
+  top:1.5px;
+  position:absolute;
+  width:35px; height:35px;
+  background-color:whitesmoke;
+  border-radius:35%;
+  border:1px solid gray;
+  z-index:1;
+  opacity:.8;
+}
+.nodeRoot{ border:1px solid black; box-shadow:0px 0px 5px #0000003d;  }
+.nodeSelected{
+  border:2px solid red;
+  background-color: #fff700;
+}
+.nodeSelected .node_value{
+  background-color: #fff700!important;
+  border-top:1px solid red;
+  border-right:1px solid red;
+  border-bottom:1px solid red;
+}
+.node_inside{
+  position:relative;
+  width:150%; height:100%;
+  margin-left:-25%;
+}
+.node_label{
+  background-color:transparent;
+  width: 30px;
+  border:none;
+  position: absolute;
+  top: 4px;left:9px;
+  text-align:center;
+  font-size: 20px;
+  color:gray;
+
+}
+.node_cost{
+  position:absolute;
+  top:calc(50% - 9px);
+  left:-8.2px;
+  text-align:center;
+  border:none;
+  background-color: rgba(255, 255, 255, 0.51);
+  text-shadow:0px 0px 5px white;
+  width:17px;
+}
+.node_value{
+  position:absolute;
+  left: calc(100% - 10px);
+  top: 7px;
+  width:17px;
+  text-align:center;
+  background-color: #f7f7f7;
+  border:none;
+  border-top:1px solid gray;
+  border-right:1px solid gray;
+  border-bottom:1px solid gray;
+}
+.node button{
+  cursor:hand; cursor:pointer;
+  font-size:10px;
+  margin:1px;
+}
+.node:hover .node_actions{ opacity:1; pointer-events: initial;}
+.node_actions{
+  opacity:0;
+  width: 75px;
+  left:-6px;
+  position:absolute;
+  bottom:-15px;
+  pointer-events: none;
+}
+
+.line{
+  position:absolute;
+  width:1px;
+  margin-top:-1px;
+  opacity:.5;
+  background-color:gray;
+}
+.line_pointer{
+  position:absolute;
+  top:calc(100% - 30px);
+  transform: rotate(-90deg);
+  left:-6px;
+
+
+}

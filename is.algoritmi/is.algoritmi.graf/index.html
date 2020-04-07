@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>fit.IS #algoritmi</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="../is.algoritmi._shared/main.css">
+  <link rel="stylesheet" type="text/css" href="./main.css">
+  <script type="text/javascript" src="../is.algoritmi._shared/node.js"></script>
+  <script type="text/javascript" src="../is.algoritmi._shared/main.js"></script>
+  <script type="text/javascript" src="./main.js"></script>
+  <script type="text/javascript" src="./initial.js"></script>
+</head>
+<body>
+
+  <div>(M za pomjeranje), (C za povezivanje), (✓ za odabir cvora)</div>
+
+  <div class="line" id="drawLine" style="display: none">
+    <div class="line_pointer">◄</div>
+    <input type="text" class="node_cost" value="0">
+  </div>
+
+  <div id="template">
+
+    <div class="line">
+      <div class="line_pointer">◄</div>
+      <input type="text" class="node_cost" value="0">
+    </div>
+
+    <div class="node">
+      
+      <div class="node_inside">
+        <input class="node_label" value="A" minlength="1" maxlength="1" />
+        <input type="text" class="node_value" value="1"> <br>
+        <div class="node_actions">
+          <button class="btnDrag">M</button>
+          <button class="btnConnectNode">C</button> <br>
+          <button class="btnRemoveNode">X</button>
+          <button class="btnFindThisOne">✓</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div>
+    <table>
+      <tr>
+        <td></td>
+        <td></td>
+        <td>Algoritmi</td>
+        <td></td>
+      </tr>
+        <td> <button id="btnAddNode">Dodaj</button> </td>
+        <td> <button id="btnReset">Reset</button> </td>
+        <td> <select id="selectedAlghoritm"></select> </td>
+        <td> <button id="btnPretrazi">Pretrazi</button> </td>
+    </table>
+    <div id="algoritamDescription"></div>
+  </div>
+  <div id="content"></div>
+  <div id="result" style="display: none">
+    <div><strong id="algoritamName">Depth first search</strong></div>
+    <div id="table1" style="display: none">
+      <table>
+        <tr>
+          <td>Lista posjecenosti</td>
+          <td>Otvorena lista</td>
+          <td>Zatvorena lista</td>
+        </tr>
+        <tbody id="resultTableBody"></tbody>
+      </table>
+    </div>
+    <div id="table2" style="display: none">
+      <table>
+          <td>Otvorena lista</td>
+          <td>Sortirana lista</td>
+          <td></td>
+        <tbody id="resultTable2Body"></tbody>
+      </table>
+    </div>
+    <div>
+      <strong>Lista posjecenosti:</strong> <span id="listaPosjecenosti"></span>
+    </div>
+  </div>
+
+  <script type="text/javascript" src="../is.algoritmi._shared/alg.js"></script>
+  <script type="text/javascript" src="../is.algoritmi._shared/alg.manager.IterationAndRecursion.js"></script>
+  <script type="text/javascript" src="../is.algoritmi._shared/alg.manager.CostsSearch.js"></script>
+  <script type="text/javascript" src="../is.algoritmi._shared/alg.uniformCostSearch.js"></script>
+  <script type="text/javascript" src="../is.algoritmi._shared/alg.greadyBestFirstSearch.js"></script>
+  <script type="text/javascript" src="../is.algoritmi._shared/alg.astar.js"></script>
+  <script type="text/javascript" src="../is.algoritmi._shared/alg.deepFirstSearch.js"></script>
+  <script type="text/javascript" src="../is.algoritmi._shared/alg.breadthFirstSearch.js"></script>
+  <script type="text/javascript" src="../is.algoritmi._shared/alg.limitedDepthSearchSaDubinom.js"></script>
+  <script type="text/javascript" src="../is.algoritmi._shared/alg.IterativeDeepeningSearch.js"></script>
+
+  <script type="text/javascript">
+    var main = null;
+    var root = null;
+    var nodes = [];
+
+
+    $(document).ready(function(){
+      main = new Main();
+      loadInitial();
+
+      var selectedAlghoritm = $('#selectedAlghoritm');
+      alg.types.forEach((e)=>{ selectedAlghoritm.append('<option value="'+e.id+'">'+e.name+'</option>'); });
+      $('#btnReset').click(function(){  
+        main.reset();
+      });
+      $('#btnAddNode').click(function(){ main.addNewNode(); });
+      $('#btnPretrazi').click(function(){
+        if($('.nodeSelected').length == 0){
+          alert('Neki node mora biti selectovan! duuh');
+          return;
+        }
+        var algoritam = alg.get($('#selectedAlghoritm').val());
+        if(algoritam == null)
+          alert("WTF??");
+        else
+          alg.run(algoritam);
+      });
+      $('#maxDepth').on('change', function(){
+        alg.maxDepth = parseInt($(this).val());
+      });
+      selectedAlghoritm.change(function() {
+        var algoritam = alg.get($('#selectedAlghoritm').val());
+        $('#algoritamDescription').html('<strong>'+algoritam.name+'</strong> ' + algoritam.description);
+      });
+      $('#algoritamDescription').html('<strong>'+alg.types[0].name+'</strong> ' + alg.types[0].description);
+
+
+    });
+  </script>
+
+</body>
+</html>

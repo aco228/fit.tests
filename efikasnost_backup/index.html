@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>fit.mreze #efikasnost</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script type="text/javascript" src="./bignumber.js"></script>
+  <script type="text/javascript" src="./calculator.js"></script>
+  <script type="text/javascript" src="./measureConversions.js"></script>
+  <script type="text/javascript" src="./main.js"></script>
+  <link rel="stylesheet" type="text/css" href="./main.css">
+</head>
+<body>
+
+  <!--
+    +=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=
+    CONFIGURATION
+  -->
+
+  <div id="configuration">
+    <div class="confBox confBox_closed">
+      <div class="confHeader">Segmentacija</div>
+      <div class="confBody">
+        <div class="hinput">
+          <label>Podjela na broj fajlova</label>
+          <input type="number" value="0" id="segNumberOfParts"/>
+        </div>
+        <div class="hinput" value-of="segFileSize" id="segFileSize">
+          <label>Podjela na velicinu</label>
+          <input type="number" value="0"/>
+          <select context="file_sizes"></select>
+        </div>
+        <div class="hinput" value-of="headerSize" id="headerSize">
+          <label>Velicina headera (za svaki segment)</label>
+          <input type="number" value="0"/>
+          <select context="file_sizes"></select>
+        </div>
+        <div class="hinput" value-of="zaglavljeSize" id="zaglavljeSize">
+          <label>Velicina zaglavlja (jedan)</label>
+          <input type="number" value="0"/>
+          <select context="file_sizes"></select>
+        </div>
+      </div>
+    </div>
+
+    <div class="confBox">
+      <div class="confHeader">Main</div>
+      <div class="confBody">
+
+        <div style="color:blue; margin:5px;">#default vrijednosti za link</div>
+        <div class="hinput" value-of="file-size" id="fileSize">
+          <label>Velicina fajla</label>
+          <input type="number" value="1"/>
+          <select context="file_sizes"></select>
+        </div>
+        <div class="hinput">
+          <label>Broj gresaka</label>
+          <input type="number" value="0" id="brGresaka"/>
+        </div>
+        
+        <div style="color:blue; margin:5px;">#default vrijednosti za link</div>
+        <div id="defaults_link">
+          <div class="hinput" defaults="defaults_link" context="lengths" value-of="lengths">
+            <label>Duzina</label>
+            <input type="number" value="0" />
+            <select context="lengths"></select>
+          </div>
+          <div class="hinput" defaults="defaults_link" context="capacity" value-of="capacity">
+            <label>Prenos</label>
+            <input type="number" value="2500000000" />
+            <select context="capacity"></select>
+          </div>
+          <div class="hinput" defaults="defaults_link" context="capacity_sizes" value-of="capacity_sizes">
+            <label>Kapacitet</label>
+            <input type="number" value="100" />
+            <select context="capacity_sizes"></select>
+          </div>
+        </div>
+
+        <div style="color:blue; margin:5px;">#default vrijednosti za host</div>
+        <div id="defaults_host">
+          <div class="hinput" defaults="defaults_host" context="vrijeme_obrade" value-of="vrijeme_obrade">
+            <label>Vrijeme obrade</label>
+            <input type="number" value="0" /> <select context="times"></select>
+          </div>
+          <div class="hinput" defaults="defaults_host" context="dodavanje_headera" value-of="dodavanje_headera">
+            <label>Dodaje se header velicine </label>
+            <input type="number" value="0" /> <select context="file_sizes"></select>
+          </div>
+          <div class="hinput" defaults="defaults_host" do_not_copy context="komutator_nakon_primljenih_prvih" value-of="komutator_nakon_primljenih_prvih">
+            <label>Nakon primnjenih prvih </label>
+            <input type="number" value="0" /> <select context="file_sizes"></select>
+          </div>
+        </div>
+
+        <div style="margin-top:10px;" class="hinput">
+          <input type="button" id="addNewNode" value="Dodaj novi host" />
+          <input type="button" id="updateDefaultValues" value="Update default vrijednost" />
+        </div>
+
+      </div>
+    </div>
+    
+  </div>
+
+  <!--
+    +=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=
+    TEMPLATE
+  -->
+
+  <div id="template">
+
+    <select value-context="file_sizes">
+      <option value="MB" size="4">MB</option>
+      <option value="Mb" size="4">Mb</option>
+      <option value="b" size="1" default>b</option>
+      <option value="B" size="2">B</option>
+      <option value="KB" size="3">KB</option>
+      <option value="Kb" size="4">Kb</option>
+      <option value="GB" size="5">GB</option>
+      <option value="Gb" size="5">Gb</option>
+    </select>
+
+    <select value-context="lengths">
+      <option value="m" size="1" default>m</option>
+      <option value="km" size="2">km</option>
+    </select>
+
+    <select value-context="times">
+      <option value="ms">ms</option>
+      <option value="μs">μs</option>
+      <option value="ps">ps</option>
+      <option value="ns">ns</option>
+      <option value="s" default>s</option>
+      <option value="min">min</option>
+    </select>
+
+    <select value-context="capacity_sizes">
+      <option value="Mbs" size="3">Mb/s</option>
+      <option value="bs" size="1" default>b/s</option>
+      <option value="Bs" size="2">B/s</option>
+      <option value="Kbs" size="4">Kb/s</option>
+      <option value="Gbs" size="5">Gb/s</option>
+    </select>
+
+    <select value-context="capacity">
+      <option value="ms" size="1" default>m/s</option>
+      <option value="kms" size="2">km/s</option>
+    </select>
+
+    <div class="host node">
+      <div class="node_label">#H1</div>
+      <div class="node_remove">X</div>
+      <div class="node_inside"></div>
+    </div>
+    <div class="link node">
+      <div class="link_draw"></div>
+      <div class="node_label">#L1</div>
+      <div class="node_inside"></div>
+    </div>
+  </div>
+
+
+  <!--
+    +=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=
+    
+  -->
+
+  <div id="canvas"></div>
+
+
+  <!--
+    +=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=
+    RESULT
+  -->
+
+  <div id="result">
+    <label>Broj decimala: </label> <input type="number" id="brojDecimala" value="3"> <br>
+    <div class="result_header"># Fajl</div>
+    <div class="result_box" context="fileSize">
+      Velicina poslatog fajla je <span class="result_value">0</span> <select context="file_sizes"></select>
+    </div>
+    <div class="result_box" context="velicinaHeadera">
+      Velicina headera je <span class="result_value">0</span> <select context="file_sizes"></select>
+    </div>
+    <div class="result_box" context="ukupnaVelicinaHeadera">
+      Ukupna velicina headera je <span class="result_value">0</span> <select context="file_sizes"></select>
+    </div>
+    <div class="result_box" context="efikasnost">
+      Efikasnost prenosa je <span class="result_value">0</span>
+    </div>
+    <div class="result_box" context="brzinaPrenosa">
+      Brzina prenosa je <span class="result_value">0</span> <select context="capacity_sizes"></select>
+    </div>
+
+
+    <div class="result_header"># Segmentacija</div>
+    <div class="result_box" context="podjelaNaBrojFajlova">
+      Podjela na broj segmenata je <span class="result_value">0</span>
+    </div>
+    <div class="result_box" context="podjelaNaVelicinu">
+      Podjela na velicinu segmenta  je <span class="result_value">0</span> <select context="file_sizes"></select>
+    </div>
+
+
+    <div class="result_header"># Kasnjenje</div>
+    <div class="result_box" context="ukupnoKasnjenje">
+      Ukupno kasnjenje je <span class="result_value">0</span> <select context="times"></select>
+    </div>
+    <div class="result_box" context="usledPrenosa">
+      Kasnjenje usred prenosa je  <span class="result_value">0</span>  <select context="times"></select>
+    </div>
+    <div class="result_box" context="usledPropagacije">
+      Kasnjenje usred propagacije je <span class="result_value">0</span> <select context="times"></select>
+    </div>
+    <div class="result_box" context="kasnjenjeUsredObrade">
+      Kasnjenje usred obrade (inputi) je <span class="result_value">0</span> <select context="times"></select>
+    </div>
+
+    <div id="tables"></div>
+  </div>
+
+  <script type="text/javascript">
+    var main = null, calc = null;
+    $(document).ready(function(){
+      calc = new Calculator();
+
+      main = new Main();
+      main.addInitialNode();
+      main.catchEvents();
+      calc.update();
+    });
+  </script>
+
+</body>
+</html>

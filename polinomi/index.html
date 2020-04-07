@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>fit.mreze #polinomi</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script type="text/javascript" src="./polinom.js"></script>
+  <link rel="stylesheet" type="text/css" href="./polinom.css">
+
+</head>
+<body>
+
+  <label>Bit -> polinom: </label> <input type="text" id="inputBit2Polinom" value="11010"> <button id="btn_bit2Polinom">Pretvori</button> <br>
+  <label>Niz bita: </label> <input type="text" id="inputBit" value="1101011"> <br>
+  <label>Polinom: </label> <input type="text" id="inputPolinom" value="x4 + x3 + 1"> <br>
+  <button id="btn">Izracunaj</button> <br>
+
+  <div id="result">
+    
+    <!--
+    <div id="rBits">11010101<span class="rBits_crc">00000</span></div>
+    <div id="razlomak">
+      <div class="sentence">
+        <span class="word">x<sup class="stepen">2</sup></span>
+        <span class="word">x<sup class="stepen">2</sup></span>
+        <span class="word">x<sup class="stepen">2</sup></span>
+        <span class="word">x<sup class="stepen">2</sup></span>
+        <span class="word">x<sup class="stepen">2</sup></span>
+        <span class="word">x<sup class="stepen">2</sup></span>
+      </div>
+      :
+      <div class="sentence">
+        <span class="word">x<sup class="stepen">2</sup></span>
+        <span class="word">x<sup class="stepen">2</sup></span>
+        <span class="word">x<sup class="stepen">2</sup></span>
+        <span class="word">x<sup class="stepen">2</sup></span>
+        <span class="word">x<sup class="stepen">2</sup></span>
+        <span class="word">x<sup class="stepen">2</sup></span>
+      </div>
+      =
+      <div class="sentence">
+        <span class="word">x<sup class="stepen">2</sup></span>
+        <span class="word">x<sup class="stepen">2</sup></span>
+        <span class="word">x<sup class="stepen">2</sup></span>
+        <span class="word">x<sup class="stepen">2</sup></span>
+        <span class="word">x<sup class="stepen">2</sup></span>
+        <span class="word">x<sup class="stepen">2</sup></span>
+      </div>
+    -->
+    </div>
+
+  </div>
+
+  <script type="text/javascript">
+    var polinom = null;
+    $(document).ready(function(){
+      polinom = new Polinom();
+    });
+  </script>
+
+
+</body>
+</html>

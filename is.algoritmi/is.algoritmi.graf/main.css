@@ -1,0 +1,18 @@
+.node button{ margin:-1px; }
+.node_actions{left:6px; bottom:-35px; }
+
+.nodeConnectionRequester{border:2px solid #02ff00; }
+.nodeConnectionPosible{ border:2px solid blue; }
+
+.nodeConnectionPosible:hover .node_actions{ display:none; }
+.nodeConnectionPosible:hover .node_label{ pointer-events:none;}
+.nodeConnectionPosible:hover .node_value{ pointer-events:none;}
+
+.line:hover { background-color: red; }
+.line{ width:3px; }
+.line_pointer{
+  top:calc(100% - 40px);
+  transform: rotate(-90deg);
+  left:-4px;
+}
+.node_cost{ background-color:white; }

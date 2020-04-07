@@ -1,0 +1,156 @@
+body, html{
+  padding:0px; margin:5px;
+  font-family: 'Roboto', sans-serif;
+  font-size:12px;
+}
+
+input{ font:inherit; }
+select{ font:inherit; }
+
+#template{
+  display: none; visibility: none;
+}
+
+/* 
+
+  += += += += += += += += += += += += += += += += += += += += += += += += += += += += += += 
+  CONFIGURATION
+
+*/
+
+#configuration{
+  width:900px;
+}
+.confBox_closed{
+  height:20px;
+  overflow:hidden;
+}
+.confBox{
+  background-color: #eaeaea;
+  padding: 5px;
+  margin-bottom:3px;
+
+}
+.confHeader{
+  background-color: #828282;
+  cursor:hand; cursor:pointer;
+  padding:3px;
+  color:white;
+}
+.confBody{
+  margin-top:5px; margin-left: 20px;
+}
+
+/* 
+
+  += += += += += += += += += += += += += += += += += += += += += += += += += += += += += += 
+  CANVAS
+
+*/
+
+#canvas{ float:left; width:450px; margin-top: 20px; }
+
+
+/*
+  += += += += += += += += += += += += += += += += += += += += += += += += += += += += += += 
+  SHARED
+*/
+
+  /* .node:hover{ background-color:#bdbdbd29; } */
+  .node{
+    position:relative;
+    width:420px; height:150px;
+
+  }
+  .node_inside{
+    top:12px; left:40px;
+    position:relative;
+    font-size:10.5px;
+  }
+  .node_label{
+    position:absolute;
+    font-size: 20px;
+    top:5px; left:5px;
+    color:gray;
+    pointer-events:none;
+    opacity: .5;
+  }
+  .node_remove:hover{ opacity:1;}
+  .node_remove{
+    position:absolute;
+    top:35px; left: 11px;
+    background-color:red;
+    padding: 1px 10px;
+    border-radius:9px; 
+    color:white;
+    cursor:hand; cursor:pointer;
+    opacity: .5;
+    z-index:5;
+  }
+  .hinput{
+    width:100%;
+  }
+  .hinput label{ display:inline-block; width: 155px; text-align:right; }
+  .hinput input{ }
+  .hinput select{ width: 60px;}
+
+/*
+  += += += += += += += += += += += += += += += += += += += += += += += += += += += += += += 
+  HOST 
+*/
+
+  .host{
+    height:60px;
+    background-color:#f1f1f1;
+    border:1px dashed #cecece;
+    border-radius:15px;
+  }
+
+
+/*
+  += += += += += += += += += += += += += += += += += += += += += += += += += += += += += += 
+  LINK
+*/
+
+  .link{ height: 90px;}
+  .link_draw{
+    position:absolute;
+    width:10px; height:100%;
+    background-color:#f1f1f1;
+    left:20px;;
+
+    border-color: #cecece;
+    border-style: dashed;
+    border-width: 0px 1px 0px 1px;
+    z-index:-1;
+  }
+
+  .host:last-of-type .node_inside{
+    display:none;
+  }
+
+
+/*
+  += += += += += += += += += += += += += += += += += += += += += += += += += += += += += += 
+  RESULT
+*/
+
+#result{
+  float:left;
+  margin-top: 20px;
+}
+.result_value{
+  padding: 0px 5px;
+  background-color:#d2ffd2;
+}
+.result_header{
+  color:green;
+  margin-top:15px;
+}
+
+#tables{
+}
+.tables_span{
+  background-color:#d2ffd2;
+  padding: 0px 5px;
+}
