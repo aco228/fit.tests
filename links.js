@@ -18,11 +18,12 @@ var links = [
       {
         n: 'Kolizioni',
         l: './kolizioni/index.html'
-      },
+      }
+	  /*,
       {
         n: 'Vremenski domeni',
         l: 'http://www.ee.unb.ca/cgi-bin/tervo/encoding.pl?binary=01001100011&c=1&d=1'
-      }
+      }*/
     ]
   },
 
