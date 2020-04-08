@@ -1,0 +1,21 @@
+velicina zaglavlja svih nivoa = za svaki segment
+
+
+// broj segmenata i velicina fajla ako je poznato da je ukupno kasnjenje 8.52ms
+
+var state = calc.getState();
+state.segFileSize = calc.convert(SIZES.FILE_SIZE, '1', 'KB', 'b');
+var currentResult = calc.calculate(state);
+
+var tm = calc.convert(SIZES.TIMES, '8.52', 'ms', 's');
+var N = Math.floor(tm.sub(currentResult.kasnjenjeUsledPropagacije).div(currentResult.kasnjenjeUsledPrenosaSegmenta.div(calc.length().sub(1))).sub(calc.length().sub(2)));
+var fileSize = state.segFileSize.mul(N);
+console.log('N', N, 'fileSize', fileSize);
+
+// ukupno kasnjenje potrebno za prenos fajla
+
+var uk = result.kasnjenjeUsledPrenosa.add(result.result[0].prenos.result).add(result.kasnjenjeUsledPropagacije);
+  for(var i = 0; i < calc.length() - 1; i++)
+    uk = uk.add(result.host_afterReceivedFirst.div(result.result[0].prenos.kapacitet));
+
+var speedOfTransmision = calc.convert(SIZES.CAPACITY_SIZES, result.fileSize.div(uk), 'bs', 'Mbs');

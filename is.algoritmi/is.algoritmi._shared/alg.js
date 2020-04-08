@@ -28,7 +28,10 @@ var alg = new function(){
   this.run = function(algoritam){
     this.currentAlgoritm = algoritam;
     this.reset();
-    console.warn('Searching for label:' + main.getNode(this.searchId).label + ' with algoritam "' + algoritam.name + '"');
+    if(this.searchId == '')
+      console.warn('Searching for label:' + main.getNode(this.searchId).label + ' with algoritam "' + algoritam.name + '"');
+    else
+      console.warn('Prolaz kroz kompletno drvo');
     algoritam.beforeStart();
     algoritam.run(root);
     algoritam.update();

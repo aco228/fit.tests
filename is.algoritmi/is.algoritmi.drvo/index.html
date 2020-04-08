@@ -100,15 +100,13 @@
         main.reset();
       });
       $('#btnPretrazi').click(function(){
-        if($('.nodeSelected').length == 0){
-          alert('Neki node mora biti selectovan! duuh');
-          return;
-        }
+
         var algoritam = alg.get($('#selectedAlghoritm').val());
         if(algoritam == null)
           alert("WTF??");
         else
           alg.run(algoritam);
+        
       });
       $('#maxDepth').on('change', function(){
         alg.maxDepth = parseInt($(this).val());
