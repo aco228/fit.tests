@@ -12,7 +12,11 @@ var alg = new function(){
     $('#algoritamName').text(this.currentAlgoritm.name);
     $('#resultTableBody').html('');
 
-    this.searchId = $('.nodeSelected').attr('id');
+    if($('.nodeSelected').length != 0)
+      this.searchId = $('.nodeSelected').attr('id');
+    else
+      this.searchId = '';
+    
     this.currentAlgoritm.reset();
   }
 
@@ -28,13 +32,16 @@ var alg = new function(){
   this.run = function(algoritam){
     this.currentAlgoritm = algoritam;
     this.reset();
-    if(this.searchId == '')
+
+    if(this.searchId != '')
       console.warn('Searching for label:' + main.getNode(this.searchId).label + ' with algoritam "' + algoritam.name + '"');
-    else
-      console.warn('Prolaz kroz kompletno drvo');
+
     algoritam.beforeStart();
     algoritam.run(root);
     algoritam.update();
+
+    if(typeof algoritam.onExit === 'function')
+      algoritam.onExit();
   }
 
 }

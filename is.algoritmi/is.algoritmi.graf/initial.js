@@ -1,5 +1,6 @@
 function loadInitial(){
-  $('#content').html(html);
+  $('#content').html(html3);
+
   $('#content').find('.node').each(function(){
     var node = new Node(parseInt($(this).find('.node_value').val()), 0);
     node.label = $(this).find('.node_label').val();
@@ -26,6 +27,110 @@ function loadInitial(){
 
   main.updateContentHeight();
 }
+
+var html2 = `
+<div class="node nodeRoot" id="nodeU55bA8Wz1Jb7ts9l" style="top: 20px; left: 35px;">
+      
+      <div class="node_inside">
+        <input class="node_label" value="1" minlength="1" maxlength="1">
+        <input type="text" class="node_value" value="1"> <br>
+        <div class="node_actions">
+          <button class="btnDrag">M</button><br>
+          <button class="btnConnectNode" type="1">C1</button>
+          <button class="btnConnectNode" type="2">C2</button> <br>
+          <button class="btnRemoveNode">X</button>
+          <button class="btnFindThisOne">✓</button>
+        </div>
+      </div>
+    </div><div class="node" id="nodemyeElgQjPx5JHkdM" style="top: 121px; left: 36px;">
+      
+      <div class="node_inside">
+        <input class="node_label" value="2" minlength="1" maxlength="1">
+        <input type="text" class="node_value" value="2"> <br>
+        <div class="node_actions">
+          <button class="btnDrag">M</button><br>
+          <button class="btnConnectNode" type="1">C1</button>
+          <button class="btnConnectNode" type="2">C2</button> <br>
+          <button class="btnRemoveNode">X</button>
+          <button class="btnFindThisOne">✓</button>
+        </div>
+      </div>
+    </div><div class="node" id="nodefswOAdQHMkwowb6X" style="top: 19px; left: 179px;">
+      
+      <div class="node_inside">
+        <input class="node_label" value="5" minlength="1" maxlength="1">
+        <input type="text" class="node_value" value="5"> <br>
+        <div class="node_actions">
+          <button class="btnDrag">M</button><br>
+          <button class="btnConnectNode" type="1">C1</button>
+          <button class="btnConnectNode" type="2">C2</button> <br>
+          <button class="btnRemoveNode">X</button>
+          <button class="btnFindThisOne">✓</button>
+        </div>
+      </div>
+    </div><div class="node" id="nodeRrdZXb6lR4KHEL4J" style="top: 119px; left: 184px;">
+      
+      <div class="node_inside">
+        <input class="node_label" value="3" minlength="1" maxlength="1">
+        <input type="text" class="node_value" value="3"> <br>
+        <div class="node_actions">
+          <button class="btnDrag">M</button><br>
+          <button class="btnConnectNode" type="1">C1</button>
+          <button class="btnConnectNode" type="2">C2</button> <br>
+          <button class="btnRemoveNode">X</button>
+          <button class="btnFindThisOne">✓</button>
+        </div>
+      </div>
+    </div><div class="node nodeSelected" id="nodeAjQct3Hmx1YQiLwU" style="top: 118px; left: 346px;">
+      
+      <div class="node_inside">
+        <input class="node_label" value="4" minlength="1" maxlength="1">
+        <input type="text" class="node_value" value="4"> <br>
+        <div class="node_actions">
+          <button class="btnDrag">M</button><br>
+          <button class="btnConnectNode" type="1">C1</button>
+          <button class="btnConnectNode" type="2">C2</button> <br>
+          <button class="btnRemoveNode">X</button>
+          <button class="btnFindThisOne">✓</button>
+        </div>
+      </div>
+    </div><div class="line doubleLine" id="line_nodemyeElgQjPx5JHkdM_nodeU55bA8Wz1Jb7ts9l" from="nodemyeElgQjPx5JHkdM" to="nodeU55bA8Wz1Jb7ts9l" style="transform: rotate(179.433deg); top: 38.4975px; left: 54px; height: 101.005px;">
+      <div class="line_pointer">◄</div>
+      
+    </div><div class="line" id="line_nodeU55bA8Wz1Jb7ts9l_nodemyeElgQjPx5JHkdM" from="nodeU55bA8Wz1Jb7ts9l" to="nodemyeElgQjPx5JHkdM" style="transform: rotate(-0.567266deg); top: 38.4975px; left: 54px; height: 101.005px;">
+      <div class="line_pointer">◄</div>
+      <input type="text" class="node_cost" value="4">
+    </div><div class="line doubleLine" id="line_nodefswOAdQHMkwowb6X_nodeU55bA8Wz1Jb7ts9l" from="nodefswOAdQHMkwowb6X" to="nodeU55bA8Wz1Jb7ts9l" style="transform: rotate(89.6021deg); top: -34.0017px; left: 125.5px; height: 144.003px;">
+      <div class="line_pointer">◄</div>
+      
+    </div><div class="line" id="line_nodeU55bA8Wz1Jb7ts9l_nodefswOAdQHMkwowb6X" from="nodeU55bA8Wz1Jb7ts9l" to="nodefswOAdQHMkwowb6X" style="transform: rotate(269.602deg); top: -34.0017px; left: 125.5px; height: 144.003px;">
+      <div class="line_pointer">◄</div>
+      <input type="text" class="node_cost" value="3" style="transform: rotate(180deg);">
+    </div><div class="line doubleLine" id="line_nodeRrdZXb6lR4KHEL4J_nodemyeElgQjPx5JHkdM" from="nodeRrdZXb6lR4KHEL4J" to="nodemyeElgQjPx5JHkdM" style="transform: rotate(89.2258deg); top: 64.4932px; left: 128.5px; height: 148.014px;">
+      <div class="line_pointer">◄</div>
+      
+    </div><div class="line" id="line_nodemyeElgQjPx5JHkdM_nodeRrdZXb6lR4KHEL4J" from="nodemyeElgQjPx5JHkdM" to="nodeRrdZXb6lR4KHEL4J" style="transform: rotate(269.226deg); top: 64.4932px; left: 128.5px; height: 148.014px;">
+      <div class="line_pointer">◄</div>
+      <input type="text" class="node_cost" value="2" style="transform: rotate(180deg);">
+    </div><div class="line doubleLine" id="line_nodefswOAdQHMkwowb6X_nodeRrdZXb6lR4KHEL4J" from="nodefswOAdQHMkwowb6X" to="nodeRrdZXb6lR4KHEL4J" style="transform: rotate(-2.86241deg); top: 37.4375px; left: 200px; height: 100.125px;">
+      <div class="line_pointer">◄</div>
+      
+    </div><div class="line" id="line_nodeRrdZXb6lR4KHEL4J_nodefswOAdQHMkwowb6X" from="nodeRrdZXb6lR4KHEL4J" to="nodefswOAdQHMkwowb6X" style="transform: rotate(177.138deg); top: 37.4375px; left: 200px; height: 100.125px;">
+      <div class="line_pointer">◄</div>
+      <input type="text" class="node_cost" value="2" style="transform: rotate(180deg);">
+    </div><div class="line" id="line_nodeAjQct3Hmx1YQiLwU_nodefswOAdQHMkwowb6X" from="nodeAjQct3Hmx1YQiLwU" to="nodefswOAdQHMkwowb6X" style="transform: rotate(120.66deg); top: -10.0696px; left: 281px; height: 194.139px;">
+      <div class="line_pointer">◄</div>
+      <input type="text" class="node_cost" value="5" style="transform: rotate(180deg);">
+    </div><div class="line" id="line_nodeU55bA8Wz1Jb7ts9l_nodeRrdZXb6lR4KHEL4J" from="nodeU55bA8Wz1Jb7ts9l" to="nodeRrdZXb6lR4KHEL4J" style="transform: rotate(-56.3988deg); top: -0.445514px; left: 129px; height: 178.891px;">
+      <div class="line_pointer">◄</div>
+      <input type="text" class="node_cost" value="5">
+    </div><div class="line doubleLine" id="line_nodeAjQct3Hmx1YQiLwU_nodeRrdZXb6lR4KHEL4J" from="nodeAjQct3Hmx1YQiLwU" to="nodeRrdZXb6lR4KHEL4J" style="transform: rotate(89.6463deg); top: 55.9985px; left: 283.5px; height: 162.003px;">
+      <div class="line_pointer">◄</div>
+      
+    </div><div class="line" id="line_nodeRrdZXb6lR4KHEL4J_nodeAjQct3Hmx1YQiLwU" from="nodeRrdZXb6lR4KHEL4J" to="nodeAjQct3Hmx1YQiLwU" style="transform: rotate(269.646deg); top: 55.9985px; left: 283.5px; height: 162.003px;">
+      <div class="line_pointer">◄</div>
+      <input type="text" class="node_cost" value="1" style="transform: rotate(180deg);">
+    </div>`;
 
 var html = `<div class="node nodeRoot" id="nodePL8q9r7MFp04RH1T" style="top: 35px; left: 163px;">
   
@@ -226,3 +331,156 @@ var html = `<div class="node nodeRoot" id="nodePL8q9r7MFp04RH1T" style="top: 35p
   <div class="line_pointer">◄</div>
   <input type="text" class="node_cost" value="1">
 </div>`;
+
+
+var html3 = `
+<div class="node nodeRoot" id="nodeezfG4Ww2LhENxWKt" style="top: 14px; left: 155px;">
+      
+      <div class="node_inside">
+        <input class="node_label" value="0" minlength="1" maxlength="1">
+        <input type="text" class="node_value" value="1"> <br>
+        <div class="node_actions">
+          <button class="btnDrag">M</button><br>
+          <button class="btnConnectNode" type="1">C1</button>
+          <button class="btnConnectNode" type="2">C2</button> <br>
+          <button class="btnRemoveNode">X</button>
+          <button class="btnFindThisOne">✓</button>
+        </div>
+      </div>
+    </div><div class="node" id="nodenRmMUCHMlExIDr7f" style="top: 167px; left: 66px;">
+      
+      <div class="node_inside">
+        <input class="node_label" value="8" minlength="1" maxlength="1">
+        <input type="text" class="node_value" value="1"> <br>
+        <div class="node_actions">
+          <button class="btnDrag">M</button><br>
+          <button class="btnConnectNode" type="1">C1</button>
+          <button class="btnConnectNode" type="2">C2</button> <br>
+          <button class="btnRemoveNode">X</button>
+          <button class="btnFindThisOne">✓</button>
+        </div>
+      </div>
+    </div><div class="node" id="nodeGVLmG02ycPhp9bb1" style="top: 167px; left: 188px;">
+      
+      <div class="node_inside">
+        <input class="node_label" value="3" minlength="1" maxlength="1">
+        <input type="text" class="node_value" value="1"> <br>
+        <div class="node_actions">
+          <button class="btnDrag">M</button><br>
+          <button class="btnConnectNode" type="1">C1</button>
+          <button class="btnConnectNode" type="2">C2</button> <br>
+          <button class="btnRemoveNode">X</button>
+          <button class="btnFindThisOne">✓</button>
+        </div>
+      </div>
+    </div><div class="node" id="nodefcdoB67ZxgbdiUmh" style="top: 296px; left: 250px;">
+      
+      <div class="node_inside">
+        <input class="node_label" value="4" minlength="1" maxlength="1">
+        <input type="text" class="node_value" value="1"> <br>
+        <div class="node_actions">
+          <button class="btnDrag">M</button><br>
+          <button class="btnConnectNode" type="1">C1</button>
+          <button class="btnConnectNode" type="2">C2</button> <br>
+          <button class="btnRemoveNode">X</button>
+          <button class="btnFindThisOne">✓</button>
+        </div>
+      </div>
+    </div><div class="node" id="nodekSsLOhbyYohrMcl2" style="top: 14px; left: 344px;">
+      
+      <div class="node_inside">
+        <input class="node_label" value="1" minlength="1" maxlength="1">
+        <input type="text" class="node_value" value="1"> <br>
+        <div class="node_actions">
+          <button class="btnDrag">M</button><br>
+          <button class="btnConnectNode" type="1">C1</button>
+          <button class="btnConnectNode" type="2">C2</button> <br>
+          <button class="btnRemoveNode">X</button>
+          <button class="btnFindThisOne">✓</button>
+        </div>
+      </div>
+    </div><div class="node" id="nodeTjFlXGCmw2IyvJjw" style="top: 167px; left: 347px;">
+      
+      <div class="node_inside">
+        <input class="node_label" value="2" minlength="1" maxlength="1">
+        <input type="text" class="node_value" value="1"> <br>
+        <div class="node_actions">
+          <button class="btnDrag">M</button><br>
+          <button class="btnConnectNode" type="1">C1</button>
+          <button class="btnConnectNode" type="2">C2</button> <br>
+          <button class="btnRemoveNode">X</button>
+          <button class="btnFindThisOne">✓</button>
+        </div>
+      </div>
+    </div><div class="node" id="nodewdGT8IUgacKkQRlT" style="top: 62px; left: 467px;">
+      
+      <div class="node_inside">
+        <input class="node_label" value="7" minlength="1" maxlength="1">
+        <input type="text" class="node_value" value="1"> <br>
+        <div class="node_actions">
+          <button class="btnDrag">M</button><br>
+          <button class="btnConnectNode" type="1">C1</button>
+          <button class="btnConnectNode" type="2">C2</button> <br>
+          <button class="btnRemoveNode">X</button>
+          <button class="btnFindThisOne">✓</button>
+        </div>
+      </div>
+    </div><div class="node" id="noder1OUDubxXWhFtI5e" style="top: 254px; left: 483px;">
+      
+      <div class="node_inside">
+        <input class="node_label" value="5" minlength="1" maxlength="1">
+        <input type="text" class="node_value" value="1"> <br>
+        <div class="node_actions">
+          <button class="btnDrag">M</button><br>
+          <button class="btnConnectNode" type="1">C1</button>
+          <button class="btnConnectNode" type="2">C2</button> <br>
+          <button class="btnRemoveNode">X</button>
+          <button class="btnFindThisOne">✓</button>
+        </div>
+      </div>
+    </div><div class="node" id="nodeFw33uUs0uyXmnmdb" style="top: 135px; left: 603px;">
+      
+      <div class="node_inside">
+        <input class="node_label" value="6" minlength="1" maxlength="1">
+        <input type="text" class="node_value" value="1"> <br>
+        <div class="node_actions">
+          <button class="btnDrag">M</button><br>
+          <button class="btnConnectNode" type="1">C1</button>
+          <button class="btnConnectNode" type="2">C2</button> <br>
+          <button class="btnRemoveNode">X</button>
+          <button class="btnFindThisOne">✓</button>
+        </div>
+      </div>
+    </div><div class="line" id="line_nodeezfG4Ww2LhENxWKt_nodenRmMUCHMlExIDr7f" from="nodeezfG4Ww2LhENxWKt" to="nodenRmMUCHMlExIDr7f" style="transform: rotate(30.1865deg); top: 21.4986px; left: 130px; height: 177.003px;">
+      <div class="line_pointer">◄</div>
+      <input type="text" class="node_cost" value="0">
+    </div><div class="line" id="line_nodeezfG4Ww2LhENxWKt_nodeGVLmG02ycPhp9bb1" from="nodeezfG4Ww2LhENxWKt" to="nodeGVLmG02ycPhp9bb1" style="transform: rotate(-12.1715deg); top: 30.7408px; left: 190px; height: 156.518px;">
+      <div class="line_pointer">◄</div>
+      <input type="text" class="node_cost" value="0">
+    </div><div class="line" id="line_nodenRmMUCHMlExIDr7f_nodefcdoB67ZxgbdiUmh" from="nodenRmMUCHMlExIDr7f" to="nodefcdoB67ZxgbdiUmh" style="transform: rotate(-54.9662deg); top: 137.642px; left: 176.5px; height: 224.715px;">
+      <div class="line_pointer">◄</div>
+      <input type="text" class="node_cost" value="0">
+    </div><div class="line" id="line_nodeGVLmG02ycPhp9bb1_nodefcdoB67ZxgbdiUmh" from="nodeGVLmG02ycPhp9bb1" to="nodefcdoB67ZxgbdiUmh" style="transform: rotate(-25.6699deg); top: 178.437px; left: 237.5px; height: 143.126px;">
+      <div class="line_pointer">◄</div>
+      <input type="text" class="node_cost" value="0">
+    </div><div class="line" id="line_nodeGVLmG02ycPhp9bb1_nodeTjFlXGCmw2IyvJjw" from="nodeGVLmG02ycPhp9bb1" to="nodeTjFlXGCmw2IyvJjw" style="transform: rotate(90deg); top: 106px; left: 286px; height: 159px;">
+      <div class="line_pointer">◄</div>
+      <input type="text" class="node_cost" value="0" style="transform: rotate(180deg);">
+    </div><div class="line" id="line_nodeezfG4Ww2LhENxWKt_nodekSsLOhbyYohrMcl2" from="nodeezfG4Ww2LhENxWKt" to="nodekSsLOhbyYohrMcl2" style="transform: rotate(90deg); top: -62px; left: 268px; height: 189px;">
+      <div class="line_pointer">◄</div>
+      <input type="text" class="node_cost" value="0">
+    </div><div class="line" id="line_nodekSsLOhbyYohrMcl2_nodewdGT8IUgacKkQRlT" from="nodekSsLOhbyYohrMcl2" to="nodewdGT8IUgacKkQRlT" style="transform: rotate(-68.6821deg); top: -9.51704px; left: 424px; height: 132.034px;">
+      <div class="line_pointer">◄</div>
+      <input type="text" class="node_cost" value="0">
+    </div><div class="line" id="line_nodeTjFlXGCmw2IyvJjw_noder1OUDubxXWhFtI5e" from="nodeTjFlXGCmw2IyvJjw" to="noder1OUDubxXWhFtI5e" style="transform: rotate(-57.3927deg); top: 148.277px; left: 433.5px; height: 161.447px;">
+      <div class="line_pointer">◄</div>
+      <input type="text" class="node_cost" value="0">
+    </div><div class="line" id="line_noder1OUDubxXWhFtI5e_nodeFw33uUs0uyXmnmdb" from="noder1OUDubxXWhFtI5e" to="nodeFw33uUs0uyXmnmdb" style="transform: rotate(225.24deg); top: 128.5px; left: 561.5px; height: 169px;">
+      <div class="line_pointer">◄</div>
+      <input type="text" class="node_cost" value="0" style="transform: rotate(180deg);">
+    </div><div class="line" id="line_nodeTjFlXGCmw2IyvJjw_nodewdGT8IUgacKkQRlT" from="nodeTjFlXGCmw2IyvJjw" to="nodewdGT8IUgacKkQRlT" style="transform: rotate(228.814deg); top: 53.2739px; left: 425.5px; height: 159.452px;">
+      <div class="line_pointer">◄</div>
+      <input type="text" class="node_cost" value="0" style="transform: rotate(180deg);">
+    </div>
+
+`;

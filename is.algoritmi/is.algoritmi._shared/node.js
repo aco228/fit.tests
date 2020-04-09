@@ -28,7 +28,11 @@ function Node(value, cost){
   }
 
   this.getCost = function(parent){
-    return parseInt($('.line[to=' + this.id + '][from=' + parent.id + ']').find('.node_cost').val());
+    var line = $('.line[to=' + this.id + '][from=' + parent.id + ']');
+    if(line.hasClass('doubleLine'))
+      return parseInt($('.line[to=' + parent.id + '][from=' + this.id + ']').find('.node_cost').val());
+    else
+      return parseInt($('.line[to=' + this.id + '][from=' + parent.id + ']').find('.node_cost').val());
   }
 
   this.hasChild = function(node){
@@ -54,10 +58,10 @@ function Node(value, cost){
       }
   }
 
-  this.addChild = function(node){
+  this.addChild = function(node, twoDirections){
     this.children.push(node);
     node.parent.push(this);
-    main.connectLine(node, this);
+    main.connectLine(node, this, twoDirections);
   }
 
   this.getDepth = function(){ return this.depth; }

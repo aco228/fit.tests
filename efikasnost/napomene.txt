@@ -19,3 +19,8 @@ var uk = result.kasnjenjeUsledPrenosa.add(result.result[0].prenos.result).add(re
     uk = uk.add(result.host_afterReceivedFirst.div(result.result[0].prenos.kapacitet));
 
 var speedOfTransmision = calc.convert(SIZES.CAPACITY_SIZES, result.fileSize.div(uk), 'bs', 'Mbs');
+
+
+// odrediti broj segmenata ako je efikasnost
+
+var segmenti = Math.ceil(result.originalFileSize.mul('1'.div('0.96664').sub(1)).div(result.headerSize));

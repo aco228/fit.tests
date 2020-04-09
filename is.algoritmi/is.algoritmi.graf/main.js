@@ -7,6 +7,7 @@ Main.prototype.initExtend = function(){
     if(confirm('Izbrisi liniju?')){
       var fromNode = main.getNode($(this).attr('from'));
       var toNode = main.getNode($(this).attr('to'));
+
       fromNode.removeChild(toNode);
       toNode.removeParent(fromNode);
       $(this).remove();
@@ -20,6 +21,7 @@ Main.prototype.reset = function(){
   root = null;
   nodes = [];
 }
+
 
 Main.prototype.updateContentHeight = function(){
   var max = 0;
@@ -101,6 +103,7 @@ Main.prototype.dragNode = function(node) {
 // +=// +=// +=// +=// +=// +=// +=// +=// +=// +=// +=// +=// +=// +=// +=// +=// +=// +=// +=// +=// +=// +=// +=// +=// +=// +=
 // CONNECTING NODES
 Main.prototype.connectionIsOpen = false;
+Main.prototype.connectionType = '';
 Main.prototype.connectingNode = null;
 
 
@@ -108,6 +111,7 @@ Main.prototype.connectingInit = function(){
   var self = this;
   $('body').on('click', '.btnConnectNode', function(){
     var parent = $(this).closest('.node');
+    connectionType = $(this).attr('type');
     if(parent.hasClass('nodeConnectionRequester')){
       parent.removeClass('nodeConnectionRequester');
       self.closeConnectingPhase(); 
@@ -127,7 +131,12 @@ Main.prototype.connectingInit = function(){
 
   $('body').on('click', '.nodeConnectionPosible', function(){
     var currentNode = self.getNode($(this).attr('id'));
+
+    if(connectionType == '2')
+      currentNode.addChild(self.connectingNode, true);
+    
     self.connectingNode.addChild(currentNode);
+
     self.closeConnectingPhase();
   });
 

@@ -4,6 +4,7 @@
   <title>fit.IS #algoritmi.drvo</title>
   <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
   <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script type="text/javascript" src="../../system.js"></script>
   <link rel="stylesheet" type="text/css" href="../is.algoritmi._shared/main.css">
   <script type="text/javascript" src="../is.algoritmi._shared/node.js"></script>
   <script type="text/javascript" src="../is.algoritmi._shared/main.js"></script>
@@ -61,6 +62,7 @@
     </div>
     <div id="table2" style="display: none">
       <table>
+          <td>Poseceni cvor</td>
           <td>Otvorena lista</td>
           <td>Sortirana lista</td>
           <td></td>
@@ -75,13 +77,15 @@
   <script type="text/javascript" src="../is.algoritmi._shared/alg.js"></script>
   <script type="text/javascript" src="../is.algoritmi._shared/alg.manager.IterationAndRecursion.js"></script>
   <script type="text/javascript" src="../is.algoritmi._shared/alg.manager.CostsSearch.js"></script>
-  <script type="text/javascript" src="../is.algoritmi._shared/alg.deepFirstSearch.js"></script>
-  <script type="text/javascript" src="../is.algoritmi._shared/alg.breadthFirstSearch.js"></script>
-  <script type="text/javascript" src="../is.algoritmi._shared/alg.limitedDepthSearchSaDubinom.js"></script>
-  <script type="text/javascript" src="../is.algoritmi._shared/alg.IterativeDeepeningSearch.js"></script>
-  <script type="text/javascript" src="../is.algoritmi._shared/alg.uniformCostSearch.js"></script>
-  <script type="text/javascript" src="../is.algoritmi._shared/alg.greadyBestFirstSearch.js"></script>
-  <script type="text/javascript" src="../is.algoritmi._shared/alg.astar.js"></script>
+
+  <script type="text/javascript" src="../is.algoritmi._shared/alg.rec.deepFirstSearch.js"></script>
+  <script type="text/javascript" src="../is.algoritmi._shared/alg.rec.breadthFirstSearch.js"></script>
+  <script type="text/javascript" src="../is.algoritmi._shared/alg.rec.limitedDepthSearchSaDubinom.js"></script>
+  <script type="text/javascript" src="../is.algoritmi._shared/alg.rec.IterativeDeepeningSearch.js"></script>
+
+  <script type="text/javascript" src="../is.algoritmi._shared/alg.cost.uniformCostSearch.js"></script>
+  <script type="text/javascript" src="../is.algoritmi._shared/alg.cost.greadyBestFirstSearch.js"></script>
+  <script type="text/javascript" src="../is.algoritmi._shared/alg.cost.astar.js"></script>
 
   <script type="text/javascript">
     var main = null;
@@ -100,13 +104,15 @@
         main.reset();
       });
       $('#btnPretrazi').click(function(){
-
+        if($('.nodeSelected').length == 0){
+          alert('Neki node mora biti selectovan! duuh');
+          return;
+        }
         var algoritam = alg.get($('#selectedAlghoritm').val());
         if(algoritam == null)
           alert("WTF??");
         else
           alg.run(algoritam);
-        
       });
       $('#maxDepth').on('change', function(){
         alg.maxDepth = parseInt($(this).val());

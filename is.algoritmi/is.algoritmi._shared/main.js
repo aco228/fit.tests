@@ -97,13 +97,32 @@ function Main(){
     return prefix + result;
   }
 
+  this.copyHtml = function(){
+    var result = '';
+    $('#content').find('.node').each(function(){
+      var html = $($(this)[0].outerHTML);
+      html.find('.node_label').attr('value', $(this).find('.node_label').val());
+      html.find('.node_value').attr('value', $(this).find('.node_value').val());
+      //console.log($(this).find('.node_label').val(), $(this).find('.node_value').val());
+      result += html[0].outerHTML;
+    });
+
+    $('#content').find('.line').each(function(){
+      var html = $($(this)[0].outerHTML);
+      if($(this).find('.node_cost').length > 0)
+        html.find('.node_cost').attr('value', $(this).find('.node_cost').val());
+      result += html[0].outerHTML;
+    });
+
+    return result;
+  }
+
   /*
     +=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=
     UPDATE
   */
 
-
-  this.connectLine = function(toNode, fromNode){
+  this.connectLine = function(toNode, fromNode, twoDirections){
 
     var lineElem = null;
     var id = 'line_' + fromNode.id + '_' + toNode.id;
@@ -124,6 +143,11 @@ function Main(){
       lineElem = $('#' + id);
 
     var line = lineElem[0];
+
+    if(typeof twoDirections !== 'undefined' && twoDirections == true){
+      lineElem.find('.node_cost').remove();
+      lineElem.addClass('doubleLine');
+    }
 
     var from = fromNode.getElement()[0];
     var to =   toNode.getElement()[0];
