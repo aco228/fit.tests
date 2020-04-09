@@ -5,7 +5,7 @@ function IterationAndRecursion(){
   this.parent = alg;
   this.result = null;
 
-  this.sortChildren = true;
+  this.sortChildren = false;
 
   this.beforeStart = function(){}
   this.onSelect = function(){ }
