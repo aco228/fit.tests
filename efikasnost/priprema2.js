@@ -53,10 +53,10 @@ console.log('Efektivna brzina', efektivnaBrzinaPrenosa);
 // N=8 swicheva, odrediti koliko iznosi ukupno kasnjenje koje je potrebno da se cijela poruka isporuci racunaru B
 
 
-var fileSize = calc.convert(SIZES.FILE_SIZE, '49', 'MB', 'b');
+var fileSize = calc.convert(SIZES.FILE_SIZE, '3', 'MB', 'b');
 var S = calc.convert(SIZES.FILE_SIZE, '1', 'KB', 'b');
-var propagacija = calc.convert(SIZES.TIMES, '4.9', 'us', 's');
-var prenos = calc.convert(SIZES.TIMES, '1.9', 'ms', 's');
+var propagacija = calc.convert(SIZES.TIMES, '4.0', 'us', 's');
+var prenos = calc.convert(SIZES.TIMES, '0.4', 'ms', 's');
 var N = 8; // switchevi
 
 

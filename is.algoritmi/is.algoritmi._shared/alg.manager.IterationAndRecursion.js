@@ -5,7 +5,7 @@ function IterationAndRecursion(){
   this.parent = alg;
   this.result = null;
 
-  this.sortChildren = false;
+  this.sortChildren = true;
 
   this.beforeStart = function(){}
   this.onSelect = function(){ }
@@ -48,20 +48,35 @@ function IterationAndRecursion(){
       node.children.forEach((e) => {
         var child = e;
         var exists = false;
+        var tempI = -1;
+
         for(var i = 0; i < self.result.otvorenaLista.length; i++)
           if(self.result.otvorenaLista[i].id == child.id){
-            child = {...e};
-            child.id = main.id();
+            //exists = true;
+            tempI = i;
+            console.log('Exists: ' + child.label);
+            break;
+          }
+
+        // brisemo prosli element, i dodajemo trenutni
+        if(tempI > -1)
+          self.result.otvorenaLista.splice(tempI, 1);
+
+        for(var i = 0; i < self.result.zatvorenaLista.length; i++)
+          if(self.result.zatvorenaLista[i].id == child.id){
             exists = true;
             console.log('Exists: ' + child.label);
+            break;
           }
 
         if(!exists)
           list.push(child);
       });
 
-    if(this.sortChildren)
-      list = list.sort(function(a, b){return a.label - b.label})
+    if(this.sortChildren){
+      console.log('Sorting children');
+      list = list.sort(function(a, b){return a.label.charCodeAt(0) - b.label.charCodeAt(0) });
+    }
 
     for(var i = 0; i < list.length; i++)
       this.result.otvorenaLista.push(list[i]);

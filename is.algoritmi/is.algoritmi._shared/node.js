@@ -132,6 +132,9 @@ function Node(value, cost){
       elem.addClass('nodeRoot');
     elem.find('.node_label').val(this.label);
     elem.find('.node_label').on('input', function(){ self.label = $(this).val(); });
+
+    elem.find('.node_value').val(this.value);
+    elem.find('.node_value').on('input', function(){ self.value = parseInt($(this).val()); });
     elem.attr('id', this.id);
     return elem;
   }

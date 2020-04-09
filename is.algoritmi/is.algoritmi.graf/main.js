@@ -4,14 +4,14 @@ Main.prototype.initExtend = function(){
 
   $('body').on('click', '.line', function(){
     if($(this).find('input').is(':focus')) return;
-    if(confirm('Izbrisi liniju?')){
+    //if(confirm('Izbrisi liniju?')){
       var fromNode = main.getNode($(this).attr('from'));
       var toNode = main.getNode($(this).attr('to'));
 
       fromNode.removeChild(toNode);
       toNode.removeParent(fromNode);
       $(this).remove();
-    }
+    //}
   });
 }
 
