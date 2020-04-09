@@ -23,7 +23,7 @@
 
   <div id="configuration">
     <div class="confBox confBox_closed">
-      <div class="confHeader">Konvertovanje</div>
+      <div class="confHeader">Konverovanje</div>
       <div class="confBody">
 
         <div class="confBody_seg" id="konvertovanjeInBox">
@@ -110,7 +110,7 @@
 
 
     <div class="confBox">
-      <div class="confHeader">...</div>
+      <div class="confHeader">Main</div>
       <div class="confBody">
 
         <div class="confBody_seg">
@@ -227,7 +227,7 @@
 
     <select value-context="times">
       <option value="ms">ms</option>
-      <option value="μs">μs</option>
+      <option value="us">μs</option>
       <option value="ps">ps</option>
       <option value="ns">ns</option>
       <option value="s" default>s</option>
@@ -288,6 +288,9 @@
     <div class="result_box" context="efikasnost">
       Efikasnost prenosa je <span class="result_value">0</span>
     </div>
+    <div class="result_box" context="efikasnostSegmenata">
+      Efikasnost prenosa segmenata je <span class="result_value">0</span>
+    </div>
     <div class="result_box" context="brzinaPrenosa">
       Brzina prenosa je <span class="result_value">0</span> <select context="capacity_sizes"></select>
     </div>
@@ -306,8 +309,11 @@
     <div class="result_box" context="ukupnoKasnjenje">
       Ukupno kasnjenje je <span class="result_value">0</span> <select context="times"></select>
     </div>
-    <div class="result_box" context="ukupnoKasnjenjeSegmenta">
+    <div class="result_box" context="ukupnoKasnjenje_segmenta">
       Ukupno kasnjenje segmenta je <span class="result_value">0</span> <select context="times"></select>
+    </div>
+    <div class="result_box" context="ukupnoKasnjenjeSegmenta">
+      Kasnjenje usled prenosa segmenta je <span class="result_value">0</span> <select context="times"></select>
     </div>
     <div class="result_box" context="usledPrenosa">
       Kasnjenje usred prenosa je  <span class="result_value">0</span>  <select context="times"></select>

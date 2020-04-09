@@ -151,6 +151,7 @@ function Main(){
     console.log('result', state);
     this.writeResult('fileSize', state.fileSize, 'b', SIZES.FILE_SIZE);
     this.writeResult('efikasnost', this.toDecimalString(state.efikasnost) + '%');
+    this.writeResult('efikasnostSegmenata', this.toDecimalString(state.efikasnostSegmenata) + '%');
     this.writeResult('velicinaHeadera', state.headerSize, 'b', SIZES.FILE_SIZE);
     this.writeResult('ukupnaVelicinaHeadera', state.segTotalHeaderSize, 'b', SIZES.FILE_SIZE);
     this.writeResult('brzinaPrenosa', state.speedOfTransmision, 'bs', SIZES.CAPACITY_SIZES);
@@ -159,6 +160,7 @@ function Main(){
     this.writeResult('podjelaNaVelicinu', state.segFileSize, 'b', SIZES.FILE_SIZE);
 
     this.writeResult('ukupnoKasnjenje', state.ukupnoVrijemeKasnjenja, 's', SIZES.TIMES);
+    this.writeResult('ukupnoKasnjenje_segmenta', state.ukupnoVrijemeKasnjenjaSegmenta, 's', SIZES.TIMES);
     this.writeResult('ukupnoKasnjenjeSegmenta', state.kasnjenjeUsledPrenosaSegmenta, 's', SIZES.TIMES);
     
     this.writeResult('kasnjenjeUsredObrade', state.kasnjenjeUsledObrade, 's', SIZES.TIMES);

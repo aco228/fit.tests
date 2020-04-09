@@ -63,6 +63,7 @@ function Calculator(){
   }
 
   this.length = function(){ return $('#canvas').find('.host').length; }
+  this.links = function(){ return $('#canvas').find('.link').length; }
   this.host = function(i){ return $($('#canvas').find('.host')[i]); }
   this.link = function(i){ return $($('#canvas').find('.link')[i]); }
 
@@ -82,7 +83,8 @@ function Calculator(){
       kasnjenjeUsledPrenosaSegmenta: '0',
       kasnjenjeUsledPropagacije: '0',
       ukupnoVrijemeKasnjenja: '0',
-      efikasnost: '0',
+      ukupnoVrijemeKasnjenjaSegmenta: '0',
+      efikasnost: '0', efikasnostSegmenata:'',
 
       hasSegmentation: false,
       segmentMoraBitiPotvrdjen: $('#segmentMoraBitiPotvrdjen').is(':checked'),
@@ -95,13 +97,13 @@ function Calculator(){
 
     // segmentacija
 
-    if(!result.host_afterReceivedFirst.equal('0')){
+    /*if(!result.host_afterReceivedFirst.equal('0')){
       result.hasSegmentation = true;
       result.segNumberOfParts = Math.ceil(result.fileSize.div( result.host_afterReceivedFirst)).toString();
       result.segTotalHeaderSize = result.headerSize.mul(result.segNumberOfParts);
       result.fileSize = result.fileSize.add(result.segTotalHeaderSize);
     }
-    else if(!result.segFileSize.equal('0')){
+    else */if(!result.segFileSize.equal('0')){
       result.hasSegmentation = true;
       result.segNumberOfParts = Math.ceil(result.fileSize.div(result.segFileSize)).toString();
       result.segTotalHeaderSize = result.headerSize.mul(result.segNumberOfParts);
@@ -154,8 +156,10 @@ function Calculator(){
       var kasnjenje = state.fileSize.div(kapacitet);
       var kasnjenjeSegment = state.segFileSize.add(state.headerSize).div(kapacitet);
 
+      /*
       if(!state.host_afterReceivedFirst.equal('0'))
         kasnjenje = state.host_afterReceivedFirst.div(kapacitet);
+      */
       /*
       if(!state.segFileSize.equal('0'))
         kasnjenje = state.segFileSize.div(kapacitet);
@@ -196,27 +200,29 @@ function Calculator(){
 
   this.finishCalculations = function(result){
 
-    if(!result.host_afterReceivedFirst.equal('0'))
-      result.kasnjenjeUsledPrenosa = result.kasnjenjeUsledPrenosa.mul(result.segNumberOfParts.add(this.length() - 3));
+    if(!result.host_afterReceivedFirst.equal('0')){
+      /*
+      result.kasnjenjeUsledPrenosa = result.kasnjenjeUsledPrenosa.add(result.result[0].prenos.result).add(result.kasnjenjeUsledPropagacije);
+      for(var i = 0; i < calc.length() - 1; i++)
+        result.kasnjenjeUsledPrenosa = result.kasnjenjeUsledPrenosa.add(result.host_afterReceivedFirst.div(result.result[0].prenos.kapacitet));
+      //result.kasnjenjeUsledPrenosa = result.kasnjenjeUsledPrenosa.mul(result.segNumberOfParts.add(this.length() - 3));
+      */
+    }
     if(!result.segFileSize.equal('0')){
       result.kasnjenjeUsledPrenosa = result.result[0].prenos.result.mul(result.segNumberOfParts.mul(2));
     }
 
     result.ukupnoVrijemeKasnjenja = result.kasnjenjeUsledObrade.add(result.kasnjenjeUsledPrenosa).add(result.kasnjenjeUsledPropagacije);
 
+    if(result.hasSegmentation)
+      result.ukupnoVrijemeKasnjenjaSegmenta = (calc.length()-2).mul(result.segFileSize.div(result.result[0].prenos.kapacitet)).add(result.originalFileSize.div(result.result[0].prenos.kapacitet));
+    else
+      result.ukupnoVrijemeKasnjenjaSegmenta = '0';
+
     if(!result.preventStackOverflow)
     {
-      // ukoliko svaki segment mora biti potvrdjen
-      if(result.hasSegmentation && result.segmentMoraBitiPotvrdjen){
-        var newState = this.getState();
-        newState.preventStackOverflow = true;
-        newState.originalFileSize = newState.segFileSize;
-
-        var ns = this.calculate(newState);
-        result.result = ns.result;
-        result.ukupnoVrijemeKasnjenja = ns.kasnjenjeUsledPrenosa.add(result.kasnjenjeUsledPropagacije.mul(this.length())).add(result.kasnjenjeUsledObrade).mul(result.segNumberOfParts);
-        result.kasnjenjeUsledPrenosa = ns.kasnjenjeUsledPrenosa;
-      }
+        //result.kasnjenjeUsledPrenosa = result.segFileSize.div(result.result[0].prenos.kapacitet).add(result.kasnjenjeUsledPropagacije).mul(result.segNumberOfParts);
+      
       /*
       // segmentacija, uzimanje tabele prenosa i propagacije
       else if(result.hasSegmentation && !result.segmentMoraBitiPotvrdjen){
@@ -241,12 +247,24 @@ function Calculator(){
 
   this.calculateError = function(result){
     result.efikasnost = result.originalFileSize.div(result.fileSize);
+    /*
     if(!result.numberOfErrors.equal('0') && !result.hasSegmentation)
       result.efikasnost = result.originalFileSize.div(result.fileSize.mul(result.numberOfErrors.add(1)));
     else if(!result.numberOfErrors.equal('0') && result.hasSegmentation)
       result.efikasnost = result.originalFileSize.div(result.originalFileSize.add(result.segNumberOfParts.mul(result.headerSize)).add((result.segFileSize.add(result.headerSize)).mul(result.numberOfErrors)));
       //result.efikasnost = result.originalFileSize / (result.originalFileSize + (result.headerSize + result.segFileSize + (result.segNumberOfParts * result.headerSize)) * (result.numberOfErrors + 1));
+      */
+
+    if(!result.numberOfErrors.equal('0'))
+      result.efikasnost = result.originalFileSize.div(result.originalFileSize.add(result.headerSize).mul(result.numberOfErrors.add(1)))
+    else
+      result.efikasnost = result.originalFileSize.div(result.originalFileSize.add(result.headerSize));
+
     result.efikasnost = result.efikasnost.mul(100);
+
+    result.efikasnostSegmenata = result.originalFileSize.div(result.originalFileSize.add(result.segNumberOfParts.mul(result.headerSize)).add((result.segFileSize.add(result.headerSize)).mul(result.numberOfErrors)));
+    result.efikasnostSegmenata = result.efikasnostSegmenata.mul(100);
+
 
     return result;
   }

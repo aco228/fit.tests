@@ -53,7 +53,7 @@ function convert_to_milisecods(value, measure){
   if(measure == 'ms') return value;
   if(measure == 'min') return value.mul(60000);
   if(measure == 's') return value.mul(1000);
-  if(measure == 'μs') return value.mul(0.001);
+  if(measure == 'us') return value.mul(0.001);
   if(measure == 'ns') return value.mul(0.0000001);
   if(measure == 'ps') return value.mul(0.0000000001);
 }
@@ -61,7 +61,7 @@ function convert_to_milisecods(value, measure){
 function convert_from_milisecods(value, measure){
   if(measure == 'ms') return value;
   if(measure == 'min') return value.div(60000);
-  if(measure == 'μs') return value.mul(1000);
+  if(measure == 'us') return value.mul(1000);
   if(measure == 's') return value.div(1000);
   if(measure == 'ns') return value.mul(1000000);
   if(measure == 'ps') return value.mul(1000000000);
