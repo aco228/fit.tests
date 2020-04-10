@@ -1,5 +1,5 @@
 function loadInitial(){
-  $('#content').html(html);
+  $('#content').html(html3);
 
   $('#content').find('.node').each(function(){
     var node = new Node(parseInt($(this).find('.node_value').val()), 0);

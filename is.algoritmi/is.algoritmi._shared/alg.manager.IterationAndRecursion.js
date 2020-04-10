@@ -5,7 +5,7 @@ function IterationAndRecursion(){
   this.parent = alg;
   this.result = null;
 
-  this.sortChildren = true;
+  this.sortChildren = false;
 
   this.beforeStart = function(){}
   this.onSelect = function(){ }
@@ -44,9 +44,10 @@ function IterationAndRecursion(){
     var self = this;
     var list = [];
 
-    if(node.getDepth() < this.parent.maxDepth)
+    if(node.tempDepth < this.parent.maxDepth)
       node.children.forEach((e) => {
         var child = e;
+        child.tempDepth = node.tempDepth;
         var exists = false;
         var tempI = -1;
 
@@ -97,11 +98,12 @@ function IterationAndRecursion(){
     this.update();
     this.result.listaPosjecenosti += node.label;
     this.result.currentlistaPosjecenosti = node.label;
+    this.update();
   }
 
   // check at the start of the method
   this.initialCheck = function(node){
-    var result = (node.getDepth() > this.parent.maxDepth || this.result.found == true);
+    var result = (node.tempDepth > this.parent.maxDepth || this.result.found == true);
     if(result)
       this.update();
     return result;

@@ -11,10 +11,7 @@
 
     var pe_MAX = 100, pe_INDEX = 0;
 
-
-
     while(stop == false){
-
       pe_INDEX++;
       if(pe_INDEX >= pe_MAX){
         console.error("ENDLESS LOOP MAJMUNE..");
@@ -29,6 +26,8 @@
       for(var i = 0; i < list.length; i++){
         var visited = false;
         var currentNode = list[i];
+        currentNode.tempDepth++;
+
         self.result.zatvorenaLista.forEach(e=>{
           if(e.id == currentNode.id) visited = true;
         });

@@ -5,6 +5,8 @@ var alg = new function(){
   this.searchId = '';
   this.currentAlgoritm = null;
 
+  this.sortChildren = false;
+
   this.reset = function(){
     if($('#result').css('display') == 'none')
       $('#result').css('display', 'block');
@@ -37,6 +39,11 @@ var alg = new function(){
       console.warn('Searching for label:' + main.getNode(this.searchId).label + ' with algoritam "' + algoritam.name + '"');
 
     algoritam.beforeStart();
+    algoritam.sortChildren = $('#sortchildren').is(':checked');
+
+    console.log(algoritam);
+
+    root.tempDepth = -1;
     algoritam.run(root);
     algoritam.update();
 
