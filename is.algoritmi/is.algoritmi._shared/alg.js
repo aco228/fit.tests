@@ -30,6 +30,10 @@ var alg = new function(){
     return null;
   }
 
+  this.sortChildrenFunc = function(list){
+  return list.sort(function(a, b){return eval($('#sortchildrenFunc').val()); /*a.label.charCodeAt(0) - b.label.charCodeAt(0)*/ });
+  }
+
 
   this.run = function(algoritam){
     this.currentAlgoritm = algoritam;

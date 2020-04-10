@@ -76,7 +76,7 @@ function IterationAndRecursion(){
 
     if(this.sortChildren){
       console.log('Sorting children');
-      list = list.sort(function(a, b){return a.label.charCodeAt(0) - b.label.charCodeAt(0) });
+      list = this.parent.sortChildrenFunc(list);
     }
 
     for(var i = 0; i < list.length; i++)
