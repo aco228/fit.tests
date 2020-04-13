@@ -18,7 +18,11 @@ var links = [
       {
         n: 'Kolizioni',
         l: './kolizioni/index.html'
-      }
+      },
+	  {
+		n: 'Provjera parnosti',
+		l: './provjera_parnosti/index.html'
+	  }
 	  /*,
       {
         n: 'Vremenski domeni',

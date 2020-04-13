@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>fit</title>
+  <title>fit #is.materijali</title>
   <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
   <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
   <style type="text/css">
@@ -33,9 +33,10 @@
       '1_Uvod',
       '2_Ekspertni_sistemi',
       '3_Tehnike_pretrazivanja',
-      '4_Tehnike_pretrazivanja',
-      '5_Masinsko_ucenje_1_dio_',
-      '6_Masinsko_ucenje_2._dio_-_klasifikacija_'
+      '4_Tehnike_pretrazivanja'
+      //,
+      //'5_Masinsko_ucenje_1_dio_',
+      //'6_Masinsko_ucenje_2._dio_-_klasifikacija_'
     ];
     $(document).ready(function(){
       links.forEach((e)=>{
@@ -44,7 +45,7 @@
         $('#content').append(iframe);
         iframe.on('load', function(){
           var iframeDocument = $(iframe[0].contentDocument || iframe[0].contentWindow.document);
-          iframe.css({height: iframeDocument.height()});
+          iframe.css({height: iframeDocument.height() + 50});
         });
 
         $('select').on('change', function(){

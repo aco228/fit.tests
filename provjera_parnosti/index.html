@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>#fit mreze. provjera parnosti</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="./main.css">
+  <script type="text/javascript" src="./main.js"></script>
+</head>
+<body>
+
+  <label>Niz bita: </label> 
+  <input type="text" name="" value="1101011 0010101 0100100 1101001 0111011" id="input"/>
+  <select id="slc">
+    <option value="provjeri">Provjeriti niz parnosti</option>
+    <option value="kodiraj">Kodirati niz parnosti</option>
+  </select>
+  <button id="btn">Izracuanj</button>
+
+  <div id="result"></div>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $('#btn').click(function(){
+        if($('#slc').val() == 'kodiraj')
+          kodiraj();
+        else
+          provjeri();
+      });
+    });
+  </script>
+
+</body>
+</html>

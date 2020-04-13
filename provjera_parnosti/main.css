@@ -1,0 +1,32 @@
+body, html{
+  padding:0px; margin:5px;
+  font-family: 'Roboto', sans-serif;
+  font-size:12px;
+}
+input, button, select{
+  font:inherit;
+}
+
+input[type=text]{
+  width: 800px;
+  padding: 3px;
+}
+
+#result{
+  margin-top: 20px;
+  font-size: 20px;
+}
+.bit{
+  width: 25px;
+  display:inline-block;
+  text-align:center;
+  font-size: 25px;
+}
+.bit_alst{ font-weight:bold; }
+.bit_lst{ font-weight:bold; }
+
+.errBit_bit{
+  position:absolute;
+  font-size: 10px;
+  font-weight:bold;
+}
