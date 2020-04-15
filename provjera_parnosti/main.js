@@ -1,4 +1,9 @@
 function loadArray(){
+  if($('#input').val() == ''){
+    alert("Nema unosa!");
+    return null;
+  }
+
   var arr = $('#input').val().split(' ');
 
   if(arr.length <= 1){
@@ -83,10 +88,12 @@ function print(arr, kom){
 }
 
 function provjeri(){
+  $('#result').html('');
   var arr = loadArray();
   if(arr == null)
     return;
   print(arr);
+
 
   // provjera horizontalna
   var errHor = [];
@@ -159,6 +166,15 @@ function tryToFix(arr){
           niz += tempArr[i][j];
         niz += ' ';
       }
+
+      var orginalnaPoruka = '';
+      // stampa orginalne poruke
+      for(var i = 0; i < tempArr.length - 1; i++){
+        for(var j = 0; j < tempArr[i].length - 1; j++)
+          orginalnaPoruka += tempArr[i][j];
+        orginalnaPoruka += ' ';
+      }
+      $('#result').append('<br><br><div>Orginalna poruka je:<br>' + orginalnaPoruka + '</div>');
 
       $('#result').append('<br><br><div>Ispravan niz:<br>' + niz + '</div>');
       return;
