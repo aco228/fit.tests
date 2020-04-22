@@ -1,0 +1,36 @@
+html, body{
+  padding:0px; margin:5px;
+  font-family: 'Roboto', sans-serif;
+  font-size:12px;
+}
+
+input[type=text]{
+  width: 550px;
+  padding: 3px;
+}
+input, button, select{
+  font:inherit;
+}
+
+#resultBox{
+  padding: 15px;;
+}
+#result{
+  font-size:55px;
+}
+
+.wrd{
+  display:inline-block;
+  border-right: 1px dashed  #cacaca;
+  width: 54px;
+  text-align:center;
+}
+
+.wrd:nth-child(odd){
+  background-color:#ffffe7;
+}
+
+#cvs{
+  width: 100%; 
+  height: 110px;
+}

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>rt.kodovi</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+  <script>
+
+    // OZNAKA ZA 0 U KODU Bipolar-AMI
+    // Nulti napon!
+    var BAMI_CHAR = '=';
+
+    // razdvajanje rijeci (bitno kod mancestera)
+    var WORD_SEPARATOR = ' ';
+
+  </script>
+
+  <script type="text/javascript" src="./main.js"></script>
+  <script type="text/javascript" src="./canvas.js"></script>
+  <script type="text/javascript" src="./nrz.js"></script>
+  <script type="text/javascript" src="./nrzi.js"></script>
+  <script type="text/javascript" src="./bami.js"></script>
+  <script type="text/javascript" src="./man.js"></script>
+  <script type="text/javascript" src="./dman.js"></script>
+  <link rel="stylesheet" type="text/css" href="./main.css">
+</head>
+
+<body>
+
+  <div>
+    <input type="text" id="input" value="01001100011">
+    pretvori iz
+    <select id="selFrom">
+      <option value="bin" validate="bin">Binarno</option>
+      <option value="nrz" validate="kod">NRZ</option>
+      <option value="nrzi" validate="kod">NRZI</option>
+      <option value="bami" validate="kod">Bipolar-AMI</option>
+      <option value="man" validate="kod">Macester</option>
+      <option value="dman" validate="kod">Diferencijalni Mancester</option>
+    </select>
+    u
+    <select id="selTo">
+      <option value="bin" validate="bin">Binarno</option>
+      <option value="nrz" validate="kod" selected>NRZ</option>
+      <option value="nrzi" validate="kod">NRZI</option>
+      <option value="bami" validate="kod">Bipolar-AMI</option>
+      <option value="man" validate="kod">Macester</option>
+      <option value="dman" validate="kod">Diferencijalni Mancester</option>
+    </select>
+    <button id="btn">Potvrdi</button>
+  </div>
+
+
+  <div id="resultBox">
+    <div id="result"> </div>
+    <div>
+      <canvas id="cvs"></canvas>
+    </div>
+  </div>
+
+
+  <script type="text/javascript">
+
+    $(document).ready(function () {
+      canvas.set();
+
+      $('#btn').click(function () {
+        $('#result').html('');
+        canvas.reset();
+
+        var text = $('#input').val();
+        var from = {
+          type: $('#selFrom').val(),
+          validate: $('#selFrom').find('option:selected').attr('validate')
+        };
+        var to = {
+          type: $('#selTo').val(),
+          validate: $('#selTo').find('option:selected').attr('validate')
+        };
+
+        if (validate(text, from.validate))
+          return;
+
+        var input = from.type == 'bin' ? text : window[from.type].from(text);
+        var result = to.type == 'bin' ? input : window[to.type].to(input);
+        $('#result').html(to.type == 'bin' ? result : convertToHtml(result, window[to.type].length));
+        
+      });
+    });
+
+    function validate(input, type) {
+      if (input == '') {
+        alert('Nema unosa!')
+        return true;
+      }
+
+      var dictonary = type == 'bin' ? '10' : '_-' + BAMI_CHAR;
+      for (var i = 0; i < input.length; i++)
+        if (dictonary.indexOf(input[i]) === -1) {
+          alert('Pogresan unos');
+          return true;
+        }
+
+      return false;
+    }
+
+    function convertToHtml(result, length){
+      var arr = [];
+      var cI = 0, w = '';
+      for(var i = 0; i < result.length; i++){
+        w += result[i];
+        cI++;
+        if(cI >= length){
+          arr.push(w);
+          w = ''; cI = 0;
+        }
+      }
+
+      console.log(arr);
+      canvas.prepare();
+
+      var result = '';
+      for(var i = 0; i < arr.length; i++){
+        result += `<div class="wrd">`+arr[i]+`</div>`;
+        canvas.drawCube(i);
+        canvas.drawSegments(i, arr[i]);
+      }
+
+      canvas.drawMiddleLine(arr.length);
+
+      return result;
+    }
+
+
+  </script>
+
+</body>
+
+</html>

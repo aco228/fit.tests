@@ -22,6 +22,10 @@ var links = [
 	  {
 		n: 'Provjera parnosti',
 		l: './provjera_parnosti/index.html'
+	  },
+	  {
+		n: 'Kodovi',
+		l: './rt.kodovi/index.html'
 	  }
 	  /*,
       {
