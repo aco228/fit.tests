@@ -1,9 +1,11 @@
 var nrzi = {
   length:1,
   
-  from: function(input){
+  from: function(data){
     var result = '';
     var currentChar = '';
+    var input = data.text;
+
     for(var i = 0; i < input.length; i++) {
       if(currentChar == ''){
         currentChar = input[i];
@@ -22,9 +24,11 @@ var nrzi = {
     return result;
   },
 
-  to: function(input, startWith = '_') {
+  to: function(data) {
     var result = '';
-    var currentChar = startWith;
+    var currentChar = data.startPosition == 'up' ? '-' : '_';
+    var input = data.text;
+    
     for(var i = 0; i < input.length; i++) {
       if(input[i] == '1') 
         currentChar = currentChar == '_' ? '-' : '_';

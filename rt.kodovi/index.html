@@ -30,26 +30,37 @@
 <body>
 
   <div>
-    <input type="text" id="input" value="01001100011">
+    <input type="text" id="input" value="01001100011">  <!-- -__-_-_--__-_-_-_--__- -->
     pretvori iz
-    <select id="selFrom">
+    <select class="selToFrom" id="selFrom">
       <option value="bin" validate="bin">Binarno</option>
       <option value="nrz" validate="kod">NRZ</option>
-      <option value="nrzi" validate="kod">NRZI</option>
-      <option value="bami" validate="kod">Bipolar-AMI</option>
-      <option value="man" validate="kod">Macester</option>
-      <option value="dman" validate="kod">Diferencijalni Mancester</option>
+      <option value="nrzi" validate="kod" adits="startPosition">NRZI</option>
+      <option value="bami" validate="kod" adits="bamiChar">Bipolar-AMI</option>
+      <option value="man" validate="kod" adits="startPosition">Macester</option>
+      <option value="dman" validate="kod" adits="startPosition">Diferencijalni Mancester</option>
     </select>
     u
-    <select id="selTo">
+    <select class="selToFrom" id="selTo">
       <option value="bin" validate="bin">Binarno</option>
-      <option value="nrz" validate="kod" selected>NRZ</option>
-      <option value="nrzi" validate="kod">NRZI</option>
-      <option value="bami" validate="kod">Bipolar-AMI</option>
-      <option value="man" validate="kod">Macester</option>
-      <option value="dman" validate="kod">Diferencijalni Mancester</option>
+      <option value="nrz" validate="kod">NRZ</option>
+      <option value="nrzi" validate="kod" adits="startPosition">NRZI</option>
+      <option value="bami" validate="kod" adits="bamiChar">Bipolar-AMI</option>
+      <option value="man" validate="kod" adits="startPosition">Macester</option>
+      <option value="dman" validate="kod" adits="startPosition">Diferencijalni Mancester</option>
     </select>
     <button id="btn">Potvrdi</button>
+  </div>
+  <div id="aditsional">
+    <div class="adits" part-of="startPosition" lookup="input[name=valueOf]:checked" style="display: none;">
+      Pocetni polozaj: gore
+      <input type="radio" name="valueOf" value="up" checked>
+      dolje
+      <input type="radio" name="valueOf" value="down">
+    </div>
+    <div class="adits" part-of="bamiChar" lookup="input[name=valueOf]" style="display: none;">
+      Karakter za srednju poziciju <input name="valueOf" type="text" maxlength="1" minlength="1" value="=" style="width:30px">
+    </div>
   </div>
 
 
@@ -63,76 +74,32 @@
 
   <script type="text/javascript">
 
+    var main = null;
     $(document).ready(function () {
       canvas.set();
+      main = new Main();
+      main.init();
 
       $('#btn').click(function () {
         $('#result').html('');
         canvas.reset();
 
-        var text = $('#input').val();
-        var from = {
-          type: $('#selFrom').val(),
-          validate: $('#selFrom').find('option:selected').attr('validate')
-        };
-        var to = {
-          type: $('#selTo').val(),
-          validate: $('#selTo').find('option:selected').attr('validate')
-        };
-
-        if (validate(text, from.validate))
+        var data = main.getData();
+        if(data == null)
           return;
 
-        var input = from.type == 'bin' ? text : window[from.type].from(text);
-        var result = to.type == 'bin' ? input : window[to.type].to(input);
-        $('#result').html(to.type == 'bin' ? result : convertToHtml(result, window[to.type].length));
+        var input = data.from.type == 'bin' ? data.text : window[data.from.type].from(data);
+        var result = data.to.type == 'bin' ? input : window[data.to.type].to(data);
+
+        if(data.to.type == 'bin'){
+          $('#result').append(result+ '<br><br>');
+          $('#result').append(main.convertToHtml(data.text, window[data.from.type].length));
+        }
+        else
+          $('#result').html(main.convertToHtml(result, window[data.to.type].length));
         
       });
     });
-
-    function validate(input, type) {
-      if (input == '') {
-        alert('Nema unosa!')
-        return true;
-      }
-
-      var dictonary = type == 'bin' ? '10' : '_-' + BAMI_CHAR;
-      for (var i = 0; i < input.length; i++)
-        if (dictonary.indexOf(input[i]) === -1) {
-          alert('Pogresan unos');
-          return true;
-        }
-
-      return false;
-    }
-
-    function convertToHtml(result, length){
-      var arr = [];
-      var cI = 0, w = '';
-      for(var i = 0; i < result.length; i++){
-        w += result[i];
-        cI++;
-        if(cI >= length){
-          arr.push(w);
-          w = ''; cI = 0;
-        }
-      }
-
-      console.log(arr);
-      canvas.prepare();
-
-      var result = '';
-      for(var i = 0; i < arr.length; i++){
-        result += `<div class="wrd">`+arr[i]+`</div>`;
-        canvas.drawCube(i);
-        canvas.drawSegments(i, arr[i]);
-      }
-
-      canvas.drawMiddleLine(arr.length);
-
-      return result;
-    }
-
 
   </script>
 

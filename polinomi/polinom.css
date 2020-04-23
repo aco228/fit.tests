@@ -11,3 +11,8 @@ input[type=text]{
 .sentence{ display:inline-block;}
 .stepen{ font-size: 10px; }
 .word{ display:inline-block; font-size: 20px; width:20px;}
+.word_rmv{ text-decoration: line-through; opacity:.5; }
+
+#razlomak > .sentence:nth-child(odd){ background-color:#ffd2d2; }
+#razlomak > .sentence:nth-child(even){ background-color:#d3d2ff; }
+#razlomak > #dRezultat { background-color:#d2fff1; }

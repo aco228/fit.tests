@@ -11,13 +11,22 @@ function Polinom(){
       var pol = self.bitToPolinomArray(text);
       $('#inputPolinom').val(self.bitToPolinomString(pol));
     });
+    $('#btn_polinom2nizBita').click(function(){
+      var text = $('#inputPolinom2NizBita').val();
+      var pol = self.getPolinomArray(text);
+      var stepenPolinoma = pol[0];
+      $('#inputBit').val(self.polinomToBitString(pol, stepenPolinoma));
+    });
   }
 
   this.calculate = function(){
     $('#result').html('');
 
-    var crcPolinom = this.getPolinomArray();
+    var crcPolinom = this.getPolinomArray($('#inputPolinom').val());
     var stepenPolinoma = crcPolinom[0];
+    if($('#iskulirajStepenGeneratora').is(':checked'))
+      stepenPolinoma = 0;
+
     var bits = this.getBitString(stepenPolinoma);
     var bitsPolinom = this.bitToPolinomArray(bits);
 
@@ -32,6 +41,7 @@ function Polinom(){
     var result = [];
 
     var comparePolinom = [...bitsPolinom];
+    var offset = 0;
 
     for(;;){
       var bD = comparePolinom.getFirstAvaliable();
@@ -58,8 +68,11 @@ function Polinom(){
       for(var i = 0; i < crcPolinom.length; i++)
         crcWithR.push(r + crcPolinom[i]);
 
-      comparePolinom = mergeArray(comparePolinom, crcWithR);
-      this.addStep(comparePolinom);
+      var merge = mergeArray(comparePolinom, crcWithR);
+      comparePolinom = merge.result;
+
+      this.addStep(comparePolinom, merge.deleted, offset);
+      offset += merge.deleted.length;
 
       console.warn(bD, cD, r, 'crcWithR', crcWithR, 'newBitsPolinom', comparePolinom);
     }
@@ -121,8 +134,9 @@ function Polinom(){
     return str;
   }
 
-  this.getPolinomArray = function(){
-    var splitByPlus = $('#inputPolinom').val().replace(/\s/g, "").toLowerCase().split('+');
+  this.getPolinomArray = function(input){
+    input = input.replace(/\s/g, "").toLowerCase().split('+');
+    var splitByPlus = input;
     var result = [];
     for(var i = 0; i < splitByPlus.length; i++){
       if(splitByPlus[i] == '')
@@ -156,8 +170,14 @@ function Polinom(){
     $('#dRezultat').append('<span class="word">x<sup class="stepen">'+x+'</sup></span>');
   }
 
-  this.addStep = function(pol){
-    $('#result').append('<div>' + this.printGetPolinomSentence(pol) + '</div>');
+  this.addStep = function(pol, deletedPol, offset){
+    console.log('addstep', pol, deletedPol, offset);
+    var offsetStr = '';
+    if(typeof offset !== 'undefined')
+      for(var i = 0; i < offset; i++)
+        offsetStr += '<span class="word"></span>';
+
+    $('#result').append('<div>' + this.printGetPolinomSentence(pol, deletedPol, offsetStr) + '</div>');
   }
 
   this.printDeljenje = function(bitsPolinom, crcPolinom){
@@ -169,13 +189,30 @@ function Polinom(){
       '</div>');
   }
 
-  this.printGetPolinomSentence = function(polinom){
+  this.printGetPolinomSentence = function(polinom, deletedPolinom, offsetStr){
     var html = '';
+
+    if(typeof deletedPolinom !== 'undefined' )
+      for(var i = 0; i < deletedPolinom.length; i++)
+        html += this.getWord(deletedPolinom[i], 'word_rmv');
+
     for(var i = 0; i < polinom.length; i++)
-      html +='<span class="word">x<sup class="stepen">'+polinom[i]+'</sup></span>';
-    return '<div class="sentence">' + html + '</div>';
+      html += this.getWord(polinom[i]);
+    return '<div class="sentence">' + (typeof offsetStr === 'string' ? offsetStr : '') + html + '</div>';
 
   }
+
+  this.getWord = function(pol, extraClass){
+    extraClass = typeof extraClass === 'undefined' ? '' : ' ' + extraClass;
+
+    if(pol == 0)
+     return '<span class="word'+ extraClass +'">1<sup class="stepen"></sup></span> + '
+    else if(pol == 1)
+      return '<span class="word'+ extraClass +'">x<sup class="stepen"></sup></span> + '
+    else
+      return '<span class="word'+ extraClass +'">x<sup class="stepen">'+pol+'</sup></span> + '
+  }
+
 
   this.printFinalResult = function(pol, stepenPolinoma, originalBits){
     var html = this.printGetPolinomSentence(pol);
@@ -201,18 +238,32 @@ Array.prototype.getFirstAvaliable = function(){
 }
 
 function mergeArray(fromArray, inputArray){
+  var deleted = [];
   inputArray.forEach(e=>{
     if(fromArray.indexOf(e) == -1)
       fromArray.push(e);
-    else
+    else{
+      deleted.push(e);
       fromArray.splice(fromArray.indexOf(e), 1);
+    }
   });
-
+  
   fromArray = fromArray.sort(function (a, b) {  return b - a;  });
   console.log('sorted', fromArray);
-  return fromArray;
+  console.log('deleted', deleted);
+  return {
+    result: fromArray,
+    deleted: deleted
+  };
 }
 
 String.prototype.replaceAt=function(index, replacement) {
     return this.substr(0, index) + replacement+ this.substr(index + replacement.length);
+}
+
+function getInt(input) {
+  var nums = input.replace(/[^0-9]/g, '');
+  if(nums == '')
+    return null;
+  return parseInt(input.replace(/[^0-9]/g, ''));
 }

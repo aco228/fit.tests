@@ -58,9 +58,11 @@ var canvas = {
 
   drawSegments: function(index, input){
     var segmentWidth = this.cubeWidth / input.length;
+    var hadFirst = false;
     var y = 0, x = index * this.cubeWidth;
     this.ctx.lineWidth = 3;
-    this.ctx.strokeStyle = "#FF0000";
+    this.ctx.strokeStyle = "#bb9726";
+    var bamChar = $('.adits[part-of=bamiChar]').find('input').val();
 
 
     for(var i = 0; i < input.length; i++)
@@ -72,12 +74,19 @@ var canvas = {
         case '-':
           y = this.margin;
           break;
-        case BAMI_CHAR:
+        case bamChar:
           y = this.height / 2;
           break;
       }
 
       x += segmentWidth;
+
+      if(index == 0 && !hadFirst){
+        console.log('zero');
+        this.lastY = y;
+        hadFirst = true;
+      }
+
       if(y == this.lastY)
         this.drawLine(this.lastX, this.lastY, x, y);
       else
@@ -93,7 +102,7 @@ var canvas = {
   },
 
   drawLine: function(fromX, fromY, toX, toY){
-    console.log('drawing', fromX, fromY, toX, toY);
+    //console.log('drawing', 'fromX', fromX, 'fromY', fromY, 'toX', toX, 'toY', toY);
     this.ctx.beginPath();
     this.ctx.moveTo(fromX + 0.1, fromY + 0.1);
     this.ctx.lineTo(toX + 0.1, toY + 0.1);
