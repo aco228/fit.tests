@@ -135,7 +135,8 @@ function Polinom(){
   }
 
   this.getPolinomArray = function(input){
-    input = input.replace(/\s/g, "").toLowerCase().split('+');
+    //input = input.replace(/\s/g, "").toLowerCase().split('+');
+    input = this.preparePolinomString(input).split('+');
     var splitByPlus = input;
     var result = [];
     for(var i = 0; i < splitByPlus.length; i++){
@@ -150,6 +151,17 @@ function Polinom(){
     }
 
     result = result.sort(function (a, b) {  return b - a;  });
+    return result;
+  }
+
+  this.preparePolinomString = function(input){
+    input = input.replace(/\s/g, "").toLowerCase();
+    var acptChars = '+x';
+    var result = '';
+    for(var i = 0; i < input.length; i++)
+      if(isDigit(input[i]) || acptChars.indexOf(input[i]) !== -1)
+        result += input[i];
+    
     return result;
   }
 
@@ -218,7 +230,7 @@ function Polinom(){
     var html = this.printGetPolinomSentence(pol);
     html += '<strong>OSTATAK</strong><br>';
     var bits = this.polinomToBitString(pol, stepenPolinoma);
-    html += '<div>' + originalBits.substr(0, originalBits.length - 4) + '<span style="color:red">' +  bits + '</span></div>';
+    html += '<div>' + originalBits.substr(0, originalBits.length - stepenPolinoma) + '<span style="color:red">' +  bits + '</span></div>';
     $('#result').append('<br><br>' + html);
 
   }
@@ -266,4 +278,17 @@ function getInt(input) {
   if(nums == '')
     return null;
   return parseInt(input.replace(/[^0-9]/g, ''));
+}
+
+// Test for digits
+function isDigit(aChar)
+{
+   myCharCode = aChar.charCodeAt(0);
+
+   if((myCharCode > 47) && (myCharCode <  58))
+   {
+      return true;
+   }
+
+   return false;
 }
