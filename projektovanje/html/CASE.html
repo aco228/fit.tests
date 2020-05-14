@@ -1,0 +1,551 @@
+<html>
+
+Dijagrami složene strukture<br>
+<br>
+Dijagrami složene strukture prikazuju saradnju klasa, interfejsa ili komponenti u cilju opisa strukture<br>
+zadužene za izvršavanje posmatrane funkcionalnosti. Ovi dijagrami su slični dijagramima klasa.<br>
+Razlika Je u tome što dijagrami klasa prikazuju statičku strukturu sistema, kroz prikaz klasa sa<br>
+njihovim atributima 1 operacijama, a dijagrami složene strukture prikazuju izvršnu arhitekturu, relacije<br>
+između njenih gradivnih elemenata i odnos posmatrane arhitekture sa okruženjem, u cilju prikazivanja<br>
+informacija koji se ne mogu prikazati pomoću statičkih dijagrama. Dijagrami složene strukture su<br>
+takođe novina u verziji UML-a 2.0.<br>
+<br>
+Dijagrami raspoređivanja<br>
+<br>
+Dijagrami raspoređivanja služe za predstavljanje hardverske arhitekture sistema. Oni prikazuju delove<br>
+sistema raspoređene po fizičkim lokacijama. Ovi dijagrami se mogu posmatrati ı kao prikaz<br>
+arhitekturalnog rešenja celokupnog. sistema. Pomoću njih se prikazuje konfiguracija procesnih<br>
+čvotova u toku izvršavanja ı komponenti koje se nalaze u njima. Predstavljaju posebnu vrstu<br>
+dijagrama klasa namenjenih statičkom prikazu raspoređenosti hardvera sistema. Sastoje se iz čvorova,<br>
+koji se prikazuju u obliku kvadra, kao 1 relacija između ovih čvotova.<br>
+<br>
+Opisani UML dijagrami mogu se koristiti u različitim fazama razvoja softvera. U fazi analize najčešće<br>
+se koriste: dijagrami slučajeva upotrebe, dijagrami aktivnosti ı dijagrami stanja mašine, dok se u fazi<br>
+projektovanja uobičajeno koriste: dijagrami klasa, dijagrami sekvenci i saradnje, dijagrami paketa,<br>
+dijagrami raspoređivanja.<br>
+<br>
+CASE tehnologije<br>
+<br>
+Computer Atded Software Engineering (CASE) označava aktivnost razvoja softverskih proizvoda uz<br>
+pomoć računara. CASE tehnologije su namenjene automatizaciji procesa razvoja softverskih<br>
+proizvoda. U najopštijjeem slučaju, pojam CASE se upotrebljava za svaki softverski proizvod<br>
+namenjen za automatizaciju bilo kojeg zadatka razvoja softvera. Saglasno tome, CASE tehnologije<br>
+pokrivaju dijapazon od pojedinačnih alata za automatizaciju određenih zadataka, do kompletnih<br>
+45<br>
+<br>
+softverskih alata za automatizaciju većine koraka metodologije razvoja softverskog proizvoda. CASE<br>
+tehnologije ne predstavljaju zamenu za bilo koji metod ili tehniku razvoja, već samo dodatak metodu<br>
+ili tehnici u generisanju kvalitetnog: proizvoda. Njihovo korišćenje je interaktivno, prilagođeno<br>
+korisniku uz naglasak na upotrebu grafike.<br>
+Pojam, osobine i struktura CASE<br>
+CASE, tehnologije su razvijene kao rezultat nastojanja osoba koje se bave razvojem softvera da<br>
+unaprede sopstvenu produktivnost. Naime, ironičnom se smatrala situacija da se u oblasti primene<br>
+informacionih tehnologija teži povećati produktivnost rada drugih, ignorišući pri tome potencijal<br>
+računata za unapređenje sopstvene produktivnosti. Pored povećanja produktivnosti, osnovni ciljevi<br>
+primene CASE tehnologije su: skraćenje vremena izrade projekata, povećanje kvaliteta i nivoa<br>
+performansi softvera putem stroge primene razvojne procedure. Da bi se navedeni ciljevi postigli bila<br>
+je neophodna disciplinirana primena konzistentne metodologije, čiji koraci bi se realizovali uz<br>
+primenu računara. Jednom rečju, rešenje se tražilo u automatizaciji postupaka razvoja softvera<br>
+primenom CASE tehnologija.<br>
+Osnovni ciljevi primene CASE tehnologije su dakle:<br>
+<br>
+" povećanje produktivnosti projektanta u aktivnostima razvoja softvera,<br>
+<br>
+" skraćenje vremena izrade projekta,<br>
+<br>
+" povećanje kvaliteta softvera i<br>
+<br>
+" unapređenje performansi sistema.<br>
+<br>
+Ideja Je bila da se ovi ciljevi postignu putem disciplinirane primene konzistentne metodologije, čiji<br>
+koraci bi se realizovali uz primenu računara. Jednom rečju, rešenje se tražilo u automatizaciji<br>
+postupaka projektovanja softvera putem CASE tehnologije.<br>
+CASE, je akronim koji Je prva koristila Nastec Corporation 1982. godine. Njihov proizvod,<br>
+DesigneAid, je alat kojim se logički ı semantički procenjuju softver i sistemski dizajn dijagrama i gradi<br>
+se rečnik podataka, a podržava strukturnu analizu i dizajn, kao i dijagrame Warnier-Orr.<br>
+Ovaj akronim poseduje dva značenja. CASE se koristi za označavanje pojma computer-aided<br>
+software engineering, ali takođe ı za označavanje pojma computer-alded systems engineering. U<br>
+ovom udžbeniku, CASE je akronim koji označava pojam Computer - Aided Software Engineeting i<br>
+može se Prevesti kao inžinjersko projektovanje softvera (i informacionih sistema) uz pomoć računata.<br>
+U najopštijem slučaju, pojam CASE se odnosi na svaki softverski proizvod namenjen za<br>
+automatizaciju bilo kojeg: zadatka izrade softvera odnosno on podrazumeva korišćenje informacionih<br>
+sistema u razvoju informacionih sistema.<br>
+Saglasno tome, CASE tehnologije pokrivaju dijapazon od pojedinačnih alata za automatizaciju<br>
+određenih zadataka projektovanja softvera do kompletnih rešenja za automatizaciju izrade većine<br>
+koraka metodologije "životnog ciklusa" za projektovanje softvera kao celine. Tako je započeo razvoj<br>
+CASE tehnologije, koju danas bilo u eksperimentalnoj fazi ili u samoj praksi primenjuju sve značajnije<br>
+organizacije koje se bave razvojem softvera.<br>
+CASE, tehnologije se usled toliko brzog razvoja i trenutnog stanja razvijenosti ne mogu više<br>
+posmatrati kao prost zbir računarskih programa. One predstavljaju mnogo više od toga. Kako<br>
+46<br>
+<br>
+<br>
+tehnologija bez metodologije nije zamisliva, i organizacije koje su usvojile CASE tehnologije bez<br>
+izmene primenjene metodologije nisu ostvarile značajnije koristi od njihove primene.<br>
+Značajno je napomenuti da se danas CASE tehnologije ne mogu shvatiti kao prost zbir alata koji su<br>
+namenjeni razvoju softvera, već kao sistemi koji integrišu sledeće komponente: (a) hardvet, (b)<br>
+softver, (c) bazu podataka, (d) procedure, (e) kadrove. U CASE terminologiji integralna, celina<br>
+hardverskih ı softverskih komponenti se naziva CASE alatom. Procedure se nazivaju CASE<br>
+metodologijom, a baza podataka CASE enciklopedijom. Uspešna primena CASE tehnologije<br>
+pretpostavlja usvajanje odgovarajuće metodologije razvoja softvetskog proizvoda. Ukoliko se ovom<br>
+zahtevu ne udovolji, izostaće pozitivni efekti primene CASE tehnologije.<br>
+Bitne karakteristike automatizacije predstavljaju:<br>
+<br>
+" provera međusobne usaglašenosti rezultata koraka metodologije,<br>
+<br>
+" provera kompletnosti realizovanih aktivnosti na projektu i<br>
+<br>
+" vođenje ažurne dokumentacije.<br>
+CASE alati zahtevaju novi 1 disciplinirani pristup softverskom inženjeringu, odnosno CASE alati<br>
+moraju biti selektirani ı primenjeni u onim aplikacijama za koje su i namenjeni. Osoblje koje radi sa<br>
+njima mora biti na adekvatan način obučeno. Naime, CASE alati su samo sredstva u rukama softver<br>
+inženjera ili drugih korisnika, čiji efekat zavisi ne samo od kvaliteta alata već i od sposobnosti i znanja<br>
+korisnika.<br>
+<br>
+Opštu strukturu CASE tehnologije čine:<br>
+<br>
+" alati za strateško planiranje,<br>
+<br>
+" alati za sistem analizu,<br>
+<br>
+" alati za dizajn baze podataka,<br>
+<br>
+" alati za razvoj sistema,<br>
+<br>
+" alati za izgradnju sistema,<br>
+<br>
+" alati za upravljanje sistemima,<br>
+<br>
+" alati za podršku procesima,<br>
+<br>
+" alati za upravljanje projektima i<br>
+<br>
+" enciklopedija.<br>
+CASE enciklopedija predstavlja bazu podataka o svim elementima razvoja informacionog. sistema.<br>
+Ona predstavlja sponu između svih nabrojanih komponenti strukture CASE tehnologije, ı ne samo<br>
+to, već pruža mogućnost da se putem nje pojedine faze razvoja informacionog. sistema automatski<br>
+međusobno nadovezuju i pri tome rezultati ız određene faze istovremeno stavljaju na raspolaganje<br>
+alatıina u narednim fazama procesa razvoja.<br>
+Treba naglasiti, da ne poseduju svi CASE tehnologije napred navedene alate u svojoj osnovnoj<br>
+strukturi, mada dobavljači uglavnom teže da razviju u sopstvenoj režiji ili u saradnji sa ostalim<br>
+isporučiocima određene CASE tehnologije koji čine zaokružene celine. Takođe, nemaju sve CASE<br>
+tehnologije ni istu moć. Dok pojedine poseduju dobar alat za analizu sistema, druge poseduju dobar<br>
+<br>
+alat za dizajn baze podataka, treće poseduju dobar alat za strateško planiranje itd. Zbog toga,<br>
+organizacije u primeni kombinuju alate različitih CASE tehnologija. Upotrebljavaju tako alate iz jedne<br>
+tehnologije u realizaciji jedne faze razvoja, a druge alate iz druge tehnologije u realizaciji druge faze<br>
+razvOJA.<br>
+<br>
+Ovakva primena CASE tehnologije stvata određene probleme jer ne postoji definisana standardna<br>
+struktura CASE enciklopedije. Podaci u enciklopediji koje pruža određena tehnologija uglavnom su<br>
+nekompatibilni sa podacima u enciklopediji potrebnim za druge tehnologije. Različite tehnologije<br>
+imaju različite standarde, pa se o tome pri izboru mora povesti računa.<br>
+<br>
+CASE tehnologija ne predstavlja automatizovani razvoj sistema već metodologiju 1 niz alata za razvoj<br>
+sistema uz visoku produktivnost rada.<br>
+<br>
+Klasifikacija CASE tehnologije<br>
+<br>
+Postoji više kriterijuma za klasifikaciju CASE tehnologije. Tako se one klasifikuju: obzirom na<br>
+funkcije koje poseduju, obzitom na ulogu koju kao instrumenti u rukama upravljača ili izvršioca<br>
+aktivnosti imaju, obzirom na mogućnost primene u različitim fazama razvoja softvera, obzitom na<br>
+hardver ı softver koji ih podržava, obrzitom na poreklo i troškove i dr. Jedan od mogućih kriterijuma<br>
+pri klasifikaciji je i kompletnost CASE tehnologije koja ukazuje na broj zadataka metodologije<br>
+"životnog ciklusa" čiju automatizaciju CASE tehnologija podržava. Prema ovoj klasifikaciji<br>
+diferenciraju se:<br>
+<br>
+" Upper CASE - CASE tehnologije namenjene za automatizaciju faze strategijskog. planiranja<br>
+sistema i faze upravljanja projektima.<br>
+<br>
+" Middle CASE - CASE tehnologije namenjene za automatizaciju faze analize i faze dizajna.<br>
+<br>
+" Lower CASE - CASE tehnologije za automatizaciju faza programiranja, testiranja ı uvođenja<br>
+informacIOnog sistema.<br>
+<br>
+Prema integralnosti CASE tehnologije se strukturiraju na:<br>
+<br>
+" CASE tool - CASE alati koji automatizuju pojedine aktivnosti u fazama razvoja informacionog<br>
+sistema. Koriste moćnu grafičku podršku za opis i dokumentovanje sistema kao i za dizajn<br>
+korisničkog interfejsa.<br>
+<br>
+" CASE toolkit - CASE paket alata ili komplet predstavlja paket koji se koristi za automatizaciju<br>
+razvoja Jedne faze ili određene funkcije kroz više faza razvoja informacionog: sistema (npr.<br>
+projektovanje baze podataka).<br>
+<br>
+" CASE workbench - CASE tehnologije koje služe za automatizaciju svih zadataka kroz faze<br>
+razvoja informacionog sistema 1ı predstavljaju integrisanu kolekciju CASE paketa.<br>
+Kombinacijom kolekcije CASE paketa sa odgovarajućom hardverskom jedinicom dobija se<br>
+radna stanica za razvoj softvera -– CASE workstation. Prilikom izbora kolekcije CASE alata<br>
+treba imati na umu, sa Jedne strane, njihove karakteristike ı vrste sistema kojima su namenjene,<br>
+a takođe i zahteve korisnika ı karakteristike sistema za koji se želi primeniti CASE kolekcija.<br>
+<br>
+U zavisnosti koje faze životnog ciklusa sistema pokriva CASE tehnologije se dele na Avison, D.E.,<br>
+Fitzgerald, G.(1995):<br>
+<br>
+" Projektanski CASE - automatizuju prve tri faze životnog ciklusa: strategijsko planiranje, analizu<br>
+ı dizajn;<br>
+<br>
+" Programerski CASE - automatizuju naredne tri faze životnog ciklusa: programiranje,<br>
+implementaciju ı eksploataciju ı održavanje;<br>
+<br>
+" Integrisani CASE - podržava sve faze životnog ciklusa razvoja sistema.<br>
+<br>
+Ukoliko se kao primarni kriterijum u klasifikaciji CASE tehnologije koriste funkcije koje isti poseduju<br>
+onda se mogu razlikovati sledeće grupe proizvoda:<br>
+<br>
+" Alati za planiranje poslovnih sistema - CASE tehnologije ove klase podržavaju aktivnosti<br>
+praćenja tokova informacija između organizacionih jedinica.<br>
+<br>
+" Alati za upravljanje projektima - CASE tehnologije ove klase podržavaju aktivnosti: procene<br>
+vrednosti projekata, planiranja projekata, lociranja resursa, prikupljanja informacija i upravljanja<br>
+podacima, analize rizika, praćenja troškova, obezbeđenja kvaliteta, verifikacije standarda,<br>
+merenja produktivnosti i dr.<br>
+<br>
+" Alati podrške - CASE tehnologije ove klase podržavaju aktivnosti koje se upražnjavaju kroz<br>
+ceo proces softverskog inženjeringa. To su alati za podršku dokumentovanja, alati za podršku<br>
+sistemskog softvera, alati za podršku obezbeđenja kvaliteta, alati za podršku upravljanja bazama<br>
+podataka i dr.<br>
+<br>
+" Alati za analizu ı dizajn - CASE tehnologije ove klase omogućuju softver inžinjeru da kreira<br>
+model sistema koji će se graditi. Model sadrži prikaz tokova podataka, sadržaj podataka, prikaz<br>
+procesa, prikaz kontrola ı dr. Alati za analizu ı dizajn pomažu u kreiranju modela ı razvoju<br>
+njegovog. kvaliteta. Obavljanjem provere konzistentnosti ı vrednosti modela ovi alati<br>
+omogućuju da se otklone greške pre nego što se priđe dizajnu ili samoj implementaciji.<br>
+<br>
+" Alati za programiranje - CASE tehnologije ove klase podržavaju aktivnosti kreiranja<br>
+programskih rešenja. To su konvencionalni alati za podršku programskim Jezicima (kompajleti,<br>
+linkeri, asembleri), editori, simulatori setova instrukcija, generatori koda, generatori modula i dr.<br>
+<br>
+" Alati integracije i testiranja - CASE tehnologije ove klase se koriste pri integraciji proizvedenog<br>
+softvera sa okolinom u kojoj će isti funkcionisati. To su alati koji omogućuju prikupljanje<br>
+podataka koji će se koristiti tokom testiranja, alati kojima se analizira izvorni kod bez vršenja<br>
+testa, alati kojima se analizira izvorni kod tokom obrade, alatı koji simuliraju funkcije hardvera ı<br>
+ostalih spoljnih elemenata, alati koji pomažu u planiranju, razvoju i proveti testa i dr.<br>
+<br>
+" Alati prototipskog razvoja - CASE tehnologije ove klase služe u modelu prototipskog: razvoja<br>
+softvera.<br>
+<br>
+" Alati za podršku održavanja - CASE tehnologije ove klase služe kao podrška održavanju koje<br>
+angažuje otprilike 70% ukupnih napora na razvoju softvera. Podržavaju tri grupe funkcija:<br>
+inženjering u suprotnom smeru (na osnovu izvornog koda kao ulaza, generisanje analitičkog ı<br>
+razvojnog modela), rekonstrukcija koda i reinženjering.<br>
+<br>
+Efekti primene CASE tehnologije<br>
+Pri razvoju CASE tehnologije specijalna pažnja se posvećuje automatizaciji prve tri faze ŽIVOtnOg<br>
+ciklusa. Razlog za to su visine relattvnih troškova otklanjanja greške u pojedinim fazama životnog<br>
+ciklusa. Sto se greška kasnije otkrije, to više košta njeno otklanjanje.<br>
+Efektivna primena CASE tehnologije značajno doprinosi kvalitetu softverskog. inženjeringa. CASE<br>
+tehnologije su korisne jer izvršavaju svoju funkciju, štede vreme, štede radnu snagu, štede novac ili<br>
+omogućuju nešto što Je bez njih teško ili uopšte ne izvodivo. Produktivnost organizacije se povećava,<br>
+a greške u razvoju softvera se značajno smanjuju. CASE tehnologije u razvoju softvera doprinose<br>
+nizu pozitivnih efekata:<br>
+<br>
+" grafička prezentacija modela sistema,<br>
+<br>
+" detekcija grešaka i korekcija nekonzistentnosti,<br>
+<br>
+" interaktivna izrada prototipa sistema,<br>
+<br>
+" identifikacija komponenti sistema koji se mogu ponovo upotrebiti u razvoju,<br>
+<br>
+" efektivno upravljanje razvojem sistema,<br>
+<br>
+" efikasna kontrola utrošenog vremena u razvoju,<br>
+<br>
+" kontrola trošenja sredstava predviđenih za razvoj,<br>
+<br>
+" automatizovano generisanje uvek ažurne dokumentacije i drugi.<br>
+<br>
+Upravo zbog navedenih efekata, CASE tehnologije se preporučuju kao rešenje mnogih problema<br>
+imanentnih tradicionalnom načinu razvoja sistema, kao što su kašnjenje u izvedbi, netačnost, teško<br>
+izvođenje izmena ı loša dokumentovanost. Za sada, pettod primene CASE tehnologija je relativno<br>
+kratak da bi se mogli tačnije proceniti efekti. Postojeće studije pokazuju da se poboljšanja kreću od 30<br>
+do 600%. Bez obzira na neusaglašenost ovih rezultata ohrabruje da većina studija ukazuje na<br>
+poboljšanja. Povećanje produktivnosti, izgradnja mnogo tačnijih sistema u kraćem vremenskom<br>
+intervalu, uticali su na one koji se bave razvojem sistema da izmene ili kompletno restruktuiraju svoje<br>
+metodologije razvoja sistema kako bi imlementirali CASE tehnologije.<br>
+<br>
+Osobine CASE tehnologije<br>
+<br>
+Generalno posmatrano, tazvoj CASE tehnologije zavisi od specifičnosti zahteva korisnika, okruženja<br>
+u kojem se ista želi primeniti 1 ideja o tome kako bi tehnologija mogla da funkcioniše. Standardi u<br>
+izgradnji CASE tehnologija ne postoje. CASE tehologije su brojne, što se uočava i kroz napred<br>
+navedenu grubu ı opštu analizu mogućnosti primene određenih tehnologija u pojedinim fazama<br>
+razvoja softvera. One pokrivaju većinu aktivnosti tih faza.<br>
+<br>
+Obeležja koja treba da poseduju proizvodi CASE tehnologije koji pripadaju klasi kvalitetnih<br>
+tehnologija su sledeća:<br>
+<br>
+1. Jednostavno ı lako korišćenje - Ova osobina predstavlja meru efektivnosti tehnologije u odnosu na<br>
+korisnika. Nezavisno od funkcionalnosti i potpunosti, CASE tehnologija tereba da Je tako kreirana da<br>
+je korisnik može lako, jednostavno ı bez puno razmišljanja ı neizvesnosti koristiti u rešavanju<br>
+<br>
+projektantskih zadataka. Ukoliko to nije slučaj, tada korisnik svoje vreme provodi u razmišljanju kako<br>
+bi tehnologiju koristio ili kako tehnologija uopšte radi, a to znači da ista svojom ulogom ne pomaže<br>
+već samo Predstavlja smetnju ili čak prepreku u radu.<br>
+<br>
+2. Tehnologija treba da poseduje mogućnost da otkriva greške korisnika, a poželjno je da sama te<br>
+greške ı otklanja. Tehnologija treba da omogući interakciju sa korisnikom putem dijaloga koji je<br>
+razumljiv ı prihvatljiv za korisnika. Ona treba da je fleksibilna ı da se može kombinovati sa drugim<br>
+tehnologijama kako bi se zadovoljili različiti zahtevi korisnika. Posebno Je značajno da se minimiziraju<br>
+ili potpuno isključe nepredviđena reagovanja tehnologije, koja obično rezultiraju nezadovoljstvom<br>
+korisnika. CASE tehnologija ne bi smela svojim izlazima da iznenađuje, zbunjuje i blokira rad<br>
+korisnika. Naredbe koje korisnik upotrebljava treba da su Jasne, jednostavne ı konzistentne.<br>
+<br>
+3. Podobnost - Kvalitetna Je ona tehnologija koja poseduje takav nivo podobnosti i performansi da<br>
+može da podrži rešavanje velikog broja zadataka u razvoju softvera. Podobnost se izražava kroz obim<br>
+kojim jednostavne naredbe tehnologije mogu uzrokovati njene glavne efekte. Uz ovo obeležje<br>
+pridružuje se ı zahtev da CASE tehnologija treba da bude u mogućnosti da pruža informacije o<br>
+sopstvenom stanju. Dobra tehnologija može impresionirati ı mnogo većom podobnošću nego što je<br>
+ona ustvari, ukoliko poseduje više znanja o sopstvenom stanju.<br>
+<br>
+4. Velika snaga tJ. moć - Snaga tehnologije se ocenjuje na osnovu kombinacije sledećih faktora:<br>
+<br>
+" pouzdanost tehnologije,<br>
+<br>
+" osobine tehnologije koje se ispoljavaju pri oskudnim ili lošim uslovima,<br>
+<br>
+" funkcionisanje,<br>
+<br>
+" težina posledica nedostataka tehnologije,<br>
+<br>
+" konzistentnost aktivnosti u funkcionisanju tehnologije ı<br>
+<br>
+" način na koji se tehnologija integriše u okruženje.<br>
+5. Pouzdanost je značajan zahtev koji se ispoljava kao sposobnost alata da rastereti korisnika od rizika<br>
+greške koju sam napravi. CASE tehnologija treba da otkriva odnosno otklanja greške i posledice koje<br>
+zbog istih nastanu. Tehnologija treba da poseduje sopstveni mehanizam samotestiranja koji<br>
+obezbeđuje njegovo pravilno funkcionisanje.<br>
+6. Konzistentnost aktivnosti tehnologije potvrđuje veličinu t|. obim njene snage. Konzistentnost<br>
+podrazumeva dobro definisanu sintaksu i semantiku. Istovremeno, tehnologija mora biti tako<br>
+razvijana da podržava kompatibilnost između pojedinih verzija.<br>
+7. Funkcionalnost - Ova osobina nije definisana samo zadatkom zbog kojeg je tehnologija dizajnirana<br>
+već ı metodima koji se upotrebljavaju u izvršenju zadataka. Broj tehnologija koje podržavaju<br>
+metodologije je veoma velik. Efikasnost koju ispoljava tehnologija u podršci metoda može<br>
+neposredno doprineti razumevanju i definisanju osobina tehnologije, kao i određenju kvaliteta i<br>
+korisnosti izlaza koje obezbeđuje.<br>
+8. CASE. tehnologije integrišu metode i povezuju ih sa metodologijom. Pojedine tehnologije<br>
+podržavaju jedno, više ili sva područja metodologije ı prenose rezultate između faza. Koncepcija i<br>
+struktura CASE tehnologije je determinirana izabranom metodologijom i njoj pripadajućim<br>
+metodama ı tehnikama. Tehnologija mora da obezbedi konzistentnu primenu metodologije i metoda<br>
+<br>
+na kojima se zasniva. Tako ona mora funkcionisati korektno ı kontrolisati da li se metodologija<br>
+sprovodi u potpunosti. Pored toga, tehnologija mora genetisati izlaze koji su korektni ı striktno<br>
+definisani metodologijom.<br>
+9. Lako povezivanje sa postojećim sistemom -– CASE x tehnologija se mora lako ı nesmetano uvesti u<br>
+ostojeći informacioni sistem. Ona se jednostavno instalira i omogućuje da se postojeće strukture<br>
+<br>
+postoj J ĐucuJ postoj<br>
+datoteka ili baze podataka koriste na isti način kao ı pre njene upotrebe. CASE tehnologija mora<br>
+omogućiti i prenos podataka odnosno njihovu razmenu između različitih CASE tehnologija koje se<br>
+već koriste u organizaciji.<br>
+10. Kvalitet podrške CASE tehnologije - Prilikom vrednovanja tehnologije sa aspekta kvaliteta<br>
+podrške, značajno je sagledati ı sledeće elemente podrške:<br>
+<br>
+" reputacija dobavljača,<br>
+<br>
+" zrelost tehnologije ı njena rasprostranjenost,<br>
+<br>
+" mogućnost smanjenja troškova pri kupovini više kopija,<br>
+<br>
+" mogućnost iznajmljivanja tehnologije,<br>
+<br>
+" mogućnost vraćanja tehnologije uz povrat sredstava,<br>
+<br>
+" mogućnost dobijanja punih prava 1 pristupa izvotnom kodu,<br>
+<br>
+" mogućnost i uslovi održavanja,<br>
+<br>
+" vreme odziva u održavanju,<br>
+<br>
+" pružanje pomoći u obezbeđenju problematičnih odgovora,<br>
+<br>
+" da li korisnik raspolaže pravom na nove verzije tehnologije bez naknade,<br>
+<br>
+" koji je rok garancije,<br>
+<br>
+" koji su rokovi isporuke,<br>
+<br>
+" kakvi su uslovi obuke za korisnike tehnologije,<br>
+<br>
+" da li postoje efikasni programi obuke i<br>
+<br>
+" kakva su stručna 1 pedagoška svojstva kadrova koji vrše obuku.<br>
+CASE tehnologije obezbeđuju integralno razvojno okruženje koje Je nezavisno od metodološkog<br>
+prilaza u razvoju sistema ı pruža podršku svim aktivnostima od definisanja, preko razvoja do<br>
+održavanja softvera. Pri tome, omogućujući optimalno funkcionisanje sistema uz najmanji mogući<br>
+procenat grešaka.<br>
+Načini integracije CASE tehnologija<br>
+CASE tehnologije se mogu na različite načine integrisati. Mali je broj alata koji su potpuno nezavisni i<br>
+tako se koriste. Takvi alati kreiraju samostalno izlaze u vidu dokumenata, programa, podataka ı<br>
+njihova veza prema ostalima u okruženju je papir koji prenosi graditelj softvera. U stvarnosti, CASE<br>
+tehnologije se povezuju 1 razlikujemo sledeće načine integracije:<br>
+<br>
+Razmena podataka (Data exchange) - je najčešći slučaj i mogućnost koju poseduje većina alata. To<br>
+je slučaj kada alat izlaze, koje kreira, prevodi u oblik nestruktuirane datoteke u formatu štampe. To<br>
+omogućuje da se zaštite podaci alata, eliminiše se potreba ponovnog unošenja elemenata specifikacije<br>
+dizajna ı sprečavaju štamparske greške. Prevodioci se uglavnom razvijaju zajedničkom akcijom<br>
+isportučilaca alata ı mogu se od istih nabaviti. Međutim, prevodioci su razvijeni i od strane<br>
+konsultanata i korisnika od kojih se takođe mogu kupiti.<br>
+<br>
+Nedostatak ovog načina je što se uglavnom samo deo prevedenih podataka može na ovaj način<br>
+prihvatiti ı koristiti u drugom alatu, sve dok se ne definiše kompatibilnost. Takođe, nedostatak je i što<br>
+stalni razvoj softvera zahteva da se i nakon manjih izmena datoteke prevode i prenose. Razne verzije<br>
+mogu lako dovesti do odsustva sinhronizacije.<br>
+<br>
+Ukoliko se koristi veliki broj alata na Jednom projektu, neprihvatljivo je masovno transfetrisanje i<br>
+prevođenje, posebno što Je ono Još i Jednosmerno. Naime, ne postoje mogućnosti da se vrše izmene<br>
+obostrano, a što znači da dolazi u pitanje održavanje integralnosti konfiguracije kroz nizove alata koji<br>
+se upotrebljavaju.<br>
+<br>
+Zajednički pristup alatına (Common Tool Access) - predstavlja sledeći nivo integracije, koji<br>
+omogućuje korisniku da poziva veći broj različitih alata na isti način, npr. iz pull-down menija. U<br>
+multitasking okruženju to znači da korisnik može simultano otvarati alate, ručno koordinirati ulaze u<br>
+njih ı upoređivati izlaze dizajna na način kako želi. Npr. korisnik može istovremeno prikazati<br>
+dijagrame tokova podataka, dijagrame strukture, rečnik podataka 1 izvorni kod koje održavaju različiti<br>
+alati. U ovom okruženju, razmena podataka iz alata u alat može biti uprošćena uvođenjem procedure<br>
+prevođenja običnim izborom menija ili izborom makto funkcije.<br>
+<br>
+Zajedničko upravljanje podacima (Common Data Management) - predstavlja način integracije pri<br>
+kojoj se podaci iz različitih alata održavaju u Jednoj logičkoj bazi podataka, koja može biti fizički<br>
+decentralizovana ili centralizovana. Integracija na ovaj način uprošćava razmenu informacija i podiže<br>
+nivo integralnosti podataka, pošto svaki alat ima stalni ı trenutni pristup najaktuelnijim podacima<br>
+odnosno uvek ažurnim podacima. Istovremeno, prava pristupa se mogu konttolisati, a može se<br>
+upravljati ı verzijama alata. Način kontrole je ručni putem procedura ptijavljivanja ı odjavljivanja.<br>
+Tipično, postoji funkcija integrisanja podataka koja omogućuje graditeljima softvera da rade na<br>
+različitim delovima aplikacija i kombinuju poslove. Ukoliko ovakva grupa alata poseduje<br>
+karakteristiku provere, tada je moguće utvrđivanje nekonzistentnosti između rezultata pojedinih<br>
+autota.<br>
+<br>
+Mada se podacima iz različitih alata upravlja zajedno na zajedničkom nivou, alati ne poznaju<br>
+međusobno interne strukture podataka ı semantiku predstavljanja u dizajnu. Potreban Je i dalje korak<br>
+prevođenja koji se manuelno aktivira da bi se jednom alatu omogućilo korišćenje izlaza drugog alata.<br>
+Podela podataka (Data Shating) - je način integracije pri kojem alati poseduju kompatibilne<br>
+strukture podataka i semantiku i mogu se direktno upotrebljavati bez ikakve transformacije. Svaki alat<br>
+Je tako dizajniran da bi bio kompatibilan sa ostalima u uslovima podele podataka. Zbog toga, podela<br>
+podataka se javlja uglavnom kod alata istog proizvođača ili kod više proizvođača koji su se strateški<br>
+povezali upravo da bi proizveli takav proizvod (čak možda i na zahtev Jednog korisnika). Za<br>
+realizaciju ovog načina povezivanja, ključnu ulogu su odigrali standardi koji obezbeđuju dobru<br>
+osnovu za integraciju CASE, alata.<br>
+<br>
+Međusobna opertatibilnost (Interoperability) - Je najviši nivo integracije pojedinačnih alata i javlja se<br>
+ukoliko je realizovan zajednički pristup i podela podataka.<br>
+Da bi se postigla puna integrisanost CASE okruženja, neophodna su još dva dodatna elementa:<br>
+upravljanje meta podacima i sredstva kontrole.<br>
+Meta podaci su podaci proizvedeni od pojedinih CASE alata, a nose informacije o procesu<br>
+softverskog inženjeringa. Meta podaci uključuju:<br>
+<br>
+" definicije objekata,<br>
+<br>
+" veze i zavisnosti između objekata proizvoljne detaljnosti,<br>
+<br>
+" pravila dizajna softvera,<br>
+<br>
+" tokove procesa, procedure i događaje.<br>
+Sredstva kontrole omogućuju pojedinačnim alatıina da obaveste ostatak okruženja (ostale alate,<br>
+rukovodioca podataka,..) o značajnim događajima ı pošalju zahteve za akcijom ostalim alatima i<br>
+servisima putem trigera. Npr. alat za dizajn bi morao obavestiti alat za upravljanje konfiguracijom da<br>
+je kretrana nova verzija dokumenta dizajna ı da Je potrebno da ovaj izvrši proveru konzistentnosti.<br>
+Sredstva kontrole pomažu u održavanju integriteta okruženja i obezbeđuju sredstva za automatizaciju<br>
+standardnih procesa i procedura.<br>
+<br>
+Ocena ı izbor CASE tehnologije<br>
+Proces ocene vrednosti i izbor CASE tehnologije se izvodi od strane organizacije koja ga želi nabaviti.<br>
+Svaka organizacija ima sopstvene potrebe ı zahteve pri nabavci tehnologije. Proces procene čine<br>
+sledeći metodološki koraci:<br>
+<br>
+" analiza potreba i zahteva korisnika,<br>
+<br>
+" analiza postojećeg: okruženja,<br>
+<br>
+" identifikovanje potencijalne liste CASE tehnologija ı<br>
+<br>
+" primena kriterijuma za ocenu kvaliteta 1 izbor tehnologije.<br>
+Analiza potreba i zahteva korisnika predstavlja veoma značajan korak u izboru CASE tehnologije.<br>
+Organizacija tteba da opredeli koji model razvoja softvera će primeniti, koji su osnovni tehnički i<br>
+upravljački zadaci. Tačno se moraju identifikovati oni zadaci koji se žele potpuno ili delimično<br>
+realizovati uz pomoć automatizovanih alata.<br>
+Analiza postojećeg okruženja Je u potpunosti povezana sa prethodnim metodološkim korakom.<br>
+CASE, tehnologija mora potpuno da bude prikladna okruženju. Ograničenja su moguća i ona se<br>
+moraju uzeti u obzir. Tako npr. novac, vreme, iskustvo zaposlenih, dosadašnja praksa, odnosi sa<br>
+dobavljačima ı dr. Ova ograničenja ne samo da se identifikuju nego se 1 analiziraju sa aspekta njihove<br>
+moguće promene ili otklanjanja.<br>
+Identifikovanje potencijalne liste CASE tehnologija predstavlja korak kojim se potrebama 1 zahtevima<br>
+korisnika pridružuju moguće tehnologije koje bi iste zadovoljili. Trenutno je izbor tehnologija veoma<br>
+velik, a poseduje tendenciju daljeg: brzog: razvoja. Prezentacije, reklamni materijali i dr. obezbeđuju<br>
+inicijalne informacije o postojećim tehnologijama.<br>
+<br>
+Poslednji korak ove metodologije je sigurno najznačajniji. Svi identifikovani kriterijumi se primenjuju<br>
+na svaku od CASE tehnologija koje su identifikovane u potencijalnoj listi. Kriterijumi se postavljaju<br>
+za potrebe najobjektivnije selekcije. Troškovi ı vreme su pri tome na vrhu liste. Ukoliko postoji<br>
+mogućnost nije na odmet da se dobavljač poseti i na licu mesta tehnologija upozna i testira.<br>
+Beleške ı zapažanja sa testa tteba da su opredeljujući u određenju koliko tehnologija zadovoljava<br>
+postavljene kriterijume. Posebna pažnja se pridaje kriterijumima koji su najviše rangirani. Konačna<br>
+odluka treba da se bazira i na mišljenju zaposlenih u organizaciji koji bi ttebali da ostvare najveću<br>
+korist od primene tehnologije.<br>
+Pravci razvoja CASE tehnologije<br>
+CASE, tehnologije kao elementi softverskog inženjeringa treba da ponude odgovor na njegove<br>
+trenutne ı buduće potrebe. To su: potreba za utvrđivanjem jedinstvenih standarda, primena<br>
+instrukcija na prirodnom jeziku čoveka, stvaranje opštih šablona i dr. Standardizovane CASE<br>
+tehnologije moraju obuhvatati brojne formalne metode ı standarde i obezbeđivati adekvatan tj. visok<br>
+nivo dokumentovanosti. Takođe, CASE tehnologije bi morale pomoći u upravljanju projektom<br>
+razvoja softvera ı omogućiti njegovo bolje ı lakše održavanje. Pravilna primena CASE tehnologija<br>
+doprinela bi efikasnosti upravljanja troškovima, skraćenju vremena izrade ı izradi kvalitetnih<br>
+proizvoda.<br>
+CASE tehnologije od kojih se očekuje da zadovolje ove zahteve svrstavaju se u sledeće tri grupe:<br>
+<br>
+" inteligentne CASE tehnologije,<br>
+<br>
+" CASE tehnologije za prototipski razvoj softveta i<br>
+<br>
+" CASE tehnologije podrške.<br>
+<br>
+Inteligentne CASE tehnologije su u pravom smislu alati budućnosti. One tteeba da omoguće razvoj<br>
+softvera za kompleksne računarske sisteme uz minimalno učešće čoveka. One treba da su efektivne i<br>
+efikasne sa aspekta troškova. Tehnologije iz ove grupe treba da omoguće da se automatizmom<br>
+odaberu pogodni metodi za razvoj softvera ı kompletiraju zahtevi. Pored toga, tteba da vode brigu o<br>
+svim detaljima ı spreče pojavu nekonzistentnosti.<br>
+Komponente ovih tehnologija budućnosti su:<br>
+" moduli funkcija koji odražavaju zadatke u analizi i dizajnu softverskog sistema,<br>
+" simulacija, kojom se proverava ponašanje projektovanog softvera,<br>
+" dokumentacija, koja treba da pruži mogućnost inžinjerima da prate razvoj zahteva kroz različite<br>
+faze razvoja softvera,<br>
+" matrice, koje će signalizirati nedostatak inputa ili outputa ı pomagati u očuvanju softvera od<br>
+logičkih grešaka,<br>
+" rečnik podataka, kao skladište za module funkcija, dokumentaciju i matrice i<br>
+" programski jezik, koji bi bio primeren zahtevima opisa funkcija u formi tvrdnji, uslova i<br>
+promena.<br>
+Neke osnovne karakteristike inteligentnih CASE tehnologija uključivale bi i sledeće elemente:<br>
+<br>
+" pokrivaju razvoj softvera u svim fazama životnog ciklusa softvera,<br>
+<br>
+" uključuju planiranje,<br>
+<br>
+" poseduju alate zasnovane na znanju 1 bogatu grafičku podršku,<br>
+<br>
+" podržavaju automatizovano kodiranje, testiranje i dokumentovanje,<br>
+<br>
+" podržavaju softverski reinženjering,<br>
+<br>
+" omogućuju ponovno korišćenje softvera,<br>
+<br>
+" obezbeđuju potpunu konzistentnost programa i sistema u celini,<br>
+<br>
+" testiraju projekat i pre kodiranja, a kodirani moduli automatski se integrišu u celinu itd.<br>
+CASE tehnologije za prototipski razvoj softvera treba da potpomognu u budućnosti efikasnu ı<br>
+efektivnu komunikaciju između krajnjih korisnika i projektanata. Osnovna ideja je da se upotrebe u<br>
+izradi eksperimentalnog prototipa pre nego što se korisnik odluči da uđe u velike investicije. Ulazni<br>
+ekrani ı meniji se moraju razvijati dok izlazni ekrani i izveštaji prikazuju šta će korisnik videti.<br>
+Programi se pišu tek posle odluke da se softver izrađuje.<br>
+Simulacija će se upotrebljavati za proveru i definisanje performansi kao što su: vreme pristupa bazi<br>
+podataka, vreme generisanja odgovora, vreme ptolaza 1 dr. potrebnih u sistemu. Simulacijom će se<br>
+demonstrtirati ulazi i u zavisnosti od njih promenljivi izlazi kakve će ih korisnik dobijati u izvršenju.<br>
+CASE tehnologije podrške su koncipirane tako da mogu sa uspehom podržati, nezavisno Jedna od<br>
+druge, aktivnosti upravljanja projektom, vrednovanje kvalitativnih performansi, generisanje test<br>
+slučajeva. Ove tehnologije treba da se u daljem petiodu razvoja integrišu sa inteligentnim CASE<br>
+tehnologijama ı CASE tehnologijama za prototipski razvoj softvera.<br>
+U nastavku su dati nazivi poznatijih CASE tehnologija ı njihovih proizvođača:<br>
+<br>
+
+
+</html>
