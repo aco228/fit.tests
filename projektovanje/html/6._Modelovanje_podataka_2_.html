@@ -1,0 +1,638 @@
+<html>
+<head><meta http-equiv=Content-Type content="text/html; charset=UTF-8">
+<style type="text/css">
+<!--
+span.cls_002{font-family:Arial,serif;font-size:54.1px;color:rgb(210,82,59);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_002{font-family:Arial,serif;font-size:54.1px;color:rgb(210,82,59);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_003{font-family:Arial,serif;font-size:54.0px;color:rgb(210,82,59);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_003{font-family:Arial,serif;font-size:54.0px;color:rgb(210,82,59);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_004{font-family:Arial,serif;font-size:40.0px;color:rgb(210,82,59);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_004{font-family:Arial,serif;font-size:40.0px;color:rgb(210,82,59);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_005{font-family:Arial,serif;font-size:17.1px;color:rgb(146,161,153);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_005{font-family:Arial,serif;font-size:17.1px;color:rgb(146,161,153);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_006{font-family:Arial,serif;font-size:20.1px;color:rgb(41,41,52);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_006{font-family:Arial,serif;font-size:20.1px;color:rgb(41,41,52);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_007{font-family:Arial,serif;font-size:14.5px;color:rgb(146,161,153);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_007{font-family:Arial,serif;font-size:14.5px;color:rgb(146,161,153);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_008{font-family:Arial,serif;font-size:17.1px;color:rgb(41,41,52);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_008{font-family:Arial,serif;font-size:17.1px;color:rgb(41,41,52);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_009{font-family:Arial,serif;font-size:17.1px;color:rgb(41,41,52);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_009{font-family:Arial,serif;font-size:17.1px;color:rgb(41,41,52);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_010{font-family:Arial,serif;font-size:14.4px;color:rgb(146,161,153);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_010{font-family:Arial,serif;font-size:14.4px;color:rgb(146,161,153);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_011{font-family:Arial,serif;font-size:20.1px;color:rgb(41,41,52);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_011{font-family:Arial,serif;font-size:20.1px;color:rgb(41,41,52);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_012{font-family:Arial,serif;font-size:20.1px;color:rgb(41,41,52);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_012{font-family:Arial,serif;font-size:20.1px;color:rgb(41,41,52);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_013{font-family:Arial,serif;font-size:17.1px;color:rgb(146,161,153);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_013{font-family:Arial,serif;font-size:17.1px;color:rgb(146,161,153);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_014{font-family:Arial,serif;font-size:20.1px;color:rgb(41,41,52);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_014{font-family:Arial,serif;font-size:20.1px;color:rgb(41,41,52);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_015{font-family:Arial,serif;font-size:17.1px;color:rgb(41,41,52);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_015{font-family:Arial,serif;font-size:17.1px;color:rgb(41,41,52);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_016{font-family:Arial,serif;font-size:18.8px;color:rgb(146,161,153);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_016{font-family:Arial,serif;font-size:18.8px;color:rgb(146,161,153);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_017{font-family:Arial,serif;font-size:22.0px;color:rgb(41,41,52);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_017{font-family:Arial,serif;font-size:22.0px;color:rgb(41,41,52);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_018{font-family:Arial,serif;font-size:22.0px;color:rgb(41,41,52);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_018{font-family:Arial,serif;font-size:22.0px;color:rgb(41,41,52);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_019{font-family:Arial,serif;font-size:16.3px;color:rgb(146,161,153);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_019{font-family:Arial,serif;font-size:16.3px;color:rgb(146,161,153);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_020{font-family:Arial,serif;font-size:19.0px;color:rgb(41,41,52);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_020{font-family:Arial,serif;font-size:19.0px;color:rgb(41,41,52);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_021{font-family:Arial,serif;font-size:19.0px;color:rgb(41,41,52);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_021{font-family:Arial,serif;font-size:19.0px;color:rgb(41,41,52);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_022{font-family:Arial,serif;font-size:20.4px;color:rgb(146,161,153);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_022{font-family:Arial,serif;font-size:20.4px;color:rgb(146,161,153);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_023{font-family:Arial,serif;font-size:24.1px;color:rgb(41,41,52);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_023{font-family:Arial,serif;font-size:24.1px;color:rgb(41,41,52);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_024{font-family:Arial,serif;font-size:24.1px;color:rgb(41,41,52);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_024{font-family:Arial,serif;font-size:24.1px;color:rgb(41,41,52);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_025{font-family:Arial,serif;font-size:20.5px;color:rgb(146,161,153);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_025{font-family:Arial,serif;font-size:20.5px;color:rgb(146,161,153);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_026{font-family:Arial,serif;font-size:24.1px;color:rgb(41,41,52);font-weight:normal;font-style:italic;text-decoration: none}
+div.cls_026{font-family:Arial,serif;font-size:24.1px;color:rgb(41,41,52);font-weight:normal;font-style:italic;text-decoration: none}
+span.cls_027{font-family:Arial,serif;font-size:11.9px;color:rgb(146,161,153);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_027{font-family:Arial,serif;font-size:11.9px;color:rgb(146,161,153);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_028{font-family:Arial,serif;font-size:14.1px;color:rgb(41,41,52);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_028{font-family:Arial,serif;font-size:14.1px;color:rgb(41,41,52);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_029{font-family:Arial,serif;font-size:14.1px;color:rgb(41,41,52);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_029{font-family:Arial,serif;font-size:14.1px;color:rgb(41,41,52);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_030{font-family:Arial,serif;font-size:36.0px;color:rgb(210,82,59);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_030{font-family:Arial,serif;font-size:36.0px;color:rgb(210,82,59);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_031{font-family:Arial,serif;font-size:12.8px;color:rgb(146,161,153);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_031{font-family:Arial,serif;font-size:12.8px;color:rgb(146,161,153);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_032{font-family:Arial,serif;font-size:15.1px;color:rgb(41,41,52);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_032{font-family:Arial,serif;font-size:15.1px;color:rgb(41,41,52);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_033{font-family:Arial,serif;font-size:15.1px;color:rgb(41,41,52);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_033{font-family:Arial,serif;font-size:15.1px;color:rgb(41,41,52);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_034{font-family:Arial,serif;font-size:13.0px;color:rgb(41,41,52);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_034{font-family:Arial,serif;font-size:13.0px;color:rgb(41,41,52);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_035{font-family:Arial,serif;font-size:13.0px;color:rgb(41,41,52);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_035{font-family:Arial,serif;font-size:13.0px;color:rgb(41,41,52);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_036{font-family:Arial,serif;font-size:11.1px;color:rgb(146,161,153);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_036{font-family:Arial,serif;font-size:11.1px;color:rgb(146,161,153);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_037{font-family:Arial,serif;font-size:22.0px;color:rgb(41,41,52);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_037{font-family:Arial,serif;font-size:22.0px;color:rgb(41,41,52);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_038{font-family:Arial,serif;font-size:18.8px;color:rgb(146,161,153);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_038{font-family:Arial,serif;font-size:18.8px;color:rgb(146,161,153);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_039{font-family:Arial,serif;font-size:16.3px;color:rgb(146,161,153);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_039{font-family:Arial,serif;font-size:16.3px;color:rgb(146,161,153);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_040{font-family:Arial,serif;font-size:15.4px;color:rgb(146,161,153);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_040{font-family:Arial,serif;font-size:15.4px;color:rgb(146,161,153);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_041{font-family:Arial,serif;font-size:24.1px;color:rgb(41,41,52);font-weight:normal;font-style:italic;text-decoration: none}
+div.cls_041{font-family:Arial,serif;font-size:24.1px;color:rgb(41,41,52);font-weight:normal;font-style:italic;text-decoration: none}
+span.cls_042{font-family:Arial,serif;font-size:15.4px;color:rgb(146,161,153);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_042{font-family:Arial,serif;font-size:15.4px;color:rgb(146,161,153);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_043{font-family:Arial,serif;font-size:13.6px;color:rgb(146,161,153);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_043{font-family:Arial,serif;font-size:13.6px;color:rgb(146,161,153);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_044{font-family:Arial,serif;font-size:16.0px;color:rgb(41,41,52);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_044{font-family:Arial,serif;font-size:16.0px;color:rgb(41,41,52);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_045{font-family:Arial,serif;font-size:16.0px;color:rgb(41,41,52);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_045{font-family:Arial,serif;font-size:16.0px;color:rgb(41,41,52);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_046{font-family:Arial,serif;font-size:13.6px;color:rgb(146,161,153);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_046{font-family:Arial,serif;font-size:13.6px;color:rgb(146,161,153);font-weight:normal;font-style:normal;text-decoration: none}
+-->
+</style>
+<script type="text/javascript" src="c10ef670-94f7-11ea-8b25-0cc47a792c0a_id_c10ef670-94f7-11ea-8b25-0cc47a792c0a_files/wz_jsgraphics.js"></script>
+</head>
+<body>
+<div style="position:absolute;left:50%;margin-left:-360px;top:0px;width:720px;height:540px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="c10ef670-94f7-11ea-8b25-0cc47a792c0a_id_c10ef670-94f7-11ea-8b25-0cc47a792c0a_files/background01.jpg" width=720 height=540></div>
+<div style="position:absolute;left:61.20px;top:125.14px" class="cls_002"><span class="cls_002">MODELOVANJE</span></div>
+<div style="position:absolute;left:61.20px;top:189.96px" class="cls_003"><span class="cls_003">PODATAKA - 2</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-360px;top:550px;width:720px;height:540px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="c10ef670-94f7-11ea-8b25-0cc47a792c0a_id_c10ef670-94f7-11ea-8b25-0cc47a792c0a_files/background02.jpg" width=720 height=540></div>
+<div style="position:absolute;left:43.20px;top:55.94px" class="cls_004"><span class="cls_004">Relacioni model podataka</span></div>
+<div style="position:absolute;left:43.20px;top:127.22px" class="cls_005"><span class="cls_005">•</span></div>
+<div style="position:absolute;left:57.60px;top:124.22px" class="cls_006"><span class="cls_006">Osnovne karakteristike:</span></div>
+<div style="position:absolute;left:64.80px;top:148.35px" class="cls_007"><span class="cls_007">•</span><span class="cls_008"> omogućava vrlo jednostavan i prirodan prikaz podataka, jer se model</span></div>
+<div style="position:absolute;left:79.22px;top:164.69px" class="cls_009"><span class="cls_009">predstavlja skupom tabela, a tabele su prikaz strukture koji je najprihvatljiviji za</span></div>
+<div style="position:absolute;left:79.22px;top:181.01px" class="cls_009"><span class="cls_009">komunikaciju sa korisnikom (zbog preglednosti i jednostavnosti)</span></div>
+<div style="position:absolute;left:64.80px;top:201.41px" class="cls_010"><span class="cls_010">•</span><span class="cls_009"> moguća je formalna matematička interpretacija modela; tabela se može</span></div>
+<div style="position:absolute;left:79.22px;top:217.73px" class="cls_009"><span class="cls_009">definisati kao matematička relacija.</span></div>
+<div style="position:absolute;left:43.20px;top:241.03px" class="cls_005"><span class="cls_005">•</span></div>
+<div style="position:absolute;left:57.60px;top:238.01px" class="cls_011"><span class="cls_011">Zbog mogućnosti da se formalno matematički interpretira cjelokupna</span></div>
+<div style="position:absolute;left:57.60px;top:257.23px" class="cls_006"><span class="cls_006">teorija modela podataka, projektovanje logičke baze zasniva se</span></div>
+<div style="position:absolute;left:57.60px;top:276.43px" class="cls_006"><span class="cls_006">najčešće na ovom modelu.</span></div>
+<div style="position:absolute;left:43.20px;top:303.43px" class="cls_005"><span class="cls_005">•</span></div>
+<div style="position:absolute;left:57.60px;top:300.43px" class="cls_006"><span class="cls_006">U relacionom modelu podaci se predstavljaju skupom </span><span class="cls_012">tabela </span><span class="cls_006">odn.</span></div>
+<div style="position:absolute;left:57.60px;top:319.63px" class="cls_012"><span class="cls_012">relacija </span><span class="cls_006">čiji je sadržaj predstavljen specifičnom optimalnom formom.</span></div>
+<div style="position:absolute;left:43.20px;top:346.64px" class="cls_013"><span class="cls_013">•</span></div>
+<div style="position:absolute;left:57.60px;top:343.64px" class="cls_011"><span class="cls_011">Podaci su na osnovu semantičkih svojstava svrstani u </span><span class="cls_014">n-torke</span></div>
+<div style="position:absolute;left:64.80px;top:367.78px" class="cls_010"><span class="cls_010">•</span><span class="cls_009"> npr. entitet RADNIK (matični broj, ime i prezime, kvalifikacija, godina</span></div>
+<div style="position:absolute;left:79.22px;top:384.10px" class="cls_009"><span class="cls_009">zaposlenja,…) je jedna uređena n-torka.</span></div>
+<div style="position:absolute;left:64.80px;top:404.50px" class="cls_010"><span class="cls_010">•</span><span class="cls_009"> U opštem slučaju, n-torke se posmatraju kao uređeni skupovi unutar kojih</span></div>
+<div style="position:absolute;left:79.22px;top:420.82px" class="cls_009"><span class="cls_009">podaci stoje u tačno određenim odnosima. Definicija tih odnosa naziva se</span></div>
+<div style="position:absolute;left:79.22px;top:437.14px" class="cls_015"><span class="cls_015">relacija</span><span class="cls_009">.</span></div>
+<div style="position:absolute;left:43.20px;top:460.44px" class="cls_005"><span class="cls_005">•</span></div>
+<div style="position:absolute;left:57.60px;top:457.44px" class="cls_006"><span class="cls_006">Dakle, kod relacionih modela podaci se daju relacijama odn.</span></div>
+<div style="position:absolute;left:57.60px;top:476.64px" class="cls_006"><span class="cls_006">tabelama a model se prikazuje kao skup tabela.</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-360px;top:1100px;width:720px;height:540px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="c10ef670-94f7-11ea-8b25-0cc47a792c0a_id_c10ef670-94f7-11ea-8b25-0cc47a792c0a_files/background03.jpg" width=720 height=540></div>
+<div style="position:absolute;left:43.20px;top:55.94px" class="cls_004"><span class="cls_004">Relacioni model podataka</span></div>
+<div style="position:absolute;left:43.20px;top:126.38px" class="cls_016"><span class="cls_016">•</span><span class="cls_017"> Primjer: relacija RADNIK može da izgleda kao:</span></div>
+<div style="position:absolute;left:43.20px;top:300.67px" class="cls_016"><span class="cls_016">•</span><span class="cls_017"> Atributi za svaki red u relaciji (tabeli) imaju određene</span></div>
+<div style="position:absolute;left:57.60px;top:324.43px" class="cls_017"><span class="cls_017">vrijednosti, koje uzimaju iz odgovarajućih domena, tako da su</span></div>
+<div style="position:absolute;left:57.60px;top:348.20px" class="cls_018"><span class="cls_018">kolone u tabeli ustvari domeni odgovarajućih atributa.</span></div>
+<div style="position:absolute;left:43.20px;top:377.26px" class="cls_016"><span class="cls_016">•</span><span class="cls_017"> Broj domena nad kojima je relacija definisana odn. broj atributa</span></div>
+<div style="position:absolute;left:57.60px;top:401.02px" class="cls_017"><span class="cls_017">relacije ili broj kolona odgovarajuće tabele definiše red relacije.</span></div>
+<div style="position:absolute;left:64.80px;top:429.82px" class="cls_019"><span class="cls_019">•</span><span class="cls_020"> Tako razlikujemo relacije prvog reda ili unarne relacije (jedan atribut),</span></div>
+<div style="position:absolute;left:79.22px;top:450.34px" class="cls_021"><span class="cls_021">relacije drugog reda (binarne relacije - dva atributa) ili relacije n-tog</span></div>
+<div style="position:absolute;left:79.22px;top:470.88px" class="cls_020"><span class="cls_020">reda odn. n-arne relacije (n atributa).</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-360px;top:1650px;width:720px;height:540px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="c10ef670-94f7-11ea-8b25-0cc47a792c0a_id_c10ef670-94f7-11ea-8b25-0cc47a792c0a_files/background04.jpg" width=720 height=540></div>
+<div style="position:absolute;left:43.20px;top:55.94px" class="cls_004"><span class="cls_004">Relacioni model podataka</span></div>
+<div style="position:absolute;left:43.20px;top:126.14px" class="cls_022"><span class="cls_022">•</span><span class="cls_023"> Razlikuju se i:</span></div>
+<div style="position:absolute;left:64.80px;top:157.37px" class="cls_005"><span class="cls_005">•</span><span class="cls_006"> nastupajući elementi relacije (pojedini element ili slog sadrži</span></div>
+<div style="position:absolute;left:79.22px;top:178.97px" class="cls_006"><span class="cls_006">vrijednost za svaki od atributa i to je red relacije ili n-torka relacije);</span></div>
+<div style="position:absolute;left:64.80px;top:205.37px" class="cls_005"><span class="cls_005">•</span><span class="cls_006"> ključ (atribut ili grupa atributa odn. složeni ključ koji ima različite</span></div>
+<div style="position:absolute;left:79.22px;top:226.97px" class="cls_006"><span class="cls_006">vrijednosti za svaki nastupajući element relacije - red tabele; u</span></div>
+<div style="position:absolute;left:79.22px;top:248.57px" class="cls_011"><span class="cls_011">tabeli na prethodnoj slici to je matični broj).</span></div>
+<div style="position:absolute;left:43.20px;top:275.47px" class="cls_022"><span class="cls_022">•</span><span class="cls_023"> Ključ relacije je primarni atribut ili grupa atributa (složeni</span></div>
+<div style="position:absolute;left:57.60px;top:301.39px" class="cls_023"><span class="cls_023">ključ koji ima različite vrijednosti za svaki nastupajući</span></div>
+<div style="position:absolute;left:57.60px;top:327.31px" class="cls_023"><span class="cls_023">element relacije, odn. red tabele; u prethodnoj tabeli to je</span></div>
+<div style="position:absolute;left:57.60px;top:353.26px" class="cls_023"><span class="cls_023">matični broj).</span></div>
+<div style="position:absolute;left:43.20px;top:384.94px" class="cls_022"><span class="cls_022">•</span><span class="cls_023"> Ključ relacije odn. primarni ključ se bira između svih</span></div>
+<div style="position:absolute;left:57.60px;top:410.86px" class="cls_023"><span class="cls_023">potencijalnih ključeva ili kandidata za ključ, a potencijalni</span></div>
+<div style="position:absolute;left:57.60px;top:436.78px" class="cls_024"><span class="cls_024">ključevi su oni atributi ili grupe atributa koji imaju različite</span></div>
+<div style="position:absolute;left:57.60px;top:462.72px" class="cls_023"><span class="cls_023">vrijednosti za svaki nastupajući element.</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-360px;top:2200px;width:720px;height:540px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="c10ef670-94f7-11ea-8b25-0cc47a792c0a_id_c10ef670-94f7-11ea-8b25-0cc47a792c0a_files/background05.jpg" width=720 height=540></div>
+<div style="position:absolute;left:43.20px;top:55.94px" class="cls_004"><span class="cls_004">Relacioni model podataka</span></div>
+<div style="position:absolute;left:43.20px;top:126.14px" class="cls_022"><span class="cls_022">•</span><span class="cls_023"> Karakteristike:</span></div>
+<div style="position:absolute;left:64.80px;top:157.37px" class="cls_005"><span class="cls_005">•</span><span class="cls_006"> ne postoje jednaki redovi u tabelama;</span></div>
+<div style="position:absolute;left:64.80px;top:183.77px" class="cls_005"><span class="cls_005">•</span><span class="cls_006"> poredak redova nije važan;</span></div>
+<div style="position:absolute;left:64.80px;top:210.17px" class="cls_005"><span class="cls_005">•</span><span class="cls_006"> poredak kolona nije važan; pri tome svaka kolona ima svoje ime.</span></div>
+<div style="position:absolute;left:64.80px;top:236.57px" class="cls_005"><span class="cls_005">•</span><span class="cls_011"> sve vrijednosti u tabeli imaju "atomski" karakter tj. ne mogu se</span></div>
+<div style="position:absolute;left:79.22px;top:258.19px" class="cls_006"><span class="cls_006">razbiti na komponente bez gubljenja informacija.</span></div>
+<div style="position:absolute;left:43.20px;top:285.07px" class="cls_022"><span class="cls_022">•</span><span class="cls_023"> Dobre strane:</span></div>
+<div style="position:absolute;left:64.80px;top:316.27px" class="cls_005"><span class="cls_005">•</span><span class="cls_006"> jednostavnost i laka shvatljivost (pristupačan je za krajnjeg</span></div>
+<div style="position:absolute;left:79.22px;top:337.85px" class="cls_011"><span class="cls_011">korisnika);</span></div>
+<div style="position:absolute;left:64.80px;top:364.30px" class="cls_005"><span class="cls_005">•</span><span class="cls_006"> ima dobru teorijsku osnovu;</span></div>
+<div style="position:absolute;left:64.80px;top:390.70px" class="cls_005"><span class="cls_005">•</span><span class="cls_006"> široka primjena usled razvijenih komercijalnih sistema za</span></div>
+<div style="position:absolute;left:79.22px;top:412.30px" class="cls_006"><span class="cls_006">upravljanje bazom podataka.</span></div>
+<div style="position:absolute;left:43.20px;top:439.18px" class="cls_025"><span class="cls_025">•</span><span class="cls_024"> Zbog ovih karakteristika, relacioni model podataka je</span></div>
+<div style="position:absolute;left:57.60px;top:465.12px" class="cls_023"><span class="cls_023">najčešće korišćen.</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-360px;top:2750px;width:720px;height:540px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="c10ef670-94f7-11ea-8b25-0cc47a792c0a_id_c10ef670-94f7-11ea-8b25-0cc47a792c0a_files/background06.jpg" width=720 height=540></div>
+<div style="position:absolute;left:43.20px;top:55.94px" class="cls_004"><span class="cls_004">Relacioni model podataka</span></div>
+<div style="position:absolute;left:43.20px;top:129.02px" class="cls_022"><span class="cls_022">•</span><span class="cls_023"> Postupak stvaranja relacionog modela:</span></div>
+<div style="position:absolute;left:64.80px;top:162.65px" class="cls_005"><span class="cls_005">•</span><span class="cls_006"> prevođenje dijagrama zavisnosti entiteta u inicijalni relacioni</span></div>
+<div style="position:absolute;left:79.22px;top:186.65px" class="cls_006"><span class="cls_006">dijagram;</span></div>
+<div style="position:absolute;left:64.80px;top:215.45px" class="cls_005"><span class="cls_005">•</span><span class="cls_006"> pridruživanje ili alociranje svakog identifikovanog atributa</span></div>
+<div style="position:absolute;left:79.22px;top:239.45px" class="cls_011"><span class="cls_011">odgovarajućoj relaciji;</span></div>
+<div style="position:absolute;left:64.80px;top:268.27px" class="cls_005"><span class="cls_005">•</span><span class="cls_006"> pregled i provjera relacionog dijagrama;</span></div>
+<div style="position:absolute;left:64.80px;top:297.07px" class="cls_005"><span class="cls_005">•</span><span class="cls_006"> kvantifikovanje modela podataka;</span></div>
+<div style="position:absolute;left:64.80px;top:325.87px" class="cls_005"><span class="cls_005">•</span><span class="cls_006"> kompletiranje definicije relacije veza i atributa.</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-360px;top:3300px;width:720px;height:540px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="c10ef670-94f7-11ea-8b25-0cc47a792c0a_id_c10ef670-94f7-11ea-8b25-0cc47a792c0a_files/background07.jpg" width=720 height=540></div>
+<div style="position:absolute;left:43.20px;top:55.94px" class="cls_004"><span class="cls_004">Relacioni model podataka - Primjer</span></div>
+<div style="position:absolute;left:43.20px;top:129.02px" class="cls_022"><span class="cls_022">•</span><span class="cls_023"> Pojednostavljena aplikacija upita o statusu porudžbina</span></div>
+<div style="position:absolute;left:43.20px;top:163.61px" class="cls_022"><span class="cls_022">•</span><span class="cls_023"> Polaz: pretpostavljena ekranska slika</span></div>
+<div style="position:absolute;left:43.20px;top:301.87px" class="cls_022"><span class="cls_022">•</span><span class="cls_023"> Identifikovani tipovi entiteta: KUPAC, PROIZVOD,</span></div>
+<div style="position:absolute;left:57.60px;top:330.67px" class="cls_023"><span class="cls_023">PORUDŽBINA (o njima su potrebni podaci).</span></div>
+<div style="position:absolute;left:43.20px;top:365.26px" class="cls_022"><span class="cls_022">•</span><span class="cls_026"> Dijagram zavisnosti entiteta:</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-360px;top:3850px;width:720px;height:540px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="c10ef670-94f7-11ea-8b25-0cc47a792c0a_id_c10ef670-94f7-11ea-8b25-0cc47a792c0a_files/background08.jpg" width=720 height=540></div>
+<div style="position:absolute;left:43.20px;top:55.94px" class="cls_004"><span class="cls_004">Relacioni model podataka - Primjer</span></div>
+<div style="position:absolute;left:43.20px;top:126.38px" class="cls_016"><span class="cls_016">•</span><span class="cls_017"> U optimalnoj formi će se javiti relacije:</span></div>
+<div style="position:absolute;left:64.80px;top:155.21px" class="cls_019"><span class="cls_019">•</span><span class="cls_020"> PORUDŽBINA (Broj porudžbine, datum, šifra kupca);</span></div>
+<div style="position:absolute;left:64.80px;top:180.29px" class="cls_019"><span class="cls_019">•</span><span class="cls_020"> PROIZVOD (Broj proizvoda, naziv proizvoda, jedinična cijena</span></div>
+<div style="position:absolute;left:79.22px;top:200.81px" class="cls_020"><span class="cls_020">proizvoda);</span></div>
+<div style="position:absolute;left:64.80px;top:225.89px" class="cls_019"><span class="cls_019">•</span><span class="cls_020"> NARUČENI PROIZVOD (Broj porudžbine, Broj proizvoda, naručena</span></div>
+<div style="position:absolute;left:79.22px;top:246.41px" class="cls_021"><span class="cls_021">količina, isporučena količina);</span></div>
+<div style="position:absolute;left:64.80px;top:271.51px" class="cls_019"><span class="cls_019">•</span><span class="cls_020"> KUPAC (Šifra kupca, ime kupca).</span></div>
+<div style="position:absolute;left:43.20px;top:296.83px" class="cls_016"><span class="cls_016">•</span><span class="cls_017"> U grafičkom prikazu, relacije se, kao i tipovi entiteta,</span></div>
+<div style="position:absolute;left:57.60px;top:320.59px" class="cls_017"><span class="cls_017">predstavljaju pravougaonicima u koje se upisuje ime i primarni</span></div>
+<div style="position:absolute;left:57.60px;top:344.36px" class="cls_018"><span class="cls_018">ključ. Veze se prikazuju na sledeći način:</span></div>
+<div style="position:absolute;left:64.80px;top:373.18px" class="cls_019"><span class="cls_019">•</span><span class="cls_020"> veze tipa 1:1 i 1:c se predstavljaju linijama koje spajaju</span></div>
+<div style="position:absolute;left:79.22px;top:393.70px" class="cls_020"><span class="cls_020">pravougaonike;</span></div>
+<div style="position:absolute;left:64.80px;top:418.78px" class="cls_019"><span class="cls_019">•</span><span class="cls_020"> veza tipa 1:m se predstavlja linijom sa strelicom u onu stranu gde se</span></div>
+<div style="position:absolute;left:79.22px;top:439.30px" class="cls_020"><span class="cls_020">nalazi "m" tačka veze;</span></div>
+<div style="position:absolute;left:64.80px;top:464.40px" class="cls_019"><span class="cls_019">•</span><span class="cls_020"> veza tipa m:m između relacija ne postoji.</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-360px;top:4400px;width:720px;height:540px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="c10ef670-94f7-11ea-8b25-0cc47a792c0a_id_c10ef670-94f7-11ea-8b25-0cc47a792c0a_files/background09.jpg" width=720 height=540></div>
+<div style="position:absolute;left:43.20px;top:55.94px" class="cls_004"><span class="cls_004">Relacioni model podataka - Primjer</span></div>
+<div style="position:absolute;left:43.20px;top:129.02px" class="cls_022"><span class="cls_022">•</span><span class="cls_023"> Relacioni dijagram za primjer:</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-360px;top:4950px;width:720px;height:540px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="c10ef670-94f7-11ea-8b25-0cc47a792c0a_id_c10ef670-94f7-11ea-8b25-0cc47a792c0a_files/background10.jpg" width=720 height=540></div>
+<div style="position:absolute;left:43.20px;top:55.94px" class="cls_004"><span class="cls_004">Relacioni model podataka</span></div>
+<div style="position:absolute;left:43.20px;top:127.70px" class="cls_010"><span class="cls_010">•</span></div>
+<div style="position:absolute;left:57.60px;top:125.06px" class="cls_009"><span class="cls_009">Pravila za formiranje inicijalnog relacionog dijagrama na bazi dijagrama zavisnosti</span></div>
+<div style="position:absolute;left:57.60px;top:141.39px" class="cls_008"><span class="cls_008">entiteta:</span></div>
+<div style="position:absolute;left:64.80px;top:161.81px" class="cls_027"><span class="cls_027">•</span><span class="cls_028">  svaki tip entiteta se predstavlja relacijom čije ime je isto kao i ime entiteta; identifikator entiteta</span></div>
+<div style="position:absolute;left:79.22px;top:175.25px" class="cls_028"><span class="cls_028">postaje primarni ključ relacije;</span></div>
+<div style="position:absolute;left:64.80px;top:192.05px" class="cls_027"><span class="cls_027">•</span><span class="cls_028">  odnosi 1:1, 1:c i 1:m se predstavljaju vezama koje se kvantifikuju kao u dijagramu zavisnosti</span></div>
+<div style="position:absolute;left:79.22px;top:205.49px" class="cls_028"><span class="cls_028">entiteta;</span></div>
+<div style="position:absolute;left:64.80px;top:222.29px" class="cls_027"><span class="cls_027">•</span><span class="cls_028">  svaki odnos m:m iz dijagrama zavisnosti entiteta se predstavlja novom relacijom čiji je primarni</span></div>
+<div style="position:absolute;left:79.22px;top:235.71px" class="cls_029"><span class="cls_029">ključ sastavljen od identifikatora onih entiteta koji učestvuju u odnosima. Veza između nove</span></div>
+<div style="position:absolute;left:79.22px;top:249.19px" class="cls_028"><span class="cls_028">relacije i svake od relacija iz kojih je izvedena je tipa 1:m.</span></div>
+<div style="position:absolute;left:43.20px;top:268.63px" class="cls_010"><span class="cls_010">•</span></div>
+<div style="position:absolute;left:57.60px;top:265.99px" class="cls_009"><span class="cls_009">Ovako dobijeni dijagram se zove inicijalni relacioni dijagram. On ne sadrži druge</span></div>
+<div style="position:absolute;left:57.60px;top:282.31px" class="cls_009"><span class="cls_009">atribute sem primarnih ključeva.</span></div>
+<div style="position:absolute;left:43.20px;top:305.35px" class="cls_010"><span class="cls_010">•</span></div>
+<div style="position:absolute;left:57.60px;top:302.71px" class="cls_009"><span class="cls_009">Pridruživanje atributa odgovarajućim relacijama iz inicijalnog relacionog dijagrama</span></div>
+<div style="position:absolute;left:57.60px;top:319.03px" class="cls_009"><span class="cls_009">(normalizacija) - kada se atributi definišu, pridružuju se odgovarajućim relacijama.</span></div>
+<div style="position:absolute;left:57.60px;top:335.35px" class="cls_009"><span class="cls_009">To pridruživanje (alociranje) je uspešno izvedeno ako svaki posmatrani atribut</span></div>
+<div style="position:absolute;left:57.60px;top:351.70px" class="cls_009"><span class="cls_009">zavisi od:</span></div>
+<div style="position:absolute;left:64.80px;top:372.10px" class="cls_027"><span class="cls_027">•</span><span class="cls_028">  ključa,</span></div>
+<div style="position:absolute;left:64.80px;top:388.90px" class="cls_027"><span class="cls_027">•</span><span class="cls_028">  cijelog ključa,</span></div>
+<div style="position:absolute;left:64.80px;top:405.70px" class="cls_027"><span class="cls_027">•</span><span class="cls_028">  ničeg osim od ključa izabrane relacije.</span></div>
+<div style="position:absolute;left:43.20px;top:425.14px" class="cls_010"><span class="cls_010">•</span></div>
+<div style="position:absolute;left:57.60px;top:422.50px" class="cls_009"><span class="cls_009">To znači da su relacije normalizovane u odnosu na atribute. Ako to za neki atribut</span></div>
+<div style="position:absolute;left:57.60px;top:438.79px" class="cls_008"><span class="cls_008">nije slučaj, treba formirati novu relaciju pa je unijeti u dijagram. Normalizovana</span></div>
+<div style="position:absolute;left:57.60px;top:455.16px" class="cls_009"><span class="cls_009">odn. normalna forma je optimalna forma atributa.</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-360px;top:5500px;width:720px;height:540px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="c10ef670-94f7-11ea-8b25-0cc47a792c0a_id_c10ef670-94f7-11ea-8b25-0cc47a792c0a_files/background11.jpg" width=720 height=540></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-360px;top:5500px;width:720px;height:540px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="c10ef670-94f7-11ea-8b25-0cc47a792c0a_id_c10ef670-94f7-11ea-8b25-0cc47a792c0a_files/background12.jpg" width=720 height=540></div>
+<div style="position:absolute;left:43.20px;top:58.46px" class="cls_030"><span class="cls_030">Relacioni model podataka - Normalizacija</span></div>
+<div style="position:absolute;left:43.20px;top:127.94px" class="cls_031"><span class="cls_031">•</span></div>
+<div style="position:absolute;left:57.60px;top:125.66px" class="cls_032"><span class="cls_032">Normalizacija je proces koji pretvara inicijalni set relacija u optimalni skup koji se zove i</span></div>
+<div style="position:absolute;left:57.60px;top:140.07px" class="cls_033"><span class="cls_033">relacioni model.</span></div>
+<div style="position:absolute;left:43.20px;top:160.37px" class="cls_031"><span class="cls_031">•</span></div>
+<div style="position:absolute;left:57.60px;top:158.09px" class="cls_032"><span class="cls_032">Cilj normalizacije je da se eliminiše redundancija (radi pojednostavljenja ažuriranja) i da se</span></div>
+<div style="position:absolute;left:57.60px;top:172.49px" class="cls_032"><span class="cls_032">optimizuje mogućnost proširivanja.</span></div>
+<div style="position:absolute;left:43.20px;top:192.77px" class="cls_031"><span class="cls_031">•</span></div>
+<div style="position:absolute;left:57.60px;top:190.49px" class="cls_032"><span class="cls_032">Sam proces se sastoji od transformisanja inicijalne relacije u više drugih relacija, pri čemu</span></div>
+<div style="position:absolute;left:57.60px;top:204.89px" class="cls_032"><span class="cls_032">svaki atribut u svakoj relaciji zavisi samo od ključa.</span></div>
+<div style="position:absolute;left:43.20px;top:225.17px" class="cls_031"><span class="cls_031">•</span></div>
+<div style="position:absolute;left:57.60px;top:222.89px" class="cls_032"><span class="cls_032">Standardni koraci u procesu normalizacije su:</span></div>
+<div style="position:absolute;left:64.80px;top:240.87px" class="cls_034"><span class="cls_034">1. Prva normalna forma (1NF): Ukloniti atribute koji ne zavise od ključa, tj. mogu imati višestruke</span></div>
+<div style="position:absolute;left:64.80px;top:253.39px" class="cls_035"><span class="cls_035">vrijednosti za datu vrijednost ključa i formirati novu relaciju čiji ključ će biti sastavljen (konkatiniran) od</span></div>
+<div style="position:absolute;left:64.80px;top:265.87px" class="cls_035"><span class="cls_035">jednog ili više njenih atributa sa ključem originalne relacije</span></div>
+<div style="position:absolute;left:64.80px;top:281.47px" class="cls_036"><span class="cls_036">•</span><span class="cls_035">  Prva normalna forma ukida ponavljanje podataka u nenormalizovanim datotekama odn. segmentima</span></div>
+<div style="position:absolute;left:79.22px;top:293.95px" class="cls_035"><span class="cls_035">baze, izdvajanjem podataka koji se ponavljaju u posebne datoteke/tabele koje ostaju u vezi sa</span></div>
+<div style="position:absolute;left:79.22px;top:306.43px" class="cls_035"><span class="cls_035">osnovnom datotekom preko veznog podatka. Takođe se slogovi varijabilne dužine prevode u slogove</span></div>
+<div style="position:absolute;left:79.22px;top:318.91px" class="cls_035"><span class="cls_035">fiksne dužine.</span></div>
+<div style="position:absolute;left:64.80px;top:334.51px" class="cls_035"><span class="cls_035">2. Druga normalna forma (2NF): Ukloniti atribute koji ne zavise od celog ključa i formirati novu relaciju čiji</span></div>
+<div style="position:absolute;left:64.80px;top:347.00px" class="cls_034"><span class="cls_034">ključ će biti minimalni deo ključa originalne relacije i od koga će zavisiti svaki od uklonjenih atributa</span></div>
+<div style="position:absolute;left:64.80px;top:362.62px" class="cls_036"><span class="cls_036">•</span><span class="cls_035">  Druga normalna forma zadovoljava uslove 1NF i uvodi punu funkcionalnu zavisnost svih neključnih</span></div>
+<div style="position:absolute;left:79.22px;top:375.10px" class="cls_035"><span class="cls_035">podataka od primarnog ključa.</span></div>
+<div style="position:absolute;left:64.80px;top:390.70px" class="cls_035"><span class="cls_035">3. Treća normalna forma (3NF): Ukloniti atribute koji zavise od drugih atributa u relaciji izuzev od ključa i</span></div>
+<div style="position:absolute;left:64.80px;top:403.18px" class="cls_035"><span class="cls_035">formirati novu relaciju čiji ključ će biti onaj atribut u originalnoj relaciji od koga zavise svi uklonjeni atributi</span></div>
+<div style="position:absolute;left:64.80px;top:418.78px" class="cls_036"><span class="cls_036">•</span><span class="cls_035">  Treća normalna forma zadovoljava uslove 2NF i ukida bilo kakvu međuzavisnost neključnih podataka.</span></div>
+<div style="position:absolute;left:64.80px;top:434.38px" class="cls_035"><span class="cls_035">4. i 5. normalna forma (rjeđe se koriste, i to u slučajevima kada 3NF ne može da završi normalizaciju; 4NF</span></div>
+<div style="position:absolute;left:64.80px;top:446.86px" class="cls_034"><span class="cls_034">je značajna za situacije gdje ključni podatak ima višeznačne zavisnosti, koje se mogu do kraja eliminisati</span></div>
+<div style="position:absolute;left:64.80px;top:459.36px" class="cls_035"><span class="cls_035">tek svođenjem na 5NF).</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-360px;top:6050px;width:720px;height:540px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="c10ef670-94f7-11ea-8b25-0cc47a792c0a_id_c10ef670-94f7-11ea-8b25-0cc47a792c0a_files/background13.jpg" width=720 height=540></div>
+<div style="position:absolute;left:43.20px;top:55.94px" class="cls_004"><span class="cls_004">Normalizacija - primjer</span></div>
+<div style="position:absolute;left:43.20px;top:129.02px" class="cls_022"><span class="cls_022">•</span><span class="cls_023"> Sirovi (nenormalizovani) podaci:</span></div>
+<div style="position:absolute;left:43.20px;top:301.87px" class="cls_022"><span class="cls_022">•</span><span class="cls_023"> 1. normalna forma (1NF):</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-360px;top:6600px;width:720px;height:540px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="c10ef670-94f7-11ea-8b25-0cc47a792c0a_id_c10ef670-94f7-11ea-8b25-0cc47a792c0a_files/background14.jpg" width=720 height=540></div>
+<div style="position:absolute;left:43.20px;top:55.94px" class="cls_004"><span class="cls_004">Normalizacija - primjer</span></div>
+<div style="position:absolute;left:43.20px;top:129.02px" class="cls_022"><span class="cls_022">•</span><span class="cls_023"> 2. normalna forma (2NF):</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-360px;top:7150px;width:720px;height:540px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="c10ef670-94f7-11ea-8b25-0cc47a792c0a_id_c10ef670-94f7-11ea-8b25-0cc47a792c0a_files/background15.jpg" width=720 height=540></div>
+<div style="position:absolute;left:43.20px;top:55.94px" class="cls_004"><span class="cls_004">Normalizacija - primjer</span></div>
+<div style="position:absolute;left:43.20px;top:129.02px" class="cls_022"><span class="cls_022">•</span><span class="cls_023"> 3. normalna forma (2NF):</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-360px;top:7700px;width:720px;height:540px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="c10ef670-94f7-11ea-8b25-0cc47a792c0a_id_c10ef670-94f7-11ea-8b25-0cc47a792c0a_files/background16.jpg" width=720 height=540></div>
+<div style="position:absolute;left:43.20px;top:58.46px" class="cls_030"><span class="cls_030">Pregled i provjera relacionog dijagrama</span></div>
+<div style="position:absolute;left:43.20px;top:123.74px" class="cls_016"><span class="cls_016">•</span><span class="cls_017"> Kada su svi atributi iz poslovnog sistema identifikovani i</span></div>
+<div style="position:absolute;left:57.60px;top:144.89px" class="cls_017"><span class="cls_017">pridodati odgovarajućim relacijama, treba još jednom izvršiti</span></div>
+<div style="position:absolute;left:57.60px;top:166.01px" class="cls_017"><span class="cls_017">provjeru modela.</span></div>
+<div style="position:absolute;left:43.20px;top:192.41px" class="cls_016"><span class="cls_016">•</span><span class="cls_017"> Pri tome može da se desi da normalizovane relacije sadrže</span></div>
+<div style="position:absolute;left:57.60px;top:213.53px" class="cls_017"><span class="cls_017">atribute sa nultim vrijednostima. To se dešava onda kada</span></div>
+<div style="position:absolute;left:57.60px;top:234.65px" class="cls_018"><span class="cls_018">atribut trenutno nema vrijednost ili nema vrijednost za određeni</span></div>
+<div style="position:absolute;left:57.60px;top:255.79px" class="cls_017"><span class="cls_017">period. Tada treba formirati podtip entiteta, pa se formira nova</span></div>
+<div style="position:absolute;left:57.60px;top:276.91px" class="cls_017"><span class="cls_017">relacija ili se dvije relacije spajaju u jednu, gdje će neki atribut</span></div>
+<div style="position:absolute;left:57.60px;top:298.03px" class="cls_017"><span class="cls_017">imati nultu vrijednost.</span></div>
+<div style="position:absolute;left:43.20px;top:324.43px" class="cls_016"><span class="cls_016">•</span><span class="cls_017"> Takođe se mogu pojaviti relacije koje osim primarnog ključa ne</span></div>
+<div style="position:absolute;left:57.60px;top:345.56px" class="cls_018"><span class="cls_018">sadrže druge atribute. Takve relacije treba ukloniti iz modela,</span></div>
+<div style="position:absolute;left:57.60px;top:366.70px" class="cls_017"><span class="cls_017">ali pri tome treba voditi računa da li takve relacije predstavljaju</span></div>
+<div style="position:absolute;left:57.60px;top:387.82px" class="cls_017"><span class="cls_017">odnose tipa m:m. Takve relacije ne treba uklanjati i ako sadrže</span></div>
+<div style="position:absolute;left:57.60px;top:408.94px" class="cls_017"><span class="cls_017">samo komponente primarnog ključa, jer nisu redundantne.</span></div>
+<div style="position:absolute;left:43.20px;top:435.34px" class="cls_016"><span class="cls_016">•</span><span class="cls_017"> Provjeru modela treba izvršiti u smislu otkrivanja i uklanjanja</span></div>
+<div style="position:absolute;left:57.60px;top:456.48px" class="cls_017"><span class="cls_017">redundantnih veza.</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-360px;top:8250px;width:720px;height:540px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="c10ef670-94f7-11ea-8b25-0cc47a792c0a_id_c10ef670-94f7-11ea-8b25-0cc47a792c0a_files/background17.jpg" width=720 height=540></div>
+<div style="position:absolute;left:43.20px;top:55.94px" class="cls_004"><span class="cls_004">Relacioni model podataka</span></div>
+<div style="position:absolute;left:43.20px;top:126.62px" class="cls_005"><span class="cls_005">•</span><span class="cls_006"> Osim samog relacionog dijagrama koji predstavlja jednu komponentu</span></div>
+<div style="position:absolute;left:57.60px;top:148.25px" class="cls_006"><span class="cls_006">modela podataka, treba formirati i odgovarajuću dokumentaciju koja</span></div>
+<div style="position:absolute;left:57.60px;top:169.85px" class="cls_006"><span class="cls_006">sadrži tačnu definiciju relacija, veza i atributa.</span></div>
+<div style="position:absolute;left:43.20px;top:196.25px" class="cls_005"><span class="cls_005">•</span><span class="cls_006"> Redoslijed odvijanja aktivnosti pri formiranju modela podataka:</span></div>
+<div style="position:absolute;left:64.80px;top:222.41px" class="cls_010"><span class="cls_010">•</span><span class="cls_009"> Formirati relacije za svaki tip entiteta i za svaki odnos m:m i to dokumentovati</span></div>
+<div style="position:absolute;left:79.22px;top:240.77px" class="cls_008"><span class="cls_008">listom entitet / relacija;</span></div>
+<div style="position:absolute;left:64.80px;top:263.23px" class="cls_010"><span class="cls_010">•</span><span class="cls_009"> Dodeliti atribute odgovarajućim relacijama;</span></div>
+<div style="position:absolute;left:64.80px;top:285.67px" class="cls_010"><span class="cls_010">•</span><span class="cls_009"> Identifikovati primarne, alternativne i strane ključeve za svaku relaciju;</span></div>
+<div style="position:absolute;left:64.80px;top:308.11px" class="cls_010"><span class="cls_010">•</span><span class="cls_009"> Normalizovati svaku relaciju;</span></div>
+<div style="position:absolute;left:64.80px;top:330.55px" class="cls_010"><span class="cls_010">•</span><span class="cls_009"> Provjeriti atribute sa nultim vrijednostima i, ako je potrebno, kreirati nove</span></div>
+<div style="position:absolute;left:79.22px;top:348.92px" class="cls_008"><span class="cls_008">relacije;</span></div>
+<div style="position:absolute;left:64.80px;top:371.38px" class="cls_010"><span class="cls_010">•</span><span class="cls_009"> Napraviti listu atributa, odn. unijeti atribute u odgovarajuće obrasce;</span></div>
+<div style="position:absolute;left:64.80px;top:393.82px" class="cls_010"><span class="cls_010">•</span><span class="cls_009"> Nacrtati relacioni dijagram;</span></div>
+<div style="position:absolute;left:64.80px;top:416.26px" class="cls_010"><span class="cls_010">•</span><span class="cls_009"> Ukloniti redundantne veze;</span></div>
+<div style="position:absolute;left:64.80px;top:438.70px" class="cls_010"><span class="cls_010">•</span><span class="cls_009"> Dokumentovati veze, tj. unijeti ih u odgovarajuće obrasce;</span></div>
+<div style="position:absolute;left:64.80px;top:461.16px" class="cls_010"><span class="cls_010">•</span><span class="cls_009"> Provjeriti i obezbediti međusobnu konzistentnost relacionog dijagrama,</span></div>
+<div style="position:absolute;left:79.22px;top:479.52px" class="cls_009"><span class="cls_009">definicija veza i strukture ključa.</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-360px;top:8800px;width:720px;height:540px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="c10ef670-94f7-11ea-8b25-0cc47a792c0a_id_c10ef670-94f7-11ea-8b25-0cc47a792c0a_files/background18.jpg" width=720 height=540></div>
+<div style="position:absolute;left:43.20px;top:55.94px" class="cls_004"><span class="cls_004">Relacioni model podataka</span></div>
+<div style="position:absolute;left:43.20px;top:126.62px" class="cls_005"><span class="cls_005">•</span><span class="cls_006"> Osim samog relacionog dijagrama koji predstavlja jednu komponentu</span></div>
+<div style="position:absolute;left:57.60px;top:148.25px" class="cls_006"><span class="cls_006">modela podataka, treba formirati i odgovarajuću dokumentaciju koja</span></div>
+<div style="position:absolute;left:57.60px;top:169.85px" class="cls_006"><span class="cls_006">sadrži tačnu definiciju relacija, veza i atributa.</span></div>
+<div style="position:absolute;left:43.20px;top:196.25px" class="cls_005"><span class="cls_005">•</span><span class="cls_006"> Redoslijed odvijanja aktivnosti pri formiranju modela podataka:</span></div>
+<div style="position:absolute;left:64.80px;top:222.41px" class="cls_010"><span class="cls_010">•</span><span class="cls_009"> Formirati relacije za svaki tip entiteta i za svaki odnos m:m i to dokumentovati</span></div>
+<div style="position:absolute;left:79.22px;top:240.77px" class="cls_008"><span class="cls_008">listom entitet / relacija;</span></div>
+<div style="position:absolute;left:64.80px;top:263.23px" class="cls_010"><span class="cls_010">•</span><span class="cls_009"> Dodeliti atribute odgovarajućim relacijama;</span></div>
+<div style="position:absolute;left:64.80px;top:285.67px" class="cls_010"><span class="cls_010">•</span><span class="cls_009"> Identifikovati primarne, alternativne i strane ključeve za svaku relaciju;</span></div>
+<div style="position:absolute;left:64.80px;top:308.11px" class="cls_010"><span class="cls_010">•</span><span class="cls_009"> Normalizovati svaku relaciju;</span></div>
+<div style="position:absolute;left:64.80px;top:330.55px" class="cls_010"><span class="cls_010">•</span><span class="cls_009"> Provjeriti atribute sa nultim vrijednostima i, ako je potrebno, kreirati nove</span></div>
+<div style="position:absolute;left:79.22px;top:348.92px" class="cls_008"><span class="cls_008">relacije;</span></div>
+<div style="position:absolute;left:64.80px;top:371.38px" class="cls_010"><span class="cls_010">•</span><span class="cls_009"> Napraviti listu atributa, odn. unijeti atribute u odgovarajuće obrasce;</span></div>
+<div style="position:absolute;left:64.80px;top:393.82px" class="cls_010"><span class="cls_010">•</span><span class="cls_009"> Nacrtati relacioni dijagram;</span></div>
+<div style="position:absolute;left:64.80px;top:416.26px" class="cls_010"><span class="cls_010">•</span><span class="cls_009"> Ukloniti redundantne veze;</span></div>
+<div style="position:absolute;left:64.80px;top:438.70px" class="cls_010"><span class="cls_010">•</span><span class="cls_009"> Dokumentovati veze, tj. unijeti ih u odgovarajuće obrasce;</span></div>
+<div style="position:absolute;left:64.80px;top:461.16px" class="cls_010"><span class="cls_010">•</span><span class="cls_009"> Provjeriti i obezbediti međusobnu konzistentnost relacionog dijagrama,</span></div>
+<div style="position:absolute;left:79.22px;top:479.52px" class="cls_009"><span class="cls_009">definicija veza i strukture ključa.</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-360px;top:9350px;width:720px;height:540px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="c10ef670-94f7-11ea-8b25-0cc47a792c0a_id_c10ef670-94f7-11ea-8b25-0cc47a792c0a_files/background19.jpg" width=720 height=540></div>
+<div style="position:absolute;left:43.20px;top:55.94px" class="cls_004"><span class="cls_004">Relacioni model podataka</span></div>
+<div style="position:absolute;left:43.20px;top:114.67px" class="cls_016"><span class="cls_016">•</span><span class="cls_017"> Osnovni koncepti relacionog modela su struktura, ograničenja</span></div>
+<div style="position:absolute;left:57.60px;top:135.79px" class="cls_017"><span class="cls_017">(pravila integriteta) i operatori</span></div>
+<div style="position:absolute;left:43.20px;top:162.19px" class="cls_016"><span class="cls_016">•</span><span class="cls_017"> Model koji sadrži sve koncepte date u ovoj tabeli je </span><span class="cls_037">potpuni</span></div>
+<div style="position:absolute;left:57.60px;top:183.31px" class="cls_017"><span class="cls_017">relacioni model.</span></div>
+<div style="position:absolute;left:43.20px;top:209.72px" class="cls_038"><span class="cls_038">•</span><span class="cls_018"> Relacioni model koji podržava samo koncepte strukture i</span></div>
+<div style="position:absolute;left:57.60px;top:230.86px" class="cls_017"><span class="cls_017">pravila integriteta a nema skup operatora naziva se tabelarni</span></div>
+<div style="position:absolute;left:57.60px;top:251.98px" class="cls_017"><span class="cls_017">odn. </span><span class="cls_037">semirelacioni</span><span class="cls_017"> model podataka.</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-360px;top:9900px;width:720px;height:540px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="c10ef670-94f7-11ea-8b25-0cc47a792c0a_id_c10ef670-94f7-11ea-8b25-0cc47a792c0a_files/background20.jpg" width=720 height=540></div>
+<div style="position:absolute;left:43.20px;top:55.94px" class="cls_004"><span class="cls_004">Prošireni relacioni model podataka</span></div>
+<div style="position:absolute;left:43.20px;top:126.14px" class="cls_022"><span class="cls_022">•</span><span class="cls_023"> U periodu 1970. - 1979. razvijen je čitav niz modela</span></div>
+<div style="position:absolute;left:57.60px;top:152.09px" class="cls_023"><span class="cls_023">podataka, sa sve složenijim i semantički sve bogatijim</span></div>
+<div style="position:absolute;left:57.60px;top:178.01px" class="cls_023"><span class="cls_023">konceptima, razvijajući se u pravcu 2. generacije modela</span></div>
+<div style="position:absolute;left:57.60px;top:203.93px" class="cls_023"><span class="cls_023">podataka.</span></div>
+<div style="position:absolute;left:43.20px;top:235.61px" class="cls_025"><span class="cls_025">•</span><span class="cls_024"> Dr E.F. Codd je 1979. god. neke od novih koncepata</span></div>
+<div style="position:absolute;left:57.60px;top:261.55px" class="cls_023"><span class="cls_023">ugradio u svoj prošireni relacioni model podataka. Novi</span></div>
+<div style="position:absolute;left:57.60px;top:287.47px" class="cls_023"><span class="cls_023">elementi u proširenom relacionom modelu su:</span></div>
+<div style="position:absolute;left:64.80px;top:318.67px" class="cls_005"><span class="cls_005">•</span><span class="cls_006"> Uključivanje nula vrijednosti i definisanje novog skupa operatora;</span></div>
+<div style="position:absolute;left:64.80px;top:345.08px" class="cls_013"><span class="cls_013">•</span><span class="cls_011"> Uvođenje ključeva - surogata da bi se napravila razlika između</span></div>
+<div style="position:absolute;left:79.22px;top:366.70px" class="cls_006"><span class="cls_006">entiteta i njihovih sintaksnih identifikatora (imena); svi primarni i</span></div>
+<div style="position:absolute;left:79.22px;top:388.30px" class="cls_006"><span class="cls_006">spoljni ključevi su surogati;</span></div>
+<div style="position:absolute;left:64.80px;top:414.70px" class="cls_005"><span class="cls_005">•</span><span class="cls_006"> Uvođenje različitih vrsta domena i relacija sa ciljem da se obuhvate</span></div>
+<div style="position:absolute;left:79.22px;top:436.27px" class="cls_011"><span class="cls_011">novi semantički koncepti koji su se u međuvremenu pojavili u</span></div>
+<div style="position:absolute;left:79.22px;top:457.92px" class="cls_006"><span class="cls_006">drugim modelima; npr. E - domen (E - relacija) je domen svih</span></div>
+<div style="position:absolute;left:79.22px;top:479.52px" class="cls_006"><span class="cls_006">mogućih vrednosti surogata - unarna relacija.</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-360px;top:10450px;width:720px;height:540px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="c10ef670-94f7-11ea-8b25-0cc47a792c0a_id_c10ef670-94f7-11ea-8b25-0cc47a792c0a_files/background21.jpg" width=720 height=540></div>
+<div style="position:absolute;left:43.20px;top:55.94px" class="cls_004"><span class="cls_004">Model objekti-veze (ER model)</span></div>
+<div style="position:absolute;left:43.20px;top:126.38px" class="cls_016"><span class="cls_016">•</span><span class="cls_017"> Ovaj model je razvio Piter Čen sa MIT-a pod nazivom ERA</span></div>
+<div style="position:absolute;left:57.60px;top:150.17px" class="cls_017"><span class="cls_017">(Entity - Relationship - Atribute: model objekti - veze - atributi, ili</span></div>
+<div style="position:absolute;left:57.60px;top:173.93px" class="cls_017"><span class="cls_017">ER: model objekti-veze ). ER modeli su:</span></div>
+<div style="position:absolute;left:64.80px;top:202.73px" class="cls_019"><span class="cls_019">•</span><span class="cls_020"> jednostavni;</span></div>
+<div style="position:absolute;left:64.80px;top:227.81px" class="cls_019"><span class="cls_019">•</span><span class="cls_020"> pregledni;</span></div>
+<div style="position:absolute;left:64.80px;top:252.89px" class="cls_039"><span class="cls_039">•</span><span class="cls_021"> laki za primjenu i komuniciranje;</span></div>
+<div style="position:absolute;left:64.80px;top:277.99px" class="cls_019"><span class="cls_019">•</span><span class="cls_020"> bogati semantikom;</span></div>
+<div style="position:absolute;left:64.80px;top:303.07px" class="cls_019"><span class="cls_019">•</span><span class="cls_020"> nezavisni ni od jednog konkretnog SUBP;</span></div>
+<div style="position:absolute;left:64.80px;top:328.15px" class="cls_019"><span class="cls_019">•</span><span class="cls_020"> laki za prevođenje u bilo koji od ranije opisanih modela (hijerarhijski,</span></div>
+<div style="position:absolute;left:79.22px;top:348.68px" class="cls_021"><span class="cls_021">mrežni ili relacioni).</span></div>
+<div style="position:absolute;left:43.20px;top:374.02px" class="cls_016"><span class="cls_016">•</span><span class="cls_017"> Za grafički prikaz modela se koristi ER dijagram. Dijagramom</span></div>
+<div style="position:absolute;left:57.60px;top:397.78px" class="cls_017"><span class="cls_017">se prikazuju objekti (klase objekata), odnosno entiteti, njihovi</span></div>
+<div style="position:absolute;left:57.60px;top:421.54px" class="cls_017"><span class="cls_017">atributi i veze među entitetima. Koriste se sledeći standardni</span></div>
+<div style="position:absolute;left:57.60px;top:445.30px" class="cls_018"><span class="cls_018">simboli (na slici). Simboli se spajaju linijama</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-360px;top:11000px;width:720px;height:540px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="c10ef670-94f7-11ea-8b25-0cc47a792c0a_id_c10ef670-94f7-11ea-8b25-0cc47a792c0a_files/background22.jpg" width=720 height=540></div>
+<div style="position:absolute;left:43.20px;top:55.94px" class="cls_004"><span class="cls_004">Prošireni model objekti-veze</span></div>
+<div style="position:absolute;left:43.20px;top:129.02px" class="cls_022"><span class="cls_022">•</span><span class="cls_023"> Postoji i prošireni model objekti veze, kod koga se</span></div>
+<div style="position:absolute;left:57.60px;top:157.85px" class="cls_023"><span class="cls_023">prikazuju samo binarne veze. To znači da svaki tip veze</span></div>
+<div style="position:absolute;left:57.60px;top:186.65px" class="cls_023"><span class="cls_023">između dva tipa objekata, E1 i E2 definiše dva tipa</span></div>
+<div style="position:absolute;left:57.60px;top:215.45px" class="cls_023"><span class="cls_023">preslikavanja, tj. E1 --> E2 i inverzno, E2 --> E1.</span></div>
+<div style="position:absolute;left:43.20px;top:250.01px" class="cls_025"><span class="cls_025">•</span><span class="cls_024"> Jedna od bitnih karakteristika veza između objekata je</span></div>
+<div style="position:absolute;left:57.60px;top:278.83px" class="cls_023"><span class="cls_023">kardinalnost preslikavanja.</span></div>
+<div style="position:absolute;left:64.80px;top:312.43px" class="cls_005"><span class="cls_005">•</span><span class="cls_006"> Kardinalnost preslikavanja E1 u E2 definiše se parom (DG, GG)</span></div>
+<div style="position:absolute;left:79.22px;top:336.44px" class="cls_011"><span class="cls_011">gde je DG donja granica i predstavlja minimum tj. najmanji broj</span></div>
+<div style="position:absolute;left:79.22px;top:360.46px" class="cls_006"><span class="cls_006">pojavljivanja tipa objekta E2 za jedno pojavljivanje E1, dok je GG</span></div>
+<div style="position:absolute;left:79.22px;top:384.46px" class="cls_006"><span class="cls_006">gornja granica i predstavlja najveći broj pojavljivanja tipa objekta</span></div>
+<div style="position:absolute;left:79.22px;top:408.46px" class="cls_006"><span class="cls_006">E2 za jedno pojavljivanje E1. Donja granica može imati vrijednost</span></div>
+<div style="position:absolute;left:79.22px;top:432.46px" class="cls_006"><span class="cls_006">0, 1 ili neki cijeli broj veći od 1. Gornja granica (GG) može imati</span></div>
+<div style="position:absolute;left:79.22px;top:456.48px" class="cls_006"><span class="cls_006">vrijednost 1, neki cio broj veći od 1 ili nepoznat cio broj veći od 1,</span></div>
+<div style="position:absolute;left:79.22px;top:480.48px" class="cls_006"><span class="cls_006">koji se označava sa M. U jednom preslikavanju mora biti DG &lt; GG.</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-360px;top:11550px;width:720px;height:540px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="c10ef670-94f7-11ea-8b25-0cc47a792c0a_id_c10ef670-94f7-11ea-8b25-0cc47a792c0a_files/background23.jpg" width=720 height=540></div>
+<div style="position:absolute;left:43.20px;top:55.94px" class="cls_004"><span class="cls_004">ER model</span></div>
+<div style="position:absolute;left:43.20px;top:129.02px" class="cls_022"><span class="cls_022">•</span><span class="cls_023"> Primjer: kupovina avionske karte</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-360px;top:12100px;width:720px;height:540px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="c10ef670-94f7-11ea-8b25-0cc47a792c0a_id_c10ef670-94f7-11ea-8b25-0cc47a792c0a_files/background24.jpg" width=720 height=540></div>
+<div style="position:absolute;left:43.20px;top:55.94px" class="cls_004"><span class="cls_004">ER model</span></div>
+<div style="position:absolute;left:27.00px;top:126.38px" class="cls_016"><span class="cls_016">•</span><span class="cls_017"> Pored navedenih koncepata, u ER modelu se uvodi i:</span></div>
+<div style="position:absolute;left:48.62px;top:155.21px" class="cls_019"><span class="cls_019">•</span><span class="cls_020"> vrsta (klasa) slabog entiteta - vrsta entiteta koji je na neki način</span></div>
+<div style="position:absolute;left:63.02px;top:175.73px" class="cls_020"><span class="cls_020">zavisan od drugog entiteta i pojavljivanje tog "slabog" entiteta</span></div>
+<div style="position:absolute;left:63.02px;top:196.25px" class="cls_020"><span class="cls_020">nema neko značenje, tj. ne predstavlja ni jedan objekat od interesa</span></div>
+<div style="position:absolute;left:63.02px;top:216.77px" class="cls_020"><span class="cls_020">u realnom sistemu, već dobija značenje kad se poveže sa nekim</span></div>
+<div style="position:absolute;left:63.02px;top:237.29px" class="cls_021"><span class="cls_021">drugim tzv. nadređenim entitetom (simbol</span></div>
+<div style="position:absolute;left:521.56px;top:237.29px" class="cls_021"><span class="cls_021">)</span></div>
+<div style="position:absolute;left:48.62px;top:287.47px" class="cls_019"><span class="cls_019">•</span><span class="cls_020"> vrsta (klasa) specijalne veze - zavisnost slabog entiteta se opisuje</span></div>
+<div style="position:absolute;left:63.02px;top:307.99px" class="cls_020"><span class="cls_020">preko tipa specijalne veze. Postoji više vrsta specijalne veze:</span></div>
+<div style="position:absolute;left:70.22px;top:332.83px" class="cls_040"><span class="cls_040">•</span><span class="cls_009"> egzistencijalna zavisnost (E) javlja se u onim slučajevima kada</span></div>
+<div style="position:absolute;left:84.62px;top:351.20px" class="cls_008"><span class="cls_008">postojanje entiteta zavisi od nekog drugog entiteta. Npr:</span></div>
+<div style="position:absolute;left:70.22px;top:396.10px" class="cls_040"><span class="cls_040">•</span><span class="cls_009"> identifikaciona zavisnost (ID) se javlja u slučaju kada se klasa entiteta</span></div>
+<div style="position:absolute;left:84.62px;top:414.46px" class="cls_009"><span class="cls_009">ne može identifikovati skupom njegovih atributa, već se mora koristiti</span></div>
+<div style="position:absolute;left:84.62px;top:432.82px" class="cls_009"><span class="cls_009">atribut identifikator nekog drugog entiteta. Npr. entitet GRAD sa</span></div>
+<div style="position:absolute;left:84.62px;top:451.18px" class="cls_008"><span class="cls_008">atributom IME. Da bi ovaj entitet bio pravilno identifikovan, ponekad je</span></div>
+<div style="position:absolute;left:84.62px;top:469.56px" class="cls_009"><span class="cls_009">potrebno da bude vezan za državu.</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-360px;top:12650px;width:720px;height:540px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="c10ef670-94f7-11ea-8b25-0cc47a792c0a_id_c10ef670-94f7-11ea-8b25-0cc47a792c0a_files/background25.jpg" width=720 height=540></div>
+<div style="position:absolute;left:43.20px;top:55.94px" class="cls_004"><span class="cls_004">ER model</span></div>
+<div style="position:absolute;left:43.20px;top:126.14px" class="cls_022"><span class="cls_022">•</span><span class="cls_023"> I egzistencijalna i identifikaciona zavisnost znače da slabi</span></div>
+<div style="position:absolute;left:57.60px;top:152.09px" class="cls_023"><span class="cls_023">entitet ne može da postoji bez nadređenog entiteta, tj.</span></div>
+<div style="position:absolute;left:57.60px;top:178.01px" class="cls_023"><span class="cls_023">entiteta koji ga identifikuje.</span></div>
+<div style="position:absolute;left:43.20px;top:209.69px" class="cls_022"><span class="cls_022">•</span><span class="cls_023"> Pored egzistencijalnih i identifikacionih zavisnosti, uvodi</span></div>
+<div style="position:absolute;left:57.60px;top:235.61px" class="cls_024"><span class="cls_024">se i pojam </span><span class="cls_041">kombinovane veze</span><span class="cls_024">, a to je slučaj kad postoje</span></div>
+<div style="position:absolute;left:57.60px;top:261.55px" class="cls_023"><span class="cls_023">istovremeno obje navedene zavisnosti.</span></div>
+<div style="position:absolute;left:43.20px;top:293.23px" class="cls_022"><span class="cls_022">•</span><span class="cls_023"> Uopšte, uvođenje slabih entiteta predstavlja određenu</span></div>
+<div style="position:absolute;left:57.60px;top:319.15px" class="cls_023"><span class="cls_023">apstrakciju (apstrakcija - kontrolisano uključivanje detalja</span></div>
+<div style="position:absolute;left:57.60px;top:345.08px" class="cls_024"><span class="cls_024">da bi se predstavila opšta svojstva objekata).</span></div>
+<div style="position:absolute;left:43.20px;top:376.78px" class="cls_022"><span class="cls_022">•</span><span class="cls_023"> Pored pomenutih koncepata, u poslednje vreme se uvodi i</span></div>
+<div style="position:absolute;left:57.60px;top:402.70px" class="cls_023"><span class="cls_023">pojam </span><span class="cls_026">mješovita klasa entitet - veza </span><span class="cls_023">i njome se</span></div>
+<div style="position:absolute;left:57.60px;top:428.62px" class="cls_023"><span class="cls_023">predstavlja veza između relacija (veza). To se predstavlja</span></div>
+<div style="position:absolute;left:57.60px;top:454.56px" class="cls_023"><span class="cls_023">simbolom:</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-360px;top:13200px;width:720px;height:540px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="c10ef670-94f7-11ea-8b25-0cc47a792c0a_id_c10ef670-94f7-11ea-8b25-0cc47a792c0a_files/background26.jpg" width=720 height=540></div>
+<div style="position:absolute;left:43.20px;top:55.94px" class="cls_004"><span class="cls_004">ER model - Pimjer</span></div>
+<div style="position:absolute;left:43.20px;top:124.58px" class="cls_019"><span class="cls_019">•</span><span class="cls_020"> Isplata radnika</span></div>
+<div style="position:absolute;left:43.20px;top:307.03px" class="cls_019"><span class="cls_019">•</span><span class="cls_020"> Upisane su DG i GG, tako da je kod veze "radi" DG = 1 i GG = 1, što</span></div>
+<div style="position:absolute;left:57.60px;top:325.27px" class="cls_020"><span class="cls_020">znači da jednom pojavljivanju entiteta RADNIK odgovara najmanje jedno</span></div>
+<div style="position:absolute;left:57.60px;top:343.52px" class="cls_021"><span class="cls_021">i najviše jedno pojavljivanje enteta ODELJENJE, tako da je veza (1,1).</span></div>
+<div style="position:absolute;left:57.60px;top:361.78px" class="cls_020"><span class="cls_020">Jedan radnik radi u jednom odeljenju. Obrnuto, za slučaj ODELJENJE --</span></div>
+<div style="position:absolute;left:57.60px;top:380.02px" class="cls_020"><span class="cls_020">> RADNIK, DG = 0 i GG = M (u jednom odeljenju može najmanje da</span></div>
+<div style="position:absolute;left:57.60px;top:398.26px" class="cls_020"><span class="cls_020">nema radnika (0) ili da najviše radi mnogo radnika (M)).</span></div>
+<div style="position:absolute;left:43.20px;top:421.06px" class="cls_019"><span class="cls_019">•</span><span class="cls_020"> Takođe je dat i slabi entitet ISPLATA. Ovaj entitet sa atributima "Datum" i</span></div>
+<div style="position:absolute;left:57.60px;top:439.30px" class="cls_021"><span class="cls_021">"Iznos" sam nema nekog značenja, ali kada se pojavljivanja entiteta</span></div>
+<div style="position:absolute;left:57.60px;top:457.56px" class="cls_020"><span class="cls_020">ISPLATE daju za svako pojavljivanje entiteta RADNIK, tada dobija</span></div>
+<div style="position:absolute;left:57.60px;top:475.80px" class="cls_020"><span class="cls_020">značenje.</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-360px;top:13750px;width:720px;height:540px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="c10ef670-94f7-11ea-8b25-0cc47a792c0a_id_c10ef670-94f7-11ea-8b25-0cc47a792c0a_files/background27.jpg" width=720 height=540></div>
+<div style="position:absolute;left:43.20px;top:58.46px" class="cls_030"><span class="cls_030">ER model - metodologija modelovanja</span></div>
+<div style="position:absolute;left:43.20px;top:127.22px" class="cls_005"><span class="cls_005">•</span></div>
+<div style="position:absolute;left:57.60px;top:124.22px" class="cls_006"><span class="cls_006">Prva faza - ANALIZA ZAHTJEVA (identifikacija kolona, odnosno</span></div>
+<div style="position:absolute;left:57.60px;top:143.43px" class="cls_011"><span class="cls_011">atributa - karakteristika entiteta). To podrazumijeva jasno i precizno</span></div>
+<div style="position:absolute;left:57.60px;top:162.65px" class="cls_006"><span class="cls_006">definisanje zahtjeva za informacijama. Zahtjevi se lako definišu na</span></div>
+<div style="position:absolute;left:57.60px;top:181.85px" class="cls_006"><span class="cls_006">osnovu dobro urađene analize funkcija realnog sistema.</span></div>
+<div style="position:absolute;left:43.20px;top:208.85px" class="cls_005"><span class="cls_005">•</span></div>
+<div style="position:absolute;left:57.60px;top:205.85px" class="cls_006"><span class="cls_006">Druga faza - NALAŽENJE GLOBALNOG MODELA PODATAKA</span></div>
+<div style="position:absolute;left:57.60px;top:225.05px" class="cls_006"><span class="cls_006">(grupisanje kolona u entitete - definisanje tipova entiteta, veza i</span></div>
+<div style="position:absolute;left:57.60px;top:244.25px" class="cls_011"><span class="cls_011">atributa). Entiteti, veze i njihovi atributi se prikazuju grafički. Dobijeni</span></div>
+<div style="position:absolute;left:57.60px;top:263.47px" class="cls_006"><span class="cls_006">globalni model služi za komunikaciju sa korisnikom. Nakon toga se</span></div>
+<div style="position:absolute;left:57.60px;top:282.67px" class="cls_006"><span class="cls_006">dodaju i drugi semantički detalji i crta se konačni dijagram.</span></div>
+<div style="position:absolute;left:43.20px;top:309.67px" class="cls_005"><span class="cls_005">•</span></div>
+<div style="position:absolute;left:57.60px;top:306.67px" class="cls_006"><span class="cls_006">Treća faza - IDENTIFIKACIJA PRIMARNIH KLJUČEVA (za svaki</span></div>
+<div style="position:absolute;left:57.60px;top:325.87px" class="cls_006"><span class="cls_006">entitet treba ispitati da li neka od kolona ima jedinstvenu vrijednost za</span></div>
+<div style="position:absolute;left:57.60px;top:345.08px" class="cls_011"><span class="cls_011">svaki nastupajući element tog entiteta - ako postoji, proglasiti je za</span></div>
+<div style="position:absolute;left:57.60px;top:364.30px" class="cls_006"><span class="cls_006">primarni ključ).</span></div>
+<div style="position:absolute;left:43.20px;top:391.30px" class="cls_005"><span class="cls_005">•</span></div>
+<div style="position:absolute;left:57.60px;top:388.30px" class="cls_006"><span class="cls_006">Četvrta faza - IDENTIFIKACIJA STRANIH KLJUČEVA (strani ključevi</span></div>
+<div style="position:absolute;left:57.60px;top:407.50px" class="cls_006"><span class="cls_006">su kolone čije vrijednosti povezuju entitet sa primarnim ključem nekog</span></div>
+<div style="position:absolute;left:57.60px;top:426.70px" class="cls_006"><span class="cls_006">drugog entiteta. Identifikacija stranih ključeva se sastoji u poređenju</span></div>
+<div style="position:absolute;left:57.60px;top:445.90px" class="cls_011"><span class="cls_011">primarnih ključeva i kolona kod drugih entiteta).</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-360px;top:14300px;width:720px;height:540px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="c10ef670-94f7-11ea-8b25-0cc47a792c0a_id_c10ef670-94f7-11ea-8b25-0cc47a792c0a_files/background28.jpg" width=720 height=540></div>
+<div style="position:absolute;left:43.20px;top:55.94px" class="cls_004"><span class="cls_004">ER model</span></div>
+<div style="position:absolute;left:43.20px;top:126.62px" class="cls_005"><span class="cls_005">•</span><span class="cls_006"> Analiza veza među entitetima</span></div>
+<div style="position:absolute;left:43.20px;top:153.05px" class="cls_005"><span class="cls_005">•</span><span class="cls_006"> Tipovi veza mogu biti 1:1, 1:c, 1: m i m:m.</span></div>
+<div style="position:absolute;left:43.20px;top:179.45px" class="cls_005"><span class="cls_005">•</span><span class="cls_006"> Ako se uoči veza tipa m:m, treba je eliminisati uvođenjem novog</span></div>
+<div style="position:absolute;left:57.60px;top:201.05px" class="cls_006"><span class="cls_006">entiteta koji je u vezi tipa 1:m sa oba entiteta koji su bili u vezi tipa</span></div>
+<div style="position:absolute;left:57.60px;top:222.65px" class="cls_006"><span class="cls_006">m:m. Taj postupak znači normalizaciju modela podataka, po</span></div>
+<div style="position:absolute;left:57.60px;top:244.25px" class="cls_011"><span class="cls_011">pravilima:</span></div>
+<div style="position:absolute;left:64.80px;top:273.07px" class="cls_010"><span class="cls_010">•</span></div>
+<div style="position:absolute;left:79.22px;top:270.43px" class="cls_009"><span class="cls_009">1. pravilo: samo atomske vrijednosti (nijedna kolona da ne sadrži složene</span></div>
+<div style="position:absolute;left:79.22px;top:288.79px" class="cls_009"><span class="cls_009">vrednosti niti da predstavlja grupu koja se ponavlja; npr. ako u tabeli treba imati</span></div>
+<div style="position:absolute;left:79.22px;top:307.15px" class="cls_009"><span class="cls_009">podatke o svim vrstama isplata radniku ili o brojevima telefona komitenta, bolje</span></div>
+<div style="position:absolute;left:79.22px;top:325.51px" class="cls_009"><span class="cls_009">je napraviti novu tabelu od ključa i po jednog broja telefona / vrste isplate).</span></div>
+<div style="position:absolute;left:64.80px;top:350.60px" class="cls_007"><span class="cls_007">•</span></div>
+<div style="position:absolute;left:79.22px;top:347.96px" class="cls_008"><span class="cls_008">2. pravilo: zavisnost od cijelog primarnog ključa (npr. u tabeli koja sadrži ključ =</span></div>
+<div style="position:absolute;left:79.22px;top:366.34px" class="cls_009"><span class="cls_009">broj indeksa + šifra predmeta i atribut ime studenta, ime studenta zavisi samo</span></div>
+<div style="position:absolute;left:79.22px;top:384.70px" class="cls_009"><span class="cls_009">od broja dosijea a ne i od šifre predmeta, pa ga treba eliminisati).</span></div>
+<div style="position:absolute;left:64.80px;top:409.78px" class="cls_010"><span class="cls_010">•</span></div>
+<div style="position:absolute;left:79.22px;top:407.14px" class="cls_009"><span class="cls_009">3. pravilo: zavisnost samo od primarnog ključa (kolone u tabeli treba da zavise</span></div>
+<div style="position:absolute;left:79.22px;top:425.50px" class="cls_009"><span class="cls_009">samo od primarnog ključa; npr. tabela koja sadrži: šifru predmeta, naziv</span></div>
+<div style="position:absolute;left:79.22px;top:443.86px" class="cls_008"><span class="cls_008">predmeta, šifru studijske grupe i naziv studijske grupe treba da se podeli u 2</span></div>
+<div style="position:absolute;left:79.22px;top:462.24px" class="cls_009"><span class="cls_009">tabele).</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-360px;top:14850px;width:720px;height:540px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="c10ef670-94f7-11ea-8b25-0cc47a792c0a_id_c10ef670-94f7-11ea-8b25-0cc47a792c0a_files/background29.jpg" width=720 height=540></div>
+<div style="position:absolute;left:43.20px;top:55.94px" class="cls_004"><span class="cls_004">ER model</span></div>
+<div style="position:absolute;left:43.20px;top:126.98px" class="cls_016"><span class="cls_016">•</span></div>
+<div style="position:absolute;left:57.60px;top:123.74px" class="cls_017"><span class="cls_017">Prevođenje ER modela u druge - da bi ER modeli mogli da se</span></div>
+<div style="position:absolute;left:57.60px;top:144.89px" class="cls_017"><span class="cls_017">realizuju odn. da se projektuje baza podataka, moraju da se</span></div>
+<div style="position:absolute;left:57.60px;top:166.01px" class="cls_017"><span class="cls_017">prevedu na neki od komercijalnih modela tj. na one modele za</span></div>
+<div style="position:absolute;left:57.60px;top:187.13px" class="cls_017"><span class="cls_017">koje postoje komercijalni SUBP (hijerarhijski, mrežni ili</span></div>
+<div style="position:absolute;left:57.60px;top:208.25px" class="cls_017"><span class="cls_017">relacioni).</span></div>
+<div style="position:absolute;left:43.20px;top:237.91px" class="cls_016"><span class="cls_016">•</span></div>
+<div style="position:absolute;left:57.60px;top:234.65px" class="cls_018"><span class="cls_018">Ako se želi da se ER model realizuje pomoću relacionog SUBP,</span></div>
+<div style="position:absolute;left:57.60px;top:255.79px" class="cls_017"><span class="cls_017">mora se transformisati u skup tabela (relacija) koje su u trećoj</span></div>
+<div style="position:absolute;left:57.60px;top:276.91px" class="cls_017"><span class="cls_017">odn. četvrtoj normalnoj formi. Za takva prevođenja postoje</span></div>
+<div style="position:absolute;left:57.60px;top:298.03px" class="cls_017"><span class="cls_017">utvrđeni postupci, kao što su:</span></div>
+<div style="position:absolute;left:64.80px;top:324.55px" class="cls_019"><span class="cls_019">•</span><span class="cls_020"> Čenov postupak - sastoji se iz:</span></div>
+<div style="position:absolute;left:86.42px;top:347.36px" class="cls_042"><span class="cls_042">•</span><span class="cls_008"> definicija funkcionalne zavisnosti između atributa;</span></div>
+<div style="position:absolute;left:86.42px;top:367.78px" class="cls_040"><span class="cls_040">•</span><span class="cls_009"> normalizacija tipova entiteta;</span></div>
+<div style="position:absolute;left:86.42px;top:388.18px" class="cls_040"><span class="cls_040">•</span><span class="cls_009"> normalizacija tipova veza.</span></div>
+<div style="position:absolute;left:64.80px;top:408.58px" class="cls_019"><span class="cls_019">•</span><span class="cls_020"> postupci analize relacija;</span></div>
+<div style="position:absolute;left:64.80px;top:431.38px" class="cls_019"><span class="cls_019">•</span><span class="cls_020"> postupci sinteze relacija i dr.</span></div>
+<div style="position:absolute;left:43.20px;top:457.30px" class="cls_038"><span class="cls_038">•</span></div>
+<div style="position:absolute;left:57.60px;top:454.06px" class="cls_018"><span class="cls_018">Zbog mogućnosti prevođenja u druge modele, kaže se da ER</span></div>
+<div style="position:absolute;left:57.60px;top:475.20px" class="cls_017"><span class="cls_017">model predstavlja generalizaciju tih modela.</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-360px;top:15400px;width:720px;height:540px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="c10ef670-94f7-11ea-8b25-0cc47a792c0a_id_c10ef670-94f7-11ea-8b25-0cc47a792c0a_files/background30.jpg" width=720 height=540></div>
+<div style="position:absolute;left:43.20px;top:58.46px" class="cls_030"><span class="cls_030">ER model - prevođenje u relacioni model</span></div>
+<div style="position:absolute;left:43.20px;top:127.34px" class="cls_019"><span class="cls_019">•</span></div>
+<div style="position:absolute;left:57.60px;top:124.58px" class="cls_020"><span class="cls_020">Prevođenje ER modela u relacioni model se izvodi tako što se dio</span></div>
+<div style="position:absolute;left:57.60px;top:142.83px" class="cls_021"><span class="cls_021">strukture ER modela, odnosno dijagram objekti-veze (DOV), predstavlja</span></div>
+<div style="position:absolute;left:57.60px;top:161.09px" class="cls_020"><span class="cls_020">relacionom šemom, a ograničenja, operacije i dio strukture ER modela se</span></div>
+<div style="position:absolute;left:57.60px;top:179.33px" class="cls_020"><span class="cls_020">predstavljaju operacijama za očuvanje integriteta definisanja nad</span></div>
+<div style="position:absolute;left:57.60px;top:197.57px" class="cls_020"><span class="cls_020">relacionim modelom.</span></div>
+<div style="position:absolute;left:43.20px;top:223.13px" class="cls_019"><span class="cls_019">•</span></div>
+<div style="position:absolute;left:57.60px;top:220.37px" class="cls_020"><span class="cls_020">Pravila za objekte (entitete):</span></div>
+<div style="position:absolute;left:64.80px;top:243.29px" class="cls_043"><span class="cls_043">•</span><span class="cls_044"> Svaki objekat iz DOV postaje šema relacije, ime tipa entiteta postaje ime šeme</span></div>
+<div style="position:absolute;left:79.22px;top:258.67px" class="cls_045"><span class="cls_045">relacije, obilježja objekta su obilježja šeme relacije. Za osnovne objekte identifikator</span></div>
+<div style="position:absolute;left:79.22px;top:274.03px" class="cls_045"><span class="cls_045">objekta (entiteta) postaje primarni ključ šeme relacije.</span></div>
+<div style="position:absolute;left:64.80px;top:293.23px" class="cls_046"><span class="cls_046">•</span><span class="cls_045"> Svaki ″slab″ objekat takođe postaje šema relacije. Ime tipa objekta postaje ime</span></div>
+<div style="position:absolute;left:79.22px;top:308.59px" class="cls_045"><span class="cls_045">šeme relacije. obilježja objekta su obilježja šeme relacije. Identifikator nadređenog</span></div>
+<div style="position:absolute;left:79.22px;top:323.95px" class="cls_045"><span class="cls_045">objekta postaje jedno od obilježja šeme relacije koja odgovara ″slabom″ objektu.</span></div>
+<div style="position:absolute;left:79.22px;top:339.29px" class="cls_044"><span class="cls_044">Identifikator slabog objekta čine identifikator nadređenog objekta i obilježja ″slabog″</span></div>
+<div style="position:absolute;left:79.22px;top:354.70px" class="cls_045"><span class="cls_045">objekta koja jedinstveno identifikuju pojavljivanje ″slabog″ objekta u okviru</span></div>
+<div style="position:absolute;left:79.22px;top:370.06px" class="cls_045"><span class="cls_045">pojavljivanja njemu nadređenog objekta.</span></div>
+<div style="position:absolute;left:64.80px;top:389.26px" class="cls_046"><span class="cls_046">•</span><span class="cls_045"> Objekat nadtip (generalizovani tip objekta) postaje šema relacije. Ime nadtipa</span></div>
+<div style="position:absolute;left:79.22px;top:404.62px" class="cls_045"><span class="cls_045">postaje ime šeme relacije. Obilježja nadtipa su obilježja šeme relacije. Identifikator</span></div>
+<div style="position:absolute;left:79.22px;top:419.98px" class="cls_045"><span class="cls_045">nadtipa postaje ključ šeme relacije.</span></div>
+<div style="position:absolute;left:64.80px;top:439.18px" class="cls_046"><span class="cls_046">•</span><span class="cls_045"> Objekat podtip takođe postaje šema relacije. Ime podtipa postaje ime šeme relacije.</span></div>
+<div style="position:absolute;left:79.22px;top:454.56px" class="cls_045"><span class="cls_045">Obilježja podtipa su obilježja šeme relacije. Identifikator nadtipa predstavlja ključ</span></div>
+<div style="position:absolute;left:79.22px;top:469.92px" class="cls_045"><span class="cls_045">šeme relacije.</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-360px;top:15950px;width:720px;height:540px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="c10ef670-94f7-11ea-8b25-0cc47a792c0a_id_c10ef670-94f7-11ea-8b25-0cc47a792c0a_files/background31.jpg" width=720 height=540></div>
+<div style="position:absolute;left:43.20px;top:58.46px" class="cls_030"><span class="cls_030">ER model - prevođenje u relacioni model</span></div>
+<div style="position:absolute;left:43.20px;top:129.02px" class="cls_022"><span class="cls_022">•</span><span class="cls_023"> Pravila za prevođenje veza među objektima:</span></div>
+<div style="position:absolute;left:64.80px;top:162.65px" class="cls_005"><span class="cls_005">•</span><span class="cls_006"> Veze tipa (1:1)(0:M) ne postaju posebne šeme relacije, već</span></div>
+<div style="position:absolute;left:79.22px;top:186.65px" class="cls_006"><span class="cls_006">identifikator objekta za koji je GG=M postaje obilježja objekta za</span></div>
+<div style="position:absolute;left:79.22px;top:210.65px" class="cls_006"><span class="cls_006">koji je GG=1.</span></div>
+<div style="position:absolute;left:64.80px;top:239.45px" class="cls_005"><span class="cls_005">•</span><span class="cls_011"> Veze tipa (0:1)(1:1) sa objektima koji su u vezi prevode se u dvije</span></div>
+<div style="position:absolute;left:79.22px;top:263.47px" class="cls_006"><span class="cls_006">šeme relacije (za svaki objekat po jedna šema relacije i identifikator</span></div>
+<div style="position:absolute;left:79.22px;top:287.47px" class="cls_006"><span class="cls_006">jednog objekta postaje obilježje drugog objekta). Bolje je</span></div>
+<div style="position:absolute;left:79.22px;top:311.47px" class="cls_006"><span class="cls_006">predstavljanje spoljnjim ključem u šemi relacije objekta sa strane</span></div>
+<div style="position:absolute;left:79.22px;top:335.48px" class="cls_011"><span class="cls_011">(1:1).</span></div>
+</div>
+
+</body>
+</html>

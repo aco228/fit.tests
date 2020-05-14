@@ -1,0 +1,544 @@
+<html>
+<head><meta http-equiv=Content-Type content="text/html; charset=UTF-8">
+<style type="text/css">
+<!--
+span.cls_002{font-family:Arial,serif;font-size:54.1px;color:rgb(210,82,59);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_002{font-family:Arial,serif;font-size:54.1px;color:rgb(210,82,59);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_003{font-family:Arial,serif;font-size:54.0px;color:rgb(210,82,59);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_003{font-family:Arial,serif;font-size:54.0px;color:rgb(210,82,59);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_004{font-family:Arial,serif;font-size:40.0px;color:rgb(210,82,59);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_004{font-family:Arial,serif;font-size:40.0px;color:rgb(210,82,59);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_005{font-family:Arial,serif;font-size:20.5px;color:rgb(146,161,153);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_005{font-family:Arial,serif;font-size:20.5px;color:rgb(146,161,153);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_006{font-family:Arial,serif;font-size:24.1px;color:rgb(41,41,52);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_006{font-family:Arial,serif;font-size:24.1px;color:rgb(41,41,52);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_007{font-family:Arial,serif;font-size:24.1px;color:rgb(41,41,52);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_007{font-family:Arial,serif;font-size:24.1px;color:rgb(41,41,52);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_008{font-family:Arial,serif;font-size:20.4px;color:rgb(146,161,153);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_008{font-family:Arial,serif;font-size:20.4px;color:rgb(146,161,153);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_009{font-family:Arial,serif;font-size:17.1px;color:rgb(146,161,153);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_009{font-family:Arial,serif;font-size:17.1px;color:rgb(146,161,153);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_010{font-family:Arial,serif;font-size:20.1px;color:rgb(41,41,52);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_010{font-family:Arial,serif;font-size:20.1px;color:rgb(41,41,52);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_011{font-family:Arial,serif;font-size:20.1px;color:rgb(41,41,52);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_011{font-family:Arial,serif;font-size:20.1px;color:rgb(41,41,52);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_012{font-family:Arial,serif;font-size:14.4px;color:rgb(146,161,153);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_012{font-family:Arial,serif;font-size:14.4px;color:rgb(146,161,153);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_013{font-family:Arial,serif;font-size:17.1px;color:rgb(41,41,52);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_013{font-family:Arial,serif;font-size:17.1px;color:rgb(41,41,52);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_014{font-family:Arial,serif;font-size:17.1px;color:rgb(41,41,52);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_014{font-family:Arial,serif;font-size:17.1px;color:rgb(41,41,52);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_015{font-family:Arial,serif;font-size:11.9px;color:rgb(146,161,153);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_015{font-family:Arial,serif;font-size:11.9px;color:rgb(146,161,153);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_016{font-family:Arial,serif;font-size:14.1px;color:rgb(41,41,52);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_016{font-family:Arial,serif;font-size:14.1px;color:rgb(41,41,52);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_017{font-family:Arial,serif;font-size:14.1px;color:rgb(41,41,52);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_017{font-family:Arial,serif;font-size:14.1px;color:rgb(41,41,52);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_018{font-family:Arial,serif;font-size:12.0px;color:rgb(146,161,153);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_018{font-family:Arial,serif;font-size:12.0px;color:rgb(146,161,153);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_019{font-family:Arial,serif;font-size:14.5px;color:rgb(146,161,153);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_019{font-family:Arial,serif;font-size:14.5px;color:rgb(146,161,153);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_020{font-family:Arial,serif;font-size:17.1px;color:rgb(41,41,52);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_020{font-family:Arial,serif;font-size:17.1px;color:rgb(41,41,52);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_021{font-family:Arial,serif;font-size:17.1px;color:rgb(41,41,52);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_021{font-family:Arial,serif;font-size:17.1px;color:rgb(41,41,52);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_022{font-family:Arial,serif;font-size:24.1px;color:rgb(41,41,52);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_022{font-family:Arial,serif;font-size:24.1px;color:rgb(41,41,52);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_023{font-family:Arial,serif;font-size:24.1px;color:rgb(41,41,52);font-weight:normal;font-style:italic;text-decoration: none}
+div.cls_023{font-family:Arial,serif;font-size:24.1px;color:rgb(41,41,52);font-weight:normal;font-style:italic;text-decoration: none}
+span.cls_024{font-family:Arial,serif;font-size:24.1px;color:rgb(41,41,52);font-weight:normal;font-style:italic;text-decoration: none}
+div.cls_024{font-family:Arial,serif;font-size:24.1px;color:rgb(41,41,52);font-weight:normal;font-style:italic;text-decoration: none}
+span.cls_025{font-family:Arial,serif;font-size:18.8px;color:rgb(146,161,153);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_025{font-family:Arial,serif;font-size:18.8px;color:rgb(146,161,153);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_026{font-family:Arial,serif;font-size:22.0px;color:rgb(41,41,52);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_026{font-family:Arial,serif;font-size:22.0px;color:rgb(41,41,52);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_027{font-family:Arial,serif;font-size:22.0px;color:rgb(41,41,52);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_027{font-family:Arial,serif;font-size:22.0px;color:rgb(41,41,52);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_028{font-family:Arial,serif;font-size:16.3px;color:rgb(146,161,153);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_028{font-family:Arial,serif;font-size:16.3px;color:rgb(146,161,153);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_029{font-family:Arial,serif;font-size:19.0px;color:rgb(41,41,52);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_029{font-family:Arial,serif;font-size:19.0px;color:rgb(41,41,52);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_030{font-family:Arial,serif;font-size:18.8px;color:rgb(146,161,153);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_030{font-family:Arial,serif;font-size:18.8px;color:rgb(146,161,153);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_031{font-family:Arial,serif;font-size:20.1px;color:rgb(41,41,52);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_031{font-family:Arial,serif;font-size:20.1px;color:rgb(41,41,52);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_032{font-family:Arial,serif;font-size:17.1px;color:rgb(146,161,153);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_032{font-family:Arial,serif;font-size:17.1px;color:rgb(146,161,153);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_033{font-family:Arial,serif;font-size:20.1px;color:rgb(41,41,52);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_033{font-family:Arial,serif;font-size:20.1px;color:rgb(41,41,52);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_034{font-family:Arial,serif;font-size:18.1px;color:rgb(41,41,52);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_034{font-family:Arial,serif;font-size:18.1px;color:rgb(41,41,52);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_035{font-family:Arial,serif;font-size:16.3px;color:rgb(146,161,153);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_035{font-family:Arial,serif;font-size:16.3px;color:rgb(146,161,153);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_036{font-family:Arial,serif;font-size:18.1px;color:rgb(41,41,52);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_036{font-family:Arial,serif;font-size:18.1px;color:rgb(41,41,52);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_040{font-family:Arial,serif;font-size:22.0px;color:rgb(41,41,52);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_040{font-family:Arial,serif;font-size:22.0px;color:rgb(41,41,52);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_039{font-family:Arial,serif;font-size:19.0px;color:rgb(41,41,52);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_039{font-family:Arial,serif;font-size:19.0px;color:rgb(41,41,52);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_041{font-family:Arial,serif;font-size:22.0px;color:rgb(41,41,52);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_041{font-family:Arial,serif;font-size:22.0px;color:rgb(41,41,52);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_037{font-family:Arial,serif;font-size:16.3px;color:rgb(146,161,153);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_037{font-family:Arial,serif;font-size:16.3px;color:rgb(146,161,153);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_038{font-family:Arial,serif;font-size:19.0px;color:rgb(41,41,52);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_038{font-family:Arial,serif;font-size:19.0px;color:rgb(41,41,52);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_042{font-family:Arial,serif;font-size:16.0px;color:rgb(41,41,52);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_042{font-family:Arial,serif;font-size:16.0px;color:rgb(41,41,52);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_043{font-family:Arial,serif;font-size:15.4px;color:rgb(146,161,153);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_043{font-family:Arial,serif;font-size:15.4px;color:rgb(146,161,153);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_044{font-family:Arial,serif;font-size:36.1px;color:rgb(210,82,59);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_044{font-family:Arial,serif;font-size:36.1px;color:rgb(210,82,59);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_045{font-family:Arial,serif;font-size:36.0px;color:rgb(210,82,59);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_045{font-family:Arial,serif;font-size:36.0px;color:rgb(210,82,59);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_046{font-family:Arial,serif;font-size:22.0px;color:rgb(41,41,52);font-weight:normal;font-style:italic;text-decoration: none}
+div.cls_046{font-family:Arial,serif;font-size:22.0px;color:rgb(41,41,52);font-weight:normal;font-style:italic;text-decoration: none}
+span.cls_047{font-family:Arial,serif;font-size:19.0px;color:rgb(41,41,52);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_047{font-family:Arial,serif;font-size:19.0px;color:rgb(41,41,52);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_048{font-family:Arial,serif;font-size:18.1px;color:rgb(41,41,52);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_048{font-family:Arial,serif;font-size:18.1px;color:rgb(41,41,52);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_049{font-family:Arial,serif;font-size:18.1px;color:rgb(41,41,52);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_049{font-family:Arial,serif;font-size:18.1px;color:rgb(41,41,52);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_050{font-family:Arial,serif;font-size:20.1px;color:rgb(41,41,52);font-weight:normal;font-style:italic;text-decoration: none}
+div.cls_050{font-family:Arial,serif;font-size:20.1px;color:rgb(41,41,52);font-weight:normal;font-style:italic;text-decoration: none}
+span.cls_051{font-family:Arial,serif;font-size:18.1px;color:rgb(41,41,52);font-weight:normal;font-style:italic;text-decoration: none}
+div.cls_051{font-family:Arial,serif;font-size:18.1px;color:rgb(41,41,52);font-weight:normal;font-style:italic;text-decoration: none}
+span.cls_052{font-family:Arial,serif;font-size:24.1px;color:rgb(41,41,52);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_052{font-family:Arial,serif;font-size:24.1px;color:rgb(41,41,52);font-weight:bold;font-style:normal;text-decoration: none}
+-->
+</style>
+<script type="text/javascript" src="955755a4-94f7-11ea-8b25-0cc47a792c0a_id_955755a4-94f7-11ea-8b25-0cc47a792c0a_files/wz_jsgraphics.js"></script>
+</head>
+<body>
+<div style="position:absolute;left:50%;margin-left:-360px;top:0px;width:720px;height:540px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="955755a4-94f7-11ea-8b25-0cc47a792c0a_id_955755a4-94f7-11ea-8b25-0cc47a792c0a_files/background01.jpg" width=720 height=540></div>
+<div style="position:absolute;left:61.20px;top:125.14px" class="cls_002"><span class="cls_002">MODELOVANJE</span></div>
+<div style="position:absolute;left:61.20px;top:189.96px" class="cls_003"><span class="cls_003">FUNKCIJA I PROCESA</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-360px;top:550px;width:720px;height:540px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="955755a4-94f7-11ea-8b25-0cc47a792c0a_id_955755a4-94f7-11ea-8b25-0cc47a792c0a_files/background02.jpg" width=720 height=540></div>
+<div style="position:absolute;left:43.20px;top:55.94px" class="cls_004"><span class="cls_004">Uvod</span></div>
+<div style="position:absolute;left:43.20px;top:129.03px" class="cls_005"><span class="cls_005">•</span><span class="cls_006"> Logički procesi (koje sačinjavaju funkcije, događaji i</span></div>
+<div style="position:absolute;left:57.60px;top:157.85px" class="cls_007"><span class="cls_007">elementarni procesi) su akcije koje se obavljaju bez</span></div>
+<div style="position:absolute;left:57.60px;top:186.65px" class="cls_007"><span class="cls_007">obzira na način ugradnje i raspoložive resurse sistema.</span></div>
+<div style="position:absolute;left:43.20px;top:221.21px" class="cls_008"><span class="cls_008">•</span><span class="cls_007"> Stvarni problemi su preveliki i previše složeni da bi se</span></div>
+<div style="position:absolute;left:57.60px;top:250.03px" class="cls_007"><span class="cls_007">riješili odjednom, pa je potrebno njihovo strukturno</span></div>
+<div style="position:absolute;left:57.60px;top:278.83px" class="cls_007"><span class="cls_007">raščlanjivanje (razlaganje)</span></div>
+<div style="position:absolute;left:64.80px;top:312.43px" class="cls_009"><span class="cls_009">•</span><span class="cls_010"> Razlagati se mogu: funkcije i procesi, organizaciona struktura,</span></div>
+<div style="position:absolute;left:79.22px;top:336.44px" class="cls_011"><span class="cls_011">struktura podataka i struktura programske opreme</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-360px;top:1100px;width:720px;height:540px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="955755a4-94f7-11ea-8b25-0cc47a792c0a_id_955755a4-94f7-11ea-8b25-0cc47a792c0a_files/background03.jpg" width=720 height=540></div>
+<div style="position:absolute;left:43.20px;top:55.94px" class="cls_004"><span class="cls_004">Uvod</span></div>
+<div style="position:absolute;left:43.20px;top:127.70px" class="cls_012"><span class="cls_012">•</span></div>
+<div style="position:absolute;left:57.60px;top:125.06px" class="cls_013"><span class="cls_013">Funkcije</span><span class="cls_014"> su skup logički povezanih trajnih poslovnih aktivnosti i zadataka</span></div>
+<div style="position:absolute;left:64.80px;top:145.49px" class="cls_015"><span class="cls_015">•</span><span class="cls_016">  Funkcije se obavljaju stalno (nemaju određeni početak i kraj).</span></div>
+<div style="position:absolute;left:64.80px;top:162.29px" class="cls_015"><span class="cls_015">•</span><span class="cls_016">  Funkcije obavljaju osobe, grupe radnika ili organizacione cjeline.</span></div>
+<div style="position:absolute;left:64.80px;top:179.09px" class="cls_015"><span class="cls_015">•</span><span class="cls_016">  Primjeri funkcija: Prodaja, proizvodnja, otprema, računovodstvo, ...</span></div>
+<div style="position:absolute;left:64.80px;top:195.89px" class="cls_015"><span class="cls_015">•</span><span class="cls_016">  Funkcija se može sastojati od desetina pa i stotina diskretnih procesa</span></div>
+<div style="position:absolute;left:43.20px;top:215.33px" class="cls_012"><span class="cls_012">•</span></div>
+<div style="position:absolute;left:57.60px;top:212.69px" class="cls_013"><span class="cls_013">Događaj </span><span class="cls_014">je logički dio posla koji se obavlja kao nedjeljiva cjelina.</span></div>
+<div style="position:absolute;left:64.80px;top:233.09px" class="cls_015"><span class="cls_015">•</span><span class="cls_017">  Pokreće se diskretnim ulazom i završava nakon što proces odgovori odgovarajućim izlazom</span></div>
+<div style="position:absolute;left:64.80px;top:249.91px" class="cls_015"><span class="cls_015">•</span><span class="cls_016">  Događaj može se predstaviti jednim procesom kojim sistem reaguje na taj događaj</span></div>
+<div style="position:absolute;left:64.80px;top:266.71px" class="cls_015"><span class="cls_015">•</span><span class="cls_016">  Logički događaj dalje se razlaže do elementarnih procesa kojima se prikazuje reakcija sistema</span></div>
+<div style="position:absolute;left:79.22px;top:280.15px" class="cls_016"><span class="cls_016">na taj događaj.</span></div>
+<div style="position:absolute;left:43.20px;top:299.59px" class="cls_012"><span class="cls_012">•</span></div>
+<div style="position:absolute;left:57.60px;top:296.95px" class="cls_013"><span class="cls_013">Proces</span><span class="cls_014"> (elementarni, primitivni proces) je postupak, način rada, doslijedna</span></div>
+<div style="position:absolute;left:57.60px;top:313.27px" class="cls_014"><span class="cls_014">izmjena stanja, aktivnost ili zadatak kojim se obavlja neki posao.</span></div>
+<div style="position:absolute;left:64.80px;top:333.68px" class="cls_018"><span class="cls_018">•</span><span class="cls_017">  Proces se obavlja uvijek na isti način (za određeni ulaz se dobija isti izlaz).</span></div>
+<div style="position:absolute;left:64.80px;top:350.50px" class="cls_015"><span class="cls_015">•</span><span class="cls_016">  Trajanje procesa je konačno i odredivo (poznati: početak, završetak i ponavljanje)</span></div>
+<div style="position:absolute;left:43.20px;top:369.94px" class="cls_012"><span class="cls_012">•</span></div>
+<div style="position:absolute;left:57.60px;top:367.30px" class="cls_013"><span class="cls_013">Poslovna pravila</span><span class="cls_014"> su instrukcije i logika koji određuju proceduru obavljanja</span></div>
+<div style="position:absolute;left:57.60px;top:383.62px" class="cls_014"><span class="cls_014">procesa</span></div>
+<div style="position:absolute;left:64.80px;top:404.02px" class="cls_015"><span class="cls_015">•</span><span class="cls_016">  Ugrađuju se u računarski program (npr. preduslovi izlaska na ispit, broj polaganja ispita, uslovi</span></div>
+<div style="position:absolute;left:79.22px;top:417.46px" class="cls_016"><span class="cls_016">upisa, ...)</span></div>
+<div style="position:absolute;left:43.20px;top:436.90px" class="cls_019"><span class="cls_019">•</span></div>
+<div style="position:absolute;left:57.60px;top:434.26px" class="cls_020"><span class="cls_020">Poslovna politika </span><span class="cls_021">je skup poslovnih pravila</span></div>
+<div style="position:absolute;left:64.80px;top:454.68px" class="cls_015"><span class="cls_015">•</span><span class="cls_016">  Osnova za donošenje odluka</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-360px;top:1650px;width:720px;height:540px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="955755a4-94f7-11ea-8b25-0cc47a792c0a_id_955755a4-94f7-11ea-8b25-0cc47a792c0a_files/background04.jpg" width=720 height=540></div>
+<div style="position:absolute;left:43.20px;top:55.94px" class="cls_004"><span class="cls_004">Model</span></div>
+<div style="position:absolute;left:43.20px;top:129.03px" class="cls_005"><span class="cls_005">•</span><span class="cls_022"> Model </span><span class="cls_006">je prikaz sistema kako u stvarnosti treba da</span></div>
+<div style="position:absolute;left:57.60px;top:157.85px" class="cls_007"><span class="cls_007">izgleda</span></div>
+<div style="position:absolute;left:64.80px;top:191.45px" class="cls_009"><span class="cls_009">•</span><span class="cls_010"> Model služi da bolje razumijemo rad sistema ili da postavimo</span></div>
+<div style="position:absolute;left:79.22px;top:215.45px" class="cls_010"><span class="cls_010">tehnički dizajn</span></div>
+<div style="position:absolute;left:43.20px;top:245.21px" class="cls_005"><span class="cls_005">•</span><span class="cls_022"> Logi</span><span class="cls_006">č</span><span class="cls_022">ki model </span><span class="cls_006">pokazuje </span><span class="cls_023">šta </span><span class="cls_006">je sistem i </span><span class="cls_023">šta </span><span class="cls_006">on radi.</span></div>
+<div style="position:absolute;left:64.80px;top:278.83px" class="cls_009"><span class="cls_009">•</span><span class="cls_010"> Opisuje sistem nezavisno od tehničke implementacije</span></div>
+<div style="position:absolute;left:43.20px;top:423.82px" class="cls_005"><span class="cls_005">•</span><span class="cls_022"> Fizi</span><span class="cls_006">č</span><span class="cls_022">ki model </span><span class="cls_006">pokazuje ne samo </span><span class="cls_023">šta </span><span class="cls_006">je sistem i </span><span class="cls_023">šta </span><span class="cls_006">on</span></div>
+<div style="position:absolute;left:57.60px;top:452.64px" class="cls_007"><span class="cls_007">radi, već i </span><span class="cls_024">kako </span><span class="cls_007">je sistem fizički i tehnički implementiran.</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-360px;top:2200px;width:720px;height:540px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="955755a4-94f7-11ea-8b25-0cc47a792c0a_id_955755a4-94f7-11ea-8b25-0cc47a792c0a_files/background05.jpg" width=720 height=540></div>
+<div style="position:absolute;left:43.20px;top:55.94px" class="cls_004"><span class="cls_004">Model</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-360px;top:2750px;width:720px;height:540px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="955755a4-94f7-11ea-8b25-0cc47a792c0a_id_955755a4-94f7-11ea-8b25-0cc47a792c0a_files/background06.jpg" width=720 height=540></div>
+<div style="position:absolute;left:43.20px;top:55.94px" class="cls_004"><span class="cls_004">Modelovanje</span></div>
+<div style="position:absolute;left:43.20px;top:129.03px" class="cls_025"><span class="cls_025">•</span><span class="cls_026"> Modelovanje je projektovanje softverskih aplikacija i sistema</span></div>
+<div style="position:absolute;left:57.60px;top:155.45px" class="cls_027"><span class="cls_027">prije programiranja i povezivanja</span></div>
+<div style="position:absolute;left:64.80px;top:186.53px" class="cls_028"><span class="cls_028">•</span><span class="cls_029"> Trenutno i buduće stanje sistema se modeluje kako bi se identifikovali</span></div>
+<div style="position:absolute;left:79.22px;top:209.33px" class="cls_029"><span class="cls_029">zahtjevi, problemi i rizici i informacije koje nedostaju.</span></div>
+<div style="position:absolute;left:43.20px;top:237.29px" class="cls_025"><span class="cls_025">•</span><span class="cls_026"> Modelovanje podataka je najpopularnija tehnika za izražavanje</span></div>
+<div style="position:absolute;left:57.60px;top:263.71px" class="cls_027"><span class="cls_027">poslovnih zahtjeva za podacima koji će biti uskladišteni u bazu</span></div>
+<div style="position:absolute;left:57.60px;top:290.11px" class="cls_027"><span class="cls_027">podataka sistema.</span></div>
+<div style="position:absolute;left:43.20px;top:321.82px" class="cls_030"><span class="cls_030">•</span><span class="cls_027"> Modelovanje procesa je tehnika koja se dosta praktikuje za</span></div>
+<div style="position:absolute;left:57.60px;top:348.22px" class="cls_027"><span class="cls_027">izražavanje zahtjeva poslovnih procesa, tokova procesa, ulaza</span></div>
+<div style="position:absolute;left:57.60px;top:374.62px" class="cls_027"><span class="cls_027">i izlaza</span></div>
+<div style="position:absolute;left:43.20px;top:406.30px" class="cls_030"><span class="cls_030">•</span><span class="cls_027"> Modelovanje funkcija je tehnika dekompozicije funkcija u cilju</span></div>
+<div style="position:absolute;left:57.60px;top:432.70px" class="cls_026"><span class="cls_026">izrade opšteg modela funkcija</span></div>
+<div style="position:absolute;left:43.20px;top:464.40px" class="cls_030"><span class="cls_030">•</span><span class="cls_027"> Za postupak modelovanja razvijeni su odgovarajući CASE alati</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-360px;top:3300px;width:720px;height:540px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="955755a4-94f7-11ea-8b25-0cc47a792c0a_id_955755a4-94f7-11ea-8b25-0cc47a792c0a_files/background07.jpg" width=720 height=540></div>
+<div style="position:absolute;left:43.20px;top:55.94px" class="cls_004"><span class="cls_004">Dekompozicija</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-360px;top:3850px;width:720px;height:540px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="955755a4-94f7-11ea-8b25-0cc47a792c0a_id_955755a4-94f7-11ea-8b25-0cc47a792c0a_files/background08.jpg" width=720 height=540></div>
+<div style="position:absolute;left:43.20px;top:55.94px" class="cls_004"><span class="cls_004">Dekompozicija</span></div>
+<div style="position:absolute;left:43.20px;top:129.03px" class="cls_005"><span class="cls_005">•</span><span class="cls_006"> Dijagram dekompozicije: funkcije, procesi, spojnice i</span></div>
+<div style="position:absolute;left:57.60px;top:157.85px" class="cls_007"><span class="cls_007">vanjski spojevi.</span></div>
+<div style="position:absolute;left:64.80px;top:191.45px" class="cls_009"><span class="cls_009">•</span><span class="cls_031"> Funkcije</span><span class="cls_010"> se označavaju se (glagolskom) imenicom (npr. Prodaja,</span></div>
+<div style="position:absolute;left:79.22px;top:215.45px" class="cls_010"><span class="cls_010">Proizvodnja),</span></div>
+<div style="position:absolute;left:64.80px;top:244.25px" class="cls_032"><span class="cls_032">•</span><span class="cls_033"> Procesi </span><span class="cls_011">se označavaju glagolskim izrazom oblika infinitiv+objekat</span></div>
+<div style="position:absolute;left:79.22px;top:268.27px" class="cls_010"><span class="cls_010">(ofarbati dio, osušiti dio),</span></div>
+<div style="position:absolute;left:64.80px;top:297.07px" class="cls_009"><span class="cls_009">•</span><span class="cls_031"> Spojnice </span><span class="cls_010"> su spojevi (veze) između funkcija i procesa,</span></div>
+<div style="position:absolute;left:64.80px;top:325.88px" class="cls_009"><span class="cls_009">•</span><span class="cls_033"> Vanjski spojevi</span><span class="cls_011"> su spojevi sa dijelovima dijagrama na drugim</span></div>
+<div style="position:absolute;left:79.22px;top:349.90px" class="cls_010"><span class="cls_010">stranicama</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-360px;top:4400px;width:720px;height:540px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="955755a4-94f7-11ea-8b25-0cc47a792c0a_id_955755a4-94f7-11ea-8b25-0cc47a792c0a_files/background09.jpg" width=720 height=540></div>
+<div style="position:absolute;left:43.20px;top:55.94px" class="cls_004"><span class="cls_004">Dekompozicija</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-360px;top:4950px;width:720px;height:540px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="955755a4-94f7-11ea-8b25-0cc47a792c0a_id_955755a4-94f7-11ea-8b25-0cc47a792c0a_files/background10.jpg" width=720 height=540></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-360px;top:5500px;width:720px;height:540px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="955755a4-94f7-11ea-8b25-0cc47a792c0a_id_955755a4-94f7-11ea-8b25-0cc47a792c0a_files/background11.jpg" width=720 height=540></div>
+<div style="position:absolute;left:43.20px;top:55.94px" class="cls_004"><span class="cls_004">Dekompozicija</span></div>
+<div style="position:absolute;left:43.20px;top:129.03px" class="cls_005"><span class="cls_005">•</span><span class="cls_006"> Pravila:</span></div>
+<div style="position:absolute;left:64.80px;top:162.65px" class="cls_009"><span class="cls_009">•</span><span class="cls_010"> Selektivni procesi na dijagramima se označavaju znacima &lt;></span></div>
+<div style="position:absolute;left:64.80px;top:191.45px" class="cls_009"><span class="cls_009">•</span><span class="cls_010"> Sekvencijalni procesi se označavaju znacima [ ]</span></div>
+<div style="position:absolute;left:64.80px;top:220.25px" class="cls_009"><span class="cls_009">•</span><span class="cls_010"> Vrši se numeracija funkcija</span></div>
+<div style="position:absolute;left:43.20px;top:250.03px" class="cls_008"><span class="cls_008">•</span><span class="cls_007"> Funkcionalni dijagrami se ne bave podacima</span></div>
+<div style="position:absolute;left:64.80px;top:283.63px" class="cls_009"><span class="cls_009">•</span><span class="cls_010"> Ističu važnost i kompleksnost pojedinih poslova</span></div>
+<div style="position:absolute;left:43.20px;top:313.39px" class="cls_008"><span class="cls_008">•</span><span class="cls_007"> Identifikovanje sličnosti u dekompoziciji različitih poslovnih</span></div>
+<div style="position:absolute;left:57.60px;top:342.22px" class="cls_007"><span class="cls_007">funkcija</span></div>
+<div style="position:absolute;left:64.80px;top:375.82px" class="cls_009"><span class="cls_009">•</span><span class="cls_010"> Npr, za trgovinu koja se bavi prodajom masivne robe:</span></div>
+<div style="position:absolute;left:86.42px;top:404.26px" class="cls_028"><span class="cls_028">•</span><span class="cls_034"> Funkcija otpreme je ista u maloprodaji i veleprodaji</span></div>
+<div style="position:absolute;left:86.42px;top:430.18px" class="cls_035"><span class="cls_035">•</span><span class="cls_036"> Funkcija otprema se dizajnira i implementira umjesto 2 puta - samo</span></div>
+<div style="position:absolute;left:100.82px;top:451.80px" class="cls_034"><span class="cls_034">jedanput i ona treba da bude dostupna iz obje opcije (nad-funkcije)</span></div>
+<div style="position:absolute;left:100.82px;top:473.40px" class="cls_034"><span class="cls_034">aplikacije (veleprodaje i maloprodaje).</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-360px;top:6050px;width:720px;height:540px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="955755a4-94f7-11ea-8b25-0cc47a792c0a_id_955755a4-94f7-11ea-8b25-0cc47a792c0a_files/background12.jpg" width=720 height=540></div>
+<div style="position:absolute;left:43.20px;top:55.94px" class="cls_004"><span class="cls_004">Modelovanje funkcije</span></div>
+<div style="position:absolute;left:373.27px;top:129.51px" class="cls_040"><span class="cls_040">NABAVKA</span></div>
+<div style="position:absolute;left:43.20px;top:138.03px" class="cls_025"><span class="cls_025">•</span></div>
+<div style="position:absolute;left:57.60px;top:134.79px" class="cls_026"><span class="cls_026">Izrada globalnog modela</span></div>
+<div style="position:absolute;left:373.27px;top:155.93px" class="cls_030"><span class="cls_030">•</span><span class="cls_027"> Evidentiranje dobavljača</span></div>
+<div style="position:absolute;left:57.60px;top:161.21px" class="cls_027"><span class="cls_027">funkcija počinje izradom</span></div>
+<div style="position:absolute;left:373.27px;top:182.33px" class="cls_030"><span class="cls_030">•</span><span class="cls_027"> Nabavka robe</span></div>
+<div style="position:absolute;left:57.60px;top:187.61px" class="cls_027"><span class="cls_027">hijerarhijske liste funkcija po</span></div>
+<div style="position:absolute;left:394.87px;top:208.85px" class="cls_028"><span class="cls_028">•</span><span class="cls_029"> Izrada narudžbi</span></div>
+<div style="position:absolute;left:57.60px;top:214.01px" class="cls_027"><span class="cls_027">pojedinim organizacionim</span></div>
+<div style="position:absolute;left:394.87px;top:231.65px" class="cls_035"><span class="cls_035">•</span><span class="cls_039"> Primanje robe</span></div>
+<div style="position:absolute;left:57.60px;top:240.43px" class="cls_027"><span class="cls_027">cjelinama.</span></div>
+<div style="position:absolute;left:373.27px;top:254.35px" class="cls_041"><span class="cls_041">UPRAVLJANJE OSOBLJEM</span></div>
+<div style="position:absolute;left:43.20px;top:275.35px" class="cls_030"><span class="cls_030">•</span></div>
+<div style="position:absolute;left:57.60px;top:272.11px" class="cls_027"><span class="cls_027">Izrada dijagrama</span></div>
+<div style="position:absolute;left:373.27px;top:280.75px" class="cls_030"><span class="cls_030">•</span><span class="cls_027"> Evidentiranje rada</span></div>
+<div style="position:absolute;left:57.60px;top:298.51px" class="cls_027"><span class="cls_027">dekompozicije:</span></div>
+<div style="position:absolute;left:394.87px;top:307.27px" class="cls_028"><span class="cls_028">•</span><span class="cls_029"> Prijem na posao</span></div>
+<div style="position:absolute;left:64.80px;top:329.60px" class="cls_037"><span class="cls_037">1.</span><span class="cls_038"> Korijen dijagrama</span><span class="cls_039">, kome se</span></div>
+<div style="position:absolute;left:394.87px;top:330.08px" class="cls_035"><span class="cls_035">•</span><span class="cls_039"> Praćenje rada</span></div>
+<div style="position:absolute;left:416.47px;top:353.02px" class="cls_012"><span class="cls_012">•</span><span class="cls_042"> redovni rad</span></div>
+<div style="position:absolute;left:82.82px;top:352.42px" class="cls_029"><span class="cls_029">dodjeljuje ime sistema</span></div>
+<div style="position:absolute;left:416.47px;top:372.22px" class="cls_012"><span class="cls_012">•</span><span class="cls_042"> prekovremeni rad</span></div>
+<div style="position:absolute;left:64.80px;top:379.78px" class="cls_028"><span class="cls_028">2.</span><span class="cls_029"> Razrada u podsisteme i</span></div>
+<div style="position:absolute;left:416.47px;top:391.42px" class="cls_012"><span class="cls_012">•</span><span class="cls_042"> bolovanje</span></div>
+<div style="position:absolute;left:82.82px;top:402.58px" class="cls_029"><span class="cls_029">poslovne funkcije sve do nivoa</span></div>
+<div style="position:absolute;left:416.47px;top:410.62px" class="cls_012"><span class="cls_012">•</span><span class="cls_042"> godišnji odmori</span></div>
+<div style="position:absolute;left:82.82px;top:425.38px" class="cls_039"><span class="cls_039">operacionalizacije</span></div>
+<div style="position:absolute;left:394.87px;top:429.70px" class="cls_035"><span class="cls_035">•</span><span class="cls_039"> Otpuštanje iz službe</span></div>
+<div style="position:absolute;left:373.27px;top:452.40px" class="cls_030"><span class="cls_030">•</span><span class="cls_027"> Obračun plata</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-360px;top:6600px;width:720px;height:540px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="955755a4-94f7-11ea-8b25-0cc47a792c0a_id_955755a4-94f7-11ea-8b25-0cc47a792c0a_files/background13.jpg" width=720 height=540></div>
+<div style="position:absolute;left:43.20px;top:55.94px" class="cls_004"><span class="cls_004">Modelovanje funkcije</span></div>
+<div style="position:absolute;left:43.20px;top:126.60px" class="cls_009"><span class="cls_009">•</span><span class="cls_033"> Pravila:</span></div>
+<div style="position:absolute;left:64.80px;top:152.93px" class="cls_043"><span class="cls_043">•</span><span class="cls_034"> svaki proces je roditelj ili dijete,</span></div>
+<div style="position:absolute;left:64.80px;top:176.69px" class="cls_043"><span class="cls_043">•</span><span class="cls_034"> roditelj mora imati barem dvoje djece,</span></div>
+<div style="position:absolute;left:64.80px;top:200.45px" class="cls_043"><span class="cls_043">•</span><span class="cls_034"> dijete smije imati samo jednog roditelja.</span></div>
+<div style="position:absolute;left:43.20px;top:224.33px" class="cls_009"><span class="cls_009">•</span><span class="cls_033"> Preporuke:</span></div>
+<div style="position:absolute;left:64.80px;top:250.63px" class="cls_043"><span class="cls_043">•</span><span class="cls_034"> Izostaviti procese koji samo premještaju ili preusmjeravaju podatke, a pri</span></div>
+<div style="position:absolute;left:79.22px;top:270.07px" class="cls_034"><span class="cls_034">tome ih ostavljaju nedirnute.</span></div>
+<div style="position:absolute;left:64.80px;top:293.83px" class="cls_043"><span class="cls_043">•</span><span class="cls_034"> Pažnju usmjeriti na procese koji nešto:</span></div>
+<div style="position:absolute;left:86.42px;top:317.59px" class="cls_028"><span class="cls_028">•</span><span class="cls_034"> računaju (npr. prosjek ocjena),</span></div>
+<div style="position:absolute;left:86.42px;top:341.38px" class="cls_028"><span class="cls_028">•</span><span class="cls_034"> donose ili potpomažu odluke (npr. određivanje raspoloživosti robe pri</span></div>
+<div style="position:absolute;left:100.82px;top:360.82px" class="cls_034"><span class="cls_034">naručivanju),</span></div>
+<div style="position:absolute;left:86.42px;top:384.58px" class="cls_028"><span class="cls_028">•</span><span class="cls_034"> filtriraju ili sumiraju podatke (npr. računi kojima je istekao rok plaćanja),</span></div>
+<div style="position:absolute;left:86.42px;top:408.34px" class="cls_028"><span class="cls_028">•</span><span class="cls_034"> organizuju podatke u korisne informacije (npr. generisanje izvještaja),</span></div>
+<div style="position:absolute;left:86.42px;top:432.10px" class="cls_035"><span class="cls_035">•</span><span class="cls_036"> pokreću druge procese (npr. mijenjaju modalitet rada uređaja) ili</span></div>
+<div style="position:absolute;left:86.42px;top:455.88px" class="cls_028"><span class="cls_028">•</span><span class="cls_034"> rukuju podacima (npr. stvaranje, čitanje, ažuriranje, brisanje i slično).</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-360px;top:7150px;width:720px;height:540px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="955755a4-94f7-11ea-8b25-0cc47a792c0a_id_955755a4-94f7-11ea-8b25-0cc47a792c0a_files/background14.jpg" width=720 height=540></div>
+<div style="position:absolute;left:43.20px;top:55.94px" class="cls_004"><span class="cls_004">Dijagram organizacije</span></div>
+<div style="position:absolute;left:43.20px;top:126.60px" class="cls_009"><span class="cls_009">•</span><span class="cls_011"> Dijagram organizacije (shema, mapa, karta organizacije) daje prikaz</span></div>
+<div style="position:absolute;left:57.60px;top:148.25px" class="cls_010"><span class="cls_010">strukture organizacije hijerarhijom pravougaonika („kućica").</span></div>
+<div style="position:absolute;left:64.80px;top:174.41px" class="cls_012"><span class="cls_012">•</span><span class="cls_014"> Svaki pravougaonik predstavlja određenu ulogu ili odgovornost u organizaciji</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-360px;top:7700px;width:720px;height:540px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="955755a4-94f7-11ea-8b25-0cc47a792c0a_id_955755a4-94f7-11ea-8b25-0cc47a792c0a_files/background15.jpg" width=720 height=540></div>
+<div style="position:absolute;left:43.20px;top:55.94px" class="cls_004"><span class="cls_004">Metode strukturiranog modelovanja</span></div>
+<div style="position:absolute;left:43.20px;top:129.03px" class="cls_005"><span class="cls_005">•</span><span class="cls_006"> Koriste se metode kao što su PMOV, IDEF familija,</span></div>
+<div style="position:absolute;left:57.60px;top:157.85px" class="cls_007"><span class="cls_007">Dijagram klasa,</span></div>
+<div style="position:absolute;left:43.20px;top:192.41px" class="cls_008"><span class="cls_008">•</span><span class="cls_007"> Postupak modelovanja je “vještina”, zavisi od</span></div>
+<div style="position:absolute;left:57.60px;top:221.21px" class="cls_007"><span class="cls_007">sposobnosti, znanja i iskustva</span></div>
+<div style="position:absolute;left:43.20px;top:255.79px" class="cls_008"><span class="cls_008">•</span><span class="cls_007"> Ne mogu se dati neka stroga pravila modelovanja koja bi,</span></div>
+<div style="position:absolute;left:57.60px;top:284.59px" class="cls_007"><span class="cls_007">bez obzira na to ko modelovanje vrši, vodila do</span></div>
+<div style="position:absolute;left:57.60px;top:313.39px" class="cls_007"><span class="cls_007">jedinstvenog modela složenog realnog sistema</span></div>
+<div style="position:absolute;left:64.80px;top:347.02px" class="cls_009"><span class="cls_009">•</span><span class="cls_010"> Mogu se dati samo opšte metodološke preporuke, opšti</span></div>
+<div style="position:absolute;left:79.22px;top:371.02px" class="cls_010"><span class="cls_010">metodološki pristupi, kao pomoć u ovom složenom poslu</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-360px;top:8250px;width:720px;height:540px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="955755a4-94f7-11ea-8b25-0cc47a792c0a_id_955755a4-94f7-11ea-8b25-0cc47a792c0a_files/background16.jpg" width=720 height=540></div>
+<div style="position:absolute;left:43.20px;top:36.84px" class="cls_044"><span class="cls_044">Metodologija funkcionalnog modelovanja</span></div>
+<div style="position:absolute;left:43.20px;top:80.06px" class="cls_045"><span class="cls_045">IDEF0</span></div>
+<div style="position:absolute;left:43.20px;top:126.39px" class="cls_025"><span class="cls_025">•</span><span class="cls_026"> Za realizaciju programa integrisane kompjuterizacije</span></div>
+<div style="position:absolute;left:57.60px;top:150.17px" class="cls_027"><span class="cls_027">proizvodnje razrađena je familija metoda IDEF </span><span class="cls_046">(Integrated</span></div>
+<div style="position:absolute;left:57.60px;top:173.93px" class="cls_046"><span class="cls_046">Definition Function Modeling)</span><span class="cls_027">, koja je definisana nizom</span></div>
+<div style="position:absolute;left:57.60px;top:197.69px" class="cls_027"><span class="cls_027">standarda (IDEF0, IDEF1, IDEF1x, IDEF3, IDEF4, IDEF5 i</span></div>
+<div style="position:absolute;left:57.60px;top:221.45px" class="cls_026"><span class="cls_026">IDEF9).</span></div>
+<div style="position:absolute;left:43.20px;top:250.51px" class="cls_030"><span class="cls_030">•</span><span class="cls_027"> Ova familija metoda se uspješno primjenjuje u najrazličitijim</span></div>
+<div style="position:absolute;left:57.60px;top:274.27px" class="cls_027"><span class="cls_027">oblastima i pokazala kao efikasno sredstvo za analizu,</span></div>
+<div style="position:absolute;left:57.60px;top:298.03px" class="cls_027"><span class="cls_027">projektovanje i modelovanje tehnoloških procesa</span></div>
+<div style="position:absolute;left:43.20px;top:327.08px" class="cls_025"><span class="cls_025">•</span><span class="cls_026"> Metodologija funkcionalnog modeliranja IDEF0 predstavlja</span></div>
+<div style="position:absolute;left:57.60px;top:350.86px" class="cls_027"><span class="cls_027">metodu za modelovanje tehnoloških procesa i funkcija.</span></div>
+<div style="position:absolute;left:43.20px;top:379.90px" class="cls_030"><span class="cls_030">•</span><span class="cls_027"> IDEF0 prikazuje tok podataka, kontrolu sistema i funkcionalni</span></div>
+<div style="position:absolute;left:57.60px;top:403.66px" class="cls_027"><span class="cls_027">tok životnog ciklusa</span></div>
+<div style="position:absolute;left:43.20px;top:432.70px" class="cls_025"><span class="cls_025">•</span><span class="cls_026"> IDEF0 može da grafički prikaže različite operacije sa različitim</span></div>
+<div style="position:absolute;left:57.60px;top:456.48px" class="cls_027"><span class="cls_027">detaljima</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-360px;top:8800px;width:720px;height:540px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="955755a4-94f7-11ea-8b25-0cc47a792c0a_id_955755a4-94f7-11ea-8b25-0cc47a792c0a_files/background17.jpg" width=720 height=540></div>
+<div style="position:absolute;left:43.20px;top:36.84px" class="cls_044"><span class="cls_044">Metodologija funkcionalnog modelovanja</span></div>
+<div style="position:absolute;left:43.20px;top:80.06px" class="cls_045"><span class="cls_045">IDEF0</span></div>
+<div style="position:absolute;left:43.20px;top:129.03px" class="cls_005"><span class="cls_005">•</span><span class="cls_006"> Osnovni gradivni element IDEF0 je blok</span></div>
+<div style="position:absolute;left:64.80px;top:162.65px" class="cls_009"><span class="cls_009">•</span><span class="cls_010"> Četiri strane bloka imaju sledeće uloge:</span></div>
+<div style="position:absolute;left:86.42px;top:191.09px" class="cls_028"><span class="cls_028">•</span><span class="cls_034"> Lijeva - ulaz</span></div>
+<div style="position:absolute;left:86.42px;top:217.01px" class="cls_028"><span class="cls_028">•</span><span class="cls_034"> Desna - izlaz</span></div>
+<div style="position:absolute;left:86.42px;top:242.93px" class="cls_035"><span class="cls_035">•</span><span class="cls_036"> Gornja -  upravljanje</span></div>
+<div style="position:absolute;left:86.42px;top:268.87px" class="cls_028"><span class="cls_028">•</span><span class="cls_034"> Donja - mehanizam</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-360px;top:9350px;width:720px;height:540px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="955755a4-94f7-11ea-8b25-0cc47a792c0a_id_955755a4-94f7-11ea-8b25-0cc47a792c0a_files/background18.jpg" width=720 height=540></div>
+<div style="position:absolute;left:43.20px;top:55.94px" class="cls_004"><span class="cls_004">Karakteristike IDEF0 bloka</span></div>
+<div style="position:absolute;left:43.20px;top:126.39px" class="cls_025"><span class="cls_025">•</span><span class="cls_026"> Jednostavna sintaksa - riječ unutar bloka</span></div>
+<div style="position:absolute;left:43.20px;top:155.45px" class="cls_030"><span class="cls_030">•</span><span class="cls_027"> Blok - pravougaonik koji predstavlja funkciju, sadrži ime i broj</span></div>
+<div style="position:absolute;left:43.20px;top:184.49px" class="cls_030"><span class="cls_030">•</span><span class="cls_027"> Strelice - usmjerene linije, postoje 4 klase:</span></div>
+<div style="position:absolute;left:64.80px;top:213.29px" class="cls_028"><span class="cls_028">•</span><span class="cls_029"> Ulazi sa lijeve strane - ulaz (</span><span class="cls_047">I</span><span class="cls_029">nput)</span></div>
+<div style="position:absolute;left:64.80px;top:238.37px" class="cls_035"><span class="cls_035">•</span><span class="cls_039"> Ulazi odozgo - kontrola (</span><span class="cls_038">C</span><span class="cls_039">ontrol)</span></div>
+<div style="position:absolute;left:64.80px;top:263.47px" class="cls_028"><span class="cls_028">•</span><span class="cls_029"> Izlazi sa desne strane - izlaz (</span><span class="cls_047">O</span><span class="cls_029">utput)</span></div>
+<div style="position:absolute;left:64.80px;top:288.55px" class="cls_028"><span class="cls_028">•</span><span class="cls_029"> Uzazi odozdo - mehanizam (</span><span class="cls_047">M</span><span class="cls_029">echanism)</span></div>
+<div style="position:absolute;left:64.80px;top:313.63px" class="cls_029"><span class="cls_029">ICOM koncept</span></div>
+<div style="position:absolute;left:43.20px;top:338.96px" class="cls_025"><span class="cls_025">•</span><span class="cls_026"> Kontekst - okruženje u kojem funkcija ili skup funkcija radi</span></div>
+<div style="position:absolute;left:43.20px;top:368.02px" class="cls_030"><span class="cls_030">•</span><span class="cls_027"> Dekompozicija - razdvajanje funkcija na njene komponente</span></div>
+<div style="position:absolute;left:43.20px;top:397.06px" class="cls_030"><span class="cls_030">•</span><span class="cls_027"> Funkcija - aktivnost, proces ili transformacija modelovana</span></div>
+<div style="position:absolute;left:57.60px;top:420.82px" class="cls_026"><span class="cls_026">blokom, koja se identifikuje glagolom</span></div>
+<div style="position:absolute;left:43.20px;top:449.88px" class="cls_030"><span class="cls_030">•</span><span class="cls_027"> Spoj - mjesto gdje se strelica spaja sa drugim strelicama</span></div>
+<div style="position:absolute;left:43.20px;top:478.92px" class="cls_030"><span class="cls_030">•</span><span class="cls_027"> Čvor - blok iz kojeg potiče potomak</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-360px;top:9900px;width:720px;height:540px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="955755a4-94f7-11ea-8b25-0cc47a792c0a_id_955755a4-94f7-11ea-8b25-0cc47a792c0a_files/background19.jpg" width=720 height=540></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-360px;top:10450px;width:720px;height:540px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="955755a4-94f7-11ea-8b25-0cc47a792c0a_id_955755a4-94f7-11ea-8b25-0cc47a792c0a_files/background20.jpg" width=720 height=540></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-360px;top:11000px;width:720px;height:540px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="955755a4-94f7-11ea-8b25-0cc47a792c0a_id_955755a4-94f7-11ea-8b25-0cc47a792c0a_files/background21.jpg" width=720 height=540></div>
+<div style="position:absolute;left:43.20px;top:36.84px" class="cls_044"><span class="cls_044">Metodologija funkcionalnog modelovanja</span></div>
+<div style="position:absolute;left:43.20px;top:80.06px" class="cls_045"><span class="cls_045">IDEF0</span></div>
+<div style="position:absolute;left:43.20px;top:126.96px" class="cls_025"><span class="cls_025">•</span></div>
+<div style="position:absolute;left:57.60px;top:123.72px" class="cls_026"><span class="cls_026">Pojašnjenje pojmova:</span></div>
+<div style="position:absolute;left:64.80px;top:150.29px" class="cls_028"><span class="cls_028">•</span><span class="cls_029"> ulaz (I = Input): nešto što se troši u procesu (nije obavezan),</span></div>
+<div style="position:absolute;left:64.80px;top:173.09px" class="cls_028"><span class="cls_028">•</span><span class="cls_029"> upravljanje (C = Control): ograničenje na izvršavanje procesa</span></div>
+<div style="position:absolute;left:79.22px;top:191.33px" class="cls_029"><span class="cls_029">(obavezno),</span></div>
+<div style="position:absolute;left:64.80px;top:214.13px" class="cls_028"><span class="cls_028">•</span><span class="cls_029"> izlaz (O = Output): rezultat procesa (obavezan),</span></div>
+<div style="position:absolute;left:64.80px;top:236.93px" class="cls_035"><span class="cls_035">•</span><span class="cls_039"> mehanizam (M = Mechanism): koristi se u procesu, ali se ne troši (nije</span></div>
+<div style="position:absolute;left:79.22px;top:255.19px" class="cls_029"><span class="cls_029">obavezan).</span></div>
+<div style="position:absolute;left:43.20px;top:281.11px" class="cls_030"><span class="cls_030">•</span></div>
+<div style="position:absolute;left:57.60px;top:277.87px" class="cls_027"><span class="cls_027">Uzajamno dejstvo između funkcija u IDEF0 se predstavlja</span></div>
+<div style="position:absolute;left:57.60px;top:298.99px" class="cls_027"><span class="cls_027">vezama koje odražavaju tok podataka ili materijala, koji sa</span></div>
+<div style="position:absolute;left:57.60px;top:320.09px" class="cls_026"><span class="cls_026">izlaza jedne funkcije dolaze na ulaz druge.</span></div>
+<div style="position:absolute;left:64.80px;top:346.66px" class="cls_028"><span class="cls_028">•</span><span class="cls_029"> U zavisnosti od toga sa koje strane bloka se nalazi, tok dobija naziv</span></div>
+<div style="position:absolute;left:79.22px;top:364.90px" class="cls_029"><span class="cls_029">„ulazni“, „izlazni“ ili „upravljački“.</span></div>
+<div style="position:absolute;left:43.20px;top:390.82px" class="cls_030"><span class="cls_030">•</span></div>
+<div style="position:absolute;left:57.60px;top:387.58px" class="cls_027"><span class="cls_027">U IDEF0 su realizovana tri osnovna principa modelovanja</span></div>
+<div style="position:absolute;left:57.60px;top:408.70px" class="cls_027"><span class="cls_027">procesa:</span></div>
+<div style="position:absolute;left:64.80px;top:435.22px" class="cls_035"><span class="cls_035">•</span><span class="cls_039"> princip funkcionalne dekompozicije,</span></div>
+<div style="position:absolute;left:64.80px;top:458.04px" class="cls_028"><span class="cls_028">•</span><span class="cls_029"> princip ograničenja složenosti i</span></div>
+<div style="position:absolute;left:64.80px;top:480.84px" class="cls_028"><span class="cls_028">•</span><span class="cls_029"> princip konteksta.</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-360px;top:11550px;width:720px;height:540px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="955755a4-94f7-11ea-8b25-0cc47a792c0a_id_955755a4-94f7-11ea-8b25-0cc47a792c0a_files/background22.jpg" width=720 height=540></div>
+<div style="position:absolute;left:43.20px;top:55.94px" class="cls_004"><span class="cls_004">IDEF0</span></div>
+<div style="position:absolute;left:43.20px;top:126.15px" class="cls_005"><span class="cls_005">•</span><span class="cls_006"> Princip funkcionalne dekompozicije se sastoji u</span></div>
+<div style="position:absolute;left:57.60px;top:152.09px" class="cls_007"><span class="cls_007">predstavljanju složene poslovne funkcije skupom</span></div>
+<div style="position:absolute;left:57.60px;top:178.01px" class="cls_007"><span class="cls_007">elementarnih funkcija</span></div>
+<div style="position:absolute;left:43.20px;top:209.69px" class="cls_008"><span class="cls_008">•</span><span class="cls_007"> Princip ograničenja složenosti se sastoji u tome da broj</span></div>
+<div style="position:absolute;left:57.60px;top:235.61px" class="cls_006"><span class="cls_006">blokova na dijagramu mora biti od 2 do 6.</span></div>
+<div style="position:absolute;left:43.20px;top:267.31px" class="cls_008"><span class="cls_008">•</span><span class="cls_007"> Princip konteksta se sastoji u tome da modelovanje</span></div>
+<div style="position:absolute;left:57.60px;top:293.23px" class="cls_007"><span class="cls_007">poslovnog procesa počinje sa crtanjem kontekstnog</span></div>
+<div style="position:absolute;left:57.60px;top:319.16px" class="cls_006"><span class="cls_006">dijagrama koji podrazumijeva identifikaciju primarne</span></div>
+<div style="position:absolute;left:57.60px;top:345.10px" class="cls_007"><span class="cls_007">funkcije (na kontekstnom dijagramu se prikazuje samo</span></div>
+<div style="position:absolute;left:57.60px;top:371.02px" class="cls_007"><span class="cls_007">jedan blok koji predstavlja glavnu poslovnu funkciju</span></div>
+<div style="position:absolute;left:57.60px;top:396.94px" class="cls_007"><span class="cls_007">sistema koji se modeluje)</span></div>
+<div style="position:absolute;left:64.80px;top:428.14px" class="cls_032"><span class="cls_032">•</span><span class="cls_011"> Pri određivanju glavne poslovne funkcije, neophodno je imati u vidu</span></div>
+<div style="position:absolute;left:79.22px;top:449.76px" class="cls_010"><span class="cls_010">cilj modelovanja - jedan poslovni sistem se može opisati na razne</span></div>
+<div style="position:absolute;left:79.22px;top:471.36px" class="cls_010"><span class="cls_010">načine, u zavisnosti od toga sa kog stanovišta se posmatra.</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-360px;top:12100px;width:720px;height:540px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="955755a4-94f7-11ea-8b25-0cc47a792c0a_id_955755a4-94f7-11ea-8b25-0cc47a792c0a_files/background23.jpg" width=720 height=540></div>
+<div style="position:absolute;left:43.20px;top:36.84px" class="cls_044"><span class="cls_044">Dokumentovanje tehnoloških procesa</span></div>
+<div style="position:absolute;left:43.20px;top:80.06px" class="cls_045"><span class="cls_045">IDEF3</span></div>
+<div style="position:absolute;left:43.20px;top:129.03px" class="cls_025"><span class="cls_025">•</span><span class="cls_026"> Metoda IDEF3 predstavlja standard za dokumentovanje</span></div>
+<div style="position:absolute;left:57.60px;top:155.45px" class="cls_027"><span class="cls_027">tehnoloških procesa, koji se odvijaju u poslovnim sistemima, i</span></div>
+<div style="position:absolute;left:57.60px;top:181.85px" class="cls_027"><span class="cls_027">predstavlja alat za vizuelno praćenje i modeliranje njihovih</span></div>
+<div style="position:absolute;left:57.60px;top:208.25px" class="cls_027"><span class="cls_027">scenarija.</span></div>
+<div style="position:absolute;left:43.20px;top:239.93px" class="cls_025"><span class="cls_025">•</span><span class="cls_026"> Pod scenarijom se podrazumjeva opis redoslijeda promjena</span></div>
+<div style="position:absolute;left:57.60px;top:266.35px" class="cls_027"><span class="cls_027">svojstava objekata, u okvirima razmatranog procesa (npr. opis</span></div>
+<div style="position:absolute;left:57.60px;top:292.75px" class="cls_027"><span class="cls_027">redoslijeda etapa obrade dijelova u radionici i promjena</span></div>
+<div style="position:absolute;left:57.60px;top:319.15px" class="cls_027"><span class="cls_027">njihovih svojstava nakon završetka svake etape).</span></div>
+<div style="position:absolute;left:43.20px;top:350.86px" class="cls_030"><span class="cls_030">•</span><span class="cls_027"> Izvršavanje svakog scenarija prati odgovarajući tok</span></div>
+<div style="position:absolute;left:57.60px;top:377.26px" class="cls_027"><span class="cls_027">dokumenata:</span></div>
+<div style="position:absolute;left:64.80px;top:408.34px" class="cls_028"><span class="cls_028">•</span><span class="cls_029"> tok dokumenata koji određuju strukturu i redoslijed procesa (npr.</span></div>
+<div style="position:absolute;left:79.22px;top:431.14px" class="cls_039"><span class="cls_039">tehnološke napomene, opis standarda) i</span></div>
+<div style="position:absolute;left:64.80px;top:458.52px" class="cls_028"><span class="cls_028">•</span><span class="cls_029"> tok dokumenata koji odražavaju hod njegovog izvršenja (npr. rezultati</span></div>
+<div style="position:absolute;left:79.22px;top:481.32px" class="cls_029"><span class="cls_029">testova, ekspertiza).</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-360px;top:12650px;width:720px;height:540px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="955755a4-94f7-11ea-8b25-0cc47a792c0a_id_955755a4-94f7-11ea-8b25-0cc47a792c0a_files/background24.jpg" width=720 height=540></div>
+<div style="position:absolute;left:43.20px;top:55.94px" class="cls_004"><span class="cls_004">IDEF3</span></div>
+<div style="position:absolute;left:43.20px;top:123.72px" class="cls_025"><span class="cls_025">•</span><span class="cls_026"> Postoje dva tipa dijagrama u standardu IDEF3, koji</span></div>
+<div style="position:absolute;left:57.60px;top:144.89px" class="cls_027"><span class="cls_027">predstavljaju opise jednog istog scenarija tehnološkog procesa</span></div>
+<div style="position:absolute;left:57.60px;top:166.01px" class="cls_027"><span class="cls_027">iz različitih uglova posmatranja:</span></div>
+<div style="position:absolute;left:64.80px;top:192.53px" class="cls_028"><span class="cls_028">•</span><span class="cls_029"> Dijagrami opisa redosleda faza procesa (Process Flow Description</span></div>
+<div style="position:absolute;left:79.22px;top:210.77px" class="cls_029"><span class="cls_029">Diagrams - PFDD) - prikazuju veze među pojedinim akcijama nekog</span></div>
+<div style="position:absolute;left:79.22px;top:229.01px" class="cls_039"><span class="cls_039">scenarija</span></div>
+<div style="position:absolute;left:64.80px;top:251.83px" class="cls_028"><span class="cls_028">•</span><span class="cls_029"> Dijagrami stanja objekta i njegovi transformacioni procesi (Object State</span></div>
+<div style="position:absolute;left:79.22px;top:270.07px" class="cls_029"><span class="cls_029">Transition Network - OSTN) - opis dozvoljenih stanja i uslova</span></div>
+<div style="position:absolute;left:43.20px;top:292.75px" class="cls_030"><span class="cls_030">•</span><span class="cls_027"> Zajedno daju pregled niza aktivnosti koje opisuju neki proces</span></div>
+<div style="position:absolute;left:43.20px;top:319.15px" class="cls_030"><span class="cls_030">•</span><span class="cls_027"> Osnovni cilj IDEF3 je da obezbijedi struktuirani nači na koji</span></div>
+<div style="position:absolute;left:57.60px;top:340.30px" class="cls_027"><span class="cls_027">ekspert iz određenog domena može da prikaže znanje o</span></div>
+<div style="position:absolute;left:57.60px;top:361.42px" class="cls_027"><span class="cls_027">operacijama određenog sistema ili organizacije</span></div>
+<div style="position:absolute;left:43.20px;top:387.82px" class="cls_030"><span class="cls_030">•</span><span class="cls_027"> Motivi za razvoj IDEF3:</span></div>
+<div style="position:absolute;left:64.80px;top:414.34px" class="cls_028"><span class="cls_028">•</span><span class="cls_029"> Ubrzanje procesa modelovanja sistema</span></div>
+<div style="position:absolute;left:64.80px;top:437.16px" class="cls_028"><span class="cls_028">•</span><span class="cls_029"> Podrška upravljanju projektom</span></div>
+<div style="position:absolute;left:64.80px;top:459.96px" class="cls_028"><span class="cls_028">•</span><span class="cls_029"> Pružanje koncepta, sintakse i procedura za izgradnju zahtjeva sistema</span></div>
+<div style="position:absolute;left:64.80px;top:482.76px" class="cls_028"><span class="cls_028">•</span><span class="cls_029"> ...</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-360px;top:13200px;width:720px;height:540px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="955755a4-94f7-11ea-8b25-0cc47a792c0a_id_955755a4-94f7-11ea-8b25-0cc47a792c0a_files/background25.jpg" width=720 height=540></div>
+<div style="position:absolute;left:43.20px;top:55.94px" class="cls_004"><span class="cls_004">IDEF3 - Model opisa procesa</span></div>
+<div style="position:absolute;left:43.20px;top:129.03px" class="cls_005"><span class="cls_005">•</span><span class="cls_006"> Prikazuje način ponašanja predloženog sistema</span></div>
+<div style="position:absolute;left:43.20px;top:163.61px" class="cls_008"><span class="cls_008">•</span><span class="cls_007"> 5 osnovnih gradivnih blokova za opisivanje sistema</span></div>
+<div style="position:absolute;left:64.80px;top:197.21px" class="cls_009"><span class="cls_009">•</span><span class="cls_010"> Dijagram opisa procesa:</span></div>
+<div style="position:absolute;left:86.42px;top:225.65px" class="cls_048"><span class="cls_048">1. Aktivnost </span><span class="cls_034">- strelica</span></div>
+<div style="position:absolute;left:86.42px;top:251.59px" class="cls_048"><span class="cls_048">2. Logika </span><span class="cls_034">- blokovi za spajanje</span></div>
+<div style="position:absolute;left:86.42px;top:277.51px" class="cls_048"><span class="cls_048">3 Ponašanje </span><span class="cls_034">- blokovi</span></div>
+<div style="position:absolute;left:64.80px;top:303.79px" class="cls_009"><span class="cls_009">•</span><span class="cls_010"> Stanje i prelazi</span></div>
+<div style="position:absolute;left:86.42px;top:332.24px" class="cls_049"><span class="cls_049">4. Stanje objekta </span><span class="cls_036">- krug</span></div>
+<div style="position:absolute;left:86.42px;top:358.18px" class="cls_048"><span class="cls_048">5. Prelaz stanja </span><span class="cls_034">- strelice</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-360px;top:13750px;width:720px;height:540px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="955755a4-94f7-11ea-8b25-0cc47a792c0a_id_955755a4-94f7-11ea-8b25-0cc47a792c0a_files/background26.jpg" width=720 height=540></div>
+<div style="position:absolute;left:43.20px;top:55.94px" class="cls_004"><span class="cls_004">IDEF3</span></div>
+<div style="position:absolute;left:43.20px;top:129.03px" class="cls_005"><span class="cls_005">•</span><span class="cls_006"> Organizaciona struktura - scenario</span></div>
+<div style="position:absolute;left:64.80px;top:162.65px" class="cls_009"><span class="cls_009">•</span><span class="cls_010"> Skup situacija i stanja koja opisuju određenu klasu problema</span></div>
+<div style="position:absolute;left:43.20px;top:192.41px" class="cls_008"><span class="cls_008">•</span><span class="cls_007"> Primjer</span></div>
+<div style="position:absolute;left:64.80px;top:226.01px" class="cls_009"><span class="cls_009">•</span><span class="cls_010"> Scenario: dio se doprema u radionicu za farbanje osnovnom</span></div>
+<div style="position:absolute;left:79.22px;top:250.03px" class="cls_010"><span class="cls_010">farbom. Ona se nanosi u jednom debelom sloju na veoma visokoj</span></div>
+<div style="position:absolute;left:79.22px;top:274.03px" class="cls_010"><span class="cls_010">temperaturi. Boja se suši u peći, nakon čega se vrši testiranje</span></div>
+<div style="position:absolute;left:79.22px;top:298.03px" class="cls_010"><span class="cls_010">kvaliteta farbanja. Ako se otkrije da nema dovoljno osnovne farbe,</span></div>
+<div style="position:absolute;left:79.22px;top:322.04px" class="cls_011"><span class="cls_011">taj dio se ponovo vraća na farbanje. Ako doi zadovolji inspekciju,</span></div>
+<div style="position:absolute;left:79.22px;top:346.06px" class="cls_010"><span class="cls_010">prosleđuje se dalje na obradu.</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-360px;top:14300px;width:720px;height:540px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="955755a4-94f7-11ea-8b25-0cc47a792c0a_id_955755a4-94f7-11ea-8b25-0cc47a792c0a_files/background27.jpg" width=720 height=540></div>
+<div style="position:absolute;left:43.20px;top:58.46px" class="cls_045"><span class="cls_045">IDEF3 - Dijagrami opisa redosleda faza</span></div>
+<div style="position:absolute;left:43.20px;top:126.15px" class="cls_005"><span class="cls_005">•</span><span class="cls_006"> Simboli:</span></div>
+<div style="position:absolute;left:64.80px;top:157.37px" class="cls_009"><span class="cls_009">•</span><span class="cls_010"> Pravougaonici na dijagramu PFDD se zovu funkcionalni elementi ili</span></div>
+<div style="position:absolute;left:79.22px;top:178.97px" class="cls_010"><span class="cls_010">elementi ponašanja (</span><span class="cls_050">Unit of Behavior </span><span class="cls_010">(UOB)) - označavaju</span></div>
+<div style="position:absolute;left:79.22px;top:200.57px" class="cls_010"><span class="cls_010">aktivnosti, fazu procesa ili primljena rješenja.</span></div>
+<div style="position:absolute;left:86.42px;top:226.87px" class="cls_028"><span class="cls_028">•</span><span class="cls_034"> Svaki UOB se imenuje glagolskim izrazima oblika infinitiv + objekat i</span></div>
+<div style="position:absolute;left:100.82px;top:246.31px" class="cls_034"><span class="cls_034">jedinstvenim brojem.</span></div>
+<div style="position:absolute;left:64.80px;top:270.19px" class="cls_009"><span class="cls_009">•</span><span class="cls_010"> Na dijagramima za veze između funkcija se prikazuju strelicama, i</span></div>
+<div style="position:absolute;left:79.22px;top:291.79px" class="cls_010"><span class="cls_010">to:</span></div>
+<div style="position:absolute;left:86.42px;top:318.07px" class="cls_028"><span class="cls_028">•</span><span class="cls_034"> prethođenje </span><span class="cls_051">(Precedence)</span><span class="cls_034">, prethodna aktivnost se mora završiti da bi</span></div>
+<div style="position:absolute;left:100.82px;top:337.54px" class="cls_034"><span class="cls_034">sledeća započela (crta se slijeva nadesno ili odozgo prema dole),</span></div>
+<div style="position:absolute;left:86.42px;top:361.30px" class="cls_028"><span class="cls_028">•</span><span class="cls_034"> tok objekata </span><span class="cls_051">(Object Flow)</span><span class="cls_034">, izlaz prethodne je ulaz u slijedeću aktivnost,</span></div>
+<div style="position:absolute;left:86.42px;top:385.06px" class="cls_028"><span class="cls_028">•</span><span class="cls_034"> relacioni </span><span class="cls_051">(Relational Link)</span><span class="cls_034">, povezivanje uz korisnički definisani uslov.</span></div>
+<div style="position:absolute;left:64.80px;top:408.94px" class="cls_009"><span class="cls_009">•</span><span class="cls_010"> Prelazi, veze </span><span class="cls_050">(J - junction) </span><span class="cls_010">su sledeće:</span></div>
+<div style="position:absolute;left:86.42px;top:435.22px" class="cls_035"><span class="cls_035">•</span><span class="cls_036"> & (logičko I) - svaka povezana aktivnost uvijek se obavlja/završava,</span></div>
+<div style="position:absolute;left:86.42px;top:459.00px" class="cls_028"><span class="cls_028">•</span><span class="cls_034"> X (ekskluzivno ILI) - obavlja se samo jedna od povezanih aktivnosti,</span></div>
+<div style="position:absolute;left:86.42px;top:482.76px" class="cls_028"><span class="cls_028">•</span><span class="cls_034"> O (ILI) - obavlja se jedna ili više povezanih aktivnosti.</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-360px;top:14850px;width:720px;height:540px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="955755a4-94f7-11ea-8b25-0cc47a792c0a_id_955755a4-94f7-11ea-8b25-0cc47a792c0a_files/background28.jpg" width=720 height=540></div>
+<div style="position:absolute;left:43.20px;top:55.94px" class="cls_004"><span class="cls_004">IDEF3 - Dijagrami stanja objekta</span></div>
+<div style="position:absolute;left:43.20px;top:129.03px" class="cls_005"><span class="cls_005">•</span><span class="cls_006"> Isti primjer ali sa stanovišta objekta (ne posmatrača)</span></div>
+<div style="position:absolute;left:43.20px;top:163.61px" class="cls_008"><span class="cls_008">•</span><span class="cls_007"> Ključni elementi su </span><span class="cls_052">stanje</span><span class="cls_007"> (krug) i </span><span class="cls_052">promjena stanja</span></div>
+<div style="position:absolute;left:57.60px;top:192.41px" class="cls_007"><span class="cls_007">(strelice)</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-360px;top:15400px;width:720px;height:540px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="955755a4-94f7-11ea-8b25-0cc47a792c0a_id_955755a4-94f7-11ea-8b25-0cc47a792c0a_files/background29.jpg" width=720 height=540></div>
+<div style="position:absolute;left:43.20px;top:55.94px" class="cls_004"><span class="cls_004">Simboli</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-360px;top:15950px;width:720px;height:540px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="955755a4-94f7-11ea-8b25-0cc47a792c0a_id_955755a4-94f7-11ea-8b25-0cc47a792c0a_files/background30.jpg" width=720 height=540></div>
+<div style="position:absolute;left:43.20px;top:55.94px" class="cls_004"><span class="cls_004">Primjer</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-360px;top:16500px;width:720px;height:540px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="955755a4-94f7-11ea-8b25-0cc47a792c0a_id_955755a4-94f7-11ea-8b25-0cc47a792c0a_files/background31.jpg" width=720 height=540></div>
+<div style="position:absolute;left:43.20px;top:55.94px" class="cls_004"><span class="cls_004">Primjer</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-360px;top:17050px;width:720px;height:540px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="955755a4-94f7-11ea-8b25-0cc47a792c0a_id_955755a4-94f7-11ea-8b25-0cc47a792c0a_files/background32.jpg" width=720 height=540></div>
+<div style="position:absolute;left:43.20px;top:55.94px" class="cls_004"><span class="cls_004">Primjer</span></div>
+</div>
+
+</body>
+</html>

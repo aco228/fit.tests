@@ -1,0 +1,637 @@
+<html>
+<head><meta http-equiv=Content-Type content="text/html; charset=UTF-8">
+<style type="text/css">
+<!--
+span.cls_003{font-family:Arial,serif;font-size:14.0px;color:rgb(255,255,255);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_003{font-family:Arial,serif;font-size:14.0px;color:rgb(255,255,255);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_002{font-family:Arial,serif;font-size:54.1px;color:rgb(210,82,59);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_002{font-family:Arial,serif;font-size:54.1px;color:rgb(210,82,59);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_004{font-family:Arial,serif;font-size:40.1px;color:rgb(210,82,59);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_004{font-family:Arial,serif;font-size:40.1px;color:rgb(210,82,59);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_005{font-family:Arial,serif;font-size:20.4px;color:rgb(146,161,153);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_005{font-family:Arial,serif;font-size:20.4px;color:rgb(146,161,153);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_006{font-family:Arial,serif;font-size:24.1px;color:rgb(41,41,52);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_006{font-family:Arial,serif;font-size:24.1px;color:rgb(41,41,52);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_007{font-family:Arial,serif;font-size:17.0px;color:rgb(146,161,153);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_007{font-family:Arial,serif;font-size:17.0px;color:rgb(146,161,153);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_008{font-family:Arial,serif;font-size:20.0px;color:rgb(41,41,52);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_008{font-family:Arial,serif;font-size:20.0px;color:rgb(41,41,52);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_009{font-family:Arial,serif;font-size:36.0px;color:rgb(210,82,59);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_009{font-family:Arial,serif;font-size:36.0px;color:rgb(210,82,59);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_010{font-family:Arial,serif;font-size:36.1px;color:rgb(210,82,59);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_010{font-family:Arial,serif;font-size:36.1px;color:rgb(210,82,59);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_011{font-family:Arial,serif;font-size:18.8px;color:rgb(146,161,153);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_011{font-family:Arial,serif;font-size:18.8px;color:rgb(146,161,153);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_012{font-family:Arial,serif;font-size:22.1px;color:rgb(41,41,52);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_012{font-family:Arial,serif;font-size:22.1px;color:rgb(41,41,52);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_013{font-family:Arial,serif;font-size:16.2px;color:rgb(146,161,153);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_013{font-family:Arial,serif;font-size:16.2px;color:rgb(146,161,153);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_014{font-family:Arial,serif;font-size:19.1px;color:rgb(41,41,52);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_014{font-family:Arial,serif;font-size:19.1px;color:rgb(41,41,52);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_015{font-family:Arial,serif;font-size:14.5px;color:rgb(146,161,153);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_015{font-family:Arial,serif;font-size:14.5px;color:rgb(146,161,153);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_016{font-family:Arial,serif;font-size:17.0px;color:rgb(41,41,52);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_016{font-family:Arial,serif;font-size:17.0px;color:rgb(41,41,52);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_017{font-family:Arial,serif;font-size:18.1px;color:rgb(255,255,255);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_017{font-family:Arial,serif;font-size:18.1px;color:rgb(255,255,255);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_018{font-family:Arial,serif;font-size:18.1px;color:rgb(255,255,255);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_018{font-family:Arial,serif;font-size:18.1px;color:rgb(255,255,255);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_019{font-family:Arial,serif;font-size:22.1px;color:rgb(41,41,52);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_019{font-family:Arial,serif;font-size:22.1px;color:rgb(41,41,52);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_020{font-family:Arial,serif;font-size:16.1px;color:rgb(41,41,52);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_020{font-family:Arial,serif;font-size:16.1px;color:rgb(41,41,52);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_037{font-family:Arial,serif;font-size:24.1px;color:rgb(41,41,52);font-weight:bold;font-style:normal;text-decoration: underline}
+div.cls_037{font-family:Arial,serif;font-size:24.1px;color:rgb(41,41,52);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_021{font-family:Arial,serif;font-size:24.1px;color:rgb(41,41,52);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_021{font-family:Arial,serif;font-size:24.1px;color:rgb(41,41,52);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_022{font-family:Arial,serif;font-size:24.1px;color:rgb(41,41,52);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_022{font-family:Arial,serif;font-size:24.1px;color:rgb(41,41,52);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_023{font-family:Arial,serif;font-size:20.1px;color:rgb(41,41,52);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_023{font-family:Arial,serif;font-size:20.1px;color:rgb(41,41,52);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_024{font-family:Arial,serif;font-size:14.5px;color:rgb(146,161,153);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_024{font-family:Arial,serif;font-size:14.5px;color:rgb(146,161,153);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_025{font-family:Arial,serif;font-size:17.1px;color:rgb(41,41,52);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_025{font-family:Arial,serif;font-size:17.1px;color:rgb(41,41,52);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_026{font-family:Arial,serif;font-size:17.0px;color:rgb(41,41,52);font-weight:normal;font-style:italic;text-decoration: none}
+div.cls_026{font-family:Arial,serif;font-size:17.0px;color:rgb(41,41,52);font-weight:normal;font-style:italic;text-decoration: none}
+span.cls_027{font-family:Arial,serif;font-size:16.3px;color:rgb(146,161,153);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_027{font-family:Arial,serif;font-size:16.3px;color:rgb(146,161,153);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_028{font-family:Arial,serif;font-size:18.1px;color:rgb(41,41,52);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_028{font-family:Arial,serif;font-size:18.1px;color:rgb(41,41,52);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_029{font-family:Arial,serif;font-size:18.1px;color:rgb(41,41,52);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_029{font-family:Arial,serif;font-size:18.1px;color:rgb(41,41,52);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_030{font-family:Arial,serif;font-size:17.1px;color:rgb(146,161,153);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_030{font-family:Arial,serif;font-size:17.1px;color:rgb(146,161,153);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_031{font-family:Arial,serif;font-size:22.1px;color:rgb(210,82,59);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_031{font-family:Arial,serif;font-size:22.1px;color:rgb(210,82,59);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_032{font-family:Arial,serif;font-size:16.3px;color:rgb(146,161,153);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_032{font-family:Arial,serif;font-size:16.3px;color:rgb(146,161,153);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_033{font-family:Arial,serif;font-size:15.4px;color:rgb(146,161,153);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_033{font-family:Arial,serif;font-size:15.4px;color:rgb(146,161,153);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_034{font-family:Arial,serif;font-size:15.4px;color:rgb(146,161,153);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_034{font-family:Arial,serif;font-size:15.4px;color:rgb(146,161,153);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_035{font-family:Arial,serif;font-size:16.2px;color:rgb(146,161,153);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_035{font-family:Arial,serif;font-size:16.2px;color:rgb(146,161,153);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_036{font-family:Arial,serif;font-size:19.1px;color:rgb(41,41,52);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_036{font-family:Arial,serif;font-size:19.1px;color:rgb(41,41,52);font-weight:normal;font-style:normal;text-decoration: none}
+-->
+</style>
+<script type="text/javascript" src="1556cb3c-94f7-11ea-8b25-0cc47a792c0a_id_1556cb3c-94f7-11ea-8b25-0cc47a792c0a_files/wz_jsgraphics.js"></script>
+</head>
+<body>
+<div style="position:absolute;left:50%;margin-left:-360px;top:0px;width:720px;height:540px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="1556cb3c-94f7-11ea-8b25-0cc47a792c0a_id_1556cb3c-94f7-11ea-8b25-0cc47a792c0a_files/background01.jpg" width=720 height=540></div>
+<div style="position:absolute;left:607.24px;top:5.64px" class="cls_003"><span class="cls_003">1</span></div>
+<div style="position:absolute;left:61.20px;top:189.86px" class="cls_002"><span class="cls_002">FAZE RAZVOJA IS</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-360px;top:550px;width:720px;height:540px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="1556cb3c-94f7-11ea-8b25-0cc47a792c0a_id_1556cb3c-94f7-11ea-8b25-0cc47a792c0a_files/background02.jpg" width=720 height=540></div>
+<div style="position:absolute;left:43.20px;top:55.86px" class="cls_004"><span class="cls_004">Struktura softverskog inženjeringa</span></div>
+<div style="position:absolute;left:43.20px;top:128.96px" class="cls_005"><span class="cls_005">•</span><span class="cls_006"> Strukturu softverskog inženjeringa  čine tri ključne</span></div>
+<div style="position:absolute;left:57.60px;top:157.76px" class="cls_006"><span class="cls_006">komponente:</span></div>
+<div style="position:absolute;left:64.80px;top:191.48px" class="cls_007"><span class="cls_007">•</span><span class="cls_008"> metode</span></div>
+<div style="position:absolute;left:64.80px;top:220.28px" class="cls_007"><span class="cls_007">•</span><span class="cls_008"> alati i</span></div>
+<div style="position:absolute;left:64.80px;top:249.08px" class="cls_007"><span class="cls_007">•</span><span class="cls_008"> postupci (procedure)</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-360px;top:1100px;width:720px;height:540px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="1556cb3c-94f7-11ea-8b25-0cc47a792c0a_id_1556cb3c-94f7-11ea-8b25-0cc47a792c0a_files/background03.jpg" width=720 height=540></div>
+<div style="position:absolute;left:43.20px;top:36.78px" class="cls_009"><span class="cls_009">Struktura softverskog inženjeringa -</span></div>
+<div style="position:absolute;left:43.20px;top:79.98px" class="cls_010"><span class="cls_010">metode</span></div>
+<div style="position:absolute;left:43.20px;top:123.74px" class="cls_011"><span class="cls_011">•</span><span class="cls_012"> Metode - predstavljaju neophodan i uz odreÿene pretpostavke</span></div>
+<div style="position:absolute;left:57.60px;top:144.86px" class="cls_012"><span class="cls_012">propisani sistematski način na koji se izvršavaju pojedini zadaci</span></div>
+<div style="position:absolute;left:57.60px;top:165.98px" class="cls_012"><span class="cls_012">softverskog inženjeringa:</span></div>
+<div style="position:absolute;left:64.80px;top:192.44px" class="cls_013"><span class="cls_013">•</span><span class="cls_014"> planiranje i procjenjivanje projekata,</span></div>
+<div style="position:absolute;left:64.80px;top:215.24px" class="cls_013"><span class="cls_013">•</span><span class="cls_014"> analiza sistemskih i softverskih zahtjeva,</span></div>
+<div style="position:absolute;left:64.80px;top:238.04px" class="cls_013"><span class="cls_013">•</span><span class="cls_014"> projektovanje strukture podataka,</span></div>
+<div style="position:absolute;left:64.80px;top:260.84px" class="cls_013"><span class="cls_013">•</span><span class="cls_014"> definisanje arhitekture programa,</span></div>
+<div style="position:absolute;left:64.80px;top:283.64px" class="cls_013"><span class="cls_013">•</span><span class="cls_014"> kodiranje,</span></div>
+<div style="position:absolute;left:64.80px;top:306.44px" class="cls_013"><span class="cls_013">•</span><span class="cls_014"> testiranje,</span></div>
+<div style="position:absolute;left:64.80px;top:329.26px" class="cls_013"><span class="cls_013">•</span><span class="cls_014"> održavanje</span></div>
+<div style="position:absolute;left:43.20px;top:352.00px" class="cls_011"><span class="cls_011">•</span><span class="cls_012"> Izbor odgovarajuće metode u razvoju je složen zadatak - ne</span></div>
+<div style="position:absolute;left:57.60px;top:373.12px" class="cls_012"><span class="cls_012">postoje jedinstvene metode koje se mogu primijeniti u</span></div>
+<div style="position:absolute;left:57.60px;top:394.24px" class="cls_012"><span class="cls_012">rješavanju svakog problema.</span></div>
+<div style="position:absolute;left:43.20px;top:420.64px" class="cls_011"><span class="cls_011">•</span><span class="cls_012"> Različite metode se mogu kombinovati</span></div>
+<div style="position:absolute;left:64.80px;top:447.10px" class="cls_013"><span class="cls_013">•</span><span class="cls_014"> Izabrati za korisnika, sistem i proces razvoja najpogodniji i</span></div>
+<div style="position:absolute;left:79.20px;top:465.34px" class="cls_014"><span class="cls_014">najprilagodljiviji metod</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-360px;top:1650px;width:720px;height:540px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="1556cb3c-94f7-11ea-8b25-0cc47a792c0a_id_1556cb3c-94f7-11ea-8b25-0cc47a792c0a_files/background04.jpg" width=720 height=540></div>
+<div style="position:absolute;left:43.20px;top:36.78px" class="cls_009"><span class="cls_009">Struktura softverskog inženjeringa - alati i</span></div>
+<div style="position:absolute;left:43.20px;top:79.98px" class="cls_010"><span class="cls_010">postupci</span></div>
+<div style="position:absolute;left:43.20px;top:127.28px" class="cls_007"><span class="cls_007">•</span></div>
+<div style="position:absolute;left:57.60px;top:124.28px" class="cls_008"><span class="cls_008">Alati - obezbjeÿuju automatizovanu ili poluautomatizovanu podršku u</span></div>
+<div style="position:absolute;left:57.60px;top:143.48px" class="cls_008"><span class="cls_008">primjeni metoda</span></div>
+<div style="position:absolute;left:43.20px;top:170.48px" class="cls_007"><span class="cls_007">•</span></div>
+<div style="position:absolute;left:57.60px;top:167.48px" class="cls_008"><span class="cls_008">Oni predstavljaju pomoć neophodnu da bi se automatizovale</span></div>
+<div style="position:absolute;left:57.60px;top:186.68px" class="cls_008"><span class="cls_008">aktivnosti razvoja softvera:</span></div>
+<div style="position:absolute;left:64.80px;top:210.80px" class="cls_015"><span class="cls_015">•</span><span class="cls_016"> Za upravljanje projektom, tj. planiranje, procjenjivanje, rasporeÿivanje,</span></div>
+<div style="position:absolute;left:79.20px;top:227.12px" class="cls_016"><span class="cls_016">modeliranje, analiza, projektovanje, kodiranje, dokumentovanje, testiranje,</span></div>
+<div style="position:absolute;left:79.20px;top:243.44px" class="cls_016"><span class="cls_016">integracija elemenata sa sistemom, upravljanje konfiguracijom, kontrola</span></div>
+<div style="position:absolute;left:79.20px;top:259.76px" class="cls_016"><span class="cls_016">kvaliteta softvera, upravljanje podacima i dr.</span></div>
+<div style="position:absolute;left:43.20px;top:283.04px" class="cls_007"><span class="cls_007">•</span></div>
+<div style="position:absolute;left:57.60px;top:280.04px" class="cls_008"><span class="cls_008">Postupci - povezuju metode i alate</span></div>
+<div style="position:absolute;left:64.80px;top:304.16px" class="cls_015"><span class="cls_015">•</span><span class="cls_016"> Niz konkretnih koraka koje je potrebno izvršiti prilikom rješavanja datog</span></div>
+<div style="position:absolute;left:79.20px;top:320.50px" class="cls_016"><span class="cls_016">problema ili grupe problema primjenom odreÿene metode.</span></div>
+<div style="position:absolute;left:43.20px;top:343.78px" class="cls_007"><span class="cls_007">•</span></div>
+<div style="position:absolute;left:57.60px;top:340.78px" class="cls_008"><span class="cls_008">Postupak može imati alternative, a meÿusobnim povezivanjem više</span></div>
+<div style="position:absolute;left:57.60px;top:359.98px" class="cls_008"><span class="cls_008">postupaka mogu se kreirati i potpuno novi postupci.</span></div>
+<div style="position:absolute;left:43.20px;top:386.98px" class="cls_007"><span class="cls_007">•</span></div>
+<div style="position:absolute;left:57.60px;top:383.98px" class="cls_008"><span class="cls_008">Postupci definišu:</span></div>
+<div style="position:absolute;left:64.80px;top:408.10px" class="cls_015"><span class="cls_015">•</span><span class="cls_016"> redoslijed izvoÿenja metodoloških koraka i primjene pojedinih metoda,</span></div>
+<div style="position:absolute;left:64.80px;top:428.50px" class="cls_015"><span class="cls_015">•</span><span class="cls_016"> koji se rezultati trebaju realizovati u pojedinim metodološkim koracima,</span></div>
+<div style="position:absolute;left:64.80px;top:448.90px" class="cls_015"><span class="cls_015">•</span><span class="cls_016"> kakve kontrole treba ugraditi u razvoj softvera u cilju obezbjeÿenja kvaliteta,</span></div>
+<div style="position:absolute;left:64.80px;top:469.30px" class="cls_015"><span class="cls_015">•</span><span class="cls_016"> putokaze za softver menadžere u ocjenjivanju izvršenog razvoja</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-360px;top:2200px;width:720px;height:540px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="1556cb3c-94f7-11ea-8b25-0cc47a792c0a_id_1556cb3c-94f7-11ea-8b25-0cc47a792c0a_files/background05.jpg" width=720 height=540></div>
+<div style="position:absolute;left:43.20px;top:55.86px" class="cls_004"><span class="cls_004">Životni ciklus softvera</span></div>
+<div style="position:absolute;left:43.20px;top:128.96px" class="cls_005"><span class="cls_005">•</span><span class="cls_006"> Razvoj softvera predstavlja ciklus aktivnosti u razvoju,</span></div>
+<div style="position:absolute;left:57.60px;top:157.76px" class="cls_006"><span class="cls_006">korišćenju i održavanju softvera.</span></div>
+<div style="position:absolute;left:43.20px;top:192.32px" class="cls_005"><span class="cls_005">•</span><span class="cls_006"> Tokom života, softver prolazi kroz više faza razvoja, od</span></div>
+<div style="position:absolute;left:57.60px;top:221.12px" class="cls_006"><span class="cls_006">začetka, preko inicijalnog razvoja, produktivnog</span></div>
+<div style="position:absolute;left:57.60px;top:249.92px" class="cls_006"><span class="cls_006">funkcionisanja, održavanja do povlačenja</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-360px;top:2750px;width:720px;height:540px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="1556cb3c-94f7-11ea-8b25-0cc47a792c0a_id_1556cb3c-94f7-11ea-8b25-0cc47a792c0a_files/background06.jpg" width=720 height=540></div>
+<div style="position:absolute;left:43.20px;top:55.86px" class="cls_004"><span class="cls_004">Životni ciklus softvera</span></div>
+<div style="position:absolute;left:285.68px;top:124.16px" class="cls_017"><span class="cls_017">Analiza i specificiranje</span></div>
+<div style="position:absolute;left:558.26px;top:124.16px" class="cls_017"><span class="cls_017">Specifikacija</span></div>
+<div style="position:absolute;left:75.86px;top:133.46px" class="cls_017"><span class="cls_017">Inicijalizacija</span></div>
+<div style="position:absolute;left:340.76px;top:142.76px" class="cls_017"><span class="cls_017">zahtjeva</span></div>
+<div style="position:absolute;left:577.76px;top:142.76px" class="cls_017"><span class="cls_017">funkcija</span></div>
+<div style="position:absolute;left:58.16px;top:229.52px" class="cls_017"><span class="cls_017">Strukturiranje</span></div>
+<div style="position:absolute;left:246.52px;top:229.52px" class="cls_017"><span class="cls_017">Specifikacija</span></div>
+<div style="position:absolute;left:422.08px;top:229.52px" class="cls_017"><span class="cls_017">Specifikacija detaljnih</span></div>
+<div style="position:absolute;left:54.62px;top:248.12px" class="cls_018"><span class="cls_018">dijelova i izbor</span></div>
+<div style="position:absolute;left:261.60px;top:248.12px" class="cls_018"><span class="cls_018">strukture</span></div>
+<div style="position:absolute;left:430.60px;top:248.12px" class="cls_018"><span class="cls_018">komponenti dizajna</span></div>
+<div style="position:absolute;left:63.26px;top:334.90px" class="cls_017"><span class="cls_017">Implementacija i</span></div>
+<div style="position:absolute;left:283.76px;top:334.90px" class="cls_017"><span class="cls_017">Integracija i</span></div>
+<div style="position:absolute;left:481.12px;top:334.90px" class="cls_017"><span class="cls_017">Provjera</span></div>
+<div style="position:absolute;left:50.72px;top:353.50px" class="cls_017"><span class="cls_017">otklanjanje grešaka</span></div>
+<div style="position:absolute;left:293.24px;top:353.50px" class="cls_017"><span class="cls_017">testiranje</span></div>
+<div style="position:absolute;left:456.58px;top:353.50px" class="cls_017"><span class="cls_017">dokumentacije</span></div>
+<div style="position:absolute;left:80.66px;top:440.28px" class="cls_017"><span class="cls_017">Obuka i</span></div>
+<div style="position:absolute;left:250.56px;top:449.60px" class="cls_017"><span class="cls_017">Održavanje</span></div>
+<div style="position:absolute;left:437.42px;top:449.60px" class="cls_017"><span class="cls_017">Povlačenje</span></div>
+<div style="position:absolute;left:76.16px;top:458.88px" class="cls_017"><span class="cls_017">upotreba</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-360px;top:3300px;width:720px;height:540px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="1556cb3c-94f7-11ea-8b25-0cc47a792c0a_id_1556cb3c-94f7-11ea-8b25-0cc47a792c0a_files/background07.jpg" width=720 height=540></div>
+<div style="position:absolute;left:43.20px;top:55.86px" class="cls_004"><span class="cls_004">Životni ciklus softvera</span></div>
+<div style="position:absolute;left:43.20px;top:123.74px" class="cls_011"><span class="cls_011">•</span><span class="cls_012"> Inicijalizacija sistema - aktivnost u kojoj se navodi porijeklo</span></div>
+<div style="position:absolute;left:57.60px;top:144.86px" class="cls_012"><span class="cls_012">softvera</span></div>
+<div style="position:absolute;left:64.80px;top:171.32px" class="cls_013"><span class="cls_013">•</span><span class="cls_014"> Primarni cilj inicijalizacije je realizacija novog softvera kojim se</span></div>
+<div style="position:absolute;left:79.20px;top:189.56px" class="cls_014"><span class="cls_014">zamjenjuju ili dopunjuju postojeća softverska rješenja</span></div>
+<div style="position:absolute;left:43.20px;top:212.30px" class="cls_011"><span class="cls_011">•</span><span class="cls_012"> Analiza i specificiranje zahtjeva - aktivnost u kojoj se</span></div>
+<div style="position:absolute;left:57.60px;top:233.42px" class="cls_012"><span class="cls_012">identifikuju problemi koje je potrebno riješiti novim softverom</span></div>
+<div style="position:absolute;left:64.80px;top:259.88px" class="cls_013"><span class="cls_013">•</span><span class="cls_014"> Proces softverskog inženjeringa odreÿuje šta se mora učiniti da bi se</span></div>
+<div style="position:absolute;left:79.20px;top:278.12px" class="cls_014"><span class="cls_014">problemi riješili</span></div>
+<div style="position:absolute;left:64.80px;top:300.92px" class="cls_013"><span class="cls_013">•</span><span class="cls_014"> Podaktivnosti ove aktivnosti su: identifikacija zahtjeva, analiza i</span></div>
+<div style="position:absolute;left:79.20px;top:319.18px" class="cls_014"><span class="cls_014">predstavljanje zahtjeva i razvoj kriterijuma i procedura za prihvatanje</span></div>
+<div style="position:absolute;left:79.20px;top:337.42px" class="cls_014"><span class="cls_014">novog softvera</span></div>
+<div style="position:absolute;left:43.20px;top:360.16px" class="cls_011"><span class="cls_011">•</span><span class="cls_012"> Specifikacija funkcija - aktivnost u kojoj se identifikuju i</span></div>
+<div style="position:absolute;left:57.60px;top:381.28px" class="cls_012"><span class="cls_012">formalizuju podaktivnosti kao što su: definisanje predmeta</span></div>
+<div style="position:absolute;left:57.60px;top:402.40px" class="cls_012"><span class="cls_012">obrade, identifikovanje atributa i veza objekata i operacija koje</span></div>
+<div style="position:absolute;left:57.60px;top:423.52px" class="cls_012"><span class="cls_012">transformišu ove objekte i utvrÿivanje ograničenja koja</span></div>
+<div style="position:absolute;left:57.60px;top:444.64px" class="cls_012"><span class="cls_012">odreÿuju ponašanje softvera</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-360px;top:3850px;width:720px;height:540px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="1556cb3c-94f7-11ea-8b25-0cc47a792c0a_id_1556cb3c-94f7-11ea-8b25-0cc47a792c0a_files/background08.jpg" width=720 height=540></div>
+<div style="position:absolute;left:43.20px;top:55.86px" class="cls_004"><span class="cls_004">Životni ciklus softvera</span></div>
+<div style="position:absolute;left:43.20px;top:126.38px" class="cls_011"><span class="cls_011">•</span><span class="cls_012"> Strukturiranje dijelova i izbor - aktivnost kojom se na osnovu</span></div>
+<div style="position:absolute;left:57.60px;top:150.14px" class="cls_012"><span class="cls_012">identifikovanih zahtjeva i specifikacije funkcija strukturira</span></div>
+<div style="position:absolute;left:57.60px;top:173.90px" class="cls_012"><span class="cls_012">softver na takve djelove kojima se može upravljati, a koji</span></div>
+<div style="position:absolute;left:57.60px;top:197.66px" class="cls_012"><span class="cls_012">predstavljaju logičke cjeline</span></div>
+<div style="position:absolute;left:64.80px;top:226.40px" class="cls_013"><span class="cls_013">•</span><span class="cls_014"> Nakon toga se vrši izbor i opredjeljenje, da li novi, postojeći ili</span></div>
+<div style="position:absolute;left:79.20px;top:246.92px" class="cls_014"><span class="cls_014">softverski sistem koji se može ponovo koristiti odgovara takvim</span></div>
+<div style="position:absolute;left:79.20px;top:267.44px" class="cls_014"><span class="cls_014">cjelinama</span></div>
+<div style="position:absolute;left:43.20px;top:292.82px" class="cls_011"><span class="cls_011">•</span><span class="cls_012"> Specifikacija strukture - aktivnost u kojoj se definišu</span></div>
+<div style="position:absolute;left:57.60px;top:316.58px" class="cls_019"><span class="cls_019">meÿusobne veze izmeÿu dijelova strukture i interfejs izmeÿu</span></div>
+<div style="position:absolute;left:57.60px;top:340.36px" class="cls_012"><span class="cls_012">modula sistema, na način koristan za njihov detaljni dizajn i</span></div>
+<div style="position:absolute;left:57.60px;top:364.12px" class="cls_012"><span class="cls_012">upravljanje cjelokupnom konfiguracijom.</span></div>
+<div style="position:absolute;left:43.20px;top:393.16px" class="cls_011"><span class="cls_011">•</span><span class="cls_012"> Specifikacija detaljnih komponenti dizajna - aktivnost u kojoj se</span></div>
+<div style="position:absolute;left:57.60px;top:416.92px" class="cls_012"><span class="cls_012">definišu procedure putem kojih se izvori podataka svakog</span></div>
+<div style="position:absolute;left:57.60px;top:440.68px" class="cls_012"><span class="cls_012">pojedinog modula transformišu iz potrebnih ulaza u zahtijevane</span></div>
+<div style="position:absolute;left:57.60px;top:464.44px" class="cls_012"><span class="cls_012">izlaze</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-360px;top:4400px;width:720px;height:540px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="1556cb3c-94f7-11ea-8b25-0cc47a792c0a_id_1556cb3c-94f7-11ea-8b25-0cc47a792c0a_files/background09.jpg" width=720 height=540></div>
+<div style="position:absolute;left:43.20px;top:55.86px" class="cls_004"><span class="cls_004">Životni ciklus softvera</span></div>
+<div style="position:absolute;left:43.20px;top:126.38px" class="cls_011"><span class="cls_011">•</span><span class="cls_012"> Implementacija komponenti i otklanjanje nedostataka -</span></div>
+<div style="position:absolute;left:57.60px;top:150.14px" class="cls_012"><span class="cls_012">aktivnost u kojoj se kodiraju dizajnirane procedure i procesi i</span></div>
+<div style="position:absolute;left:57.60px;top:173.90px" class="cls_012"><span class="cls_012">pretvaraju u izvorni kod</span></div>
+<div style="position:absolute;left:43.20px;top:202.94px" class="cls_011"><span class="cls_011">•</span><span class="cls_012"> Integracija i testiranje softvera - aktivnost koja afirmiše i</span></div>
+<div style="position:absolute;left:57.60px;top:226.70px" class="cls_012"><span class="cls_012">održava cjelokupnu integralnost komponenti softvera putem</span></div>
+<div style="position:absolute;left:57.60px;top:250.46px" class="cls_012"><span class="cls_012">verifikacije konzistentnosti i kompletnosti uvedenih modula,</span></div>
+<div style="position:absolute;left:57.60px;top:274.22px" class="cls_012"><span class="cls_012">verifikujući izvorni interfejs, vezu softvera  sa specifikacijama i</span></div>
+<div style="position:absolute;left:57.60px;top:297.98px" class="cls_012"><span class="cls_012">uporeÿujući performanse sistema i podsistema sa</span></div>
+<div style="position:absolute;left:57.60px;top:321.76px" class="cls_012"><span class="cls_012">identifikovanim zahtjevima.</span></div>
+<div style="position:absolute;left:43.20px;top:350.80px" class="cls_011"><span class="cls_011">•</span><span class="cls_012"> Provjera dokumentacije i uvoÿenje softvera - aktivnost koja</span></div>
+<div style="position:absolute;left:57.60px;top:374.56px" class="cls_012"><span class="cls_012">obuhvata izradu sistemske dokumentacije i uputstava za</span></div>
+<div style="position:absolute;left:57.60px;top:398.32px" class="cls_012"><span class="cls_012">korisnika</span></div>
+<div style="position:absolute;left:64.80px;top:427.06px" class="cls_013"><span class="cls_013">•</span><span class="cls_014"> Dokumenta koja su po formi pogodna za provjeru i kao podrška</span></div>
+<div style="position:absolute;left:79.20px;top:447.58px" class="cls_014"><span class="cls_014">sistema</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-360px;top:4950px;width:720px;height:540px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="1556cb3c-94f7-11ea-8b25-0cc47a792c0a_id_1556cb3c-94f7-11ea-8b25-0cc47a792c0a_files/background10.jpg" width=720 height=540></div>
+<div style="position:absolute;left:43.20px;top:55.86px" class="cls_004"><span class="cls_004">Životni ciklus softvera</span></div>
+<div style="position:absolute;left:43.20px;top:128.96px" class="cls_005"><span class="cls_005">•</span><span class="cls_006"> Obuka i upotreba - aktivnost koja obezbjeÿuje korisnike</span></div>
+<div style="position:absolute;left:57.60px;top:157.76px" class="cls_006"><span class="cls_006">softvera sa instrukcijama i uputstvom za razumijevanje</span></div>
+<div style="position:absolute;left:57.60px;top:186.56px" class="cls_006"><span class="cls_006">mogućnosti i ograničenja u  cilju efektivne upotrebe</span></div>
+<div style="position:absolute;left:57.60px;top:215.36px" class="cls_006"><span class="cls_006">sistema</span></div>
+<div style="position:absolute;left:43.20px;top:249.92px" class="cls_005"><span class="cls_005">•</span><span class="cls_006">  Održavanje softvera - aktivnost koja podržava operacije</span></div>
+<div style="position:absolute;left:57.60px;top:278.72px" class="cls_006"><span class="cls_006">sistema u ciljnom okruženju na način da obezbijedi</span></div>
+<div style="position:absolute;left:57.60px;top:307.52px" class="cls_006"><span class="cls_006">potrebna unapreÿenja, proširenja, popravke, zamjene i dr.</span></div>
+<div style="position:absolute;left:43.20px;top:342.10px" class="cls_005"><span class="cls_005">•</span><span class="cls_006"> Povlačenje softvera - poslednja aktivnost u životnom</span></div>
+<div style="position:absolute;left:57.60px;top:370.90px" class="cls_006"><span class="cls_006">ciklusu</span></div>
+<div style="position:absolute;left:64.80px;top:404.62px" class="cls_007"><span class="cls_007">•</span><span class="cls_008"> Softver razmatran kao beskoristan ipak može da se smatra</span></div>
+<div style="position:absolute;left:79.20px;top:428.62px" class="cls_008"><span class="cls_008">proizvodom koji bi se mogao u dijelovima ponovo upotrijebiti</span></div>
+<div style="position:absolute;left:64.80px;top:457.42px" class="cls_007"><span class="cls_007">•</span><span class="cls_008"> Komponente softvera koje su već jednom testirane su ekonomski</span></div>
+<div style="position:absolute;left:79.20px;top:481.42px" class="cls_008"><span class="cls_008">pogodnije od novih koje će se tek razvijati</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-360px;top:5500px;width:720px;height:540px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="1556cb3c-94f7-11ea-8b25-0cc47a792c0a_id_1556cb3c-94f7-11ea-8b25-0cc47a792c0a_files/background11.jpg" width=720 height=540></div>
+<div style="position:absolute;left:607.24px;top:5.64px" class="cls_003"><span class="cls_003">11</span></div>
+<div style="position:absolute;left:43.20px;top:55.86px" class="cls_004"><span class="cls_004">Životni ciklus IS</span></div>
+<div style="position:absolute;left:58.46px;top:153.90px" class="cls_020"><span class="cls_020">Planiranje</span></div>
+<div style="position:absolute;left:155.28px;top:221.82px" class="cls_020"><span class="cls_020">Analiza i</span></div>
+<div style="position:absolute;left:253.36px;top:222.70px" class="cls_020"><span class="cls_020">Testiranje</span></div>
+<div style="position:absolute;left:164.64px;top:238.38px" class="cls_020"><span class="cls_020">dizajn</span></div>
+<div style="position:absolute;left:305.80px;top:300.70px" class="cls_020"><span class="cls_020">Implementacija</span></div>
+<div style="position:absolute;left:409.54px;top:336.70px" class="cls_020"><span class="cls_020">Održavanje</span></div>
+<div style="position:absolute;left:568.96px;top:409.16px" class="cls_020"><span class="cls_020">Ocjenjivanje</span></div>
+<div style="position:absolute;left:480.70px;top:444.72px" class="cls_020"><span class="cls_020">Kontrola</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-360px;top:6050px;width:720px;height:540px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="1556cb3c-94f7-11ea-8b25-0cc47a792c0a_id_1556cb3c-94f7-11ea-8b25-0cc47a792c0a_files/background12.jpg" width=720 height=540></div>
+<div style="position:absolute;left:607.24px;top:5.64px" class="cls_003"><span class="cls_003">12</span></div>
+<div style="position:absolute;left:43.20px;top:55.86px" class="cls_004"><span class="cls_004">Razvoj informacionih sistema</span></div>
+<div style="position:absolute;left:43.20px;top:128.96px" class="cls_005"><span class="cls_005">•</span><span class="cls_006"> Projekat IS obično realizuje tim stručnjaka koji nisu</span></div>
+<div style="position:absolute;left:57.60px;top:157.76px" class="cls_006"><span class="cls_006">sastavni dio organizacije u kojoj se implementira.</span></div>
+<div style="position:absolute;left:43.20px;top:192.32px" class="cls_005"><span class="cls_005">•</span><span class="cls_006"> Da bi se obavio uspješan razvoj IS neophodno je:</span></div>
+<div style="position:absolute;left:64.80px;top:226.04px" class="cls_007"><span class="cls_007">•</span><span class="cls_008"> obezbjediti podršku rukovodstva firme;</span></div>
+<div style="position:absolute;left:64.80px;top:254.84px" class="cls_007"><span class="cls_007">•</span><span class="cls_008"> uključiti korisnike u sve faze razvoja;</span></div>
+<div style="position:absolute;left:64.80px;top:283.64px" class="cls_007"><span class="cls_007">•</span><span class="cls_008"> koristiti dokazane metodologije razvoja informacionog sistema;</span></div>
+<div style="position:absolute;left:64.80px;top:312.44px" class="cls_007"><span class="cls_007">•</span><span class="cls_008"> jasno definisanje ciljeva i zadataka sistema;</span></div>
+<div style="position:absolute;left:64.80px;top:341.26px" class="cls_007"><span class="cls_007">•</span><span class="cls_008"> usredsrediti se na najvažnije probleme i eventualne povoljnosti;</span></div>
+<div style="position:absolute;left:64.80px;top:370.06px" class="cls_007"><span class="cls_007">•</span><span class="cls_008"> jednostavan i adekvatan dizajn;</span></div>
+<div style="position:absolute;left:64.80px;top:398.86px" class="cls_007"><span class="cls_007">•</span><span class="cls_008"> dobar program obuke uključenih osoba;</span></div>
+<div style="position:absolute;left:64.80px;top:427.66px" class="cls_007"><span class="cls_007">•</span><span class="cls_008"> adekvatan plan uvoÿenja nakon završetka projekta;</span></div>
+<div style="position:absolute;left:64.80px;top:456.46px" class="cls_007"><span class="cls_007">•</span><span class="cls_008"> dobro definisan i organizovan program održavanja.</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-360px;top:6600px;width:720px;height:540px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="1556cb3c-94f7-11ea-8b25-0cc47a792c0a_id_1556cb3c-94f7-11ea-8b25-0cc47a792c0a_files/background13.jpg" width=720 height=540></div>
+<div style="position:absolute;left:607.24px;top:5.64px" class="cls_003"><span class="cls_003">13</span></div>
+<div style="position:absolute;left:43.20px;top:55.86px" class="cls_004"><span class="cls_004">Faze u razvoju IS</span></div>
+<div style="position:absolute;left:43.20px;top:128.96px" class="cls_005"><span class="cls_005">•</span><span class="cls_006"> Planiranje razvoja;</span></div>
+<div style="position:absolute;left:43.20px;top:163.52px" class="cls_005"><span class="cls_005">•</span><span class="cls_006"> Analiza i dizajn;</span></div>
+<div style="position:absolute;left:43.20px;top:198.08px" class="cls_005"><span class="cls_005">•</span><span class="cls_006"> Implementacija;</span></div>
+<div style="position:absolute;left:43.20px;top:232.64px" class="cls_005"><span class="cls_005">•</span><span class="cls_006"> Funkcionisanje i održavanje;</span></div>
+<div style="position:absolute;left:43.20px;top:267.20px" class="cls_005"><span class="cls_005">•</span><span class="cls_006"> Vrednovanje i kontrola.</span></div>
+<div style="position:absolute;left:43.20px;top:336.34px" class="cls_005"><span class="cls_005">•</span><span class="cls_006"> Svaka od pomenutih faza se </span><span class="cls_037">mora</span><span class="cls_006"> odraditi</span></div>
+<div style="position:absolute;left:43.20px;top:370.90px" class="cls_005"><span class="cls_005">•</span><span class="cls_006"> Faze se mogu dijeliti na podfaze ili aktivnosti</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-360px;top:7150px;width:720px;height:540px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="1556cb3c-94f7-11ea-8b25-0cc47a792c0a_id_1556cb3c-94f7-11ea-8b25-0cc47a792c0a_files/background14.jpg" width=720 height=540></div>
+<div style="position:absolute;left:607.24px;top:5.64px" class="cls_003"><span class="cls_003">14</span></div>
+<div style="position:absolute;left:43.20px;top:58.38px" class="cls_009"><span class="cls_009">Planiranje razvoja informacionog sistema</span></div>
+<div style="position:absolute;left:43.20px;top:126.38px" class="cls_011"><span class="cls_011">•</span><span class="cls_012"> Ova faza je dio strateškog planiranja jedne organizacije.</span></div>
+<div style="position:absolute;left:57.60px;top:150.14px" class="cls_012"><span class="cls_012">Aktivnosti u okviru ove faze su:</span></div>
+<div style="position:absolute;left:64.80px;top:181.76px" class="cls_013"><span class="cls_013">1.</span></div>
+<div style="position:absolute;left:100.80px;top:178.88px" class="cls_014"><span class="cls_014">Identifikacija i definisanje problema</span></div>
+<div style="position:absolute;left:64.80px;top:206.84px" class="cls_013"><span class="cls_013">2.</span></div>
+<div style="position:absolute;left:100.80px;top:203.96px" class="cls_014"><span class="cls_014">Analiza postojećeg informacionog sistema</span></div>
+<div style="position:absolute;left:64.80px;top:231.92px" class="cls_013"><span class="cls_013">3.</span></div>
+<div style="position:absolute;left:100.80px;top:229.04px" class="cls_014"><span class="cls_014">Šta se želi postići promjenama u informacionom sistemu</span></div>
+<div style="position:absolute;left:64.80px;top:257.00px" class="cls_013"><span class="cls_013">4.</span></div>
+<div style="position:absolute;left:100.80px;top:254.12px" class="cls_014"><span class="cls_014">Odluka da li se uvodi novi ili modifikuje postojeći informacioni sistem</span></div>
+<div style="position:absolute;left:64.80px;top:282.08px" class="cls_013"><span class="cls_013">5.</span></div>
+<div style="position:absolute;left:100.80px;top:279.20px" class="cls_014"><span class="cls_014">Projektovanje logičke strukture baze podataka</span></div>
+<div style="position:absolute;left:64.80px;top:307.16px" class="cls_013"><span class="cls_013">6.</span></div>
+<div style="position:absolute;left:100.80px;top:304.28px" class="cls_014"><span class="cls_014">Definisanje koncepcije tehničke podrške</span></div>
+<div style="position:absolute;left:64.80px;top:332.26px" class="cls_013"><span class="cls_013">7.</span></div>
+<div style="position:absolute;left:100.80px;top:329.38px" class="cls_014"><span class="cls_014">Definisanje modela kadrovske podrške</span></div>
+<div style="position:absolute;left:64.80px;top:357.34px" class="cls_013"><span class="cls_013">8.</span></div>
+<div style="position:absolute;left:100.80px;top:354.46px" class="cls_014"><span class="cls_014">Specifikacija potrebnih ulaganja</span></div>
+<div style="position:absolute;left:64.80px;top:382.42px" class="cls_013"><span class="cls_013">9.</span></div>
+<div style="position:absolute;left:100.80px;top:379.54px" class="cls_014"><span class="cls_014">Analiza izvodljivosti projekta</span></div>
+<div style="position:absolute;left:64.80px;top:404.62px" class="cls_013"><span class="cls_013">10.</span><span class="cls_014">  Utvrÿivanje prioriteta i izbor projektanta</span></div>
+<div style="position:absolute;left:64.80px;top:429.70px" class="cls_013"><span class="cls_013">11.</span><span class="cls_014">  Planiranje realizacije projekta</span></div>
+<div style="position:absolute;left:64.80px;top:454.78px" class="cls_013"><span class="cls_013">12.</span><span class="cls_014">  Prihvatanje ili odbijanje plana razvoja</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-360px;top:7700px;width:720px;height:540px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="1556cb3c-94f7-11ea-8b25-0cc47a792c0a_id_1556cb3c-94f7-11ea-8b25-0cc47a792c0a_files/background15.jpg" width=720 height=540></div>
+<div style="position:absolute;left:607.24px;top:5.64px" class="cls_003"><span class="cls_003">15</span></div>
+<div style="position:absolute;left:43.20px;top:58.38px" class="cls_009"><span class="cls_009">Planiranje razvoja informacionog sistema</span></div>
+<div style="position:absolute;left:43.20px;top:128.96px" class="cls_006"><span class="cls_006">1. Identifikacija i definisanje problema - potreba za</span></div>
+<div style="position:absolute;left:43.20px;top:157.76px" class="cls_006"><span class="cls_006">kreiranjem novog IS potiče iz sledećih razloga:</span></div>
+<div style="position:absolute;left:64.80px;top:191.48px" class="cls_007"><span class="cls_007">•</span><span class="cls_008"> Problemi sa postojećim informacionim sistemom</span></div>
+<div style="position:absolute;left:64.80px;top:220.28px" class="cls_007"><span class="cls_007">•</span><span class="cls_008"> Želja za iskorišćavanjem novih šansi i pogodnosti</span></div>
+<div style="position:absolute;left:64.80px;top:249.08px" class="cls_007"><span class="cls_007">•</span><span class="cls_008"> Rastuća konkurencija</span></div>
+<div style="position:absolute;left:64.80px;top:277.88px" class="cls_007"><span class="cls_007">•</span><span class="cls_008"> Potreba za efikasnijim korišćenjem informacija</span></div>
+<div style="position:absolute;left:64.80px;top:306.68px" class="cls_007"><span class="cls_007">•</span><span class="cls_008"> Reorganizacija u organizaciji (spajanje, razdvajanje, i sl.)</span></div>
+<div style="position:absolute;left:64.80px;top:335.50px" class="cls_007"><span class="cls_007">•</span><span class="cls_008"> Razvoj organizacije</span></div>
+<div style="position:absolute;left:64.80px;top:364.30px" class="cls_007"><span class="cls_007">•</span><span class="cls_008"> Promjene na tržištu i okruženju</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-360px;top:8250px;width:720px;height:540px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="1556cb3c-94f7-11ea-8b25-0cc47a792c0a_id_1556cb3c-94f7-11ea-8b25-0cc47a792c0a_files/background16.jpg" width=720 height=540></div>
+<div style="position:absolute;left:607.24px;top:5.64px" class="cls_003"><span class="cls_003">16</span></div>
+<div style="position:absolute;left:43.20px;top:58.38px" class="cls_009"><span class="cls_009">Planiranje razvoja informacionog sistema</span></div>
+<div style="position:absolute;left:43.20px;top:128.96px" class="cls_006"><span class="cls_006">2. Analiza postojećeg informacionog sistema</span></div>
+<div style="position:absolute;left:64.80px;top:162.68px" class="cls_007"><span class="cls_007">•</span><span class="cls_008"> Treba sagledati stanje hardvera, sistemskog i aplikativnog softvera,</span></div>
+<div style="position:absolute;left:79.20px;top:186.68px" class="cls_008"><span class="cls_008">informatičkih kadrova, troškova funkcionisanja, iskorišćenosti</span></div>
+<div style="position:absolute;left:79.20px;top:210.68px" class="cls_008"><span class="cls_008">postojećih resursa</span></div>
+<div style="position:absolute;left:64.80px;top:239.48px" class="cls_007"><span class="cls_007">•</span><span class="cls_008"> Procijeniti kvalitet, pravovremenost, količine, načina prezentacije</span></div>
+<div style="position:absolute;left:79.20px;top:263.48px" class="cls_008"><span class="cls_008">informacija koje postojeći sistem pruža</span></div>
+<div style="position:absolute;left:43.20px;top:293.12px" class="cls_021"><span class="cls_021">3. </span><span class="cls_006">Treba odgovoriti na pitanje šta se želi postići</span></div>
+<div style="position:absolute;left:43.20px;top:321.92px" class="cls_022"><span class="cls_022">promjenama u informacionom sistemu</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-360px;top:8800px;width:720px;height:540px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="1556cb3c-94f7-11ea-8b25-0cc47a792c0a_id_1556cb3c-94f7-11ea-8b25-0cc47a792c0a_files/background17.jpg" width=720 height=540></div>
+<div style="position:absolute;left:607.24px;top:5.64px" class="cls_003"><span class="cls_003">17</span></div>
+<div style="position:absolute;left:43.20px;top:58.38px" class="cls_009"><span class="cls_009">Planiranje razvoja informacionog sistema</span></div>
+<div style="position:absolute;left:43.20px;top:128.96px" class="cls_006"><span class="cls_006">4. Treba se odlučiti da li se uvodi potpuno novi ili se</span></div>
+<div style="position:absolute;left:43.20px;top:157.76px" class="cls_006"><span class="cls_006">modifikuje postojeći informacioni sistem</span></div>
+<div style="position:absolute;left:64.80px;top:191.48px" class="cls_007"><span class="cls_007">•</span><span class="cls_008"> Treba uporediti koje će se funkcije iz postojećeg sistema zadržati,</span></div>
+<div style="position:absolute;left:79.20px;top:215.48px" class="cls_008"><span class="cls_008">koje će se modifikovati a koje nove će se uvesti</span></div>
+<div style="position:absolute;left:64.80px;top:244.28px" class="cls_007"><span class="cls_007">•</span><span class="cls_008"> Treba razmotriti organizaciju podataka i klasa podataka, baza</span></div>
+<div style="position:absolute;left:79.20px;top:268.28px" class="cls_008"><span class="cls_008">podataka itd.</span></div>
+<div style="position:absolute;left:64.80px;top:297.08px" class="cls_007"><span class="cls_007">•</span><span class="cls_008"> Na osnovu razlika izmeÿu projektovanog i postojećeg</span></div>
+<div style="position:absolute;left:79.20px;top:321.08px" class="cls_023"><span class="cls_023">informacionog sistema donosi se odluka o vrsti promjena u</span></div>
+<div style="position:absolute;left:79.20px;top:345.10px" class="cls_008"><span class="cls_008">informacionom sistemu</span></div>
+<div style="position:absolute;left:43.20px;top:374.74px" class="cls_006"><span class="cls_006">5. Projektovanje logičke strukture baze podataka - realizuje</span></div>
+<div style="position:absolute;left:43.20px;top:403.54px" class="cls_006"><span class="cls_006">se na nivou entiteta (objekata) i veza meÿu njima</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-360px;top:9350px;width:720px;height:540px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="1556cb3c-94f7-11ea-8b25-0cc47a792c0a_id_1556cb3c-94f7-11ea-8b25-0cc47a792c0a_files/background18.jpg" width=720 height=540></div>
+<div style="position:absolute;left:607.24px;top:5.64px" class="cls_003"><span class="cls_003">18</span></div>
+<div style="position:absolute;left:43.20px;top:58.38px" class="cls_009"><span class="cls_009">Planiranje razvoja informacionog sistema</span></div>
+<div style="position:absolute;left:43.20px;top:124.28px" class="cls_008"><span class="cls_008">6. Definisanje koncepcije tehničke podrške - na osnovu ciljeva koji se</span></div>
+<div style="position:absolute;left:43.20px;top:143.48px" class="cls_008"><span class="cls_008">žele postići informacionim sistemom, veličine organizacije i sl. donosi</span></div>
+<div style="position:absolute;left:43.20px;top:162.68px" class="cls_008"><span class="cls_008">se odluka o obimu i strukturi računarskih resursa, komunikacione i</span></div>
+<div style="position:absolute;left:43.20px;top:181.88px" class="cls_008"><span class="cls_008">periferne opreme, sistemskog softvera, itd.</span></div>
+<div style="position:absolute;left:43.20px;top:229.88px" class="cls_007"><span class="cls_007">•</span><span class="cls_008"> Hardver:</span></div>
+<div style="position:absolute;left:64.80px;top:254.00px" class="cls_015"><span class="cls_015">•</span><span class="cls_016"> visoka integracija</span></div>
+<div style="position:absolute;left:64.80px;top:274.40px" class="cls_015"><span class="cls_015">•</span><span class="cls_016"> modularna izgradnja  - naknadnim ugradnjama se postižu poboljšavanja i</span></div>
+<div style="position:absolute;left:79.20px;top:290.72px" class="cls_016"><span class="cls_016">proširivanja primjene</span></div>
+<div style="position:absolute;left:64.80px;top:311.12px" class="cls_024"><span class="cls_024">•</span><span class="cls_025"> visoka pouzdanost, sigurnost i raspoloživost</span></div>
+<div style="position:absolute;left:64.80px;top:331.54px" class="cls_015"><span class="cls_015">•</span><span class="cls_016"> lako održavanje</span></div>
+<div style="position:absolute;left:43.20px;top:351.82px" class="cls_007"><span class="cls_007">•</span><span class="cls_008"> Sistemski softver:</span></div>
+<div style="position:absolute;left:64.80px;top:375.94px" class="cls_015"><span class="cls_015">•</span><span class="cls_016"> modularnost</span></div>
+<div style="position:absolute;left:64.80px;top:396.34px" class="cls_015"><span class="cls_015">•</span><span class="cls_026"> user friendly</span><span class="cls_016"> okruženje</span></div>
+<div style="position:absolute;left:64.80px;top:416.74px" class="cls_015"><span class="cls_015">•</span><span class="cls_016"> podrška drugim programskim alatima</span></div>
+<div style="position:absolute;left:64.80px;top:437.14px" class="cls_015"><span class="cls_015">•</span><span class="cls_016"> efikasno korišćenje postojeće opreme</span></div>
+<div style="position:absolute;left:64.80px;top:457.54px" class="cls_015"><span class="cls_015">•</span><span class="cls_016"> jednostavno održavanje</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-360px;top:9900px;width:720px;height:540px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="1556cb3c-94f7-11ea-8b25-0cc47a792c0a_id_1556cb3c-94f7-11ea-8b25-0cc47a792c0a_files/background19.jpg" width=720 height=540></div>
+<div style="position:absolute;left:607.24px;top:5.64px" class="cls_003"><span class="cls_003">19</span></div>
+<div style="position:absolute;left:43.20px;top:58.38px" class="cls_009"><span class="cls_009">Planiranje razvoja informacionog sistema</span></div>
+<div style="position:absolute;left:43.20px;top:128.96px" class="cls_006"><span class="cls_006">7. Definisanje modela kadrovske podrške - način na koji su</span></div>
+<div style="position:absolute;left:43.20px;top:157.76px" class="cls_006"><span class="cls_006">organizovani djelovi i pojedinci u organizaciji kojima je</span></div>
+<div style="position:absolute;left:43.20px;top:186.56px" class="cls_006"><span class="cls_006">povjereno voÿenje poslova u domenu informacionog</span></div>
+<div style="position:absolute;left:43.20px;top:215.36px" class="cls_006"><span class="cls_006">sistema</span></div>
+<div style="position:absolute;left:43.20px;top:249.92px" class="cls_006"><span class="cls_006">8. Specifikacija potrebnih ulaganja - procjena ulaganja u</span></div>
+<div style="position:absolute;left:43.20px;top:278.72px" class="cls_006"><span class="cls_006">sledeće elemente informacionog sistema:</span></div>
+<div style="position:absolute;left:64.80px;top:312.44px" class="cls_007"><span class="cls_007">•</span><span class="cls_008"> hardver</span></div>
+<div style="position:absolute;left:64.80px;top:341.26px" class="cls_007"><span class="cls_007">•</span><span class="cls_008"> sistemski softver, softver za rad sa bazama podataka</span></div>
+<div style="position:absolute;left:64.80px;top:370.06px" class="cls_007"><span class="cls_007">•</span><span class="cls_008"> softver za automatizaciju kancelarijskog poslovanja</span></div>
+<div style="position:absolute;left:64.80px;top:398.86px" class="cls_007"><span class="cls_007">•</span><span class="cls_008"> razvoj i obuku informatičkih kadrova</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-360px;top:10450px;width:720px;height:540px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="1556cb3c-94f7-11ea-8b25-0cc47a792c0a_id_1556cb3c-94f7-11ea-8b25-0cc47a792c0a_files/background20.jpg" width=720 height=540></div>
+<div style="position:absolute;left:607.24px;top:5.64px" class="cls_003"><span class="cls_003">20</span></div>
+<div style="position:absolute;left:43.20px;top:58.38px" class="cls_009"><span class="cls_009">Planiranje razvoja informacionog sistema</span></div>
+<div style="position:absolute;left:43.20px;top:128.96px" class="cls_006"><span class="cls_006">9. Analiza izvodljivosti projekta</span></div>
+<div style="position:absolute;left:64.80px;top:162.68px" class="cls_007"><span class="cls_007">•</span><span class="cls_008"> Tehnička izvodljivost - obezbjeÿivanje potrebnih resursa (hardvera i</span></div>
+<div style="position:absolute;left:79.20px;top:186.68px" class="cls_008"><span class="cls_008">softvera)</span></div>
+<div style="position:absolute;left:64.80px;top:215.48px" class="cls_007"><span class="cls_007">•</span><span class="cls_008"> Ekonomska izvodljivost - da li se mogu obezbijediti sredstva i da li</span></div>
+<div style="position:absolute;left:79.20px;top:239.48px" class="cls_008"><span class="cls_008">će izgradnja i korišćenje  informacionog sistema biti isplativo</span></div>
+<div style="position:absolute;left:64.80px;top:268.28px" class="cls_007"><span class="cls_007">•</span><span class="cls_008"> Zakonska izvodljivost - da li postoje zakonske smetnje za rad</span></div>
+<div style="position:absolute;left:79.20px;top:292.28px" class="cls_008"><span class="cls_008">informacionog sistema</span></div>
+<div style="position:absolute;left:86.40px;top:320.66px" class="cls_027"><span class="cls_027">•</span><span class="cls_028"> Primjer: informacioni sistem studentske službe - mogućnost online</span></div>
+<div style="position:absolute;left:100.80px;top:342.28px" class="cls_029"><span class="cls_029">prijavljivanja ispita; Problem - po zakonu ispitna prijava studenta mora</span></div>
+<div style="position:absolute;left:100.80px;top:363.88px" class="cls_029"><span class="cls_029">da bude u dosijeu</span></div>
+<div style="position:absolute;left:64.80px;top:390.22px" class="cls_007"><span class="cls_007">•</span><span class="cls_008"> Operacionalni aspekt - da li će sistem biti prilagoÿen ljudima koji će</span></div>
+<div style="position:absolute;left:79.20px;top:414.22px" class="cls_008"><span class="cls_008">da ga koriste</span></div>
+<div style="position:absolute;left:64.80px;top:443.02px" class="cls_007"><span class="cls_007">•</span><span class="cls_008"> Planski - da li se sistem može realizovati na vrijeme</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-360px;top:11000px;width:720px;height:540px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="1556cb3c-94f7-11ea-8b25-0cc47a792c0a_id_1556cb3c-94f7-11ea-8b25-0cc47a792c0a_files/background21.jpg" width=720 height=540></div>
+<div style="position:absolute;left:607.24px;top:5.64px" class="cls_003"><span class="cls_003">21</span></div>
+<div style="position:absolute;left:43.20px;top:58.38px" class="cls_009"><span class="cls_009">Planiranje razvoja informacionog sistema</span></div>
+<div style="position:absolute;left:43.20px;top:126.08px" class="cls_006"><span class="cls_006">10. Utvrÿivanje prioriteta i izbor projektanta</span></div>
+<div style="position:absolute;left:64.80px;top:157.40px" class="cls_007"><span class="cls_007">•</span><span class="cls_008"> Informacioni sistem se prvo uvodi na najkritičnijim mjestima -</span></div>
+<div style="position:absolute;left:79.20px;top:179.00px" class="cls_008"><span class="cls_008">najveći broj radnika, najviše rukovodstvo, najvažniji poslovi i sl.</span></div>
+<div style="position:absolute;left:43.20px;top:205.76px" class="cls_006"><span class="cls_006">11. Planiranje realizacije projekta</span></div>
+<div style="position:absolute;left:64.80px;top:237.08px" class="cls_007"><span class="cls_007">•</span><span class="cls_008"> Složena faza koja se obično povjerava stručnjaku iz oblasti</span></div>
+<div style="position:absolute;left:79.20px;top:258.68px" class="cls_008"><span class="cls_008">organizacije rada</span></div>
+<div style="position:absolute;left:43.20px;top:285.44px" class="cls_006"><span class="cls_006">12. Prihvatanje ili odbijanje plana razvoja</span></div>
+<div style="position:absolute;left:64.80px;top:316.76px" class="cls_030"><span class="cls_030">•</span><span class="cls_023"> Ako su prikupljene informacije dovoljne za donošenje odluke treba</span></div>
+<div style="position:absolute;left:79.20px;top:338.38px" class="cls_008"><span class="cls_008">donijeti odluku o razvoju informacionog sistema</span></div>
+<div style="position:absolute;left:64.80px;top:364.78px" class="cls_007"><span class="cls_007">•</span><span class="cls_008"> Ako nema dovoljno informacija treba zahtijevati prikupljanje</span></div>
+<div style="position:absolute;left:79.20px;top:386.38px" class="cls_008"><span class="cls_008">dodatnih informacija i činjenica o informacionom sistemu</span></div>
+<div style="position:absolute;left:64.80px;top:412.78px" class="cls_007"><span class="cls_007">•</span><span class="cls_008"> Trenutna negativna odluka ne znači da predloženi plan razvoja nije</span></div>
+<div style="position:absolute;left:79.20px;top:434.38px" class="cls_008"><span class="cls_008">dobar, već samo da ne treba ići u dalji razvoj u ovom trenutku -</span></div>
+<div style="position:absolute;left:79.20px;top:455.98px" class="cls_008"><span class="cls_008">mogu se koristiti možda u narednom periodu</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-360px;top:11550px;width:720px;height:540px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="1556cb3c-94f7-11ea-8b25-0cc47a792c0a_id_1556cb3c-94f7-11ea-8b25-0cc47a792c0a_files/background22.jpg" width=720 height=540></div>
+<div style="position:absolute;left:607.24px;top:5.64px" class="cls_003"><span class="cls_003">22</span></div>
+<div style="position:absolute;left:43.20px;top:58.38px" class="cls_009"><span class="cls_009">Analiza i dizajn informacionog sistema</span></div>
+<div style="position:absolute;left:43.20px;top:126.38px" class="cls_011"><span class="cls_011">•</span><span class="cls_012"> Nakon usvajanja plana razvoja IS prelazi se na fazu analize i</span></div>
+<div style="position:absolute;left:57.60px;top:150.14px" class="cls_012"><span class="cls_012">dizajna IS</span></div>
+<div style="position:absolute;left:64.80px;top:178.88px" class="cls_013"><span class="cls_013">•</span><span class="cls_014"> Faze analize i dizajna su karakteristične po obimnoj dokumentaciji</span></div>
+<div style="position:absolute;left:79.20px;top:199.40px" class="cls_014"><span class="cls_014">koja ih prati</span></div>
+<div style="position:absolute;left:43.20px;top:224.78px" class="cls_011"><span class="cls_011">•</span><span class="cls_012"> Analiza se provodi detaljno na sve automatizovane i</span></div>
+<div style="position:absolute;left:57.60px;top:248.54px" class="cls_012"><span class="cls_012">neautomatizovane poslove koristeći  </span><span class="cls_031">sistemsku strukturiranu</span></div>
+<div style="position:absolute;left:57.60px;top:272.30px" class="cls_031"><span class="cls_031">analizu</span></div>
+<div style="position:absolute;left:43.20px;top:301.34px" class="cls_011"><span class="cls_011">•</span><span class="cls_012"> Definisanje i analiza problema (Šta?)</span></div>
+<div style="position:absolute;left:43.20px;top:330.40px" class="cls_011"><span class="cls_011">•</span><span class="cls_012"> Ispitivanje i razumijevanje problema - prikupljanje informacija</span></div>
+<div style="position:absolute;left:57.60px;top:354.16px" class="cls_012"><span class="cls_012">(Zašto?)</span></div>
+<div style="position:absolute;left:43.20px;top:383.20px" class="cls_011"><span class="cls_011">•</span><span class="cls_012"> Izbor najbolje opcije - donošenje odluka (Kako?)</span></div>
+<div style="position:absolute;left:64.80px;top:411.94px" class="cls_013"><span class="cls_013">•</span><span class="cls_014"> Postavljanje ciljeva</span></div>
+<div style="position:absolute;left:64.80px;top:437.02px" class="cls_013"><span class="cls_013">•</span><span class="cls_014"> Izvodljivost</span></div>
+<div style="position:absolute;left:64.80px;top:462.10px" class="cls_013"><span class="cls_013">•</span><span class="cls_014"> Izbor najboljeg rješenja</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-360px;top:12100px;width:720px;height:540px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="1556cb3c-94f7-11ea-8b25-0cc47a792c0a_id_1556cb3c-94f7-11ea-8b25-0cc47a792c0a_files/background23.jpg" width=720 height=540></div>
+<div style="position:absolute;left:607.24px;top:5.64px" class="cls_003"><span class="cls_003">23</span></div>
+<div style="position:absolute;left:43.20px;top:58.38px" class="cls_009"><span class="cls_009">Analiza i dizajn informacionog sistema</span></div>
+<div style="position:absolute;left:43.20px;top:128.96px" class="cls_005"><span class="cls_005">•</span><span class="cls_006"> Dizajn sistema je specifikacija novog sistema koji će</span></div>
+<div style="position:absolute;left:57.60px;top:157.76px" class="cls_006"><span class="cls_006">postavljene zahtjeve obaviti na efikasan način</span></div>
+<div style="position:absolute;left:43.20px;top:192.32px" class="cls_005"><span class="cls_005">•</span><span class="cls_006"> Dvije važne faze dizajna sistema:</span></div>
+<div style="position:absolute;left:64.80px;top:226.04px" class="cls_007"><span class="cls_007">•</span><span class="cls_008"> logičko projektovanje - modeliranje podataka i modeliranje procesa.</span></div>
+<div style="position:absolute;left:86.40px;top:254.42px" class="cls_032"><span class="cls_032">•</span><span class="cls_029"> Rezultat logičkog projektovanja mora biti razumljiv za korisnika i</span></div>
+<div style="position:absolute;left:100.80px;top:276.02px" class="cls_029"><span class="cls_029">projektanta i treba da bude nezavisan od implementacije</span></div>
+<div style="position:absolute;left:64.80px;top:302.36px" class="cls_007"><span class="cls_007">•</span><span class="cls_008"> fizičko projektovanje - prevoÿenje logičkog projekta na konkretnu</span></div>
+<div style="position:absolute;left:79.20px;top:326.38px" class="cls_008"><span class="cls_008">opremu, konkretne softvere koji uključuju konkretne baze podataka</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-360px;top:12650px;width:720px;height:540px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="1556cb3c-94f7-11ea-8b25-0cc47a792c0a_id_1556cb3c-94f7-11ea-8b25-0cc47a792c0a_files/background24.jpg" width=720 height=540></div>
+<div style="position:absolute;left:607.24px;top:5.64px" class="cls_003"><span class="cls_003">24</span></div>
+<div style="position:absolute;left:43.20px;top:58.38px" class="cls_009"><span class="cls_009">Analiza i dizajn informacionog sistema</span></div>
+<div style="position:absolute;left:43.20px;top:126.38px" class="cls_011"><span class="cls_011">•</span><span class="cls_012"> Dizajn sistema - Ulaz, obrada, izlaz, skladištenje, procedure,</span></div>
+<div style="position:absolute;left:57.60px;top:150.14px" class="cls_012"><span class="cls_012">kontrola</span></div>
+<div style="position:absolute;left:64.80px;top:178.88px" class="cls_013"><span class="cls_013">•</span><span class="cls_014"> Logički dizajn (Šta će da radi?)</span></div>
+<div style="position:absolute;left:86.40px;top:203.84px" class="cls_033"><span class="cls_033">•</span><span class="cls_016"> Ulaz: sadržaj, format, količina, frekvencija, vrijeme</span></div>
+<div style="position:absolute;left:86.40px;top:226.28px" class="cls_033"><span class="cls_033">•</span><span class="cls_016"> Obrada: pravila, model, vrijeme</span></div>
+<div style="position:absolute;left:86.40px;top:248.72px" class="cls_033"><span class="cls_033">•</span><span class="cls_016"> Izlaz: sadržaj, format, organizacija, količina, frekvencija, vrijeme</span></div>
+<div style="position:absolute;left:86.40px;top:271.16px" class="cls_033"><span class="cls_033">•</span><span class="cls_016"> Skladištenje: podaci, format, organizacija, veza, količina</span></div>
+<div style="position:absolute;left:86.40px;top:293.60px" class="cls_033"><span class="cls_033">•</span><span class="cls_016"> Procedure: aktivnosti, pravila, lokacija, vrijeme</span></div>
+<div style="position:absolute;left:86.40px;top:316.04px" class="cls_034"><span class="cls_034">•</span><span class="cls_025"> Kontrola: sigurnost, tačnost, validnost, nadzor</span></div>
+<div style="position:absolute;left:64.80px;top:338.62px" class="cls_013"><span class="cls_013">•</span><span class="cls_014"> Fizički dizajn (Kako će da radi?)</span></div>
+<div style="position:absolute;left:86.40px;top:363.58px" class="cls_033"><span class="cls_033">•</span><span class="cls_016"> Ulaz: tastatura, glas, skener</span></div>
+<div style="position:absolute;left:86.40px;top:386.02px" class="cls_033"><span class="cls_033">•</span><span class="cls_016"> Obrada: PC, operativni sistem, aplikativni softver</span></div>
+<div style="position:absolute;left:86.40px;top:408.46px" class="cls_033"><span class="cls_033">•</span><span class="cls_016"> Izlaz: fajlovi, tekst, papir, audio</span></div>
+<div style="position:absolute;left:86.40px;top:430.90px" class="cls_033"><span class="cls_033">•</span><span class="cls_016"> Skladištenje: CD, server</span></div>
+<div style="position:absolute;left:86.40px;top:453.34px" class="cls_033"><span class="cls_033">•</span><span class="cls_016"> Procedure: backup, unos podataka, korišćenje</span></div>
+<div style="position:absolute;left:86.40px;top:475.78px" class="cls_033"><span class="cls_033">•</span><span class="cls_016"> Kontrola: šifre, pristup, log</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-360px;top:13200px;width:720px;height:540px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="1556cb3c-94f7-11ea-8b25-0cc47a792c0a_id_1556cb3c-94f7-11ea-8b25-0cc47a792c0a_files/background25.jpg" width=720 height=540></div>
+<div style="position:absolute;left:607.24px;top:5.64px" class="cls_003"><span class="cls_003">25</span></div>
+<div style="position:absolute;left:43.20px;top:55.86px" class="cls_004"><span class="cls_004">Fizički i logički model</span></div>
+<div style="position:absolute;left:43.20px;top:128.96px" class="cls_005"><span class="cls_005">•</span><span class="cls_006"> Logički model se predstavlja skup entiteta i veza u jednoj</span></div>
+<div style="position:absolute;left:57.60px;top:157.76px" class="cls_006"><span class="cls_006">organizaciji. On ne ulazi u razmatranje kako će taj model</span></div>
+<div style="position:absolute;left:57.60px;top:186.56px" class="cls_006"><span class="cls_006">biti stvarno implementiran. Osnovne koristi ovoga modela:</span></div>
+<div style="position:absolute;left:64.80px;top:220.28px" class="cls_007"><span class="cls_007">•</span><span class="cls_008"> pogodan je za razumijevanje sistema</span></div>
+<div style="position:absolute;left:64.80px;top:249.08px" class="cls_007"><span class="cls_007">•</span><span class="cls_008"> daje osnovu za modelovanje baza podataka</span></div>
+<div style="position:absolute;left:64.80px;top:277.88px" class="cls_007"><span class="cls_007">•</span><span class="cls_008"> sprečava redundanciju i nekonzistentnost podataka</span></div>
+<div style="position:absolute;left:64.80px;top:306.68px" class="cls_007"><span class="cls_007">•</span><span class="cls_008"> odličan je za sagledavanje mogućnosti razmjenje i dijeljenja</span></div>
+<div style="position:absolute;left:79.20px;top:330.70px" class="cls_008"><span class="cls_008">podataka</span></div>
+<div style="position:absolute;left:64.80px;top:359.50px" class="cls_007"><span class="cls_007">•</span><span class="cls_008"> pojednostavljuje održavanje i smanjuje troškove održavanja</span></div>
+<div style="position:absolute;left:64.80px;top:388.30px" class="cls_007"><span class="cls_007">•</span><span class="cls_008"> značajno olakšava analizu uticaja razvijenog ISa na poslovanje</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-360px;top:13750px;width:720px;height:540px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="1556cb3c-94f7-11ea-8b25-0cc47a792c0a_id_1556cb3c-94f7-11ea-8b25-0cc47a792c0a_files/background26.jpg" width=720 height=540></div>
+<div style="position:absolute;left:607.24px;top:5.64px" class="cls_003"><span class="cls_003">26</span></div>
+<div style="position:absolute;left:43.20px;top:55.86px" class="cls_004"><span class="cls_004">Fizički i logički model</span></div>
+<div style="position:absolute;left:43.20px;top:128.96px" class="cls_005"><span class="cls_005">•</span><span class="cls_006"> Fizički model predstavlja primjenu logičkog modela na</span></div>
+<div style="position:absolute;left:57.60px;top:157.76px" class="cls_006"><span class="cls_006">stvarni sistem sa starnom bazom podataka, stvarnim</span></div>
+<div style="position:absolute;left:57.60px;top:186.56px" class="cls_006"><span class="cls_006">hardverom, stvarnim komunikacionim sistemima itd.</span></div>
+<div style="position:absolute;left:43.20px;top:221.12px" class="cls_005"><span class="cls_005">•</span><span class="cls_006"> Fizičko projektovanje podrazumjeva odabir, instalaciju i</span></div>
+<div style="position:absolute;left:57.60px;top:249.92px" class="cls_006"><span class="cls_006">povezivanje računarske i komunikacione opreme</span></div>
+<div style="position:absolute;left:43.20px;top:284.48px" class="cls_005"><span class="cls_005">•</span><span class="cls_006"> Fizički model zapravo samo ograničava upotrebu logičkog</span></div>
+<div style="position:absolute;left:57.60px;top:313.28px" class="cls_022"><span class="cls_022">modela jer prilikom implementacije ne može da bude npr.</span></div>
+<div style="position:absolute;left:57.60px;top:342.10px" class="cls_006"><span class="cls_006">prezime sa beskonačno karaktera ili ne može da bude</span></div>
+<div style="position:absolute;left:57.60px;top:370.90px" class="cls_006"><span class="cls_006">beskonačna brzina komunikacije, mora se misliti o</span></div>
+<div style="position:absolute;left:57.60px;top:399.70px" class="cls_006"><span class="cls_006">bezbjednosti sistema i pravima pristupa itd.</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-360px;top:14300px;width:720px;height:540px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="1556cb3c-94f7-11ea-8b25-0cc47a792c0a_id_1556cb3c-94f7-11ea-8b25-0cc47a792c0a_files/background27.jpg" width=720 height=540></div>
+<div style="position:absolute;left:607.24px;top:5.64px" class="cls_003"><span class="cls_003">27</span></div>
+<div style="position:absolute;left:43.20px;top:55.86px" class="cls_004"><span class="cls_004">Logički model - prednosti</span></div>
+<div style="position:absolute;left:43.20px;top:129.68px" class="cls_007"><span class="cls_007">•</span></div>
+<div style="position:absolute;left:57.60px;top:126.68px" class="cls_008"><span class="cls_008">Iako logički model može djelovati kao višak on je izuzetno koristan i</span></div>
+<div style="position:absolute;left:57.60px;top:148.28px" class="cls_008"><span class="cls_008">njegov razvoj se isplati na duži rok</span></div>
+<div style="position:absolute;left:43.20px;top:175.28px" class="cls_007"><span class="cls_007">•</span></div>
+<div style="position:absolute;left:57.60px;top:172.28px" class="cls_008"><span class="cls_008">Neke od prednosti logičkog modelovanja sistema:</span></div>
+<div style="position:absolute;left:64.80px;top:196.40px" class="cls_015"><span class="cls_015">•</span><span class="cls_016"> Funkcionalne specifikacije su pojašnjene i izbjegnute su pretpostavke</span></div>
+<div style="position:absolute;left:64.80px;top:216.80px" class="cls_015"><span class="cls_015">•</span><span class="cls_016"> Potvrÿeni su poslovni zahtjevi</span></div>
+<div style="position:absolute;left:64.80px;top:237.20px" class="cls_015"><span class="cls_015">•</span><span class="cls_016"> Omogućeno je jednostavno poboljšanje poslovnih procesa</span></div>
+<div style="position:absolute;left:64.80px;top:257.60px" class="cls_015"><span class="cls_015">•</span><span class="cls_016"> Omogućuje tehnologiju fokusiranu na zahtjevima a nezavisnu od tehnologije</span></div>
+<div style="position:absolute;left:64.80px;top:278.00px" class="cls_015"><span class="cls_015">•</span><span class="cls_016"> Smanjuje se vrijeme razvoja i cijena istog</span></div>
+<div style="position:absolute;left:64.80px;top:298.40px" class="cls_015"><span class="cls_015">•</span><span class="cls_016"> Dobijaju se šabloni za kompanije koji se mogu koristiti i u drugim sistemima</span></div>
+<div style="position:absolute;left:64.80px;top:318.80px" class="cls_024"><span class="cls_024">•</span><span class="cls_025"> Omogućeno je jednostavno ponovno korišćenje podataka i njihova razmjena</span></div>
+<div style="position:absolute;left:64.80px;top:339.22px" class="cls_015"><span class="cls_015">•</span><span class="cls_016"> Brži povrat uloženih sredstava</span></div>
+<div style="position:absolute;left:64.80px;top:359.62px" class="cls_015"><span class="cls_015">•</span><span class="cls_016"> Lakše se uočava pojava meÿupodataka (metadata) koji mogu biti veoma</span></div>
+<div style="position:absolute;left:79.20px;top:377.98px" class="cls_016"><span class="cls_016">korisni</span></div>
+<div style="position:absolute;left:64.80px;top:398.38px" class="cls_015"><span class="cls_015">•</span><span class="cls_016"> Eliminisanje nepotrebnih komunikacija izmeÿu aplikacija</span></div>
+<div style="position:absolute;left:64.80px;top:418.78px" class="cls_015"><span class="cls_015">•</span><span class="cls_016"> Fokusiran je na analizu podataka i komunikacione aspekte</span></div>
+<div style="position:absolute;left:64.80px;top:439.18px" class="cls_015"><span class="cls_015">•</span><span class="cls_016"> Uspostavljanje konvencije za imenovanje podataka</span></div>
+<div style="position:absolute;left:64.80px;top:459.58px" class="cls_015"><span class="cls_015">•</span><span class="cls_016"> ...</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-360px;top:14850px;width:720px;height:540px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="1556cb3c-94f7-11ea-8b25-0cc47a792c0a_id_1556cb3c-94f7-11ea-8b25-0cc47a792c0a_files/background28.jpg" width=720 height=540></div>
+<div style="position:absolute;left:607.24px;top:5.64px" class="cls_003"><span class="cls_003">28</span></div>
+<div style="position:absolute;left:43.20px;top:55.86px" class="cls_004"><span class="cls_004">Implementacija sistema</span></div>
+<div style="position:absolute;left:43.20px;top:126.38px" class="cls_011"><span class="cls_011">•</span><span class="cls_012"> Implementacija je faza u kojoj se projekat treba implementirati</span></div>
+<div style="position:absolute;left:57.60px;top:150.14px" class="cls_012"><span class="cls_012">na realni sistem u realnim uslovima</span></div>
+<div style="position:absolute;left:43.20px;top:179.18px" class="cls_011"><span class="cls_011">•</span><span class="cls_012"> Faze u implementaciji projekta su:</span></div>
+<div style="position:absolute;left:64.80px;top:207.92px" class="cls_013"><span class="cls_013">•</span><span class="cls_014"> Najava  - u cilju uklanjanja straha zaposlenih i prepreka za realizaciju</span></div>
+<div style="position:absolute;left:64.80px;top:233.00px" class="cls_013"><span class="cls_013">•</span><span class="cls_014"> Organizacija kadrova informacionog sistema</span></div>
+<div style="position:absolute;left:64.80px;top:258.08px" class="cls_013"><span class="cls_013">•</span><span class="cls_014"> Izbor i instalacija opreme - raspisivanje tendera, vrijem isporuke,</span></div>
+<div style="position:absolute;left:79.20px;top:278.60px" class="cls_014"><span class="cls_014">instalacija, garantni rokovi, obezbijeden servis itd.</span></div>
+<div style="position:absolute;left:64.80px;top:303.68px" class="cls_013"><span class="cls_013">•</span><span class="cls_014"> Izrada ili nabavka softvera - kupovina gotovog softvera, razvoj softvera</span></div>
+<div style="position:absolute;left:79.20px;top:324.22px" class="cls_014"><span class="cls_014">sa sopstvenim kadrovima, kombinovanje prethodna dva načina i sl.</span></div>
+<div style="position:absolute;left:64.80px;top:349.30px" class="cls_013"><span class="cls_013">•</span><span class="cls_014"> Formiranje baze podataka - jedna od najvažnijih faza, jer je baza</span></div>
+<div style="position:absolute;left:79.20px;top:369.82px" class="cls_014"><span class="cls_014">podataka osnova IS</span></div>
+<div style="position:absolute;left:64.80px;top:394.90px" class="cls_013"><span class="cls_013">•</span><span class="cls_014"> Obuka korisnika</span></div>
+<div style="position:absolute;left:64.80px;top:419.98px" class="cls_013"><span class="cls_013">•</span><span class="cls_014"> Zamjena sistema - obično u početku dva sistema rade paralelno, zatim</span></div>
+<div style="position:absolute;left:79.20px;top:440.50px" class="cls_014"><span class="cls_014">novi sistem postepeno zamjenjuje stari, pri čemu se najvažniji elementi</span></div>
+<div style="position:absolute;left:79.20px;top:461.02px" class="cls_014"><span class="cls_014">dupliraju sve dok se na kraju potpuno ne preÿe na novi sistem</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-360px;top:15400px;width:720px;height:540px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="1556cb3c-94f7-11ea-8b25-0cc47a792c0a_id_1556cb3c-94f7-11ea-8b25-0cc47a792c0a_files/background29.jpg" width=720 height=540></div>
+<div style="position:absolute;left:607.24px;top:5.64px" class="cls_003"><span class="cls_003">29</span></div>
+<div style="position:absolute;left:43.20px;top:55.86px" class="cls_004"><span class="cls_004">Održavanje sistema</span></div>
+<div style="position:absolute;left:43.20px;top:123.74px" class="cls_011"><span class="cls_011">•</span><span class="cls_012"> Održavanje hardvera:</span></div>
+<div style="position:absolute;left:64.80px;top:150.20px" class="cls_013"><span class="cls_013">•</span><span class="cls_014"> redovne aktivnosti, provjere, čišćenje, podešavanje i zamjena</span></div>
+<div style="position:absolute;left:79.20px;top:168.44px" class="cls_014"><span class="cls_014">potrošnog materijala</span></div>
+<div style="position:absolute;left:64.80px;top:191.24px" class="cls_013"><span class="cls_013">•</span><span class="cls_014"> zamjena dijelova ureÿaja ili cijelih ureÿaja</span></div>
+<div style="position:absolute;left:64.80px;top:214.04px" class="cls_013"><span class="cls_013">•</span><span class="cls_014"> instalacija novih ureÿaja</span></div>
+<div style="position:absolute;left:64.80px;top:236.84px" class="cls_013"><span class="cls_013">•</span><span class="cls_014"> ...</span></div>
+<div style="position:absolute;left:43.20px;top:259.58px" class="cls_011"><span class="cls_011">•</span><span class="cls_012"> Održavanje softvera:</span></div>
+<div style="position:absolute;left:64.80px;top:286.04px" class="cls_013"><span class="cls_013">•</span><span class="cls_014"> prepravke koje ispunjavaju nove zahtjeve korisnika</span></div>
+<div style="position:absolute;left:64.80px;top:308.84px" class="cls_013"><span class="cls_013">•</span><span class="cls_014"> otklanjanje grešaka u ranijim verzijama</span></div>
+<div style="position:absolute;left:64.80px;top:331.66px" class="cls_013"><span class="cls_013">•</span><span class="cls_014"> prepravke softvera zbog promjena hardvera ili sistemskog softvera</span></div>
+<div style="position:absolute;left:64.80px;top:354.46px" class="cls_013"><span class="cls_013">•</span><span class="cls_014"> ažuriranje softvera</span></div>
+<div style="position:absolute;left:64.80px;top:377.26px" class="cls_013"><span class="cls_013">•</span><span class="cls_014"> ...</span></div>
+<div style="position:absolute;left:43.20px;top:400.00px" class="cls_011"><span class="cls_011">•</span><span class="cls_012"> Troškovi održavanja rastu tokom vremena i to mnogo brže na</span></div>
+<div style="position:absolute;left:57.60px;top:421.12px" class="cls_012"><span class="cls_012">strani održavanja softvera</span></div>
+<div style="position:absolute;left:43.20px;top:447.52px" class="cls_011"><span class="cls_011">•</span><span class="cls_012"> Softversko održavanje kod starijih sistema čini čak oko 50-75%</span></div>
+<div style="position:absolute;left:57.60px;top:468.64px" class="cls_012"><span class="cls_012">ukupno izdvojenih sredstava za održavanje</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-360px;top:15950px;width:720px;height:540px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="1556cb3c-94f7-11ea-8b25-0cc47a792c0a_id_1556cb3c-94f7-11ea-8b25-0cc47a792c0a_files/background30.jpg" width=720 height=540></div>
+<div style="position:absolute;left:607.24px;top:5.64px" class="cls_003"><span class="cls_003">30</span></div>
+<div style="position:absolute;left:43.20px;top:55.86px" class="cls_004"><span class="cls_004">Vrednovanje i kontrola IS</span></div>
+<div style="position:absolute;left:43.20px;top:129.02px" class="cls_011"><span class="cls_011">•</span><span class="cls_012"> Ova faza nastupa kada informacioni sistem postoji i funkcioniše</span></div>
+<div style="position:absolute;left:43.20px;top:160.70px" class="cls_011"><span class="cls_011">•</span><span class="cls_012"> Da bi se sprovelo ocjenjivanje informacionog sistema mora biti</span></div>
+<div style="position:absolute;left:57.60px;top:187.10px" class="cls_012"><span class="cls_012">razvijen objektivan set kriterijuma, npr.:</span></div>
+<div style="position:absolute;left:64.80px;top:218.12px" class="cls_013"><span class="cls_013">•</span><span class="cls_014"> Uticaj IS na poslovanje u smislu ubrzanja pojedinih aktivnosti</span></div>
+<div style="position:absolute;left:64.80px;top:245.48px" class="cls_013"><span class="cls_013">•</span><span class="cls_014"> Koliko sam IS može da odradi brzo pojedine operacije i da li može</span></div>
+<div style="position:absolute;left:79.20px;top:268.28px" class="cls_014"><span class="cls_014">brže</span></div>
+<div style="position:absolute;left:64.80px;top:295.64px" class="cls_013"><span class="cls_013">•</span><span class="cls_014"> Da li je pogodan za korišćenje</span></div>
+<div style="position:absolute;left:64.80px;top:323.00px" class="cls_035"><span class="cls_035">•</span><span class="cls_036"> Da li je održavanje skupo i na koji je način riješeno</span></div>
+<div style="position:absolute;left:64.80px;top:350.38px" class="cls_013"><span class="cls_013">•</span><span class="cls_014"> ...</span></div>
+<div style="position:absolute;left:43.20px;top:378.40px" class="cls_011"><span class="cls_011">•</span><span class="cls_012"> Projekat i realizacija informacionog sistema je rezultat</span></div>
+<div style="position:absolute;left:57.60px;top:404.80px" class="cls_012"><span class="cls_012">intereakcije rada projektanata (koji znaju kako da realizuju IS,</span></div>
+<div style="position:absolute;left:57.60px;top:431.20px" class="cls_012"><span class="cls_012">ali ne znaju konkretne potrebe organizacije) i ljudi iz</span></div>
+<div style="position:absolute;left:57.60px;top:457.60px" class="cls_012"><span class="cls_012">organizacija (koji znaju šta im treba, ali ne znaju da to realizuju)</span></div>
+</div>
+
+</body>
+</html>

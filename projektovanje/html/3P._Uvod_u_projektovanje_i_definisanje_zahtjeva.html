@@ -1,0 +1,515 @@
+<html>
+<head><meta http-equiv=Content-Type content="text/html; charset=UTF-8">
+<style type="text/css">
+<!--
+span.cls_002{font-family:"Verdana Bold",serif;font-size:20.1px;color:rgb(255,255,255);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_002{font-family:"Verdana Bold",serif;font-size:20.1px;color:rgb(255,255,255);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_003{font-family:"Verdana Bold",serif;font-size:32.1px;color:rgb(255,255,255);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_003{font-family:"Verdana Bold",serif;font-size:32.1px;color:rgb(255,255,255);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_004{font-family:"Verdana Bold",serif;font-size:24.1px;color:rgb(255,192,0);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_004{font-family:"Verdana Bold",serif;font-size:24.1px;color:rgb(255,192,0);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_005{font-family:"Verdana Bold",serif;font-size:30.1px;color:rgb(237,245,248);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_005{font-family:"Verdana Bold",serif;font-size:30.1px;color:rgb(237,245,248);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_006{font-family:"Verdana Bold",serif;font-size:22.0px;color:rgb(44,162,199);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_006{font-family:"Verdana Bold",serif;font-size:22.0px;color:rgb(44,162,199);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_007{font-family:"Verdana",serif;font-size:22.0px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_007{font-family:"Verdana",serif;font-size:22.0px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_008{font-family:"Verdana",serif;font-size:22.0px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_008{font-family:"Verdana",serif;font-size:22.0px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_009{font-family:"Verdana Bold",serif;font-size:24.1px;color:rgb(237,245,248);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_009{font-family:"Verdana Bold",serif;font-size:24.1px;color:rgb(237,245,248);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_010{font-family:Arial,serif;font-size:20.1px;color:rgb(44,162,199);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_010{font-family:Arial,serif;font-size:20.1px;color:rgb(44,162,199);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_011{font-family:"Verdana Bold",serif;font-size:20.1px;color:rgb(44,162,199);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_011{font-family:"Verdana Bold",serif;font-size:20.1px;color:rgb(44,162,199);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_012{font-family:"Verdana Bold",serif;font-size:20.1px;color:rgb(44,162,199);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_012{font-family:"Verdana Bold",serif;font-size:20.1px;color:rgb(44,162,199);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_013{font-family:Arial,serif;font-size:20.1px;color:rgb(44,162,199);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_013{font-family:Arial,serif;font-size:20.1px;color:rgb(44,162,199);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_014{font-family:Arial,serif;font-size:12.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_014{font-family:Arial,serif;font-size:12.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_015{font-family:"Verdana",serif;font-size:20.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_015{font-family:"Verdana",serif;font-size:20.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_016{font-family:"Verdana Bold",serif;font-size:20.1px;color:rgb(192,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_016{font-family:"Verdana Bold",serif;font-size:20.1px;color:rgb(192,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_017{font-family:"Verdana Bold",serif;font-size:20.1px;color:rgb(0,111,192);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_017{font-family:"Verdana Bold",serif;font-size:20.1px;color:rgb(0,111,192);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_018{font-family:"Verdana Bold",serif;font-size:20.1px;color:rgb(255,192,0);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_018{font-family:"Verdana Bold",serif;font-size:20.1px;color:rgb(255,192,0);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_019{font-family:"Verdana Bold Italic",serif;font-size:20.1px;color:rgb(44,162,199);font-weight:bold;font-style:italic;text-decoration: none}
+div.cls_019{font-family:"Verdana Bold Italic",serif;font-size:20.1px;color:rgb(44,162,199);font-weight:bold;font-style:italic;text-decoration: none}
+span.cls_020{font-family:"Verdana Bold Italic",serif;font-size:20.1px;color:rgb(0,111,192);font-weight:bold;font-style:italic;text-decoration: none}
+div.cls_020{font-family:"Verdana Bold Italic",serif;font-size:20.1px;color:rgb(0,111,192);font-weight:bold;font-style:italic;text-decoration: none}
+span.cls_021{font-family:"Verdana Bold",serif;font-size:20.1px;color:rgb(255,192,0);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_021{font-family:"Verdana Bold",serif;font-size:20.1px;color:rgb(255,192,0);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_022{font-family:"Verdana Bold",serif;font-size:20.1px;color:rgb(192,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_022{font-family:"Verdana Bold",serif;font-size:20.1px;color:rgb(192,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_023{font-family:"Verdana Bold",serif;font-size:18.1px;color:rgb(44,162,199);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_023{font-family:"Verdana Bold",serif;font-size:18.1px;color:rgb(44,162,199);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_024{font-family:Arial,serif;font-size:18.1px;color:rgb(44,162,199);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_024{font-family:Arial,serif;font-size:18.1px;color:rgb(44,162,199);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_025{font-family:"Verdana Bold",serif;font-size:18.1px;color:rgb(192,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_025{font-family:"Verdana Bold",serif;font-size:18.1px;color:rgb(192,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_026{font-family:Arial,serif;font-size:18.1px;color:rgb(44,162,199);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_026{font-family:Arial,serif;font-size:18.1px;color:rgb(44,162,199);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_027{font-family:"Verdana Bold",serif;font-size:18.1px;color:rgb(44,162,199);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_027{font-family:"Verdana Bold",serif;font-size:18.1px;color:rgb(44,162,199);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_028{font-family:Arial,serif;font-size:10.9px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_028{font-family:Arial,serif;font-size:10.9px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_029{font-family:"Verdana",serif;font-size:18.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_029{font-family:"Verdana",serif;font-size:18.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_030{font-family:Arial,serif;font-size:19.0px;color:rgb(44,162,199);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_030{font-family:Arial,serif;font-size:19.0px;color:rgb(44,162,199);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_031{font-family:"Verdana Bold",serif;font-size:19.0px;color:rgb(192,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_031{font-family:"Verdana Bold",serif;font-size:19.0px;color:rgb(192,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_032{font-family:"Verdana Bold",serif;font-size:19.0px;color:rgb(44,162,199);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_032{font-family:"Verdana Bold",serif;font-size:19.0px;color:rgb(44,162,199);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_033{font-family:"Verdana Bold",serif;font-size:19.0px;color:rgb(44,162,199);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_033{font-family:"Verdana Bold",serif;font-size:19.0px;color:rgb(44,162,199);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_034{font-family:"Verdana Bold",serif;font-size:19.0px;color:rgb(192,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_034{font-family:"Verdana Bold",serif;font-size:19.0px;color:rgb(192,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_035{font-family:Arial,serif;font-size:11.4px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_035{font-family:Arial,serif;font-size:11.4px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_036{font-family:Arial,serif;font-size:11.5px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_036{font-family:Arial,serif;font-size:11.5px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_037{font-family:"Verdana Bold",serif;font-size:22.0px;color:rgb(255,255,255);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_037{font-family:"Verdana Bold",serif;font-size:22.0px;color:rgb(255,255,255);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_038{font-family:"Verdana Bold",serif;font-size:18.1px;color:rgb(192,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_038{font-family:"Verdana Bold",serif;font-size:18.1px;color:rgb(192,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_039{font-family:"Verdana Bold",serif;font-size:20.1px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_039{font-family:"Verdana Bold",serif;font-size:20.1px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_040{font-family:"Verdana Bold",serif;font-size:20.1px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_040{font-family:"Verdana Bold",serif;font-size:20.1px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_041{font-family:"Verdana Bold",serif;font-size:18.1px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_041{font-family:"Verdana Bold",serif;font-size:18.1px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_042{font-family:"Verdana Bold",serif;font-size:18.1px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_042{font-family:"Verdana Bold",serif;font-size:18.1px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_043{font-family:"Verdana Bold",serif;font-size:20.1px;color:rgb(255,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_043{font-family:"Verdana Bold",serif;font-size:20.1px;color:rgb(255,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_044{font-family:"Verdana",serif;font-size:20.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_044{font-family:"Verdana",serif;font-size:20.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_045{font-family:Arial,serif;font-size:12.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_045{font-family:Arial,serif;font-size:12.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_046{font-family:"Verdana Bold",serif;font-size:22.0px;color:rgb(255,255,255);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_046{font-family:"Verdana Bold",serif;font-size:22.0px;color:rgb(255,255,255);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_047{font-family:"Verdana Bold",serif;font-size:24.1px;color:rgb(255,255,255);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_047{font-family:"Verdana Bold",serif;font-size:24.1px;color:rgb(255,255,255);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_048{font-family:"Verdana Bold",serif;font-size:20.1px;color:rgb(255,255,255);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_048{font-family:"Verdana Bold",serif;font-size:20.1px;color:rgb(255,255,255);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_049{font-family:"Verdana Bold",serif;font-size:28.0px;color:rgb(255,192,0);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_049{font-family:"Verdana Bold",serif;font-size:28.0px;color:rgb(255,192,0);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_050{font-family:"Verdana Bold",serif;font-size:28.0px;color:rgb(255,233,198);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_050{font-family:"Verdana Bold",serif;font-size:28.0px;color:rgb(255,233,198);font-weight:bold;font-style:normal;text-decoration: none}
+-->
+</style>
+<script type="text/javascript" src="4eae4932-94f7-11ea-8b25-0cc47a792c0a_id_4eae4932-94f7-11ea-8b25-0cc47a792c0a_files/wz_jsgraphics.js"></script>
+</head>
+<body>
+<div style="position:absolute;left:50%;margin-left:-360px;top:0px;width:720px;height:540px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="4eae4932-94f7-11ea-8b25-0cc47a792c0a_id_4eae4932-94f7-11ea-8b25-0cc47a792c0a_files/background01.jpg" width=720 height=540></div>
+<div style="position:absolute;left:38.33px;top:23.88px" class="cls_002"><span class="cls_002">L</span></div>
+<div style="position:absolute;left:201.65px;top:86.83px" class="cls_003"><span class="cls_003">PROJEKTOVANJE</span></div>
+<div style="position:absolute;left:111.65px;top:124.51px" class="cls_003"><span class="cls_003">INFORMACIONIH SISTEMA</span></div>
+<div style="position:absolute;left:10.13px;top:425.33px" class="cls_004"><span class="cls_004">3. Uvod u projektovanje i definisanje zahtjeva za IS</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-360px;top:550px;width:720px;height:540px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="4eae4932-94f7-11ea-8b25-0cc47a792c0a_id_4eae4932-94f7-11ea-8b25-0cc47a792c0a_files/background02.jpg" width=720 height=540></div>
+<div style="position:absolute;left:265.13px;top:32.00px" class="cls_005"><span class="cls_005">Sadržaj nastavne jedinice</span></div>
+<div style="position:absolute;left:7.20px;top:116.02px" class="cls_006"><span class="cls_006">3. Uvod u projektovanje i definisanje zahtjeva za IS</span></div>
+<div style="position:absolute;left:43.20px;top:159.68px" class="cls_007"><span class="cls_007">3.1. Uvod u projektovanje iizgradnju IS</span></div>
+<div style="position:absolute;left:43.20px;top:203.40px" class="cls_008"><span class="cls_008">3.2. Definisanje zahtjeva za IS</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-360px;top:1100px;width:720px;height:540px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="4eae4932-94f7-11ea-8b25-0cc47a792c0a_id_4eae4932-94f7-11ea-8b25-0cc47a792c0a_files/background03.jpg" width=720 height=540></div>
+<div style="position:absolute;left:30.84px;top:43.63px" class="cls_009"><span class="cls_009">3.1.1. Redosljed izrade fizičkog i logičkog modela</span></div>
+<div style="position:absolute;left:7.20px;top:115.90px" class="cls_010"><span class="cls_010">❖</span><span class="cls_011"> Logički i fizički model budućeg IS, izraÿuje se na osnovu</span></div>
+<div style="position:absolute;left:34.20px;top:139.90px" class="cls_011"><span class="cls_011">poslovnih zahtjeva i zahtjeva krajnjih korisnika, a u skladu</span></div>
+<div style="position:absolute;left:34.20px;top:163.88px" class="cls_012"><span class="cls_012">sa fizičkim i logičkim modelom postojećeg IS</span></div>
+<div style="position:absolute;left:7.20px;top:192.72px" class="cls_010"><span class="cls_010">❖</span><span class="cls_011"> Fizički model (ugradni, implementacioni, tehnički) opisuje</span></div>
+<div style="position:absolute;left:34.20px;top:216.72px" class="cls_011"><span class="cls_011">kako je sistem fizički i tehnički izgraÿen, ko, gdje i kada ga</span></div>
+<div style="position:absolute;left:34.20px;top:240.72px" class="cls_011"><span class="cls_011">koristi.</span></div>
+<div style="position:absolute;left:7.20px;top:269.50px" class="cls_013"><span class="cls_013">❖</span><span class="cls_012"> Logički model (esencijalni, konceptualni, poslovni) opisuje</span></div>
+<div style="position:absolute;left:34.20px;top:293.54px" class="cls_011"><span class="cls_011">šta je sistem, šta radi, šta su podaci.</span></div>
+<div style="position:absolute;left:7.20px;top:322.34px" class="cls_010"><span class="cls_010">❖</span><span class="cls_011"> Operativni (budući fizički) sistem prikazuje šta, ko i kada,</span></div>
+<div style="position:absolute;left:34.20px;top:346.34px" class="cls_011"><span class="cls_011">ali ne i gdje radi, a prema potrebi može se razmatrati</span></div>
+<div style="position:absolute;left:34.20px;top:370.32px" class="cls_012"><span class="cls_012">organizacion nivo, odnosno različito značenje podataka</span></div>
+<div style="position:absolute;left:34.20px;top:394.37px" class="cls_011"><span class="cls_011">zavisno od područja unutar poslovnog sistema i okruženja.</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-360px;top:1650px;width:720px;height:540px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="4eae4932-94f7-11ea-8b25-0cc47a792c0a_id_4eae4932-94f7-11ea-8b25-0cc47a792c0a_files/background04.jpg" width=720 height=540></div>
+<div style="position:absolute;left:30.84px;top:43.63px" class="cls_009"><span class="cls_009">3.1.1. Redosljed izrade fizičkog i logičkog modela</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-360px;top:2200px;width:720px;height:540px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="4eae4932-94f7-11ea-8b25-0cc47a792c0a_id_4eae4932-94f7-11ea-8b25-0cc47a792c0a_files/background05.jpg" width=720 height=540></div>
+<div style="position:absolute;left:403.75px;top:43.63px" class="cls_009"><span class="cls_009">3.1.2. Modelovanje IS</span></div>
+<div style="position:absolute;left:7.20px;top:93.38px" class="cls_010"><span class="cls_010">❖</span><span class="cls_011"> Tehnika oblikovanja dijagramima odvija se na slijedeći</span></div>
+<div style="position:absolute;left:34.20px;top:117.36px" class="cls_012"><span class="cls_012">način.</span></div>
+<div style="position:absolute;left:43.20px;top:146.21px" class="cls_014"><span class="cls_014">◼</span><span class="cls_015">  Izradom modela nastoji se opisati situacija u kojoj dogaÿaj iz</span></div>
+<div style="position:absolute;left:65.76px;top:170.21px" class="cls_015"><span class="cls_015">vanjskog svijeta pokreće (okida) process.</span></div>
+<div style="position:absolute;left:43.20px;top:199.01px" class="cls_014"><span class="cls_014">◼</span><span class="cls_015">  Proces ima odreÿeni učinak na podatke u nekom stanju.</span></div>
+<div style="position:absolute;left:43.20px;top:227.83px" class="cls_014"><span class="cls_014">◼</span><span class="cls_015">  Obavljanjem procesa podaci prelaze u novo stanje</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-360px;top:2750px;width:720px;height:540px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="4eae4932-94f7-11ea-8b25-0cc47a792c0a_id_4eae4932-94f7-11ea-8b25-0cc47a792c0a_files/background06.jpg" width=720 height=540></div>
+<div style="position:absolute;left:396.31px;top:43.63px" class="cls_009"><span class="cls_009">3.1.3. Vrste modela IS</span></div>
+<div style="position:absolute;left:7.20px;top:115.90px" class="cls_010"><span class="cls_010">❖</span><span class="cls_016"> Model podataka </span><span class="cls_011">opisuje ŠTA su podaci i ŠTA oni opisuju.</span></div>
+<div style="position:absolute;left:7.20px;top:144.70px" class="cls_010"><span class="cls_010">❖</span><span class="cls_017"> Konceptualni model </span><span class="cls_011">opisuje podatke i veze izmeÿu</span></div>
+<div style="position:absolute;left:34.20px;top:168.68px" class="cls_012"><span class="cls_012">podataka.</span></div>
+<div style="position:absolute;left:7.20px;top:197.52px" class="cls_010"><span class="cls_010">❖</span><span class="cls_011"> Najčešći konceptualni model je </span><span class="cls_018">model entiteti-veze</span><span class="cls_019">.</span></div>
+<div style="position:absolute;left:7.20px;top:226.32px" class="cls_010"><span class="cls_010">❖</span><span class="cls_020"> Logički model </span><span class="cls_019">opisuje strukturu podataka i logičkih</span></div>
+<div style="position:absolute;left:34.20px;top:250.32px" class="cls_011"><span class="cls_011">datoteka, a najčešći logički model je </span><span class="cls_018">relacioni model</span></div>
+<div style="position:absolute;left:34.20px;top:274.34px" class="cls_018"><span class="cls_018">podataka</span><span class="cls_011">.</span></div>
+<div style="position:absolute;left:7.20px;top:331.94px" class="cls_010"><span class="cls_010">❖</span><span class="cls_016"> Model funkcija </span><span class="cls_011">opisuje KAKO se prikupljaju, obraÿuju i</span></div>
+<div style="position:absolute;left:34.20px;top:355.92px" class="cls_012"><span class="cls_012">distribuiraju podaci.</span></div>
+<div style="position:absolute;left:7.20px;top:384.77px" class="cls_010"><span class="cls_010">❖</span><span class="cls_018"> Model funkcija</span><span class="cls_017"> se oblikuje razlaganjem</span><span class="cls_011"> (dekompozicijom)</span></div>
+<div style="position:absolute;left:34.20px;top:408.77px" class="cls_011"><span class="cls_011">funkcija, iterativno od vrha prema dolje (od globalnih</span></div>
+<div style="position:absolute;left:34.20px;top:432.77px" class="cls_011"><span class="cls_011">funkcija do osnovnih procesa).</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-360px;top:3300px;width:720px;height:540px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="4eae4932-94f7-11ea-8b25-0cc47a792c0a_id_4eae4932-94f7-11ea-8b25-0cc47a792c0a_files/background07.jpg" width=720 height=540></div>
+<div style="position:absolute;left:396.31px;top:43.63px" class="cls_009"><span class="cls_009">3.1.3. Vrste modela IS</span></div>
+<div style="position:absolute;left:7.20px;top:115.90px" class="cls_010"><span class="cls_010">❖</span><span class="cls_016"> Model procesa </span><span class="cls_011">opisuje obradu podataka posmatranog</span></div>
+<div style="position:absolute;left:34.20px;top:139.90px" class="cls_011"><span class="cls_011">sistema.</span></div>
+<div style="position:absolute;left:7.20px;top:168.68px" class="cls_013"><span class="cls_013">❖</span><span class="cls_012"> Najčešći model procesa je </span><span class="cls_021">dijagram toka podataka</span><span class="cls_012">.</span></div>
+<div style="position:absolute;left:7.20px;top:197.52px" class="cls_010"><span class="cls_010">❖</span><span class="cls_016"> Model dogaÿaja </span><span class="cls_011">opisuje KADA se podaci obraÿuju, odnosno</span></div>
+<div style="position:absolute;left:34.20px;top:221.52px" class="cls_011"><span class="cls_011">razmatra učinke koje dogaÿaji imaju na procese i podatke.</span></div>
+<div style="position:absolute;left:7.20px;top:250.32px" class="cls_010"><span class="cls_010">❖</span><span class="cls_011"> Kao primjer se može navesti</span><span class="cls_018"> dijagram promjene stanja</span><span class="cls_011">.</span></div>
+<div style="position:absolute;left:7.20px;top:279.14px" class="cls_010"><span class="cls_010">❖</span><span class="cls_016"> Model resursa/sredstava </span><span class="cls_011">opisuje izvršioce, odnosno KO</span></div>
+<div style="position:absolute;left:34.20px;top:303.14px" class="cls_011"><span class="cls_011">obraÿuje podatke, GDJE se podaci nalaze i GDJE se podaci</span></div>
+<div style="position:absolute;left:34.20px;top:327.14px" class="cls_011"><span class="cls_011">obraÿuju.</span></div>
+<div style="position:absolute;left:7.20px;top:355.92px" class="cls_013"><span class="cls_013">❖</span><span class="cls_022"> Modeliranje programa</span><span class="cls_012"> podrazumjeva predstavljanje</span></div>
+<div style="position:absolute;left:34.20px;top:379.97px" class="cls_011"><span class="cls_011">struktura (programskih) modula IS, npr. </span><span class="cls_018">strukturnim</span></div>
+<div style="position:absolute;left:34.20px;top:403.97px" class="cls_018"><span class="cls_018">kartama</span><span class="cls_011">.</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-360px;top:3850px;width:720px;height:540px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="4eae4932-94f7-11ea-8b25-0cc47a792c0a_id_4eae4932-94f7-11ea-8b25-0cc47a792c0a_files/background08.jpg" width=720 height=540></div>
+<div style="position:absolute;left:236.57px;top:43.63px" class="cls_009"><span class="cls_009">3.1.4. Ključne aktivnosti i učesnici</span></div>
+<div style="position:absolute;left:7.20px;top:115.90px" class="cls_010"><span class="cls_010">❖</span><span class="cls_011"> Ključne aktivnosti, u nekim metodama, zajedno se zovu</span></div>
+<div style="position:absolute;left:34.20px;top:139.90px" class="cls_011"><span class="cls_011">informaciono inženjerstvo.</span></div>
+<div style="position:absolute;left:7.20px;top:180.72px" class="cls_010"><span class="cls_010">❖</span><span class="cls_011"> Kao ključne aktivnosti mogu se uočiti sistemska analiza i</span></div>
+<div style="position:absolute;left:34.20px;top:204.72px" class="cls_011"><span class="cls_011">sistemski dizajn.</span></div>
+<div style="position:absolute;left:7.20px;top:245.52px" class="cls_010"><span class="cls_010">❖</span><span class="cls_016"> Sistemska analiza</span><span class="cls_011"> (analiza sistema) proučava poslovanje</span></div>
+<div style="position:absolute;left:34.20px;top:269.50px" class="cls_012"><span class="cls_012">sa ciljem da dâ preporuke za poboljšanja sistema i</span></div>
+<div style="position:absolute;left:34.20px;top:293.54px" class="cls_011"><span class="cls_011">specifikacije zahtjeva za rješavanje.</span></div>
+<div style="position:absolute;left:7.20px;top:334.34px" class="cls_010"><span class="cls_010">❖</span><span class="cls_016"> Sistemski dizajn</span><span class="cls_011"> (dizajn sistema) omogućava specifikaciju</span></div>
+<div style="position:absolute;left:34.20px;top:358.32px" class="cls_012"><span class="cls_012">ili konstrukciju računarom podržanog rješenja</span></div>
+<div style="position:absolute;left:34.20px;top:382.37px" class="cls_011"><span class="cls_011">identifikovanih poslovnih zahtjeva.</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-360px;top:4400px;width:720px;height:540px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="4eae4932-94f7-11ea-8b25-0cc47a792c0a_id_4eae4932-94f7-11ea-8b25-0cc47a792c0a_files/background09.jpg" width=720 height=540></div>
+<div style="position:absolute;left:236.57px;top:43.63px" class="cls_009"><span class="cls_009">3.1.4. Ključne aktivnosti i učesnici</span></div>
+<div style="position:absolute;left:7.20px;top:99.14px" class="cls_023"><span class="cls_023">Učesnici u navedenim aktivnostima su:</span></div>
+<div style="position:absolute;left:7.20px;top:131.06px" class="cls_024"><span class="cls_024">❖</span><span class="cls_025"> Korisnik</span><span class="cls_023"> za kojeg se gradi IS, šta podrazumjeva korisnika sistema</span></div>
+<div style="position:absolute;left:34.20px;top:152.66px" class="cls_023"><span class="cls_023">i vlasnika sistema.</span></div>
+<div style="position:absolute;left:7.20px;top:184.56px" class="cls_026"><span class="cls_026">❖</span><span class="cls_027"> Korisnik sistema neposredno koristi IS pri obavljanju</span></div>
+<div style="position:absolute;left:34.20px;top:206.21px" class="cls_023"><span class="cls_023">svakodnevnih poslova ili koristi informaciju dobijenu iz IS.</span></div>
+<div style="position:absolute;left:7.20px;top:238.13px" class="cls_024"><span class="cls_024">❖</span><span class="cls_023"> Vlasnik sistema naručuje i plaća razvoj i održavanje sistema,</span></div>
+<div style="position:absolute;left:34.20px;top:259.73px" class="cls_023"><span class="cls_023">postavlja prioritete i odreÿuje politiku njegovog korištenja;</span></div>
+<div style="position:absolute;left:7.20px;top:291.67px" class="cls_024"><span class="cls_024">❖</span><span class="cls_025"> Projektant</span><span class="cls_023"> (dizajner sistema) je tehnički stručnjak koji:</span></div>
+<div style="position:absolute;left:43.20px;top:323.59px" class="cls_028"><span class="cls_028">◼</span><span class="cls_029">   oblikuje sistem tako da zadovolji zahtjeve korisnika,</span></div>
+<div style="position:absolute;left:43.20px;top:355.51px" class="cls_028"><span class="cls_028">◼</span><span class="cls_029">   prevodi poslovne zahtjeve i ograničenja u tehničko rješenje,</span></div>
+<div style="position:absolute;left:43.20px;top:387.46px" class="cls_028"><span class="cls_028">◼</span><span class="cls_029">   oblikuje datoteke, baze podataka, ulaze, izlaze,</span></div>
+<div style="position:absolute;left:43.20px;top:419.38px" class="cls_028"><span class="cls_028">◼</span><span class="cls_029">   ekranske forme, mrežu i programe,</span></div>
+<div style="position:absolute;left:43.20px;top:451.30px" class="cls_028"><span class="cls_028">◼</span><span class="cls_029">   integriše rješenje;</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-360px;top:4950px;width:720px;height:540px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="4eae4932-94f7-11ea-8b25-0cc47a792c0a_id_4eae4932-94f7-11ea-8b25-0cc47a792c0a_files/background10.jpg" width=720 height=540></div>
+<div style="position:absolute;left:236.57px;top:43.63px" class="cls_009"><span class="cls_009">3.1.4. Ključne aktivnosti i učesnici</span></div>
+<div style="position:absolute;left:7.20px;top:116.02px" class="cls_030"><span class="cls_030">❖</span><span class="cls_031"> Graditelj sistema </span><span class="cls_032">(programer, projektant) konstruiše</span></div>
+<div style="position:absolute;left:34.20px;top:138.82px" class="cls_032"><span class="cls_032">komponente sistema na osnovu specifikacija koje rade</span></div>
+<div style="position:absolute;left:34.20px;top:161.60px" class="cls_033"><span class="cls_033">dizajneri sistema, provjerava ispravnost sistema i isporučuje</span></div>
+<div style="position:absolute;left:34.20px;top:184.44px" class="cls_032"><span class="cls_032">u primjenu,.</span></div>
+<div style="position:absolute;left:7.20px;top:217.80px" class="cls_030"><span class="cls_030">❖</span><span class="cls_031"> Sistem analitičari</span><span class="cls_032"> razumiju i poslovanje i računarsku obradu</span></div>
+<div style="position:absolute;left:34.20px;top:240.60px" class="cls_032"><span class="cls_032">podataka. Njihov zadatak je da provode sistemsku analizu i</span></div>
+<div style="position:absolute;left:34.20px;top:263.38px" class="cls_033"><span class="cls_033">dizajn. Povezuju one koji trebaju računar i one koji poznaju</span></div>
+<div style="position:absolute;left:34.20px;top:286.22px" class="cls_032"><span class="cls_032">informacione tehnologije (IT).</span></div>
+<div style="position:absolute;left:7.20px;top:319.58px" class="cls_030"><span class="cls_030">❖</span><span class="cls_031"> Sistem analitičar pomaže proučavanju problema i potreba</span></div>
+<div style="position:absolute;left:34.20px;top:342.38px" class="cls_031"><span class="cls_031">poslovanja radi odreÿivanja kako poslovni sistem i ICT mogu</span></div>
+<div style="position:absolute;left:34.20px;top:365.16px" class="cls_034"><span class="cls_034">najbolje riješiti problem i postići unaprijeÿenje poslovanja.</span></div>
+<div style="position:absolute;left:7.20px;top:398.57px" class="cls_030"><span class="cls_030">❖</span><span class="cls_031"> Rezultati ovih aktivnosti su:</span></div>
+<div style="position:absolute;left:43.20px;top:431.93px" class="cls_035"><span class="cls_035">◼</span><span class="cls_031">  Poboljšani poslovni procesi,</span></div>
+<div style="position:absolute;left:43.20px;top:465.26px" class="cls_036"><span class="cls_036">◼</span><span class="cls_034">  Poboljšani informacioni sistemi te nove ili poboljšane</span></div>
+<div style="position:absolute;left:65.76px;top:488.11px" class="cls_031"><span class="cls_031">aplikacije</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-360px;top:5500px;width:720px;height:540px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="4eae4932-94f7-11ea-8b25-0cc47a792c0a_id_4eae4932-94f7-11ea-8b25-0cc47a792c0a_files/background11.jpg" width=720 height=540></div>
+<div style="position:absolute;left:42.02px;top:44.83px" class="cls_037"><span class="cls_037">3.2. Definisanje zahtjeva za informacionim sistemom</span></div>
+<div style="position:absolute;left:7.20px;top:116.02px" class="cls_024"><span class="cls_024">❖</span><span class="cls_023"> Prikupljanje informacija, podataka i činjenica su ključne</span></div>
+<div style="position:absolute;left:34.20px;top:137.62px" class="cls_023"><span class="cls_023">aktivnosti.</span></div>
+<div style="position:absolute;left:7.20px;top:169.52px" class="cls_026"><span class="cls_026">❖</span><span class="cls_027"> Jedna od aktivnosti kod definisanja zahtjeva za IS su</span><span class="cls_038"> intervjui</span><span class="cls_027"> sa</span></div>
+<div style="position:absolute;left:34.20px;top:191.16px" class="cls_023"><span class="cls_023">ključnim korisnicima i radni sastanci.</span></div>
+<div style="position:absolute;left:7.20px;top:223.08px" class="cls_024"><span class="cls_024">❖</span><span class="cls_023"> Kao zamjena za intervjue koriste se </span><span class="cls_025">upitnici</span><span class="cls_023"> i</span><span class="cls_025"> ankete</span><span class="cls_023">, koji su</span></div>
+<div style="position:absolute;left:34.20px;top:244.68px" class="cls_023"><span class="cls_023">pogodni i za prikupljanje informacija o resursima.</span></div>
+<div style="position:absolute;left:7.20px;top:276.62px" class="cls_024"><span class="cls_024">❖</span><span class="cls_025"> Analiza dokumentacije </span><span class="cls_023">podrazumjeva prikupljanje cjelokupne</span></div>
+<div style="position:absolute;left:34.20px;top:298.22px" class="cls_023"><span class="cls_023">dokumentacije značajne za poslovanje, radi boljeg utvrÿivanja</span></div>
+<div style="position:absolute;left:34.20px;top:319.82px" class="cls_023"><span class="cls_023">pravila, poslovne politike i ciljeva poslovanja.</span></div>
+<div style="position:absolute;left:7.20px;top:351.74px" class="cls_024"><span class="cls_024">❖</span><span class="cls_023"> Nužna je </span><span class="cls_025">ocjena postojećih aplikacija </span><span class="cls_023">i/ili računarom podržanih</span></div>
+<div style="position:absolute;left:34.20px;top:373.32px" class="cls_027"><span class="cls_027">podataka, radi analize podataka, njihove konverzije u novi  IS.</span></div>
+<div style="position:absolute;left:7.20px;top:405.29px" class="cls_024"><span class="cls_024">❖</span><span class="cls_025"> Posmatranje</span><span class="cls_023">, odnosno neposredni uvid u poslovne procese je</span></div>
+<div style="position:absolute;left:34.20px;top:426.89px" class="cls_023"><span class="cls_023">značajan vid definisanja zahtjeva za IS.</span></div>
+<div style="position:absolute;left:7.20px;top:458.81px" class="cls_024"><span class="cls_024">❖</span><span class="cls_023"> Postupak analize mora biti prilagoÿen korisniku.</span></div>
+<div style="position:absolute;left:7.20px;top:490.75px" class="cls_024"><span class="cls_024">❖</span><span class="cls_025"> Evidentiranje rezultata</span><span class="cls_023"> analize poželjno je obaviti CASE alatima.</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-360px;top:6050px;width:720px;height:540px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="4eae4932-94f7-11ea-8b25-0cc47a792c0a_id_4eae4932-94f7-11ea-8b25-0cc47a792c0a_files/background12.jpg" width=720 height=540></div>
+<div style="position:absolute;left:318.77px;top:44.83px" class="cls_037"><span class="cls_037">3.2. 3. Postupak intervjuisanja</span></div>
+<div style="position:absolute;left:7.20px;top:110.24px" class="cls_013"><span class="cls_013">❖</span><span class="cls_022"> Intervju</span><span class="cls_012"> mora biti neusiljen i elastičan razgovor sa</span></div>
+<div style="position:absolute;left:34.20px;top:134.28px" class="cls_011"><span class="cls_011">ispitanikom u obliku niza pitanja i odgovora.</span></div>
+<div style="position:absolute;left:7.20px;top:169.08px" class="cls_010"><span class="cls_010">❖</span><span class="cls_011"> Sagovornici su rukovodioci, krajnji korisnici i ostali</span></div>
+<div style="position:absolute;left:34.20px;top:193.08px" class="cls_011"><span class="cls_011">učesnici iz poslovnog sistema.</span></div>
+<div style="position:absolute;left:7.20px;top:227.90px" class="cls_010"><span class="cls_010">❖</span><span class="cls_011"> Standardno uključuje dva sagovornika (individualni), ali</span></div>
+<div style="position:absolute;left:34.20px;top:251.90px" class="cls_011"><span class="cls_011">može i više  sagovornika (grupni).</span></div>
+<div style="position:absolute;left:7.20px;top:286.70px" class="cls_010"><span class="cls_010">❖</span><span class="cls_011"> Informacije se prikupljaju nizom pojedinačnih razgovora.</span></div>
+<div style="position:absolute;left:7.20px;top:321.53px" class="cls_010"><span class="cls_010">❖</span><span class="cls_011"> Razgovore treba voditi prema unaprijed dogovorenom</span></div>
+<div style="position:absolute;left:34.20px;top:345.53px" class="cls_011"><span class="cls_011">planu i rasporedu, šta treba da obezbjedi koordinator</span></div>
+<div style="position:absolute;left:34.20px;top:369.53px" class="cls_011"><span class="cls_011">intervjua.</span></div>
+<div style="position:absolute;left:7.20px;top:404.31px" class="cls_013"><span class="cls_013">❖</span><span class="cls_012"> Postupak intervjua je spor i neefikasan.</span></div>
+<div style="position:absolute;left:7.20px;top:439.15px" class="cls_010"><span class="cls_010">❖</span><span class="cls_011"> Nakon završetka analize i sinteze dobijenih informacija,</span></div>
+<div style="position:absolute;left:34.20px;top:463.15px" class="cls_011"><span class="cls_011">neke razgovore treba ponoviti da bi se upotpunile dobijene</span></div>
+<div style="position:absolute;left:34.20px;top:487.15px" class="cls_011"><span class="cls_011">informacije ili uskladili proturječni iskazi.</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-360px;top:6600px;width:720px;height:540px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="4eae4932-94f7-11ea-8b25-0cc47a792c0a_id_4eae4932-94f7-11ea-8b25-0cc47a792c0a_files/background13.jpg" width=720 height=540></div>
+<div style="position:absolute;left:335.59px;top:44.83px" class="cls_037"><span class="cls_037">3.2. 4. Tehnika intervjuisanja</span></div>
+<div style="position:absolute;left:7.20px;top:104.64px" class="cls_010"><span class="cls_010">❖</span><span class="cls_011"> Priprema za razgovor treba da sadrži:</span></div>
+<div style="position:absolute;left:43.20px;top:139.42px" class="cls_014"><span class="cls_014">◼</span><span class="cls_039">  Utvrÿivanje informacija koje treba saznati,</span></div>
+<div style="position:absolute;left:43.20px;top:174.26px" class="cls_014"><span class="cls_014">◼</span><span class="cls_040">  Proučavanje postojeće dokumentacije i prethodnih</span></div>
+<div style="position:absolute;left:65.76px;top:198.26px" class="cls_040"><span class="cls_040">nalaza,</span></div>
+<div style="position:absolute;left:43.20px;top:233.04px" class="cls_014"><span class="cls_014">◼</span><span class="cls_039">  Odreÿivanje dokumentacije koju treba prikupiti i</span></div>
+<div style="position:absolute;left:43.20px;top:267.89px" class="cls_014"><span class="cls_014">◼</span><span class="cls_040">  Priprema pitanja koja će biti postavljena tokom</span></div>
+<div style="position:absolute;left:65.76px;top:291.89px" class="cls_040"><span class="cls_040">razgovora.</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-360px;top:7150px;width:720px;height:540px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="4eae4932-94f7-11ea-8b25-0cc47a792c0a_id_4eae4932-94f7-11ea-8b25-0cc47a792c0a_files/background14.jpg" width=720 height=540></div>
+<div style="position:absolute;left:335.59px;top:44.83px" class="cls_037"><span class="cls_037">3.2. 4. Tehnika intervjuisanja</span></div>
+<div style="position:absolute;left:7.20px;top:104.64px" class="cls_010"><span class="cls_010">❖</span><span class="cls_011"> Plan i obavljanje razgovora može da se odvija na slijedeći</span></div>
+<div style="position:absolute;left:34.20px;top:128.64px" class="cls_011"><span class="cls_011">način:</span></div>
+<div style="position:absolute;left:43.20px;top:163.46px" class="cls_014"><span class="cls_014">◼</span><span class="cls_040">  Trajanje prvog razgovora oko 2 sata</span></div>
+<div style="position:absolute;left:43.20px;top:198.26px" class="cls_014"><span class="cls_014">◼</span><span class="cls_040">  Početak razgovora, koji sadrži predstavljanje učesnika i</span></div>
+<div style="position:absolute;left:65.76px;top:222.26px" class="cls_040"><span class="cls_040">upoznavanje sa svrhom razgovora ;</span></div>
+<div style="position:absolute;left:43.20px;top:257.09px" class="cls_014"><span class="cls_014">◼</span><span class="cls_040">  Voÿenje razgovora, odnosno postavljanje pitanja i</span></div>
+<div style="position:absolute;left:65.76px;top:281.09px" class="cls_040"><span class="cls_040">zapisivanje odgovora, prikupljanje dokumentacije, ... ;</span></div>
+<div style="position:absolute;left:43.20px;top:315.89px" class="cls_014"><span class="cls_014">◼</span><span class="cls_040">  Završetak razgovora je približno 5 do10 minuta prije</span></div>
+<div style="position:absolute;left:65.76px;top:339.87px" class="cls_039"><span class="cls_039">isteka planiranog vremena;</span></div>
+<div style="position:absolute;left:43.20px;top:374.71px" class="cls_014"><span class="cls_014">◼</span><span class="cls_040">  Zahvala na razgovoru</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-360px;top:7700px;width:720px;height:540px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="4eae4932-94f7-11ea-8b25-0cc47a792c0a_id_4eae4932-94f7-11ea-8b25-0cc47a792c0a_files/background15.jpg" width=720 height=540></div>
+<div style="position:absolute;left:335.59px;top:44.83px" class="cls_037"><span class="cls_037">3.2. 4. Tehnika intervjuisanja</span></div>
+<div style="position:absolute;left:7.20px;top:99.14px" class="cls_023"><span class="cls_023">Dokumentovanje razgovora sačinjavaju:</span></div>
+<div style="position:absolute;left:7.20px;top:131.06px" class="cls_024"><span class="cls_024">❖</span><span class="cls_023"> Samostalno pisanje zapisnika.</span></div>
+<div style="position:absolute;left:7.20px;top:162.98px" class="cls_024"><span class="cls_024">❖</span><span class="cls_023"> Kada u razgovoru sudjeluje više analitičara, odreÿuje se voditelj</span></div>
+<div style="position:absolute;left:34.20px;top:184.56px" class="cls_027"><span class="cls_027">razgovora koji je ujedno i zapisničar, a ostali ulažu primjedbe;</span></div>
+<div style="position:absolute;left:7.20px;top:216.53px" class="cls_024"><span class="cls_024">❖</span><span class="cls_023"> Zapisnik treba da sadrži:</span></div>
+<div style="position:absolute;left:43.20px;top:248.45px" class="cls_028"><span class="cls_028">◼</span><span class="cls_041">   naziv projekta,</span></div>
+<div style="position:absolute;left:43.20px;top:280.35px" class="cls_028"><span class="cls_028">◼</span><span class="cls_042">   vrijeme i mjesto održavanja razgovora,</span></div>
+<div style="position:absolute;left:43.20px;top:312.31px" class="cls_028"><span class="cls_028">◼</span><span class="cls_041">   spisak učesnika,</span></div>
+<div style="position:absolute;left:43.20px;top:344.23px" class="cls_028"><span class="cls_028">◼</span><span class="cls_041">   sadržaj razgovora (tekst zapisnika),</span></div>
+<div style="position:absolute;left:43.20px;top:376.13px" class="cls_028"><span class="cls_028">◼</span><span class="cls_042">   popis prikupljene dokumentacije i</span></div>
+<div style="position:absolute;left:43.20px;top:408.10px" class="cls_028"><span class="cls_028">◼</span><span class="cls_041">   ime zapisničara;</span></div>
+<div style="position:absolute;left:7.20px;top:440.02px" class="cls_024"><span class="cls_024">❖</span><span class="cls_023"> Zapisnik mora sadržavati ono što je rečeno i slijediti tok</span></div>
+<div style="position:absolute;left:34.20px;top:461.62px" class="cls_023"><span class="cls_023">razgovora;</span></div>
+<div style="position:absolute;left:7.20px;top:493.56px" class="cls_024"><span class="cls_024">❖</span><span class="cls_023"> Zapisnik ne smije nametati zaključke, jer su oni rezultat analize.</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-360px;top:8250px;width:720px;height:540px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="4eae4932-94f7-11ea-8b25-0cc47a792c0a_id_4eae4932-94f7-11ea-8b25-0cc47a792c0a_files/background16.jpg" width=720 height=540></div>
+<div style="position:absolute;left:223.85px;top:44.83px" class="cls_037"><span class="cls_037">3.2. 5. Preporuke za voÿenje intervjua</span></div>
+<div style="position:absolute;left:7.20px;top:115.90px" class="cls_011"><span class="cls_011">Preporuke za voÿenje intervjua:</span></div>
+<div style="position:absolute;left:7.20px;top:144.70px" class="cls_010"><span class="cls_010">❖</span><span class="cls_011"> Tokom provoÿenja intervjua treba pitati o svemu što se</span></div>
+<div style="position:absolute;left:34.20px;top:168.68px" class="cls_012"><span class="cls_012">smatra važnim:</span></div>
+<div style="position:absolute;left:7.20px;top:197.52px" class="cls_011"><span class="cls_011">1. Pitanja zatvorenog tipa: Koliko ... obraÿujete (u nekom</span></div>
+<div style="position:absolute;left:34.20px;top:221.52px" class="cls_011"><span class="cls_011">razdoblju)?, Na koji način obraÿujete ... ?;</span></div>
+<div style="position:absolute;left:7.20px;top:250.32px" class="cls_011"><span class="cls_011">2. Pitanja otvorenog tipa: Što mislite o ... ?, Koji su najveći</span></div>
+<div style="position:absolute;left:34.20px;top:274.34px" class="cls_011"><span class="cls_011">problemi ... ?;</span></div>
+<div style="position:absolute;left:7.20px;top:303.14px" class="cls_011"><span class="cls_011">3. “Probna” pitanja: Zašto?, Možete li navesti primjer za</span></div>
+<div style="position:absolute;left:34.20px;top:327.14px" class="cls_011"><span class="cls_011">takvu situaciju?, Molim detaljnije objašnjenje za</span></div>
+<div style="position:absolute;left:7.20px;top:355.92px" class="cls_013"><span class="cls_013">❖</span><span class="cls_012"> Analizom odgovora se:</span></div>
+<div style="position:absolute;left:43.20px;top:384.77px" class="cls_014"><span class="cls_014">◼</span><span class="cls_040">  razdvajaju činjenice od mišljenja,</span></div>
+<div style="position:absolute;left:43.20px;top:413.57px" class="cls_014"><span class="cls_014">◼</span><span class="cls_040">  utvrÿuje se da li pojedine činjenice odgovaraju drugima,</span></div>
+<div style="position:absolute;left:43.20px;top:442.37px" class="cls_014"><span class="cls_014">◼</span><span class="cls_040">  analiziraju činjenice koje se ne poklapaju i</span></div>
+<div style="position:absolute;left:43.20px;top:471.19px" class="cls_014"><span class="cls_014">◼</span><span class="cls_040">  vrši provjera odgovora različitih sagovornika na isto</span></div>
+<div style="position:absolute;left:65.76px;top:495.19px" class="cls_040"><span class="cls_040">pitanje</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-360px;top:8800px;width:720px;height:540px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="4eae4932-94f7-11ea-8b25-0cc47a792c0a_id_4eae4932-94f7-11ea-8b25-0cc47a792c0a_files/background17.jpg" width=720 height=540></div>
+<div style="position:absolute;left:223.85px;top:44.83px" class="cls_037"><span class="cls_037">3.2. 5. Preporuke za voÿenje intervjua</span></div>
+<div style="position:absolute;left:7.20px;top:115.90px" class="cls_011"><span class="cls_011">Preporučuje se slijedeće ponašanje:</span></div>
+<div style="position:absolute;left:7.20px;top:144.70px" class="cls_010"><span class="cls_010">❖</span><span class="cls_011"> iskrenost i nepristranost</span></div>
+<div style="position:absolute;left:7.20px;top:173.48px" class="cls_013"><span class="cls_013">❖</span><span class="cls_012"> pažnja i jezgrovitost tj. “brzo misli, jasno govori”,</span></div>
+<div style="position:absolute;left:7.20px;top:202.32px" class="cls_010"><span class="cls_010">❖</span><span class="cls_011"> izbjegavanje sugestivnih pitanja,</span></div>
+<div style="position:absolute;left:7.20px;top:231.12px" class="cls_010"><span class="cls_010">❖</span><span class="cls_011"> nenametanje zaključaka i ležernost.</span></div>
+<div style="position:absolute;left:7.20px;top:288.74px" class="cls_010"><span class="cls_010">❖</span><span class="cls_011"> Grupno intervjuiranje je potrebno izbjegavati i po potrebi</span></div>
+<div style="position:absolute;left:34.20px;top:312.74px" class="cls_011"><span class="cls_011">nadoknaditi radnim sastancima.</span></div>
+<div style="position:absolute;left:7.20px;top:341.54px" class="cls_010"><span class="cls_010">❖</span><span class="cls_011"> Ovu vrstu intervjuisanja provesti kada se želi utvrditi</span></div>
+<div style="position:absolute;left:34.20px;top:365.52px" class="cls_012"><span class="cls_012">zajednički interes ili protivrječnost.</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-360px;top:9350px;width:720px;height:540px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="4eae4932-94f7-11ea-8b25-0cc47a792c0a_id_4eae4932-94f7-11ea-8b25-0cc47a792c0a_files/background18.jpg" width=720 height=540></div>
+<div style="position:absolute;left:411.67px;top:44.83px" class="cls_037"><span class="cls_037">3.2. 6. Upitnici i ankete</span></div>
+<div style="position:absolute;left:7.20px;top:87.77px" class="cls_010"><span class="cls_010">❖</span><span class="cls_043"> Upitnik je</span><span class="cls_011">, u suštini, pismeni intervju.</span></div>
+<div style="position:absolute;left:7.20px;top:122.57px" class="cls_010"><span class="cls_010">❖</span><span class="cls_011"> Sadrži pitanja koja se postavljaju tokom razgovora</span></div>
+<div style="position:absolute;left:34.20px;top:146.57px" class="cls_011"><span class="cls_011">(okvirno 20 pitanja).</span></div>
+<div style="position:absolute;left:7.20px;top:181.39px" class="cls_010"><span class="cls_010">❖</span><span class="cls_011"> Može se dostaviti korisniku prije ili nakon intervjua.</span></div>
+<div style="position:absolute;left:7.20px;top:216.19px" class="cls_010"><span class="cls_010">❖</span><span class="cls_011"> Nedostaci upitnika su slijedeći:</span></div>
+<div style="position:absolute;left:43.20px;top:250.97px" class="cls_014"><span class="cls_014">◼</span><span class="cls_044">  ispitanik može prilagoditi (kontrolisati) svoje odgovore,</span></div>
+<div style="position:absolute;left:43.20px;top:285.82px" class="cls_014"><span class="cls_014">◼</span><span class="cls_015">  teško je procijeniti iskrenost (spontanost) odgovora,</span></div>
+<div style="position:absolute;left:43.20px;top:320.62px" class="cls_014"><span class="cls_014">◼</span><span class="cls_015">  može i obeshrabriti ispitanika.</span></div>
+<div style="position:absolute;left:7.20px;top:390.24px" class="cls_010"><span class="cls_010">❖</span><span class="cls_043"> Anketa</span><span class="cls_011"> može da obuhvatiti više ispitanika.</span></div>
+<div style="position:absolute;left:7.20px;top:425.04px" class="cls_010"><span class="cls_010">❖</span><span class="cls_011"> Pitanja su zatvorenog tipa, a odgovori i obrada odgovora</span></div>
+<div style="position:absolute;left:34.20px;top:449.02px" class="cls_012"><span class="cls_012">mogu se standardizovati.</span></div>
+<div style="position:absolute;left:7.20px;top:483.86px" class="cls_010"><span class="cls_010">❖</span><span class="cls_011"> Pogodna je za popis resursa.</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-360px;top:9900px;width:720px;height:540px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="4eae4932-94f7-11ea-8b25-0cc47a792c0a_id_4eae4932-94f7-11ea-8b25-0cc47a792c0a_files/background19.jpg" width=720 height=540></div>
+<div style="position:absolute;left:298.13px;top:44.83px" class="cls_037"><span class="cls_037">3.2. 7. Proučavanje dokumenata</span></div>
+<div style="position:absolute;left:7.20px;top:115.90px" class="cls_010"><span class="cls_010">❖</span><span class="cls_011"> Prikupljaju se svi dokumenti do kojih se može doći.</span></div>
+<div style="position:absolute;left:7.20px;top:150.70px" class="cls_010"><span class="cls_010">❖</span><span class="cls_011"> U prvom redu treba prikupiti dokumente koji su nastali kao</span></div>
+<div style="position:absolute;left:34.20px;top:174.68px" class="cls_012"><span class="cls_012">rezultat analize procesa, tipične dokumente (pravilnici,</span></div>
+<div style="position:absolute;left:34.20px;top:198.72px" class="cls_011"><span class="cls_011">zakoni, obrasci, izvještaji) i dokumente nastale analizom</span></div>
+<div style="position:absolute;left:34.20px;top:222.72px" class="cls_011"><span class="cls_011">podataka.</span></div>
+<div style="position:absolute;left:7.20px;top:257.50px" class="cls_013"><span class="cls_013">❖</span><span class="cls_012"> Poželjno je da dokumenti budu reprezentativni, tj.</span></div>
+<div style="position:absolute;left:34.20px;top:281.54px" class="cls_011"><span class="cls_011">popunjeni na tipičan način.</span></div>
+<div style="position:absolute;left:7.20px;top:316.34px" class="cls_010"><span class="cls_010">❖</span><span class="cls_011"> Stalno bilježenje nekih podataka ne mora značiti da su ti</span></div>
+<div style="position:absolute;left:34.20px;top:340.34px" class="cls_011"><span class="cls_011">podaci stvarno potrebni.</span></div>
+<div style="position:absolute;left:7.20px;top:375.17px" class="cls_010"><span class="cls_010">❖</span><span class="cls_011"> Treba prikupiti više uzoraka iste vrste dokumenta!</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-360px;top:10450px;width:720px;height:540px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="4eae4932-94f7-11ea-8b25-0cc47a792c0a_id_4eae4932-94f7-11ea-8b25-0cc47a792c0a_files/background20.jpg" width=720 height=540></div>
+<div style="position:absolute;left:298.13px;top:44.83px" class="cls_037"><span class="cls_037">3.2. 7. Proučavanje dokumenata</span></div>
+<div style="position:absolute;left:7.20px;top:115.90px" class="cls_010"><span class="cls_010">❖</span><span class="cls_011"> Vrijednost informacija o analiziranoj organizaciji</span></div>
+<div style="position:absolute;left:34.20px;top:139.90px" class="cls_011"><span class="cls_011">prikupljena (samo) preko dokumenata je niska.</span></div>
+<div style="position:absolute;left:7.20px;top:174.68px" class="cls_013"><span class="cls_013">❖</span><span class="cls_012"> Praksa može odudarati od pravilnika i administrativnih</span></div>
+<div style="position:absolute;left:34.20px;top:198.72px" class="cls_011"><span class="cls_011">obrazaca.</span></div>
+<div style="position:absolute;left:7.20px;top:233.52px" class="cls_010"><span class="cls_010">❖</span><span class="cls_011"> Treba shvatiti:</span></div>
+<div style="position:absolute;left:43.20px;top:268.30px" class="cls_045"><span class="cls_045">◼</span><span class="cls_039">  zašto i kada dokumenti nastaju,</span></div>
+<div style="position:absolute;left:43.20px;top:303.14px" class="cls_014"><span class="cls_014">◼</span><span class="cls_040">  kako se popunjavaju,</span></div>
+<div style="position:absolute;left:43.20px;top:337.94px" class="cls_014"><span class="cls_014">◼</span><span class="cls_040">  koliko su potrebni,</span></div>
+<div style="position:absolute;left:43.20px;top:372.77px" class="cls_014"><span class="cls_014">◼</span><span class="cls_040">  šta treba promijeniti da bi se popravili (sadržaj, lakoća</span></div>
+<div style="position:absolute;left:65.76px;top:396.77px" class="cls_040"><span class="cls_040">popunjavanja i čitanja).</span></div>
+<div style="position:absolute;left:7.20px;top:431.57px" class="cls_010"><span class="cls_010">❖</span><span class="cls_011"> Nužno je modele (podataka), razmatrane analizom,</span></div>
+<div style="position:absolute;left:34.20px;top:455.54px" class="cls_012"><span class="cls_012">provjeriti kod korisnika.</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-360px;top:11000px;width:720px;height:540px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="4eae4932-94f7-11ea-8b25-0cc47a792c0a_id_4eae4932-94f7-11ea-8b25-0cc47a792c0a_files/background21.jpg" width=720 height=540></div>
+<div style="position:absolute;left:67.94px;top:30.39px" class="cls_046"><span class="cls_046">3.2. 8. </span><span class="cls_047">Evidencija i analiza postojećih aplikacija</span></div>
+<div style="position:absolute;left:7.20px;top:104.64px" class="cls_010"><span class="cls_010">❖</span><span class="cls_011"> Budući da su nedostaci opreme, podrške i podataka</span></div>
+<div style="position:absolute;left:34.20px;top:128.64px" class="cls_011"><span class="cls_011">najčešći razlozi za izgradnju novog IS, potrebno ih je</span></div>
+<div style="position:absolute;left:34.20px;top:152.66px" class="cls_011"><span class="cls_011">evidentirati i analizirati.</span></div>
+<div style="position:absolute;left:7.20px;top:187.46px" class="cls_010"><span class="cls_010">❖</span><span class="cls_011"> Vrši se procjena aplikacija i podataka u primjeni, i to:</span></div>
+<div style="position:absolute;left:43.20px;top:222.26px" class="cls_014"><span class="cls_014">◼</span><span class="cls_040">  korišteni programski jezici i alati</span></div>
+<div style="position:absolute;left:43.20px;top:257.09px" class="cls_014"><span class="cls_014">◼</span><span class="cls_040">  podržane funkcije i način posluživanja programa,</span></div>
+<div style="position:absolute;left:43.20px;top:291.89px" class="cls_014"><span class="cls_014">◼</span><span class="cls_040">  meÿusobna povezanost različitih aplikacija i podataka,</span></div>
+<div style="position:absolute;left:43.20px;top:326.69px" class="cls_014"><span class="cls_014">◼</span><span class="cls_040">  postojeće platforme kao i sastav i stepen informatičke</span></div>
+<div style="position:absolute;left:65.76px;top:350.71px" class="cls_040"><span class="cls_040">obučenosti korisnika.</span></div>
+<div style="position:absolute;left:7.20px;top:385.51px" class="cls_010"><span class="cls_010">❖</span><span class="cls_011"> Analiziraju se nedostaci sistemske opreme i programske</span></div>
+<div style="position:absolute;left:34.20px;top:409.51px" class="cls_011"><span class="cls_011">podrške.</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-360px;top:11550px;width:720px;height:540px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="4eae4932-94f7-11ea-8b25-0cc47a792c0a_id_4eae4932-94f7-11ea-8b25-0cc47a792c0a_files/background22.jpg" width=720 height=540></div>
+<div style="position:absolute;left:67.94px;top:30.39px" class="cls_046"><span class="cls_046">3.2. 8. </span><span class="cls_047">Evidencija i analiza postojećih aplikacija</span></div>
+<div style="position:absolute;left:7.20px;top:115.90px" class="cls_010"><span class="cls_010">❖</span><span class="cls_011"> Nedostaci modela podataka mogu biti različiti.</span></div>
+<div style="position:absolute;left:7.20px;top:150.70px" class="cls_010"><span class="cls_010">❖</span><span class="cls_011"> Najčešći nedostaci su različitost modela podataka</span></div>
+<div style="position:absolute;left:34.20px;top:174.68px" class="cls_012"><span class="cls_012">postojećih aplikacija i nedostaci unutar pojedinih modela.</span></div>
+<div style="position:absolute;left:7.20px;top:209.52px" class="cls_010"><span class="cls_010">❖</span><span class="cls_011"> Različitost modela podataka postojećih aplikacija se</span></div>
+<div style="position:absolute;left:34.20px;top:233.52px" class="cls_011"><span class="cls_011">očituje:</span></div>
+<div style="position:absolute;left:43.20px;top:268.30px" class="cls_045"><span class="cls_045">◼</span><span class="cls_044">  entiteti iz stvarnog svijeta nisu jednako zastupljeni u</span></div>
+<div style="position:absolute;left:65.76px;top:292.34px" class="cls_015"><span class="cls_015">postojećim modelima,</span></div>
+<div style="position:absolute;left:43.20px;top:327.14px" class="cls_014"><span class="cls_014">◼</span><span class="cls_015">  isti entitet iz stvarnog svijeta pojavljuje se pod različitim</span></div>
+<div style="position:absolute;left:65.76px;top:351.14px" class="cls_015"><span class="cls_015">nazivima,</span></div>
+<div style="position:absolute;left:43.20px;top:385.97px" class="cls_014"><span class="cls_014">◼</span><span class="cls_015">  isti entitet iz stvarnog svijeta opisan je različitim atributima,</span></div>
+<div style="position:absolute;left:43.20px;top:420.77px" class="cls_014"><span class="cls_014">◼</span><span class="cls_015">  dva ili više entiteta iz stvarnog svijeta su prikazani različitim</span></div>
+<div style="position:absolute;left:65.76px;top:444.77px" class="cls_015"><span class="cls_015">brojem entiteta u modelu podataka.</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-360px;top:12100px;width:720px;height:540px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="4eae4932-94f7-11ea-8b25-0cc47a792c0a_id_4eae4932-94f7-11ea-8b25-0cc47a792c0a_files/background23.jpg" width=720 height=540></div>
+<div style="position:absolute;left:181.73px;top:30.39px" class="cls_046"><span class="cls_046">3.2. 9. </span><span class="cls_047">Posmatranje poslovnog sistema</span></div>
+<div style="position:absolute;left:7.20px;top:99.02px" class="cls_010"><span class="cls_010">❖</span><span class="cls_011"> Definisanje zahtjeva za IS se može dopuniti uvidom u</span></div>
+<div style="position:absolute;left:34.20px;top:123.02px" class="cls_011"><span class="cls_011">poslovne procese, odnosno posmatranjem radnih sredina.</span></div>
+<div style="position:absolute;left:7.20px;top:157.82px" class="cls_010"><span class="cls_010">❖</span><span class="cls_011"> Posmatra se lokacija i kretanje ljudi, tok izvršavanja</span></div>
+<div style="position:absolute;left:34.20px;top:181.80px" class="cls_012"><span class="cls_012">poslova, fizički ulazi i izlazi sistema, izrada i razmjena</span></div>
+<div style="position:absolute;left:34.20px;top:205.85px" class="cls_011"><span class="cls_011">dokumenata, procesi osnovne djelatnosti.</span></div>
+<div style="position:absolute;left:7.20px;top:240.65px" class="cls_010"><span class="cls_010">❖</span><span class="cls_011"> Prednost ovakvog pristupa je u tome što je analitičar u</span></div>
+<div style="position:absolute;left:34.20px;top:264.65px" class="cls_011"><span class="cls_011">stanju da realno sagleda poslovni proces.</span></div>
+<div style="position:absolute;left:7.20px;top:299.47px" class="cls_010"><span class="cls_010">❖</span><span class="cls_011"> Nedostaci posmatranja poslovnog sistema su neefikasnost,</span></div>
+<div style="position:absolute;left:34.20px;top:323.47px" class="cls_011"><span class="cls_011">znatan utrošak vremena, ometanje i nelagodnost</span></div>
+<div style="position:absolute;left:34.20px;top:347.47px" class="cls_011"><span class="cls_011">posmatranih osoba, mogućnost manipulacije posmatrača.</span></div>
+<div style="position:absolute;left:7.20px;top:382.25px" class="cls_013"><span class="cls_013">❖</span><span class="cls_012"> Podaci dobijeni iz malog broja kratkotrajnih posmatranja</span></div>
+<div style="position:absolute;left:34.20px;top:406.30px" class="cls_011"><span class="cls_011">mogu biti nepouzdani i netačni.</span></div>
+<div style="position:absolute;left:7.20px;top:441.10px" class="cls_010"><span class="cls_010">❖</span><span class="cls_011"> Posmatranje na licu mjesta je najteža metoda za</span></div>
+<div style="position:absolute;left:34.20px;top:465.07px" class="cls_012"><span class="cls_012">utvrÿivanje činjenica.</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-360px;top:12650px;width:720px;height:540px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="4eae4932-94f7-11ea-8b25-0cc47a792c0a_id_4eae4932-94f7-11ea-8b25-0cc47a792c0a_files/background24.jpg" width=720 height=540></div>
+<div style="position:absolute;left:401.11px;top:30.39px" class="cls_046"><span class="cls_046">3.2. 10. </span><span class="cls_047">Radni sastanci</span></div>
+<div style="position:absolute;left:7.20px;top:99.02px" class="cls_010"><span class="cls_010">❖</span><span class="cls_011"> Radni sastanci (sjednice) se organizuju da analitičari i</span></div>
+<div style="position:absolute;left:34.20px;top:123.02px" class="cls_011"><span class="cls_011">korisnici zajednički provode analizu i oblikovanje.</span></div>
+<div style="position:absolute;left:7.20px;top:157.82px" class="cls_010"><span class="cls_010">❖</span><span class="cls_011"> Cilj sjednice je pronalaženje najboljeg rješenja.</span></div>
+<div style="position:absolute;left:7.20px;top:192.65px" class="cls_010"><span class="cls_010">❖</span><span class="cls_011"> Prednosti radnih sastanaka su njihova pogodnost za</span></div>
+<div style="position:absolute;left:34.20px;top:216.65px" class="cls_011"><span class="cls_011">projekte kojima se rješavaju problemi važni za cijeli</span></div>
+<div style="position:absolute;left:34.20px;top:240.65px" class="cls_011"><span class="cls_011">poslovni sistem ili veći dio poslovanja.</span></div>
+<div style="position:absolute;left:7.20px;top:275.43px" class="cls_013"><span class="cls_013">❖</span><span class="cls_012"> Njihovim organizovanjem se izbjegavaju specifični i</span></div>
+<div style="position:absolute;left:34.20px;top:299.47px" class="cls_011"><span class="cls_011">nejasni zahtjevi, preciznije se ustanovljava opseg projekta</span></div>
+<div style="position:absolute;left:34.20px;top:323.47px" class="cls_011"><span class="cls_011">i bolje uočava protivrječnost zahtjeva.</span></div>
+<div style="position:absolute;left:7.20px;top:358.27px" class="cls_010"><span class="cls_010">❖</span><span class="cls_011"> Nedostaci radnih sjednica su pasivnost učesnika,</span></div>
+<div style="position:absolute;left:34.20px;top:382.25px" class="cls_012"><span class="cls_012">“usitnjavanje” razgovora i često udaljavanje od tema.</span></div>
+<div style="position:absolute;left:7.20px;top:417.10px" class="cls_010"><span class="cls_010">❖</span><span class="cls_011"> Sjednice treba da traju više dana (5 do 10) u nekoliko</span></div>
+<div style="position:absolute;left:34.20px;top:441.10px" class="cls_011"><span class="cls_011">sedmica, pa je ovom zahtjevu u praksi vrlo teško udovoljiti</span></div>
+<div style="position:absolute;left:34.20px;top:465.07px" class="cls_012"><span class="cls_012">zbog obaveza učesnika.</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-360px;top:13200px;width:720px;height:540px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="4eae4932-94f7-11ea-8b25-0cc47a792c0a_id_4eae4932-94f7-11ea-8b25-0cc47a792c0a_files/background25.jpg" width=720 height=540></div>
+<div style="position:absolute;left:88.70px;top:33.87px" class="cls_048"><span class="cls_048">3.2. 11. Najčešći problemi pri prikupljanju informacija</span></div>
+<div style="position:absolute;left:7.20px;top:99.02px" class="cls_010"><span class="cls_010">❖</span><span class="cls_011"> Ponašanja korisnika često može da uzrokuje niz problema:</span></div>
+<div style="position:absolute;left:7.20px;top:133.82px" class="cls_010"><span class="cls_010">❖</span><span class="cls_011"> 1. Korisnik navodi brojne potrebe, gomilu nepotrebnih</span></div>
+<div style="position:absolute;left:34.20px;top:157.82px" class="cls_011"><span class="cls_011">izvještaja, ekranskih formi, sortiranja, izračunavanja i sl.</span></div>
+<div style="position:absolute;left:43.20px;top:192.65px" class="cls_014"><span class="cls_014">◼</span><span class="cls_015">  Ovakav pristup obično je uzrokovan pomanjkanjem iskustva</span></div>
+<div style="position:absolute;left:65.76px;top:216.65px" class="cls_015"><span class="cls_015">korisnika, koji ne zna šta bi mu stvarno moglo zatrebati ili nije</span></div>
+<div style="position:absolute;left:65.76px;top:240.65px" class="cls_015"><span class="cls_015">u stanju izdvojiti ono šta je bitno;</span></div>
+<div style="position:absolute;left:7.20px;top:275.43px" class="cls_013"><span class="cls_013">❖</span><span class="cls_012"> 2. Korisnik traži više mogućnosti, a zapravo mu je</span></div>
+<div style="position:absolute;left:34.20px;top:299.47px" class="cls_011"><span class="cls_011">potrebna samo jedna ili dvije.</span></div>
+<div style="position:absolute;left:43.20px;top:334.27px" class="cls_014"><span class="cls_014">◼</span><span class="cls_015">  Dodatni zahtjevi služe za postizanje bolje nagodbe sa</span></div>
+<div style="position:absolute;left:65.76px;top:358.27px" class="cls_015"><span class="cls_015">analitičarom.</span></div>
+<div style="position:absolute;left:43.20px;top:393.10px" class="cls_014"><span class="cls_014">◼</span><span class="cls_015">  Ova taktika obično oslikava korisnika sa dobrim poznavanjem</span></div>
+<div style="position:absolute;left:65.76px;top:417.10px" class="cls_015"><span class="cls_015">onoga šta želi, a zahtjeve treba reducirati na one realne;</span></div>
+<div style="position:absolute;left:7.20px;top:451.90px" class="cls_010"><span class="cls_010">❖</span><span class="cls_011"> 3. Korisniku nedostaje volja ili znanje, a ponekad oboje.</span></div>
+<div style="position:absolute;left:43.20px;top:486.72px" class="cls_014"><span class="cls_014">◼</span><span class="cls_015">  Šanse za uspješno definisanje problema su male, jer samo</span></div>
+<div style="position:absolute;left:65.76px;top:510.72px" class="cls_015"><span class="cls_015">korisnik može izraziti svoje potrebe i probleme.</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-360px;top:13750px;width:720px;height:540px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="4eae4932-94f7-11ea-8b25-0cc47a792c0a_id_4eae4932-94f7-11ea-8b25-0cc47a792c0a_files/background26.jpg" width=720 height=540></div>
+<div style="position:absolute;left:38.33px;top:23.88px" class="cls_002"><span class="cls_002">L</span></div>
+<div style="position:absolute;left:201.65px;top:86.83px" class="cls_003"><span class="cls_003">PROJEKTOVANJE</span></div>
+<div style="position:absolute;left:111.65px;top:124.51px" class="cls_003"><span class="cls_003">INFORMACIONIH SISTEMA</span></div>
+<div style="position:absolute;left:50.95px;top:363.24px" class="cls_049"><span class="cls_049">3. Uvod u projektovanje i definisanje</span></div>
+<div style="position:absolute;left:229.54px;top:390.14px" class="cls_049"><span class="cls_049">zahtjeva za IS</span></div>
+<div style="position:absolute;left:272.74px;top:470.76px" class="cls_050"><span class="cls_050">Pitanja ?</span></div>
+</div>
+
+</body>
+</html>
