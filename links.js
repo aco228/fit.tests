@@ -52,6 +52,17 @@ var links = [
         l: './is.materijal/index.html'
       }
     ]
+  },
+
+  {
+    n: 'Projektovanje',
+    l:
+    [
+      {
+        n: 'Svi materijali',
+        l: './projektovanje/index.html'
+      }
+    ]
   }
 
 ];
