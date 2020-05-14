@@ -1,0 +1,529 @@
+<html>
+
+Projektovanje informacionih sistema<br>
+nastavna jedinica 12<br>
+<br>
+Racionalizacija fizičkog dizajna<br>
+Posle izbora kandidatske tehnologije, projektni tim pristupa racionalizaciji fizičkog dizajna. Na<br>
+ovom koraku vrše se dizajni komponenata koje su servisno orjentisane, za aplikacije koje su<br>
+servisno orjentisane i razvoje distribucione strategije. Rezultati racionalizacije se ogledaju u<br>
+nekoliko isporuka. Ove isporuke opisuju tehnologije, strategije i topologije koje su bile<br>
+dizajnirane za rešenje. Isporuke racionalizacije na nivou bazne linije uključuje:<br>
+1. Distribuciju strategije paketa<br>
+2. Komponente koje su preliminarno servisno bazirane<br>
+3. Modele distribucije:<br>
+<br>
+• Budućnost mrežne topologije<br>
+<br>
+• Budućnost topologije podataka<br>
+<br>
+• Budućnost topologije komponenata<br>
+4. Model distribucije na baznoj liniji.<br>
+Kreiranje distribucije i strategija pakovanja<br>
+Racionalizacija je iterativni proces za vreme koje projektni tim pokušava da dizajniraju<br>
+optimalno rešenje. Jedna od ciljeva racionalizacije je servis distribucije i pakovanja tih servisa<br>
+u komponente.<br>
+Definisanje distribucione strategije<br>
+Distributivna strategija je racionalisana za definisanje gde će servisi biti locirani u arhitejkturi<br>
+rešenja. Distribucija je servisno bazirana a ne komponentno bazirana.<br>
+Definicija strategije pakovanja<br>
+Strategija pakovanja je racionalisana za definisanje koji servisi će ući u svaku komponentu.<br>
+Možete imate višestruku strategiju u toku jednog rešenja. To praktično znači da tim može<br>
+kreirati sloj poslovnih pravila i da u njega može smestiti najveći broj poslovnih pravila<br>
+(ograničavanje popusta preko autora naprimer).<br>
+Upravljanje stanjem<br>
+Upravljanje stanjem je proces preko kojeg održavanje stanja rešenja i sadržaja stranice preko<br>
+većeg broja zahteva za istim podatkom ili za različitom stranicom. Microsoft ASP.NET podržava<br>
+različite sa strane klijenta i sa strane servera, opcije za upravljanjem stanja. Kao istinito za<br>
+bilo koju HTTP tehnologiju Web Forms stranice su stateless, što znači da one neće automatski<br>
+pokazati zahteve koji su od istog klijenta sve dok je aktivan pogled ili strana. Cak šta više,<br>
+stranice su uništene i ponovo kreirane sa svakom komunikacijom sa serverom; informacije u<br>
+okviru strane neće postojati posle životnog ciklusa jedne strane.<br>
+Opcije za upravljanje stanjem na Web baziranim rešenjima ali sa strane klijenta su:<br>
+1. Osobine pogleda stanja<br>
+2. Skrivena polja<br>
+3. Cookies (kolačići)<br>
+4. Query string (string upita)<br>
+<br>
+<br>
+Osobine pogleda stanja<br>
+<br>
+Web Forms stranice omogućavaju pogle osobina stanja kao ugrađene u strukturu za<br>
+automatsko obnavljanje vrednosti između većeg broja zahteva za istom stranom.<br>
+<br>
+Skrivena polja<br>
+<br>
+Ako izaberete da smestite specifične informacije strane u skriveno polje, morate poslati vaše<br>
+stranice serveru korišćenjem Hypertext Transfer Protocol (HTTP) poznati kao post metod. On<br>
+je najbolji za smeštaj jedino malih informacija često promenljivih podataka na klijentu.<br>
+ASP.NET omogućuje HtmlInputHidden kontrolu za ovaj metod.<br>
+<br>
+Cookies (kolačići)<br>
+<br>
+Kolačić je mala često izmenljiva informacija smeštena na klijentskoj strani sistema. Oni su<br>
+jednostavni i laki i smanjuju greške na serverskim izvorima.<br>
+<br>
+Query string (string upita)<br>
+<br>
+String upita je mala informacija koja je pridodata na kraju stranica Uniform Resource Locator<br>
+(URL). Mada oni omogućuju jednostavni, metod održavanja stanja, može biti iskorišćena jedino<br>
+kada strana je zahtevana preko URL-a. Oni nisu bezbedni i omogućavaju ograničeni kapacitet.<br>
+Opcije za upravljanje stanjem na Web baziranim rešenjima ali sa strane servera su:<br>
+<br>
+1. Stanje aplikacije<br>
+<br>
+2. Stanje sesije<br>
+<br>
+3. Baza podataka<br>
+<br>
+Stanje aplikacije<br>
+<br>
+Stanje aplikacije je globalni mehanizam smeštanja, koji je dostupan od svih strana Web<br>
+aplikacija. Vi koristite HttpAplicationState klasu za smeštanje specifičnih vrednosti aplikacije<br>
+koje će biti dostupne većem broju sesija i koje se neće često menjati.<br>
+<br>
+Stanje sesije<br>
+<br>
+Stanje sesije je istovremeno i stanje aplikacije ali je ograničeno sa tekućom sesijom brovsera.<br>
+ASP.NET HttpSessionState klasa može sadržati vrednosti i objekata koji će biti vidljivi jedino u<br>
+toj sesiji, i da će omogućiti vašoj aplikaciji da raste i da koriste upravljanje događajima sesije.<br>
+Ako različiti korisnici koriste rešenje, svaki korisnik ima različito stanje sesije.<br>
+<br>
+Baza podataka<br>
+<br>
+Možete takođe izabrati stanje smeštanja podatak u bazu podataka. Ovo je zajednička tehnika<br>
+za e-komerc Web sajtova u kojoj je primenjena bezbednost, personalizacija, koegzistentnost i<br>
+obradu podataka je vrlo važna. Možete kombinovati opcije stanja smeštanja podataka u vašoj<br>
+aplikaciji korišćenjem baze podataka i sa podrškom preko cookies-a ili stanjem sesije.<br>
+<br>
+Razmatranje dizajna<br>
+<br>
+Razmatranje dizajna uključuje:<br>
+<br>
+Uklopljivost – Uklopljivost uključuje mogućnost brzog i lakog proširivog rešenja da prihvati više<br>
+transakcija ili više korisnika.<br>
+<br>
+Performanse -– Performanse sistema uključuje vreme odziva sistema i brzinu sa kojom sistem<br>
+predstavlja aplikacijske aktivnosti.<br>
+<br>
+Upravljivost – Upravljivost sistema uključuje lakoću sa kojom sistem može biti upravljen na<br>
+svim nivoima.<br>
+<br>
+Ponovno korišćenje – Ponovno korišćenje je lakoća sa kojom komponente mogu biti ponovno<br>
+iskorišćene preko drugih aplikacija.<br>
+<br>
+Usitnjenost – Usitnjenost pokazuje broj grupisanih servisa u objektu i veličinu i broj grupisanih<br>
+objekata u jednu komponentu.<br>
+<br>
+Kada se koristi veći broj strategija, tim bi trebao stremiti za balansom između različitih zahteva<br>
+i ograničenjima rešenja.<br>
+<br>
+Kohezija i spajanje<br>
+<br>
+Jedna od osobina dobrog komponentnog plana je visoka kohezija i gubitak spajanja. Kohezija<br>
+je relacija između različitih unutrašnjih elemenata neke komponente. Spajanje je relacija<br>
+komponenata sa drugim komponentima.<br>
+<br>
+Kohezija<br>
+<br>
+Komponente koje opslužuju su u bliskom odnosu i kaže se da imaju visoku koheziju. Efikasnost<br>
+komponenata je direktno zavisna od bliske relacije između servisa. Kohezija može biti:<br>
+Funkcionalna -– Jedinica predstavlja samo jednu aktivnost. Ovo je najači tip kohezije<br>
+Sekvencija -– Jedinica sadrži operacije koje moraju biti predstavljene u specifičnom redu i da<br>
+mogu da dele iste podatke.<br>
+<br>
+Komunikacione -– Operacije u jedinici koriste iste podatke ali nisu u relaciji na bilo koji način.<br>
+Ovaj tip kohezije minimizira prekomernu komunikaciju u aplikaciji.<br>
+<br>
+Temporal (privremena) - Operacije su kombinovane zato što su sve predstavljene<br>
+istovremeno.<br>
+<br>
+Sve kohezije istovremeno ne predstavljaju i prednosti. Drugi tip kohezije može rezultirati u<br>
+rešenju da je siromašno organizovano i teško razumljivo, otklonjene greške i modifikovano.<br>
+Neefektivni tipovi kohezije uključuju sledeće:<br>
+<br>
+Proceduralnost – Operacije su grupisane zajedno zato što se izvršavaju u specifičnom poredku.<br>
+Suprotno od sekvencijalne kohezije, oparacije ne dele podatke.<br>
+<br>
+Koincidencija – Operacije su grupisane bez bilo koje unutrašnje relacije.<br>
+<br>
+Spajanje<br>
+<br>
+Spajanje može biti čvrsto ili slabo. Kada komponente su čvrsto spojene, onda komponente<br>
+dosat zavise od spoljnih komponenata za izvršavanje funkcija. Kada komponente su slabo<br>
+spojene, komponente ne zavise ili malo zavise od spoljnih komponenata.<br>
+<br>
+Paketi komponenata<br>
+<br>
+Prvenstveni cilj fizičkog dizajna je racionalizacija distribucije i pakovanje servisa. U prvom<br>
+koraku ovog procesa, vi pakujete servise u slojeve: korisnik, posao i podaci.<br>
+<br>
+<br>
+Distribuiranje preliminarnih komponenti<br>
+<br>
+Posle pakovanja servisa u komponente, dolazi se do aktivnosti distribuiranja komponenti kroz<br>
+mrežnu topologiju i kreiranje komponetne topologije. Startovanje procesa distribucije, tim<br>
+indentifikuje kategorije servise-korisnik, posao i podaci – za svaki čvor u mrežnoj topologiji.<br>
+Ove kategorije služe kao bazna linija za distribuciju.<br>
+<br>
+Kreiranje modela distribucije<br>
+<br>
+Distribucioni model je dijagram pridruženih aplikacija i njihovih servera u aktivnoj serverskoj<br>
+topologiji. Njegova svrha je da omogući razvojnom timu i menadžmentu realizacije da<br>
+dizajniraju i planiraju serversku topologiju i konfiguraciju. Koristi se topologija mreže i<br>
+pokazuje servise aplikacije koji će biti razvijeni na svakom serveru.<br>
+<br>
+Korekcija, snimanje i konverzija skica<br>
+<br>
+Možete crtati model distribucije na bilo kojem medijumu. Korišćenjem digitalnih kamera,<br>
+možete brzo sačuvati skice na tabli ili papiru.<br>
+<br>
+Primena fizičkog dizajna<br>
+<br>
+Za vreme primene fizičkog dizajna, tim specificira model programiranja koji će razvojni tim<br>
+koristiti, interfejse za svaku komponentu i unutrašnju strukturu svake komponente. Isporuka<br>
+fizičkog dizajna uključuje model programiranja; specifične komponente za interfejs, atribute i<br>
+servise i specifičnosti componenata bazne linije. Nivo detalja za svaku od ovih isporuka zavisi<br>
+od nivoa interakcije između upravljanja projektom i razvojnog tima.<br>
+<br>
+Model programiranja<br>
+<br>
+Zato što fizički dizajn predstavlja rešenje sa perspektive razvoja, projektni tim bi trebao da<br>
+omogući razvoj sa spacifikacijom za dizajn komponenata i izbor tehnologije. Specifične<br>
+komponente omogućavaju da razvojni tim sa puno detalja razvije komponente rešenja.<br>
+Specifikacija uključuje interfejs i opseg različitih servisa i atributa komponenata. Specifičnost je<br>
+direktno u vezi sa programskim modelom izabranim za primenu.<br>
+<br>
+Svrha modela programiranja<br>
+<br>
+Model programiranja opisuje kako razvojni tim može da iskoristi izabranu tehnologiju. Ono se<br>
+sastoji od specifikacije programiranja ili standarda koji će se slediti za vreme primene projekta.<br>
+Programski model je set specifičnih uputstava koji omogućava postojanje i primenu<br>
+komponenata i povećanje mogućnosti održavanja komponenata.<br>
+<br>
+Razmatranje dizajna za model programiranja<br>
+<br>
+Postoje nekoliko aspekata modela programiranja koji bi trebalo da se razmatra uključujući<br>
+sledeće:<br>
+<br>
+Primena tehnologija - Primenjivanje tehnologije se sastoji od programskog jezika,<br>
+aplikacijskog programskog interfejsa (APIs), serveri i serverske tehnologije i druge tehnologije<br>
+koje su zahtevane za primenu rešenja.<br>
+<br>
+Stateful nasuprot stateless objektima – Stanje održavanja objekta može direktno da utiče na<br>
+performanse, uklopljenost i složenu primenu. Stateful objekti vraćaju informacije koje su bile<br>
+iskorišćene u jednoj ili više klijentskih poziva; stateless objekti ne održavaju informacije koje<br>
+su u relacionoj razmeni.<br>
+<br>
+U procesu nasuprot izvan procesa poziva funkcija – Komponente u procesu predstavljaju sva<br>
+izvršavanja sa jednim procesom, prema eliminisanju prikupljanja preopterećenja i povećanja<br>
+performansi. Komponente izvan procesa predstavljaju, njihove aktivnosti u procesu koje su<br>
+odvojene od prizivanju klijenta, prema sakupljanju preopterećenja i smanjenja performansi.<br>
+Kohezija i spajanje – Kohezione komponente su u bliskoj relaciji sa drugim objektima sa<br>
+očuvanjem njihovih funkcionalnosti. Spajanje se odnosi na jačinu međuspoja komponenata i<br>
+na njihovu interakciju.<br>
+<br>
+Spojeni modeli nasuprot modela bez spoja -– U distribuiranom komponentnom okruženju,<br>
+različite komponente uzimaju učešće u obsluživanju koje mora imati ralno vreme spoja jedno<br>
+sa drugim da bi funkcionisao ispravno. Ako ovo realno vreme konekcije je prekinuto,<br>
+komponente ulaze u međusobnu grešku.<br>
+<br>
+Sinhronizovani modeli nasuprot asinhronizovanim modelima - Sinhronizovani programski<br>
+blokovni modeli, pozivaju komponente iz postupka sa drugim radom dok pozvani interfejs je<br>
+iskompletirao zahtev servisa i vraća kontrolu pozvanoj komponenti.<br>
+<br>
+Asinhroni programski model omogućava komponentama da pošalju poruke drugim<br>
+komponentama i da nastave funkcionisanje bez čekanja na istovremeni odgovor.<br>
+Model niti – Izborom modela niti za komponente je teška aktivnost zato što odgovarajući<br>
+model zavisi od funkcionalnosti komponenata. Komponenta predstavlja proširiv ulaz i izlaz<br>
+(I/O) proces koji može podržati slobodne niti za omogućavanje maksimalnog odgovora.<br>
+Obrada grešaka – Zato što nema komponenata koje rade savršeno ili sa savršenom okolinom,<br>
+komponente su neophodne da imaju strategiju obrade grešaka.<br>
+Bezbednost – Bezbednost za komponente i servise mogu biti izvedene na četiri načina:<br>
+• Baziranu na komponenti – bezbednost je na nivou metoda, na nivou interfejsa ili na<br>
+komonentnom nivou.<br>
+• Baziranu na bazi podataka – bezbednost je obrađena posle unosa podataka<br>
+• Baziranu na sadržaju korisnika - bezbednost je u interaktivnom metodu, koristeći<br>
+sistemsku bezbednost ili fiksnu bezbednost sa aplikacijom.<br>
+•  Baziranu na rolama – bezbednost upliće grupe, kao što je opšta menadžerska grupa.<br>
+Distribucija – Pažljivo razmatrajte metode za distribuciju aplikacije. Zapamtite da tri logička<br>
+sloja nije neophodno da prevedete u tri fizička distributivna reda.<br>
+<br>
+Interfejsi specifičnih komponenti<br>
+<br>
+Posle opisivanja programskog modela, projektni tim definiše kako će komponente biti u<br>
+interakciji. Ova interakcija je dokumentovana preko interfejsa komponenata, koji opisuju kako<br>
+pristupiti njihovim servisima i atributima. Interfejs može predstaviti jedan ili više servisa.<br>
+<br>
+<br>
+<br>
+
+Projektovanje informacionih sistema<br>
+nastavna Jedinica 19<br>
+<br>
+Pregled bezbednosti u razvoju aplikacije<br>
+Možete obezbediti vašu aplikaciju primenom nekoliko bezbednosnih mehanizama, kao što su<br>
+firewall-ovi, proxi-jevi, bezbednosni kanali i shema autentifikacije. Međutim sve one se koriste za<br>
+narušavanje bezbednosti i da napadač pronađe jednu slabost u vašem sistemu.<br>
+Zajednički tipovi bezbednosne ranjivosti<br>
+Malociozni napadač koristi različite metode da bi pronašao ranjivost sistema za svoje ciljeve.<br>
+Ranjivost je slaba tačka u bezbednosti, tako da napadač koristi mogućnost pristupa u mrežu<br>
+organizacije ili resursa na mreži. Neke od sledećih ranjivosti, kao što je loš password, nisu rezultat<br>
+aplikacijskog ili softverskog razvojnog dizajna. Međutim važno za organizaciju je da bude<br>
+upoznata sa bezbednosnom ranjivošću da bi se sistem bolje zaštitio.<br>
+Slabi password-i<br>
+Korisnici često izaberu password-e tako da se lako zapamte. Međutim ovi slabi password-i<br>
+stvaraju ranjivost zato što daju napadaču dobre izglede da pogode pravi password.<br>
+Nekonfigurisani softver<br>
+Često softver je konfigurisan tako da čini sistem ranjivim. Ako su servisi konfigurisani za<br>
+korišćenje naloga na lokalnom sistemu ili su data veća prava od zahtevanih, napadač može<br>
+iskoristiti servise da bi pristupio sistemu i da odradi loše stvari na njemu. Nekonfigurisani softver<br>
+se može podeliti u tri kategorije:<br>
+<br>
+Društveni inženjering<br>
+<br>
+Društveni inženjering je zajednički oblik otkrivanja password-a. On se obično koristi za to što<br>
+korisnici nisu upozoreni na bezbednosno izdavanje i mogu biti prevareni u otkrivanju njihovih<br>
+password-a.<br>
+<br>
+Prenos nešifriranih podataka<br>
+<br>
+Najveći broj Web aplikacija prihvata korisnički ulaz, procese korisničkih zahteva baziranih na ulazu<br>
+i onda vraća odgovore korisniku. Ako podaci koji su poslati Web serveru i vrate se nazad korisniku<br>
+u obliku čistog teksta, postoji mogućnost da podaci mogu biti prihvaćeni, pročitani i promenjeni od<br>
+napadača za vreme prenosa.<br>
+<br>
+Ako podaci sadrže informaciju o predstavljanju ili bilo koju drugu osetljivu informaciju, kao što je<br>
+broj tekućeg računa i pošalje se bez šifriranja, napadač može lako pristupiti informacijama i<br>
+iskoristiti ih za svoje potrebe.<br>
+<br>
+Prepunjen bafer<br>
+<br>
+Prepunjeni bafer je tip greške koja se primenjuje kada više podataka je upisano u bafer nego što<br>
+bafer može da prihvati.<br>
+<br>
+Malociozni korisnik proverava aplikacije, traga za načinima i slučajevima preopterećenja bafera,<br>
+zato što oni i mogu da koriste preopterećenje bafera:<br>
+<br>
+• „Uzrok, aplikacija ili operativni sistem se srušio.<br>
+<br>
+• Pronaći više bezbednosnih ranjivosti iščitavanjem poruka.<br>
+<br>
+•  Dobiti pristup sistemskoj memoriji koji zahteva da se izvršava glavni kod.<br>
+<br>
+Unos koda<br>
+<br>
+Unošenje koda rezultira da je uneti kod loš kod, koji može da radi na Web serveru, serveru baze<br>
+<br>
+podataka, ili klijentu, zavisno od prirode napada. Najčešći tipovi unosa koda su:<br>
+<br>
+• „Skripting preko sajta —– U napadu skriptom preko sajta, napadač ne napada Web server, već<br>
+napada drugog korisnika na Web serveru. Ovaj tip napada zavisi od Web aplikacije koji kreira<br>
+dinamičke strane od korisnikovih podataka. Skript preko sajta zabranjuje da se skript ivršava<br>
+na drugom korisničkom kompjuteru u drugom korisničkom kontekstu. Ovaj skript onda<br>
+pristupa kolačićima, pokreće druge skriptove ili poziva kod komponenata.<br>
+<br>
+•  „Unošenje SQL-a – Unos SQL-a može se primeniti kada razvojni tim dinamički izgrađuje SQL<br>
+izraze koristeći ukaze korisnika. Napadači mogu modifikovati SQL izraz i učiniti ga da<br>
+predstavlja oparacije koje nam nisu potrebne.<br>
+<br>
+• Unos koda pomoću značajne prepunjenosti bafera – Ovaj tip napada napadač koristi da bi<br>
+iskoristio neprovereni bafer. Napadač prepisuje programski stek sa pažljivo konstruisanim<br>
+ulaznim vrednostima i pomera funkcijsko vraćanje adrese izvršnom delu da bi skočio na<br>
+napadačev kod.<br>
+<br>
+Tajne u kodovima<br>
+<br>
+Mnogo bezbednosnih problema se kreira kada napadač je u mogućnosti da pronađe tajne koje su<br>
+<br>
+unete u kod, kao što su password-i i ključevi za šifrovanje podataka. Sledećih nekoliko primera<br>
+<br>
+tipičnog načina napadač pronalazi smeštene tajne:<br>
+<br>
+•  „Iščitavanje tajnih podataka direktno iz izvornog koda -– To znači da je nalaženje tajni moguće<br>
+kada tajni podatak je smešten nešifriran u registru ili u izvršnom delu ili u fajlu podataka.<br>
+<br>
+• Startovanje na drugi način obezbeđene aplikacije u modu za otkrivanje grešaka – Napadač koji<br>
+startuje aplikaciju u modu za otkrivanje grešaka može podesiti prekid izvršenja programa na<br>
+mestu u vašem kodu aqde se tajna informacija zahteva.<br>
+<br>
+•  „Pronalaženje strane sa tajnama na strani klijenta – Ako je vaša aplikacijska memorija upisana<br>
+u fajl strane na disku, napadač može videti sadržaj fajla Pagefile.sys da bi pronašao smeštene<br>
+tajne.<br>
+<br>
+Tradicionalni modeli bezbednosti<br>
+<br>
+Tradicionalni bezbednosni modeli ne daju adekvatni bezbednosni izazov, predstavljen preko<br>
+<br>
+umrežavanja kompjuterskih uređaja. Najtradicionalniji bezbednosni modeli zabranjuju pristup<br>
+<br>
+resursima baziranim na indentitetu korisnika koji pokreće kod. Ne postoji specifični mehanizam za<br>
+zabranu pristupa resursima baziranim na indentitetu koda. Bezbednost bazirana na korisničkom<br>
+indentitetu je zaobiđena ako korisnik kome se veruje neznajući zašto pokrene maliciozni kod.<br>
+<br>
+Poverljivi korisnik može nepažnjom pokrenuti takav kod preko:<br>
+<br>
+•  Otvaranja e-mail atačmenta<br>
+<br>
+•  Pokretanjem skripta koji je unešen na Web stranu<br>
+<br>
+• Otvaranjem fajla koji je skinut sa interneta.<br>
+<br>
+Principi kreiranja bezbednosne strategije<br>
+<br>
+Da bi ste bili u mogućnosti da dizajnirate bezbednost aplikacije, treba da se upoznate sa<br>
+<br>
+principima bezbednosti.<br>
+<br>
+•  „Oslonite se na testirane i proverene bezbednosne sisteme -– Uvek kada je moguće da koristite<br>
+provereni bezbedonosni sistem pre nego da ga sami kreirate.<br>
+<br>
+• Nikad ne verujte spoljnom ulazu - Trebalo bi da validujete sve podatke koje se unose od<br>
+korisnika ili su uzeti od drugih sistema<br>
+<br>
+• Uzmite u obzir da spoljni sistem nije bezbedan -– Ako vaša aplikacija prima nešifrirane osetljive<br>
+podatke iz spoljnog sistema, uzmite u obzir da je to cena kompromisa<br>
+<br>
+•  „Primenite principe liste privilegija – Ne omogućavajte veći broj atributa na servisu računara<br>
+nego što je minimalno neophodno.<br>
+<br>
+• Redukujte pretraživački prostor – Rizik će porasti sa brojem omponenata i podataka koji vam<br>
+daje mogućnost kroz aplikaciju.<br>
+<br>
+• Tekući bezbednosni mod – Ne omogućcćujte servise, prava korisnika i tehnologije koje vam nisu<br>
+eksplicitno neophodne. Kada isporučite aplikaciju na klijentski ili serverski računar, teško je<br>
+izvršiti konfiguraciju koja bi bila potrebna za bezbednost.<br>
+<br>
+• Ne verujte slepo na bezbednosti – Sifrujte podatke primenjujući ključeve i proverene algoritme<br>
+za šifrovanje.<br>
+<br>
+• „Sledite STRIDE principe -— Svako slovo je specifični akronim za različitu kategoriju<br>
+bezbednosne pretnje: lažni indentitet, izazvati kvar, odricanje, otkrivanje informacija,<br>
+odbijanje servisa, iskrivljivanje privilegija.<br>
+<br>
+Planiranje bezbednosti aplikaciıje<br>
+<br>
+Planiranje bezbednosti aplikacije uključuje nekoliko aktivnosti:<br>
+<br>
+Indentifikacija izazivanja kvara u aplikaciji (model izazivanja kvara) – Ovo je najvažnija aktivnost<br>
+u planiranju za bezbednost.<br>
+<br>
+Bez prethodne indentifikacije izazivanja kvara, bezbednosna politika ne može biti definisana. Kada<br>
+prihvatite mogućnost izazivanja kvara u vašoj aplikaciji, sakupite sledeće informacije:<br>
+<br>
+• Koja osobine organizacije su neophodne da budu zaštićena?<br>
+<br>
+• „Sta su izazvani kvarovi za svaki od osobina?<br>
+<br>
+Kreiranje bezbednosne politike za sprečavanje ili minimiziranje izazvanih kvarova - Posle<br>
+najvećeg broja kvarova koji su indentifikovani, neophodno je da kategorizujete te kvarove i<br>
+definišete strategiju za svaki od tipa kvara.<br>
+<br>
+Bezbednost tokom procesa razvoja aplikacije<br>
+<br>
+Tokom svake faze razvoja aplikacije postoje i aktivnosti koje se bave bezbednošću same<br>
+aplikacije. Ako se posmatra razbijeno kroz faze dobija se sledeća tabela.<br>
+<br>
+<br>
+STRIDE model kvarova<br>
+<br>
+STRIDE model kvarova je tehnika koja se koristi za indentifikaciju i kategorizaciju kvarova u<br>
+<br>
+aplikaciji. Najveći broj bezbednosnih kvarova kombinuje više od jednog elementa STRIDE modela.<br>
+<br>
+Lažiranje identiteta<br>
+<br>
+Kvarovi u okviru bezbednosti, koji spadaju u kategoriju lažiranja indentiteta su oni u kojima će se<br>
+<br>
+napadač predstaviti sa poverljivim entitetom, koji će računar prepoznati. Sledeće situacije su<br>
+<br>
+primer lažiranja identiteta:<br>
+<br>
+• Napadač krade ili pogađa password, poverljivog korisnika. Napadač onda može da lažira<br>
+identitet i da pristupi zabranjenim resorsima.<br>
+<br>
+• Napadač šalje e-mail poruke koje su bile napisane od nekog drugog.<br>
+<br>
+•  Lažiranje IP je specijalan slučaj, lažiranje identiteta. To se dešava kada napadač unosi lažnu<br>
+adresu internet protokola (IP) u internetskom prenosu, tako da prenos se prihvata od<br>
+orginalne forme preko poveriljivih izvora.<br>
+<br>
+Kvarenje<br>
+<br>
+Kvarenje podrazumeva kada, korisnik dobije neautorizovani pristup kompjuteru i onda se izmeni<br>
+<br>
+rad, konfiguracija ili podatci.<br>
+<br>
+Odricanje<br>
+<br>
+Kvar tipa odricanje, rezultira kada sistemski administartor ili osoba zadužena za bezbednost je u<br>
+<br>
+nemogućnosti da proveri korisnika – napadača ili nekog drugog, koji predstavlja slične akcije.<br>
+<br>
+Otkrivanje informacija<br>
+<br>
+Kvar na bazi otkivanja informacija rezultira kada neautorizovani korisnik može da vidi privatne<br>
+<br>
+podatke, kao što je fajl koji sadrži broj kreditne kartice i datum kada ističe.<br>
+<br>
+Poricanje servisa<br>
+<br>
+Kvar poricanja servisa (DoS) uključuje bilo koji napad pokušavajući da ugasi ili zabraniti pristup<br>
+<br>
+kompajliranja resursa. Napadanje odbijanjem servisa može prouzrokovati sledeće osobine<br>
+<br>
+kompjutera:<br>
+<br>
+• Aplikacija ili operativni sistem zaistavlja funkcionisanje.<br>
+<br>
+• CPU je zauzet dosta dugo, bez mogućnosti rada na drugim proračunima.<br>
+<br>
+• „Sistemska memorija je potpuno zauzeta tako da funkcionisanje aplikacija i operativni sistem je<br>
+pogoršan.<br>
+<br>
+• Mrežni opseg je reduciran ili kompletno je zastao.<br>
+<br>
+Podizanje privilegija<br>
+<br>
+Podizanje privilegija rezultira kada korisnik dobija pristup najvećem broju privilegija koje<br>
+<br>
+administrator mu dodeljuje.<br>
+<br>
+Polise bezbednosti<br>
+<br>
+Bezbednosne polise definiše organizacione zahteve za bezbednost kompjutera i mrežne korisnike i<br>
+<br>
+mogućnost zaštite, integritet i poverljivost informacija. Polise bezbednosti uključuju otkrivanje,<br>
+<br>
+sprečavanje i odgovor na bezbednosne incidente. Kada dizajnirate vašu aplikaciju, identifikujete i<br>
+<br>
+radite sa okvirom definisanim preko vaše bezbednosne polise korporacije.<br>
+<br>
+Prednosti<br>
+<br>
+Neke od prednosti koje bezbednosne polise su:<br>
+<br>
+• „Definisanje šta je dopušteno a šta nije dopušteno u sistemu. Jasno razumevanje šta je<br>
+dopušteno u sistemu pomoću identifikacije gde bilo koji prekršaj se može očekivati.<br>
+<br>
+•  „Servisisranje zahtevanih dokumenata moji mogu biti korišćeni u razvoju i vrednovanju<br>
+tehničkog rešenja.<br>
+<br>
+Razmatranja za dizajniranje bezbednosnih polisa<br>
+<br>
+Neka pitanja koja bi trebalo da imate na umu kada dizajnirate bezbednosna pravila u organizaciji<br>
+uključuje:<br>
+<br>
+• Dali mreža omogućava bezbednosnu komunikaciju?<br>
+<br>
+• „Dali imate interni firewall?<br>
+<br>
+• Dali imate udaljeni server aplikacije?<br>
+<br>
+• Koja su ograničenja u infrastrukturni bezbednosti?<br>
+<br>
+• Dali ste razmatrali bezbednost Web forme?<br>
+<br>
+• Koji nivo poverenja je ciljno okruženje podržano?<br>
+
+</html>

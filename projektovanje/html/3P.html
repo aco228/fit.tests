@@ -1,0 +1,411 @@
+<html>
+<head><meta http-equiv=Content-Type content="text/html; charset=UTF-8">
+<style type="text/css">
+<!--
+span.cls_002{font-family:Arial,serif;font-size:9.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_002{font-family:Arial,serif;font-size:9.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_003{font-family:Arial,serif;font-size:10.1px;color:rgb(0,0,0);font-weight:normal;font-style:italic;text-decoration: none}
+div.cls_003{font-family:Arial,serif;font-size:10.1px;color:rgb(0,0,0);font-weight:normal;font-style:italic;text-decoration: none}
+span.cls_004{font-family:Times,serif;font-size:12.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_004{font-family:Times,serif;font-size:12.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_007{font-family:Arial,serif;font-size:16.1px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_007{font-family:Arial,serif;font-size:16.1px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_008{font-family:Arial,serif;font-size:14.0px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_008{font-family:Arial,serif;font-size:14.0px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_009{font-family:Arial,serif;font-size:12.1px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_009{font-family:Arial,serif;font-size:12.1px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_005{font-family:Arial,serif;font-size:10.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_005{font-family:Arial,serif;font-size:10.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_014{font-family:Arial,serif;font-size:10.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_014{font-family:Arial,serif;font-size:10.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_013{font-family:Arial,serif;font-size:10.1px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_013{font-family:Arial,serif;font-size:10.1px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_022{font-family:Arial,serif;font-size:10.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_022{font-family:Arial,serif;font-size:10.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+-->
+</style>
+<script type="text/javascript" src="518d90e6-95cd-11ea-8b25-0cc47a792c0a_id_518d90e6-95cd-11ea-8b25-0cc47a792c0a_files/wz_jsgraphics.js"></script>
+</head>
+<body>
+<div style="position:absolute;left:50%;margin-left:-306px;top:0px;width:612px;height:792px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="518d90e6-95cd-11ea-8b25-0cc47a792c0a_id_518d90e6-95cd-11ea-8b25-0cc47a792c0a_files/background01.jpg" width=612 height=792></div>
+<div style="position:absolute;left:113.40px;top:126.90px" class="cls_002"><span class="cls_002">Poliščuk E. Jaroslav: </span><span class="cls_003">Projektovanje informacionih sistema</span></div>
+<div style="position:absolute;left:486.60px;top:126.72px" class="cls_004"><span class="cls_004">57</span></div>
+<div style="position:absolute;left:155.76px;top:189.30px" class="cls_007"><span class="cls_007">3. Uvod u projektovanje i definisanje zahtjeva za</span></div>
+<div style="position:absolute;left:228.30px;top:207.66px" class="cls_007"><span class="cls_007">informacionim sistemom</span></div>
+<div style="position:absolute;left:141.72px;top:237.72px" class="cls_008"><span class="cls_008">3.1. Uvod u projektovanje i izgradnju informacionog sistema</span></div>
+<div style="position:absolute;left:189.18px;top:265.38px" class="cls_009"><span class="cls_009">3.1.1. Redoslijed izrade fizičkog i logičkog modela</span></div>
+<div style="position:absolute;left:134.70px;top:290.58px" class="cls_005"><span class="cls_005">Fizički i logički model postojećeg IS, a zatim logički i fizički model budućeg IS,</span></div>
+<div style="position:absolute;left:113.40px;top:302.11px" class="cls_005"><span class="cls_005">izrađuje se na osnovu poslovnih zahtjeva i zahtjeva krajnjih korisnika. Fizički model</span></div>
+<div style="position:absolute;left:113.40px;top:313.63px" class="cls_005"><span class="cls_005">(ugradni, implementacioni, tehnički) opisuje kako je sistem fizički i tehnički izgrađen, te</span></div>
+<div style="position:absolute;left:113.41px;top:325.09px" class="cls_005"><span class="cls_005">ko, gdje i kada nešto radi. Logički model (esencijalni, konceptualni, poslovni) opisuje</span></div>
+<div style="position:absolute;left:113.41px;top:336.61px" class="cls_005"><span class="cls_005">šta je sistem, šta radi, šta su podaci (slika 3.1). Operativni (budući fizički) sistem</span></div>
+<div style="position:absolute;left:113.40px;top:348.08px" class="cls_005"><span class="cls_005">prikazuje šta, ko i kada, ali ne i gdje radi, a prema potrebi može se razmatrati</span></div>
+<div style="position:absolute;left:113.40px;top:359.60px" class="cls_005"><span class="cls_005">organizacijski nivo, odnosno različito značenje podataka zavisno od područja unutar</span></div>
+<div style="position:absolute;left:113.41px;top:371.12px" class="cls_005"><span class="cls_005">poslovnog sistema i okruženja.</span></div>
+<div style="position:absolute;left:423.36px;top:398.22px" class="cls_002"><span class="cls_002">Budući</span></div>
+<div style="position:absolute;left:157.80px;top:401.64px" class="cls_002"><span class="cls_002">Postojeći</span></div>
+<div style="position:absolute;left:419.35px;top:408.54px" class="cls_002"><span class="cls_002">fizički  IS</span></div>
+<div style="position:absolute;left:158.29px;top:411.96px" class="cls_002"><span class="cls_002">fizički  IS</span></div>
+<div style="position:absolute;left:227.10px;top:435.96px" class="cls_002"><span class="cls_002">Postojeći</span></div>
+<div style="position:absolute;left:337.98px;top:435.96px" class="cls_002"><span class="cls_002">Budući</span></div>
+<div style="position:absolute;left:227.34px;top:446.40px" class="cls_002"><span class="cls_002">logički IS</span></div>
+<div style="position:absolute;left:333.72px;top:446.34px" class="cls_002"><span class="cls_002">logički IS</span></div>
+<div style="position:absolute;left:258.06px;top:498.96px" class="cls_002"><span class="cls_002">Korisnički/poslovni</span></div>
+<div style="position:absolute;left:405.18px;top:498.96px" class="cls_002"><span class="cls_002">Budući</span></div>
+<div style="position:absolute;left:280.80px;top:509.40px" class="cls_002"><span class="cls_002">zahtjev</span></div>
+<div style="position:absolute;left:386.41px;top:509.40px" class="cls_002"><span class="cls_002">organizacijski IS</span></div>
+<div style="position:absolute;left:163.92px;top:540.60px" class="cls_005"><span class="cls_005">Slika 3.1. Prikaz redoslijeda izrade fizičkog i logičkog modela IS.</span></div>
+<div style="position:absolute;left:209.76px;top:575.10px" class="cls_009"><span class="cls_009">3.1.2. Modeliranje informacionog sistema</span></div>
+<div style="position:absolute;left:113.40px;top:600.36px" class="cls_005"><span class="cls_005">Potrebna je izrada modela koji odgovaraju dijelovima poslovnog sistema. Model je</span></div>
+<div style="position:absolute;left:113.40px;top:611.83px" class="cls_005"><span class="cls_005">apstrakcija ili reprezentacija dijela stvarnog svijeta. Ukoliko od ranije ne postoji IS,</span></div>
+<div style="position:absolute;left:113.40px;top:623.35px" class="cls_005"><span class="cls_005">potrebno je odrediti "surogat" postojećeg sistema po ugledu na istovjetne sisteme u</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-306px;top:802px;width:612px;height:792px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="518d90e6-95cd-11ea-8b25-0cc47a792c0a_id_518d90e6-95cd-11ea-8b25-0cc47a792c0a_files/background02.jpg" width=612 height=792></div>
+<div style="position:absolute;left:113.40px;top:126.72px" class="cls_004"><span class="cls_004">58</span></div>
+<div style="position:absolute;left:250.98px;top:126.90px" class="cls_002"><span class="cls_002">Poliščuk E. Jaroslav: </span><span class="cls_003">Projektovanje informacionih sistema</span></div>
+<div style="position:absolute;left:113.40px;top:153.18px" class="cls_005"><span class="cls_005">drugim poslovnim sistemima ili razvoj započeti sa izradom logičkog modela. Tehnika</span></div>
+<div style="position:absolute;left:113.40px;top:166.68px" class="cls_005"><span class="cls_005">oblikovanja dijagramima odvija se na slijedeći način. Izradom modela nastoji se opisati</span></div>
+<div style="position:absolute;left:113.40px;top:178.15px" class="cls_005"><span class="cls_005">situacija u kojoj događaj iz vanjskog svijeta pokreće (okida) process. Proces ima</span></div>
+<div style="position:absolute;left:113.40px;top:189.67px" class="cls_005"><span class="cls_005">određeni učinak na podatke u nekom stanju. Obavljanjem procesa podaci prelaze u</span></div>
+<div style="position:absolute;left:113.39px;top:201.19px" class="cls_005"><span class="cls_005">novo stanje (slika 3.2).</span></div>
+<div style="position:absolute;left:173.28px;top:231.78px" class="cls_002"><span class="cls_002">Događaj</span></div>
+<div style="position:absolute;left:373.98px;top:230.40px" class="cls_002"><span class="cls_002">Staro stanje</span></div>
+<div style="position:absolute;left:379.44px;top:240.78px" class="cls_002"><span class="cls_002">podataka</span></div>
+<div style="position:absolute;left:164.52px;top:273.60px" class="cls_014"><span class="cls_014">Sinhronizacija</span></div>
+<div style="position:absolute;left:294.36px;top:273.78px" class="cls_002"><span class="cls_002">Proces</span></div>
+<div style="position:absolute;left:418.26px;top:273.78px" class="cls_002"><span class="cls_002">Struktura</span></div>
+<div style="position:absolute;left:366.78px;top:278.16px" class="cls_002"><span class="cls_002">učinak</span></div>
+<div style="position:absolute;left:157.68px;top:285.06px" class="cls_014"><span class="cls_014">(koncept okidača)</span></div>
+<div style="position:absolute;left:272.10px;top:284.22px" class="cls_002"><span class="cls_002">(naredbe i pravila)</span></div>
+<div style="position:absolute;left:418.26px;top:284.16px" class="cls_002"><span class="cls_002">podataka</span></div>
+<div style="position:absolute;left:373.50px;top:319.98px" class="cls_002"><span class="cls_002">Novo stanje</span></div>
+<div style="position:absolute;left:378.72px;top:330.42px" class="cls_002"><span class="cls_002">podataka</span></div>
+<div style="position:absolute;left:177.60px;top:360.90px" class="cls_005"><span class="cls_005">Slika 3.2. Dijagram modeliranja IS [</span><span class="cls_003">Fertalj & Kalpić</span><span class="cls_005">, 2005].</span></div>
+<div style="position:absolute;left:206.16px;top:395.40px" class="cls_009"><span class="cls_009">3.1.3. Vrste modela informacionog sistema</span></div>
+<div style="position:absolute;left:134.70px;top:420.66px" class="cls_013"><span class="cls_013">Model  podataka</span><span class="cls_005">  opisuje  ŠTA  su  podaci,  odnosno  ŠTA  opisuju  podaci.</span></div>
+<div style="position:absolute;left:113.41px;top:432.19px" class="cls_005"><span class="cls_005">Konceptualni model opisuje podatke i veze između podataka. Najčešći konceptualni</span></div>
+<div style="position:absolute;left:113.40px;top:443.65px" class="cls_005"><span class="cls_005">model je model entiteti-veze</span><span class="cls_003">. </span><span class="cls_005">Logički model opisuje strukturu podataka i logičkih</span></div>
+<div style="position:absolute;left:113.39px;top:455.17px" class="cls_005"><span class="cls_005">datoteka, a najčešći logički model je relacioni model podataka.</span></div>
+<div style="position:absolute;left:134.70px;top:471.24px" class="cls_013"><span class="cls_013">Model funkcija i procesa</span><span class="cls_005"> opisuje KAKO se prikupljaju, obrađuju i distribuiraju</span></div>
+<div style="position:absolute;left:113.41px;top:482.76px" class="cls_005"><span class="cls_005">podaci. Model funkcija se oblikuje razlaganjem (dekompozicijom) funkcija, iterativno od</span></div>
+<div style="position:absolute;left:113.41px;top:494.29px" class="cls_005"><span class="cls_005">vrha prema dolje (od globalnih funkcija do osnovnih procesa). Model procesa opisuje</span></div>
+<div style="position:absolute;left:113.41px;top:505.75px" class="cls_005"><span class="cls_005">obradu podataka posmatranog sistema. Najčešći model procesa je dijagram toka</span></div>
+<div style="position:absolute;left:113.41px;top:517.27px" class="cls_005"><span class="cls_005">podataka.</span></div>
+<div style="position:absolute;left:134.70px;top:533.34px" class="cls_013"><span class="cls_013">Model događaja</span><span class="cls_005"> opisuje KADA se podaci obrađuju, odnosno razmatra učinke</span></div>
+<div style="position:absolute;left:113.39px;top:544.86px" class="cls_005"><span class="cls_005">koje događaji imaju na procese i podatke, te vrši opis stanja. Kao primjer se može</span></div>
+<div style="position:absolute;left:113.39px;top:556.39px" class="cls_005"><span class="cls_005">navesti dijagram promjene stanja.</span></div>
+<div style="position:absolute;left:134.70px;top:572.46px" class="cls_013"><span class="cls_013">Model  resursa/sredstava </span><span class="cls_005"> opisuje  izvršioce,  odnosno  KO  obrađuje  podatke,</span></div>
+<div style="position:absolute;left:113.40px;top:583.92px" class="cls_005"><span class="cls_005">GDJE se podaci nalaze i GDJE se podaci obrađuju.</span></div>
+<div style="position:absolute;left:134.70px;top:600.06px" class="cls_013"><span class="cls_013">Modeliranje  programa</span><span class="cls_005">  podrazumjeva  predstavljanje  struktura</span></div>
+<div style="position:absolute;left:436.90px;top:600.06px" class="cls_005"><span class="cls_005">(programskih)</span></div>
+<div style="position:absolute;left:113.40px;top:611.52px" class="cls_005"><span class="cls_005">modula IS, npr. strukturnim kartama.</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-306px;top:1604px;width:612px;height:792px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="518d90e6-95cd-11ea-8b25-0cc47a792c0a_id_518d90e6-95cd-11ea-8b25-0cc47a792c0a_files/background03.jpg" width=612 height=792></div>
+<div style="position:absolute;left:113.40px;top:126.90px" class="cls_002"><span class="cls_002">Poliščuk E. Jaroslav: </span><span class="cls_003">Projektovanje informacionih sistema</span></div>
+<div style="position:absolute;left:486.60px;top:126.72px" class="cls_004"><span class="cls_004">59</span></div>
+<div style="position:absolute;left:226.38px;top:155.16px" class="cls_009"><span class="cls_009">3.1.4. Ključne aktivnosti i učesnici</span></div>
+<div style="position:absolute;left:134.70px;top:180.42px" class="cls_005"><span class="cls_005">Ključne   aktivnosti,   u   nekim   metodama,   zajedno   se   zovu   informaciono</span></div>
+<div style="position:absolute;left:113.41px;top:191.95px" class="cls_005"><span class="cls_005">inženjerstvo. Kao ključne aktivnosti mogu se uočiti sistemska analiza i sistemski dizajn.</span></div>
+<div style="position:absolute;left:113.41px;top:203.47px" class="cls_005"><span class="cls_005">Sistemska analiza (analiza sistema) proučava poslovanje sa ciljem da dâ preporuke za</span></div>
+<div style="position:absolute;left:113.41px;top:214.93px" class="cls_005"><span class="cls_005">poboljšanja sistema i specifikacije zahtjeva za rješavanje. Sistemski dizajn (dizajn</span></div>
+<div style="position:absolute;left:113.41px;top:226.45px" class="cls_005"><span class="cls_005">sistema)  omogućava  specifikaciju  ili  konstrukciju  računarom  podržanog  rješenja</span></div>
+<div style="position:absolute;left:113.41px;top:237.98px" class="cls_005"><span class="cls_005">identifikovanih poslovnih zahtjeva.</span></div>
+<div style="position:absolute;left:134.70px;top:255.18px" class="cls_005"><span class="cls_005">Učesnici (nosioci uloga) u navedenim aktivnostima su:</span></div>
+<div style="position:absolute;left:134.70px;top:272.46px" class="cls_013"><span class="cls_013">Korisnik</span></div>
+<div style="position:absolute;left:181.08px;top:272.46px" class="cls_005"><span class="cls_005">(korisnik usluga, klijent, osoba ili grupa za koju se gradi IS), šta</span></div>
+<div style="position:absolute;left:113.40px;top:283.92px" class="cls_005"><span class="cls_005">podrazumjeva korisnika sistema i vlasnika sistema. Korisnik sistema (krajnji korisnik)</span></div>
+<div style="position:absolute;left:113.40px;top:295.45px" class="cls_005"><span class="cls_005">neposredno  koristi  IS  pri  obavljanju  svakodnevnih  poslova  ili  koristi  informaciju</span></div>
+<div style="position:absolute;left:113.40px;top:306.91px" class="cls_005"><span class="cls_005">dobijenu iz IS. Vlasnik sistema</span></div>
+<div style="position:absolute;left:269.08px;top:306.91px" class="cls_005"><span class="cls_005">(naručilac, stvarni vlasnik ili predstavnik uprave)</span></div>
+<div style="position:absolute;left:113.40px;top:318.43px" class="cls_005"><span class="cls_005">naručuje i plaća razvoj i održavanje sistema, postavlja prioritete i određuje politiku</span></div>
+<div style="position:absolute;left:113.40px;top:329.95px" class="cls_005"><span class="cls_005">njegovog korištenja;</span></div>
+<div style="position:absolute;left:134.70px;top:347.16px" class="cls_013"><span class="cls_013">Projektant</span><span class="cls_005"> (dizajner sistema) je tehnički stručnjak koji oblikuje  sistem tako da</span></div>
+<div style="position:absolute;left:113.39px;top:358.68px" class="cls_005"><span class="cls_005">zadovolji  zahtjeve  korisnika,  prevodi  poslovne  zahtjeve  i  ograničenja  u  tehničko</span></div>
+<div style="position:absolute;left:113.40px;top:370.21px" class="cls_005"><span class="cls_005">rješenje, oblikuje datoteke, baze podataka, ulaze, izlaze, ekranske forme, mrežu i</span></div>
+<div style="position:absolute;left:113.40px;top:381.67px" class="cls_005"><span class="cls_005">programe, integriše rješenje, a može biti i graditelj sistema;</span></div>
+<div style="position:absolute;left:134.70px;top:398.94px" class="cls_013"><span class="cls_013">Graditelj   sistema</span></div>
+<div style="position:absolute;left:229.50px;top:398.94px" class="cls_005"><span class="cls_005">(programer,   projektant,   stručnjak   koji   izgrađuje  sistem)</span></div>
+<div style="position:absolute;left:113.41px;top:410.40px" class="cls_005"><span class="cls_005">provjerava njegovu ispravnost te ga isporučuje u primjenu, konstruiše komponente</span></div>
+<div style="position:absolute;left:113.41px;top:421.93px" class="cls_005"><span class="cls_005">sistema na osnovu specifikacija koje rade dizajneri sistema.</span></div>
+<div style="position:absolute;left:134.70px;top:439.14px" class="cls_013"><span class="cls_013">Sistem analitičari </span><span class="cls_005">razumiju i poslovanje i računarsku obradu podataka. Njihov</span></div>
+<div style="position:absolute;left:113.41px;top:450.66px" class="cls_005"><span class="cls_005">zadatak je da provode sistemsku analizu i dizajn. Povezuju one koji trebaju računar i</span></div>
+<div style="position:absolute;left:113.41px;top:462.19px" class="cls_005"><span class="cls_005">one koji poznaju informacione tehnologije (IT). Formalna definicija [</span><span class="cls_003">Whitten et. al,</span></div>
+<div style="position:absolute;left:113.41px;top:473.65px" class="cls_005"><span class="cls_005">2000] sistem analitičara glasi:</span></div>
+<div style="position:absolute;left:136.08px;top:490.92px" class="cls_005"><span class="cls_005">Sistem  analitičar  pomaže  proučavanju  problema  i  potreba  poslovanja  radi</span></div>
+<div style="position:absolute;left:113.39px;top:502.44px" class="cls_005"><span class="cls_005">određivanja kako poslovni sistem i informaciona tehnologija mogu najbolje riješiti</span></div>
+<div style="position:absolute;left:113.40px;top:513.91px" class="cls_005"><span class="cls_005">problem  i  postići  unaprijeđenje  poslovanja.  Plodovi  ove  aktivnosti  su  poboljšani</span></div>
+<div style="position:absolute;left:113.40px;top:525.43px" class="cls_005"><span class="cls_005">poslovni procesi, poboljšani informacioni sistemi te nove ili poboljšane aplikacije, a</span></div>
+<div style="position:absolute;left:113.40px;top:536.89px" class="cls_005"><span class="cls_005">često sve zajedno.</span></div>
+<div style="position:absolute;left:134.70px;top:554.16px" class="cls_005"><span class="cls_005">Sistem analitičar je istraživač, arhitekta i kontrolor, rješavalac poslovnih problema,</span></div>
+<div style="position:absolute;left:113.40px;top:565.68px" class="cls_005"><span class="cls_005">zagovornik promjena, psiholog, trgovac, političar. Većina sistem analitičara koristi</span></div>
+<div style="position:absolute;left:113.41px;top:577.15px" class="cls_005"><span class="cls_005">specifičnost  pristupa,  koja  se  naziva  životni  ciklus  razvoja  sistema,  odnosno</span></div>
+<div style="position:absolute;left:113.41px;top:588.67px" class="cls_005"><span class="cls_005">sistematičan i metodičan pristup rješavanju problema sistema.</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-306px;top:2406px;width:612px;height:792px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="518d90e6-95cd-11ea-8b25-0cc47a792c0a_id_518d90e6-95cd-11ea-8b25-0cc47a792c0a_files/background04.jpg" width=612 height=792></div>
+<div style="position:absolute;left:113.40px;top:126.72px" class="cls_004"><span class="cls_004">60</span></div>
+<div style="position:absolute;left:250.98px;top:126.90px" class="cls_002"><span class="cls_002">Poliščuk E. Jaroslav: </span><span class="cls_003">Projektovanje informacionih sistema</span></div>
+<div style="position:absolute;left:162.84px;top:155.04px" class="cls_008"><span class="cls_008">3.2. Definisanje zahtjeva za informacionim sistemom</span></div>
+<div style="position:absolute;left:250.20px;top:182.76px" class="cls_009"><span class="cls_009">3.2.1. Ključne aktivnosti</span></div>
+<div style="position:absolute;left:134.70px;top:208.02px" class="cls_005"><span class="cls_005">Ključne aktivnosti, koje se mogu izdvojiti u definisanju zahtjeva za informacionim</span></div>
+<div style="position:absolute;left:113.40px;top:219.49px" class="cls_005"><span class="cls_005">sistemom, su prikupljanje informacija, prikupljanje podataka i ustanovljavanje činjenica,</span></div>
+<div style="position:absolute;left:113.40px;top:231.01px" class="cls_005"><span class="cls_005">što će u narednom tekstu biti detaljnije opisano.</span></div>
+<div style="position:absolute;left:236.76px;top:265.50px" class="cls_009"><span class="cls_009">3.2.2. Prikupljanje informacija</span></div>
+<div style="position:absolute;left:134.70px;top:290.76px" class="cls_005"><span class="cls_005">Jedna  od  aktivnosti  kod  definisanja  zahtjeva  za  IS  su  intervjui  sa  ključnim</span></div>
+<div style="position:absolute;left:113.41px;top:302.29px" class="cls_005"><span class="cls_005">korisnicima i radne sjednice. Ako naručilac zapošljava informatičare svakako ih treba</span></div>
+<div style="position:absolute;left:113.40px;top:313.75px" class="cls_005"><span class="cls_005">uključiti   u   analizu.   Sučeljavanje   korisnika   i   informatičara   ubrzava   rješavanje</span></div>
+<div style="position:absolute;left:113.40px;top:325.27px" class="cls_005"><span class="cls_005">proturječnih iskaza. Kao zamjena za intervjue koriste se upitnici i ankete, koji su</span></div>
+<div style="position:absolute;left:113.40px;top:336.79px" class="cls_005"><span class="cls_005">pogodni i za prikupljanje informacija o resursima. Analiza dokumentacije podrazumjeva</span></div>
+<div style="position:absolute;left:113.40px;top:348.26px" class="cls_005"><span class="cls_005">prikupljanje cjelokupne dokumentacije značajne za poslovanje, radi boljeg utvrđivanja</span></div>
+<div style="position:absolute;left:113.40px;top:359.78px" class="cls_005"><span class="cls_005">pravila, poslovne politike, ciljeva poslovanja i strukture informacija.</span></div>
+<div style="position:absolute;left:134.70px;top:376.98px" class="cls_005"><span class="cls_005">Nužna je ocjena postojećih aplikacija i/ili računarom podržanih podataka, radi</span></div>
+<div style="position:absolute;left:113.40px;top:388.50px" class="cls_005"><span class="cls_005">analize podataka, ali i zbog njihove konverzije u novi sistem. Posmatranje, odnosno</span></div>
+<div style="position:absolute;left:113.40px;top:400.03px" class="cls_005"><span class="cls_005">neposredni uvid u poslovne procese posmatranjem radnih sredina (način izrade i</span></div>
+<div style="position:absolute;left:113.40px;top:411.49px" class="cls_005"><span class="cls_005">razmjene  dokumenata,  procesi  osnovne  djelatnosti),  je  značajan  vid  definisanja</span></div>
+<div style="position:absolute;left:113.40px;top:423.01px" class="cls_005"><span class="cls_005">zahtjeva za IS. Postupak analize mora biti prilagođen korisniku. Evidentiranje rezultata</span></div>
+<div style="position:absolute;left:113.40px;top:434.53px" class="cls_005"><span class="cls_005">analize poželjno je obaviti CASE alatima.</span></div>
+<div style="position:absolute;left:237.06px;top:469.02px" class="cls_009"><span class="cls_009">3.2.3. Postupak intervjuisanja</span></div>
+<div style="position:absolute;left:134.70px;top:494.28px" class="cls_005"><span class="cls_005">Intervju mora biti neusiljen i elastičan razgovor sa ispitanikom u obliku niza pitanja</span></div>
+<div style="position:absolute;left:113.40px;top:505.75px" class="cls_005"><span class="cls_005">i odgovora. Ispitanik se pojavljuje u ulozi pasivnog sagovornika (!?). Sagovornici su</span></div>
+<div style="position:absolute;left:113.40px;top:517.27px" class="cls_005"><span class="cls_005">rukovodioci,  krajnji  korisnici  i  ostali  učesnici  iz  poslovnog  sistema.  Standardno</span></div>
+<div style="position:absolute;left:113.40px;top:528.79px" class="cls_005"><span class="cls_005">uključuje dva sagovornika, ali može i više, i to korisnika i ispitivača. Individualni intervju</span></div>
+<div style="position:absolute;left:113.40px;top:540.25px" class="cls_005"><span class="cls_005">je kada učestvuje jedan korisnik, ili učesnici koji rade isti posao, dok je intervjuisanje</span></div>
+<div style="position:absolute;left:113.39px;top:551.78px" class="cls_005"><span class="cls_005">grupe kada se razgovara sa više korisnika iz različitih područja.</span></div>
+<div style="position:absolute;left:134.70px;top:569.04px" class="cls_005"><span class="cls_005">Informacije se prikupljaju nizom pojedinačnih razgovora. (Prve) razgovore treba</span></div>
+<div style="position:absolute;left:113.41px;top:580.50px" class="cls_005"><span class="cls_005">voditi  prema  unaprijed  dogovorenom  planu  i  rasporedu,  šta  treba  da  obezbjedi</span></div>
+<div style="position:absolute;left:113.41px;top:592.03px" class="cls_005"><span class="cls_005">koordinator intervjua. Postupak intervjua je spor i neefikasan, jer se organizacija</span></div>
+<div style="position:absolute;left:113.41px;top:603.49px" class="cls_005"><span class="cls_005">razgovora mora obaviti za svaki pojedini razgovor. Nakon završetka analize i sinteze</span></div>
+<div style="position:absolute;left:113.41px;top:615.01px" class="cls_005"><span class="cls_005">dobijenih informacija, neke razgovore (ponekad i čitavu seriju) treba ponoviti da bi se</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-306px;top:3208px;width:612px;height:792px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="518d90e6-95cd-11ea-8b25-0cc47a792c0a_id_518d90e6-95cd-11ea-8b25-0cc47a792c0a_files/background05.jpg" width=612 height=792></div>
+<div style="position:absolute;left:113.40px;top:126.90px" class="cls_002"><span class="cls_002">Poliščuk E. Jaroslav: </span><span class="cls_003">Projektovanje informacionih sistema</span></div>
+<div style="position:absolute;left:486.60px;top:126.72px" class="cls_004"><span class="cls_004">61</span></div>
+<div style="position:absolute;left:113.40px;top:155.16px" class="cls_005"><span class="cls_005">upotpunile dobijene informacije ili uskladili proturječni iskazi. Ukupan broj razgovora ne</span></div>
+<div style="position:absolute;left:113.40px;top:166.68px" class="cls_005"><span class="cls_005">može se unaprijed tačno odrediti i treba ga prilagoditi stvarnoj situaciji.</span></div>
+<div style="position:absolute;left:240.60px;top:201.12px" class="cls_009"><span class="cls_009">3.2.4. Tehnika intervjuisanja</span></div>
+<div style="position:absolute;left:134.70px;top:226.44px" class="cls_005"><span class="cls_005">Priprema za razgovor treba da sadrži utvrđivanje informacija koje treba saznati,</span></div>
+<div style="position:absolute;left:113.41px;top:237.91px" class="cls_005"><span class="cls_005">proučavanje postojeće dokumentacije i prethodnih nalaza, određivanje dokumentacije</span></div>
+<div style="position:absolute;left:113.41px;top:249.43px" class="cls_005"><span class="cls_005">koju  treba  prikupiti  i  priprema  pitanja  koja  će  biti  postavljena  tokom  razgovora.</span></div>
+<div style="position:absolute;left:113.41px;top:260.89px" class="cls_005"><span class="cls_005">Priprema pitanja podrazumjeva izradu jezgra tema, to jest standardnih pitanja, i izradu</span></div>
+<div style="position:absolute;left:113.41px;top:272.41px" class="cls_005"><span class="cls_005">sveobuhvatnog potsjetnika i izdvajanje prikladnih pitanja.</span></div>
+<div style="position:absolute;left:134.70px;top:289.68px" class="cls_005"><span class="cls_005">Mogući plan i obavljanje razgovora može da se odvija na slijedeći način:</span></div>
+<div style="position:absolute;left:134.70px;top:306.90px" class="cls_005"><span class="cls_005">1. Trajanje prvog razgovora je 2 sata (okvirno 1,5 do 2,5 sata);</span></div>
+<div style="position:absolute;left:134.70px;top:324.18px" class="cls_005"><span class="cls_005">2. Početak  razgovora,  koji  sadrži  predstavljanje  učesnika  i  upoznavanje  sa</span></div>
+<div style="position:absolute;left:148.86px;top:335.64px" class="cls_005"><span class="cls_005">svrhom razgovora (prikupljanje informacija o … );</span></div>
+<div style="position:absolute;left:134.70px;top:352.92px" class="cls_005"><span class="cls_005">3. Vođenje  razgovora,  odnosno  postavljanje  pitanja  i  zapisivanje  odgovora,</span></div>
+<div style="position:absolute;left:148.86px;top:364.38px" class="cls_005"><span class="cls_005">prikupljanje dokumentacije, ... ;</span></div>
+<div style="position:absolute;left:134.70px;top:381.66px" class="cls_005"><span class="cls_005">4. Završetak  razgovora  je  približno</span></div>
+<div style="position:absolute;left:312.03px;top:381.66px" class="cls_005"><span class="cls_005">5  do10  minuta  prije  isteka  planiranog</span></div>
+<div style="position:absolute;left:148.86px;top:393.12px" class="cls_005"><span class="cls_005">vremena. Prekida se redoslijed postavljanja pitanja, provjerava se da li postoji</span></div>
+<div style="position:absolute;left:148.86px;top:404.65px" class="cls_005"><span class="cls_005">nešto što je sagovornik htjeo reći a nije bilo pitano, provjerava se da li treba</span></div>
+<div style="position:absolute;left:148.86px;top:416.17px" class="cls_005"><span class="cls_005">proširiti   krug   sagovornika,   dogovara   se   nastavak   razgovora</span></div>
+<div style="position:absolute;left:455.29px;top:416.17px" class="cls_005"><span class="cls_005">(dopunski</span></div>
+<div style="position:absolute;left:148.86px;top:427.63px" class="cls_005"><span class="cls_005">razgovor) kada voditelj razgovora nije postavio sva planirana pitanja ili smatra</span></div>
+<div style="position:absolute;left:148.85px;top:439.15px" class="cls_005"><span class="cls_005">da je razgovor nametnuo nova pitanja;</span></div>
+<div style="position:absolute;left:134.70px;top:456.42px" class="cls_005"><span class="cls_005">5. Zahvala na razgovoru.</span></div>
+<div style="position:absolute;left:134.70px;top:473.64px" class="cls_005"><span class="cls_005">Preispitivanje i pojašnjenje sadržaja se sastoji od provjera zapisanih navoda radi</span></div>
+<div style="position:absolute;left:113.40px;top:485.16px" class="cls_005"><span class="cls_005">upotpunjavanja   bilješki:   telefonom,   elektronskom   poštom   ili   novim   sastankom.</span></div>
+<div style="position:absolute;left:113.40px;top:496.63px" class="cls_005"><span class="cls_005">Dokumentovanje razgovora sačinjavaju:</span></div>
+<div style="position:absolute;left:134.70px;top:514.56px" class="cls_022"><span class="cls_022">•</span><span class="cls_005">   Samostalno pisanje zapisnika (“Ko ne razumije, ne može zapisivati.”). Kada u</span></div>
+<div style="position:absolute;left:148.86px;top:526.08px" class="cls_005"><span class="cls_005">razgovoru sudjeluje više analitičara, određuje se voditelj razgovora koji je</span></div>
+<div style="position:absolute;left:148.86px;top:537.55px" class="cls_005"><span class="cls_005">ujedno i zapisničar, a ostali ulažu primjedbe;</span></div>
+<div style="position:absolute;left:134.70px;top:549.73px" class="cls_022"><span class="cls_022">•</span><span class="cls_005">   Zapisnik  treba  da  sadrži:  naziv  projekta,  vrijeme  i  mjesto  održavanja</span></div>
+<div style="position:absolute;left:148.86px;top:561.25px" class="cls_005"><span class="cls_005">razgovora,  spisak  učesnika,  sadržaj   razgovora</span></div>
+<div style="position:absolute;left:385.42px;top:561.25px" class="cls_005"><span class="cls_005">(tekst  zapisnika),   popis</span></div>
+<div style="position:absolute;left:148.86px;top:572.72px" class="cls_005"><span class="cls_005">prikupljene dokumentacije i ime zapisničara;</span></div>
+<div style="position:absolute;left:134.69px;top:584.90px" class="cls_022"><span class="cls_022">•</span><span class="cls_005">   Zapisnik mora sadržavati ono što je rečeno i slijediti tok razgovora;</span></div>
+<div style="position:absolute;left:134.69px;top:597.08px" class="cls_022"><span class="cls_022">•</span><span class="cls_005">   Zapisnik ne smije nametati zaključke, jer su oni rezultat analize.</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-306px;top:4010px;width:612px;height:792px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="518d90e6-95cd-11ea-8b25-0cc47a792c0a_id_518d90e6-95cd-11ea-8b25-0cc47a792c0a_files/background06.jpg" width=612 height=792></div>
+<div style="position:absolute;left:113.40px;top:126.72px" class="cls_004"><span class="cls_004">62</span></div>
+<div style="position:absolute;left:250.98px;top:126.90px" class="cls_002"><span class="cls_002">Poliščuk E. Jaroslav: </span><span class="cls_003">Projektovanje informacionih sistema</span></div>
+<div style="position:absolute;left:134.70px;top:155.16px" class="cls_005"><span class="cls_005">Autorizacija</span></div>
+<div style="position:absolute;left:192.32px;top:155.16px" class="cls_005"><span class="cls_005">(ovjera) zapisnika se vrši tako da se zapisnik dostavlja na uvid</span></div>
+<div style="position:absolute;left:113.40px;top:166.68px" class="cls_005"><span class="cls_005">sagovorniku, koji potvrđuje vjerodostojnost zapisnika. Po potrebi sagovornik može</span></div>
+<div style="position:absolute;left:113.40px;top:178.15px" class="cls_005"><span class="cls_005">nadopuniti dijelove za koje smatra da nisu evidentirani ili pojasniti dijelove za koje misli</span></div>
+<div style="position:absolute;left:113.40px;top:189.67px" class="cls_005"><span class="cls_005">da su pogrešno protumačeni.</span></div>
+<div style="position:absolute;left:219.54px;top:224.16px" class="cls_009"><span class="cls_009">3.2.5. Preporuke za vođenje intervjua</span></div>
+<div style="position:absolute;left:134.70px;top:249.42px" class="cls_005"><span class="cls_005">Tokom provođenja intervjua treba pitati o svemu što se smatra važnim. Ništa nije</span></div>
+<div style="position:absolute;left:113.40px;top:260.95px" class="cls_005"><span class="cls_005">samo po sebi razumljivo i svima jasno. Ne pretpostavljati da se unaprijed zna o čemu</span></div>
+<div style="position:absolute;left:113.40px;top:272.47px" class="cls_005"><span class="cls_005">se radi. Repertoar i vrste pitanja može biti slijedeći:</span></div>
+<div style="position:absolute;left:134.70px;top:289.68px" class="cls_005"><span class="cls_005">1. Pitanja zatvorenog tipa: Koliko ... obrađujete (u nekom razdoblju)?, Na koji</span></div>
+<div style="position:absolute;left:149.40px;top:301.20px" class="cls_005"><span class="cls_005">način obrađujete ... ?;</span></div>
+<div style="position:absolute;left:134.70px;top:318.42px" class="cls_005"><span class="cls_005">2. Pitanja otvorenog tipa: Što mislite o ... ?, Koji su najveći problemi ... ?;</span></div>
+<div style="position:absolute;left:134.70px;top:335.70px" class="cls_005"><span class="cls_005">3.</span></div>
+<div style="position:absolute;left:149.41px;top:335.70px" class="cls_005"><span class="cls_005">“Probna” pitanja:</span></div>
+<div style="position:absolute;left:240.85px;top:335.70px" class="cls_005"><span class="cls_005">Zašto?,  Možete  li  navesti  primjer  za  takvu  situaciju?,</span></div>
+<div style="position:absolute;left:149.40px;top:347.16px" class="cls_005"><span class="cls_005">Molim detaljnije objašnjenje za</span></div>
+<div style="position:absolute;left:134.70px;top:364.44px" class="cls_005"><span class="cls_005">Analizom odgovora se razdvajaju činjenice od mišljenja, utvrđuje se da li pojedine</span></div>
+<div style="position:absolute;left:113.40px;top:375.90px" class="cls_005"><span class="cls_005">činjenice odgovaraju drugima, analiziraju činjenice koje se ne poklapaju i vrši provjera</span></div>
+<div style="position:absolute;left:113.40px;top:387.43px" class="cls_005"><span class="cls_005">odgovora različitih sagovornika na isto pitanje.</span></div>
+<div style="position:absolute;left:134.70px;top:404.64px" class="cls_005"><span class="cls_005">Preporučuje se slijedeće ponašanje: iskrenost i nepristranost</span></div>
+<div style="position:absolute;left:428.87px;top:404.64px" class="cls_005"><span class="cls_005">(cilj je naći za</span></div>
+<div style="position:absolute;left:113.40px;top:416.16px" class="cls_005"><span class="cls_005">korisnika  najprikladnije  rješenje,  a  ne  naturati  određeno  programsko  rješenje  ili</span></div>
+<div style="position:absolute;left:113.40px;top:427.69px" class="cls_005"><span class="cls_005">računarsku platformu), pažnja i jezgrovitost tj. “brzo misli, jasno govori”, izbjegavanje</span></div>
+<div style="position:absolute;left:113.40px;top:439.15px" class="cls_005"><span class="cls_005">sugestivnih  pitanja,  nenametanje  zaključaka  i  ležernost</span></div>
+<div style="position:absolute;left:388.89px;top:439.15px" class="cls_005"><span class="cls_005">(plus  praćenje  reakcija</span></div>
+<div style="position:absolute;left:113.40px;top:450.67px" class="cls_005"><span class="cls_005">sagovornika). Grupno intervjuiranje je potrebno izbjegavati i po potrebi nadoknaditi</span></div>
+<div style="position:absolute;left:113.40px;top:462.19px" class="cls_005"><span class="cls_005">radnim sjednicama. Ovu vrstu intervjuisanja iznimno provesti kada se želi utvrditi</span></div>
+<div style="position:absolute;left:113.40px;top:473.66px" class="cls_005"><span class="cls_005">zajednički interes ili protivrječnost.</span></div>
+<div style="position:absolute;left:254.58px;top:508.14px" class="cls_009"><span class="cls_009">3.2.6. Upitnici i ankete</span></div>
+<div style="position:absolute;left:134.70px;top:533.40px" class="cls_013"><span class="cls_013">Upitnik </span><span class="cls_005">je, u suštini, pismeni intervju.</span><span class="cls_013"> </span><span class="cls_005">Sadrži pitanja koja se postavljaju tokom</span></div>
+<div style="position:absolute;left:113.40px;top:544.93px" class="cls_005"><span class="cls_005">razgovora (okvirno 20 pitanja). Može se dostaviti korisniku prije ili nakon intervjua.</span></div>
+<div style="position:absolute;left:113.40px;top:556.45px" class="cls_005"><span class="cls_005">Nedostaci upitnika su slijedeći: ispitanik može prilagoditi (kontrolisati) svoje odgovore,</span></div>
+<div style="position:absolute;left:113.40px;top:567.91px" class="cls_005"><span class="cls_005">teško je procijeniti iskrenost (spontanost) odgovora, a može i obeshrabriti ispitanika.</span></div>
+<div style="position:absolute;left:134.70px;top:585.18px" class="cls_013"><span class="cls_013">Anketa</span><span class="cls_005"> može da obuhvatiti više ispitanika. Pitanja su zatvorenog tipa, a odgovori i</span></div>
+<div style="position:absolute;left:113.40px;top:596.70px" class="cls_005"><span class="cls_005">obrada odgovora mogu se standardizovati. Pogodna je za popis resursa.</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-306px;top:4812px;width:612px;height:792px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="518d90e6-95cd-11ea-8b25-0cc47a792c0a_id_518d90e6-95cd-11ea-8b25-0cc47a792c0a_files/background07.jpg" width=612 height=792></div>
+<div style="position:absolute;left:113.40px;top:126.90px" class="cls_002"><span class="cls_002">Poliščuk E. Jaroslav: </span><span class="cls_003">Projektovanje informacionih sistema</span></div>
+<div style="position:absolute;left:486.60px;top:126.72px" class="cls_004"><span class="cls_004">63</span></div>
+<div style="position:absolute;left:134.70px;top:155.16px" class="cls_005"><span class="cls_005">Na osnovu navedenog, može se zaključiti da je intervjuisanje najelastičnije!</span></div>
+<div style="position:absolute;left:113.40px;top:166.68px" class="cls_005"><span class="cls_005">Pomoću intervjua se može više naučiti o stavovima, osjećajima i motivaciji osoblja.</span></div>
+<div style="position:absolute;left:113.41px;top:178.15px" class="cls_005"><span class="cls_005">Tokom intervjua analitičar i ispitanik se nalaze jedan nasuprot drugom, pa analitičar</span></div>
+<div style="position:absolute;left:113.41px;top:189.67px" class="cls_005"><span class="cls_005">može posmatrati način na koji ispitanik odgovara i po potrebi proširiti ili usmjeriti</span></div>
+<div style="position:absolute;left:113.41px;top:201.19px" class="cls_005"><span class="cls_005">pitanja.</span></div>
+<div style="position:absolute;left:232.68px;top:235.68px" class="cls_009"><span class="cls_009">3.2.7. Proučavanje dokumenata</span></div>
+<div style="position:absolute;left:134.70px;top:260.94px" class="cls_005"><span class="cls_005">Prikupljaju se svi dokumenti do kojih se može doći. U prvom redu treba prikupiti</span></div>
+<div style="position:absolute;left:113.40px;top:272.47px" class="cls_005"><span class="cls_005">dokumente koji su nastali kao rezultat analize procesa, tipične dokumente (pravilnici,</span></div>
+<div style="position:absolute;left:113.40px;top:283.93px" class="cls_005"><span class="cls_005">zakoni, obrasci, izvještaji) i dokumente nastale analizom podataka. Poželjno je da</span></div>
+<div style="position:absolute;left:113.40px;top:295.45px" class="cls_005"><span class="cls_005">dokumenti budu reprezentativni, tj. popunjeni na tipičan način (tako se može ustanoviti</span></div>
+<div style="position:absolute;left:113.40px;top:306.91px" class="cls_005"><span class="cls_005">koje informacije se unose i na koji način). Reprezentativni dokumenti najčešće ne</span></div>
+<div style="position:absolute;left:113.40px;top:318.44px" class="cls_005"><span class="cls_005">ukazuju na izuzetke, to jest podatke koji se rjeđe bilježe, ali ipak trebaju. Stalno</span></div>
+<div style="position:absolute;left:113.40px;top:329.96px" class="cls_005"><span class="cls_005">bilježenje nekih podataka ne mora značiti da su ti podaci stvarno potrebni. Treba</span></div>
+<div style="position:absolute;left:113.41px;top:341.42px" class="cls_005"><span class="cls_005">prikupiti više uzoraka iste vrste dokumenta!</span></div>
+<div style="position:absolute;left:134.70px;top:358.68px" class="cls_005"><span class="cls_005">Vrijednost   informacija   o   analiziranoj   organizaciji   prikupljena</span></div>
+<div style="position:absolute;left:433.77px;top:358.68px" class="cls_005"><span class="cls_005">(samo)   preko</span></div>
+<div style="position:absolute;left:113.40px;top:370.20px" class="cls_005"><span class="cls_005">dokumenata je niska. Praksa može odudarati od pravilnika i administrativnih obrazaca.</span></div>
+<div style="position:absolute;left:113.40px;top:381.67px" class="cls_005"><span class="cls_005">Treba shvatiti zašto i kada dokumenti nastaju, kako se popunjavaju, koliko su potrebni,</span></div>
+<div style="position:absolute;left:113.40px;top:393.19px" class="cls_005"><span class="cls_005">te šta treba promijeniti da bi se popravili (sadržaj, lakoća popunjavanja i čitanja).</span></div>
+<div style="position:absolute;left:113.39px;top:404.65px" class="cls_005"><span class="cls_005">Nužno je modele (podataka), razmatrane analizom, provjeriti kod korisnika.</span></div>
+<div style="position:absolute;left:197.94px;top:439.14px" class="cls_009"><span class="cls_009">3.2.8. Evidencija i analiza postojećih aplikacija</span></div>
+<div style="position:absolute;left:136.09px;top:464.46px" class="cls_005"><span class="cls_005">Budući da su nedostaci opreme, podrške i podataka najčešći razlozi za izgradnju</span></div>
+<div style="position:absolute;left:113.41px;top:475.93px" class="cls_005"><span class="cls_005">novog IS, potrebno ih je evidentirati i analizirati. Vrši se procjena aplikacija i (baza)</span></div>
+<div style="position:absolute;left:113.41px;top:487.45px" class="cls_005"><span class="cls_005">podataka u primjeni, i to: korišteni programski jezici i alati, uključujući programe za</span></div>
+<div style="position:absolute;left:113.41px;top:498.97px" class="cls_005"><span class="cls_005">kancelarijsko poslovanje (npr. Excel), podržane funkcije i način posluživanja programa,</span></div>
+<div style="position:absolute;left:113.41px;top:510.43px" class="cls_005"><span class="cls_005">međusobna povezanost različitih aplikacija i podataka, postojeće platforme (računari,</span></div>
+<div style="position:absolute;left:113.41px;top:521.96px" class="cls_005"><span class="cls_005">operativni  sistem,  mreža,  SUBP),  kao  i  sastav  i  stepen  informatičke  obučenosti</span></div>
+<div style="position:absolute;left:113.41px;top:533.42px" class="cls_005"><span class="cls_005">korisnika.</span></div>
+<div style="position:absolute;left:134.70px;top:550.68px" class="cls_005"><span class="cls_005">Analiziraju se nedostaci sistemske opreme i programske podrške. U prvom redu</span></div>
+<div style="position:absolute;left:113.40px;top:562.20px" class="cls_005"><span class="cls_005">se  analizira  nepovezanost  aplikacija</span></div>
+<div style="position:absolute;left:292.81px;top:562.20px" class="cls_005"><span class="cls_005">(tzv.  informatička  ostrva),  loša  programska</span></div>
+<div style="position:absolute;left:113.40px;top:573.67px" class="cls_005"><span class="cls_005">rješenja</span></div>
+<div style="position:absolute;left:155.03px;top:573.67px" class="cls_005"><span class="cls_005">(funkcionalnost,  ergonomija),  nepouzdanost,  integritet,  zaštita  i  sigurnost</span></div>
+<div style="position:absolute;left:113.40px;top:585.19px" class="cls_005"><span class="cls_005">podataka. Takođe se analizira nepostojanje programske dokumentacije, tehnološka</span></div>
+<div style="position:absolute;left:113.40px;top:596.71px" class="cls_005"><span class="cls_005">zastarjelost (programski jezici i alati, nemogućnost rada u višekorisničkom okruženju,</span></div>
+<div style="position:absolute;left:113.39px;top:608.17px" class="cls_005"><span class="cls_005">grafički interfejs).</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-306px;top:5614px;width:612px;height:792px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="518d90e6-95cd-11ea-8b25-0cc47a792c0a_id_518d90e6-95cd-11ea-8b25-0cc47a792c0a_files/background08.jpg" width=612 height=792></div>
+<div style="position:absolute;left:113.40px;top:126.72px" class="cls_004"><span class="cls_004">64</span></div>
+<div style="position:absolute;left:250.98px;top:126.90px" class="cls_002"><span class="cls_002">Poliščuk E. Jaroslav: </span><span class="cls_003">Projektovanje informacionih sistema</span></div>
+<div style="position:absolute;left:134.70px;top:155.16px" class="cls_005"><span class="cls_005">Nedostaci modela podataka mogu biti različiti. Najčešći nedostaci su različitost</span></div>
+<div style="position:absolute;left:113.41px;top:166.68px" class="cls_005"><span class="cls_005">modela podataka postojećih aplikacija i nedostaci unutar pojedinih modela. Različitost</span></div>
+<div style="position:absolute;left:113.40px;top:178.15px" class="cls_005"><span class="cls_005">modela podataka postojećih aplikacija se očituje u tome da entiteti iz stvarnog svijeta</span></div>
+<div style="position:absolute;left:113.40px;top:189.67px" class="cls_005"><span class="cls_005">nisu  jednako  zastupljeni  u  postojećim  modelima,  isti  entitet  iz  stvarnog  svijeta</span></div>
+<div style="position:absolute;left:113.40px;top:201.19px" class="cls_005"><span class="cls_005">pojavljuje se pod različitim nazivima, isti entitet iz stvarnog svijeta opisan je različitim</span></div>
+<div style="position:absolute;left:113.40px;top:212.65px" class="cls_005"><span class="cls_005">atributima, dva ili više entiteta iz stvarnog svijeta su prikazani različitim brojem entiteta</span></div>
+<div style="position:absolute;left:113.40px;top:224.18px" class="cls_005"><span class="cls_005">u modelu podataka. Nedostaci unutar pojedinih modela su, najčešće, nedefinisanost</span></div>
+<div style="position:absolute;left:113.41px;top:235.70px" class="cls_005"><span class="cls_005">identifikatora (primarnih ključeva), nedefinisanost veza među podacima, najčešće kao</span></div>
+<div style="position:absolute;left:113.42px;top:247.16px" class="cls_005"><span class="cls_005">posljedica nepostojanja primarnih ključeva, nedefinisanost veza i pored postojanja</span></div>
+<div style="position:absolute;left:113.42px;top:258.69px" class="cls_005"><span class="cls_005">primarnih i drugih (stranih) ključeva. Navedene pojave su posljedica razvoja tokom</span></div>
+<div style="position:absolute;left:113.42px;top:270.21px" class="cls_005"><span class="cls_005">upotrebe i nedoslijednosti tog razvoja, naglašenog ponavljanje uvedenog prilikom</span></div>
+<div style="position:absolute;left:113.42px;top:281.67px" class="cls_005"><span class="cls_005">izrade zahtjevnih ili složenih programskih rješenja, kao i ukupne nenormalizovanosti</span></div>
+<div style="position:absolute;left:113.42px;top:293.20px" class="cls_005"><span class="cls_005">modela.</span></div>
+<div style="position:absolute;left:216.84px;top:327.66px" class="cls_009"><span class="cls_009">3.2.9. Posmatranje poslovnog sistema</span></div>
+<div style="position:absolute;left:134.70px;top:352.92px" class="cls_005"><span class="cls_005">Definisanje zahtjeva za IS se može dopuniti uvidom u poslovne procese, odnosno</span></div>
+<div style="position:absolute;left:113.40px;top:364.45px" class="cls_005"><span class="cls_005">posmatranjem radnih sredina. Posmatra se lokacija i kretanje ljudi, tok izvršavanja</span></div>
+<div style="position:absolute;left:113.40px;top:375.91px" class="cls_005"><span class="cls_005">poslova, fizički ulazi i izlazi sistema, zaprimanje, izrada i razmjena dokumenata,</span></div>
+<div style="position:absolute;left:113.40px;top:387.43px" class="cls_005"><span class="cls_005">procesi osnovne djelatnosti, npr. proizvodnje. Prednost ovakvog pristupa je u tome što</span></div>
+<div style="position:absolute;left:113.40px;top:398.95px" class="cls_005"><span class="cls_005">je analitičar u stanju da realno sagleda poslovni proces. Ovaj pristup je efikasan, ako</span></div>
+<div style="position:absolute;left:113.40px;top:410.42px" class="cls_005"><span class="cls_005">se  dobro  provede,  i  obezbjeđuje  pouzdanost  prikupljenih  informacija.  Nedostaci</span></div>
+<div style="position:absolute;left:113.40px;top:421.94px" class="cls_005"><span class="cls_005">posmatranja poslovnog sistema su neefikasnost, ako se dobro ne provede, znatan</span></div>
+<div style="position:absolute;left:113.40px;top:433.46px" class="cls_005"><span class="cls_005">utrošak vremena, ometanje i nelagodnost posmatranih osoba, mogućnost manipulacije</span></div>
+<div style="position:absolute;left:113.40px;top:444.93px" class="cls_005"><span class="cls_005">posmatrača, npr. prikrivanjem uobičajenog kršenja radnih procedura.</span></div>
+<div style="position:absolute;left:134.70px;top:462.18px" class="cls_005"><span class="cls_005">Podaci dobijeni iz malog broja kratkotrajnih posmatranja mogu biti nepouzdani i</span></div>
+<div style="position:absolute;left:113.40px;top:473.64px" class="cls_005"><span class="cls_005">netačni. Posmatranje na licu mjesta je najteža metoda za utvrđivanje činjenica.</span></div>
+<div style="position:absolute;left:254.82px;top:508.14px" class="cls_009"><span class="cls_009">3.2.10. Radni sastanci</span></div>
+<div style="position:absolute;left:134.70px;top:533.40px" class="cls_005"><span class="cls_005">Radni sastanci (sjednice) se organizuju da analitičari i korisnici zajednički provode</span></div>
+<div style="position:absolute;left:113.41px;top:544.93px" class="cls_005"><span class="cls_005">analizu i oblikovanje. Cilj sjednice je (zajedničko) pronalaženje najboljeg rješenja. Za to</span></div>
+<div style="position:absolute;left:113.41px;top:556.45px" class="cls_005"><span class="cls_005">je potreban poseban prostor i izolacija, moderator, dnevni red i zapisnici (slika 3.3).</span></div>
+<div style="position:absolute;left:134.70px;top:573.66px" class="cls_005"><span class="cls_005">Genijalnost  grupe  se  koristi  za  prikupljanje  ideja  i  definisanje  informacionih</span></div>
+<div style="position:absolute;left:113.40px;top:585.18px" class="cls_005"><span class="cls_005">potreba, pri čemu se korisnici potiču na aktivno i kreativno sudjelovanje. Izvodi se tako</span></div>
+<div style="position:absolute;left:113.40px;top:596.71px" class="cls_005"><span class="cls_005">da se od svakog ispitanika iz grupe traži da definiše svoj pogled na idealno rješenje.</span></div>
+<div style="position:absolute;left:113.40px;top:608.17px" class="cls_005"><span class="cls_005">Svaki učesnik iznosi sve što mu pada na pamet u vezi sa problemom koji se rješava.</span></div>
+<div style="position:absolute;left:113.40px;top:619.69px" class="cls_005"><span class="cls_005">Od predloženih rješenja odabira se najbolje prema realnoj izvodljivosti. Postupak je</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-306px;top:6416px;width:612px;height:792px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="518d90e6-95cd-11ea-8b25-0cc47a792c0a_id_518d90e6-95cd-11ea-8b25-0cc47a792c0a_files/background09.jpg" width=612 height=792></div>
+<div style="position:absolute;left:113.40px;top:126.90px" class="cls_002"><span class="cls_002">Poliščuk E. Jaroslav: </span><span class="cls_003">Projektovanje informacionih sistema</span></div>
+<div style="position:absolute;left:486.60px;top:126.72px" class="cls_004"><span class="cls_004">65</span></div>
+<div style="position:absolute;left:113.40px;top:155.16px" class="cls_005"><span class="cls_005">koristan tamo gdje postoje korisnici koji dobro poznaju sistem, ali teško prihvataju nove</span></div>
+<div style="position:absolute;left:113.40px;top:166.68px" class="cls_005"><span class="cls_005">ideje.</span></div>
+<div style="position:absolute;left:120.60px;top:410.94px" class="cls_005"><span class="cls_005">Slika 3.3. Prostor za radne sjednice [</span><span class="cls_003">A.Dennis & B. Haley Wixom, Systems Analysis</span></div>
+<div style="position:absolute;left:219.25px;top:422.47px" class="cls_003"><span class="cls_003">and Design, John Wiley & Sons, </span><span class="cls_005">2000]</span><span class="cls_003">.</span></div>
+<div style="position:absolute;left:134.72px;top:445.45px" class="cls_005"><span class="cls_005">Prednosti radnih sjednica su njihova pogodnost za projekte kojima se rješavaju</span></div>
+<div style="position:absolute;left:113.42px;top:456.97px" class="cls_005"><span class="cls_005">problemi važni za cijeli poslovni sistem ili veći dio poslovanja. Njihovim organizovanjem</span></div>
+<div style="position:absolute;left:113.42px;top:468.50px" class="cls_005"><span class="cls_005">se izbjegavaju specifični (egzotični) i nejasni zahtjevi, preciznije se ustanovljava doseg</span></div>
+<div style="position:absolute;left:113.42px;top:479.96px" class="cls_005"><span class="cls_005">projekta i bolje uočava protivrječnost zahtjeva. Nedostaci radnih sjednica su pasivnost</span></div>
+<div style="position:absolute;left:113.42px;top:491.48px" class="cls_005"><span class="cls_005">učesnika, “usitnjavanje” razgovora i često udaljavanje od tema. Sjednice treba da traju</span></div>
+<div style="position:absolute;left:113.42px;top:503.01px" class="cls_005"><span class="cls_005">više dana (5 do 10) u nekoliko sedmica. Ovom zahtjevu u praksi je vrlo teško udovoljiti</span></div>
+<div style="position:absolute;left:113.42px;top:514.47px" class="cls_005"><span class="cls_005">zbog obaveza učesnika. Otpor sjednici je srazmjeran nivou položaja konkretnog</span></div>
+<div style="position:absolute;left:113.41px;top:525.99px" class="cls_005"><span class="cls_005">učesnika. Otpor je naročito naglašen kada poslovni sistem zapošljava informatičare, jer</span></div>
+<div style="position:absolute;left:113.42px;top:537.52px" class="cls_005"><span class="cls_005">se podrazumijeva da je informatizacija isključivo njihov posao.</span></div>
+<div style="position:absolute;left:250.98px;top:571.98px" class="cls_009"><span class="cls_009">3.2.11. Razvoj prototipa</span></div>
+<div style="position:absolute;left:134.70px;top:597.24px" class="cls_005"><span class="cls_005">Razvoj  prototipa  se  koristi  kada  korisnik  ne  može  tačno  da  definiše  svoje</span></div>
+<div style="position:absolute;left:113.41px;top:608.71px" class="cls_005"><span class="cls_005">informacione potrebe prije nego što se izgradi informacioni sistem. Razlog tome može</span></div>
+<div style="position:absolute;left:113.41px;top:620.23px" class="cls_005"><span class="cls_005">biti nedostatak postojećeg modela na kojem bi korisnik zasnivao svoje potrebe ili pak</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-306px;top:7218px;width:612px;height:792px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="518d90e6-95cd-11ea-8b25-0cc47a792c0a_id_518d90e6-95cd-11ea-8b25-0cc47a792c0a_files/background10.jpg" width=612 height=792></div>
+<div style="position:absolute;left:113.40px;top:126.72px" class="cls_004"><span class="cls_004">66</span></div>
+<div style="position:absolute;left:250.98px;top:126.90px" class="cls_002"><span class="cls_002">Poliščuk E. Jaroslav: </span><span class="cls_003">Projektovanje informacionih sistema</span></div>
+<div style="position:absolute;left:113.40px;top:155.16px" class="cls_005"><span class="cls_005">teška vizuelizacija budućeg sistema. Da bi se olakšala vizuelizacija budućeg sistema</span></div>
+<div style="position:absolute;left:113.40px;top:166.68px" class="cls_005"><span class="cls_005">izgrađuje se sistem koji zadovoljava neke osnovne, inicijalne potrebe. U radu sa</span></div>
+<div style="position:absolute;left:113.40px;top:178.15px" class="cls_005"><span class="cls_005">takvim sistemom korisnik otkriva svoje informacione potrebe, te se sistem modifikuje</span></div>
+<div style="position:absolute;left:113.40px;top:189.67px" class="cls_005"><span class="cls_005">kako bi se zadovoljile te potrebe. Postupak korištenje sistema i modifikovanje istog</span></div>
+<div style="position:absolute;left:113.40px;top:201.19px" class="cls_005"><span class="cls_005">iterativno se ponavlja, a informacione potrebe korisnika otkrivaju korištenjem sistema.</span></div>
+<div style="position:absolute;left:134.70px;top:218.40px" class="cls_005"><span class="cls_005">Izrada prototipa pogodna je u onim okruženjima gdje je teško definisati konkretni</span></div>
+<div style="position:absolute;left:113.40px;top:229.92px" class="cls_005"><span class="cls_005">model sistema, te u okruženjima gdje se informacione potrebe korisnika mjenjaju ili</span></div>
+<div style="position:absolute;left:113.40px;top:241.45px" class="cls_005"><span class="cls_005">razvijaju (prototipski model razvoja IS je obrađen u podtački 2.4.3).</span></div>
+<div style="position:absolute;left:182.88px;top:275.88px" class="cls_009"><span class="cls_009">3.2.12. Najčešći problemi pri prikupljanju informacija</span></div>
+<div style="position:absolute;left:134.70px;top:301.20px" class="cls_005"><span class="cls_005">Ponašanja korisnika često može da uzrokuje niz problema pri definisanju zahtjeva</span></div>
+<div style="position:absolute;left:113.40px;top:312.67px" class="cls_005"><span class="cls_005">za IS. Informatičkim žargonom su opisana ponašanja koja se mogu očekivati od</span></div>
+<div style="position:absolute;left:113.40px;top:324.19px" class="cls_005"><span class="cls_005">korisnika.</span></div>
+<div style="position:absolute;left:134.70px;top:341.40px" class="cls_005"><span class="cls_005">1. Taktika “kuhinjskog sudopera”: korisnik navodi (preko)brojne potrebe, gomilu</span></div>
+<div style="position:absolute;left:149.40px;top:352.92px" class="cls_005"><span class="cls_005">nepotrebnih izvještaja, ekranskih formi, sortiranja, izračunavanja i sl. Ovakav</span></div>
+<div style="position:absolute;left:149.40px;top:364.45px" class="cls_005"><span class="cls_005">pristup obično je uzrokovan pomanjkanjem iskustva korisnika, koji ne zna šta</span></div>
+<div style="position:absolute;left:149.40px;top:375.91px" class="cls_005"><span class="cls_005">bi mu stvarno moglo zatrebati ili nije u stanju izdvojiti ono šta je bitno;</span></div>
+<div style="position:absolute;left:134.70px;top:393.18px" class="cls_005"><span class="cls_005">2. Taktika</span></div>
+<div style="position:absolute;left:187.55px;top:393.18px" class="cls_005"><span class="cls_005">“dimne zavjese”: korisnik traži više mogućnosti, a zapravo mu je</span></div>
+<div style="position:absolute;left:149.40px;top:404.64px" class="cls_005"><span class="cls_005">potrebna samo jedna ili dvije. Dodatni zahtjevi služe za postizanje bolje</span></div>
+<div style="position:absolute;left:149.40px;top:416.17px" class="cls_005"><span class="cls_005">nagodbe sa analitičarom. Ova taktika obično oslikava korisnika sa dobrim</span></div>
+<div style="position:absolute;left:149.40px;top:427.69px" class="cls_005"><span class="cls_005">poznavanjem onoga šta želi, a zahtjeve treba reducirati na one realne i</span></div>
+<div style="position:absolute;left:149.40px;top:439.15px" class="cls_005"><span class="cls_005">izvodljive;</span></div>
+<div style="position:absolute;left:134.70px;top:456.42px" class="cls_005"><span class="cls_005">3. Taktika "Treba mi isto, ali u boljem obliku": korisniku koji koristi ovu taktiku</span></div>
+<div style="position:absolute;left:149.40px;top:467.94px" class="cls_005"><span class="cls_005">nedostaje volja ili znanje, a ponekad oboje. Šanse za uspješno definisanje</span></div>
+<div style="position:absolute;left:149.40px;top:479.41px" class="cls_005"><span class="cls_005">problema su male, jer samo korisnik može izraziti svoje potrebe i probleme.</span></div>
+<div style="position:absolute;left:136.08px;top:496.68px" class="cls_005"><span class="cls_005">Korisnik je sklon prešutjeti izuzetke, koji su bitni (nužni!) za uspješnu realizaciju, a</span></div>
+<div style="position:absolute;left:113.39px;top:508.14px" class="cls_005"><span class="cls_005">obično  izuzeci  zahtijevaju  i  najviše  napora  tokom  ugradnje:  "To  je  naša  jedina</span></div>
+<div style="position:absolute;left:113.39px;top:519.67px" class="cls_005"><span class="cls_005">procedura … (osim kada … )". Ne izjednačavati “tako se uvijek radi” sa “tako treba</span></div>
+<div style="position:absolute;left:113.39px;top:531.19px" class="cls_005"><span class="cls_005">raditi”!</span></div>
+</div>
+
+</body>
+</html>

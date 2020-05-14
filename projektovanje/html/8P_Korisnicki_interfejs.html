@@ -1,0 +1,571 @@
+<html>
+<head><meta http-equiv=Content-Type content="text/html; charset=UTF-8">
+<style type="text/css">
+<!--
+span.cls_003{font-family:"Verdana",serif;font-size:24.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_003{font-family:"Verdana",serif;font-size:24.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_002{font-family:"Verdana",serif;font-size:12.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_002{font-family:"Verdana",serif;font-size:12.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_004{font-family:"Verdana",serif;font-size:24.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_004{font-family:"Verdana",serif;font-size:24.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_005{font-family:Arial,serif;font-size:20.1px;color:rgb(204,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_005{font-family:Arial,serif;font-size:20.1px;color:rgb(204,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_006{font-family:Arial,serif;font-size:20.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_006{font-family:Arial,serif;font-size:20.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_007{font-family:Arial,serif;font-size:24.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_007{font-family:Arial,serif;font-size:24.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_008{font-family:Arial,serif;font-size:16.0px;color:rgb(204,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_008{font-family:Arial,serif;font-size:16.0px;color:rgb(204,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_009{font-family:Arial,serif;font-size:16.0px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_009{font-family:Arial,serif;font-size:16.0px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_010{font-family:Arial,serif;font-size:20.1px;color:rgb(255,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_010{font-family:Arial,serif;font-size:20.1px;color:rgb(255,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_011{font-family:Arial,serif;font-size:20.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_011{font-family:Arial,serif;font-size:20.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_012{font-family:Arial,serif;font-size:20.1px;color:rgb(204,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_012{font-family:Arial,serif;font-size:20.1px;color:rgb(204,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_013{font-family:Arial,serif;font-size:20.1px;color:rgb(204,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_013{font-family:Arial,serif;font-size:20.1px;color:rgb(204,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_014{font-family:Arial,serif;font-size:20.1px;color:rgb(204,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_014{font-family:Arial,serif;font-size:20.1px;color:rgb(204,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_015{font-family:Arial,serif;font-size:18.1px;color:rgb(255,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_015{font-family:Arial,serif;font-size:18.1px;color:rgb(255,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_016{font-family:Arial,serif;font-size:14.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_016{font-family:Arial,serif;font-size:14.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_017{font-family:Arial,serif;font-size:18.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_017{font-family:Arial,serif;font-size:18.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_018{font-family:"Verdana",serif;font-size:18.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_018{font-family:"Verdana",serif;font-size:18.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_019{font-family:"Verdana",serif;font-size:18.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_019{font-family:"Verdana",serif;font-size:18.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_020{font-family:Arial,serif;font-size:16.0px;color:rgb(204,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_020{font-family:Arial,serif;font-size:16.0px;color:rgb(204,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_021{font-family:Arial,serif;font-size:20.1px;color:rgb(255,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_021{font-family:Arial,serif;font-size:20.1px;color:rgb(255,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+-->
+</style>
+<script type="text/javascript" src="b52baf0a-95ca-11ea-8b25-0cc47a792c0a_id_b52baf0a-95ca-11ea-8b25-0cc47a792c0a_files/wz_jsgraphics.js"></script>
+</head>
+<body>
+<div style="position:absolute;left:50%;margin-left:-360px;top:0px;width:720px;height:540px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="b52baf0a-95ca-11ea-8b25-0cc47a792c0a_id_b52baf0a-95ca-11ea-8b25-0cc47a792c0a_files/background01.jpg" width=720 height=540></div>
+<div style="position:absolute;left:75.91px;top:153.48px" class="cls_003"><span class="cls_003">PROJEKTOVANJE INFORMACIONIM SISTEMIMA</span></div>
+<div style="position:absolute;left:651.10px;top:495.58px" class="cls_002"><span class="cls_002">1</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-360px;top:550px;width:720px;height:540px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="b52baf0a-95ca-11ea-8b25-0cc47a792c0a_id_b52baf0a-95ca-11ea-8b25-0cc47a792c0a_files/background02.jpg" width=720 height=540></div>
+<div style="position:absolute;left:181.90px;top:39.50px" class="cls_004"><span class="cls_004">Osnove korisničkog interfejsa</span></div>
+<div style="position:absolute;left:55.20px;top:93.02px" class="cls_005"><span class="cls_005"></span><span class="cls_006">  Prezentacioni sloj je dio poslovne aplikacije koja omogućava</span></div>
+<div style="position:absolute;left:92.18px;top:117.02px" class="cls_006"><span class="cls_006">mehanizam komunikacije između korisnika i sloja poslovnih</span></div>
+<div style="position:absolute;left:92.18px;top:141.14px" class="cls_006"><span class="cls_006">servisa sistema</span></div>
+<div style="position:absolute;left:651.10px;top:495.58px" class="cls_002"><span class="cls_002">2</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-360px;top:1100px;width:720px;height:540px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="b52baf0a-95ca-11ea-8b25-0cc47a792c0a_id_b52baf0a-95ca-11ea-8b25-0cc47a792c0a_files/background03.jpg" width=720 height=540></div>
+<div style="position:absolute;left:200.02px;top:39.02px" class="cls_007"><span class="cls_007">Elementi prezentacionog sloja</span></div>
+<div style="position:absolute;left:55.20px;top:93.02px" class="cls_005"><span class="cls_005"></span><span class="cls_006">  Jednostavan prezentacioni sloj sadrži komponente</span></div>
+<div style="position:absolute;left:92.18px;top:117.02px" class="cls_006"><span class="cls_006">korisničkog interfejsa koji su smješteni u grafički korisnički</span></div>
+<div style="position:absolute;left:92.18px;top:141.02px" class="cls_006"><span class="cls_006">interfejs (GUI) kao što je:</span></div>
+<div style="position:absolute;left:92.30px;top:169.13px" class="cls_008"><span class="cls_008">◼</span><span class="cls_009">   Microsoft Windows Forms ili</span></div>
+<div style="position:absolute;left:92.30px;top:192.17px" class="cls_008"><span class="cls_008">◼</span><span class="cls_009">   Microsoft ASP.NET Web forme</span></div>
+<div style="position:absolute;left:55.20px;top:238.97px" class="cls_005"><span class="cls_005"></span><span class="cls_006">  Za kompleksnije korisničke interakcije možete dizajnirati</span></div>
+<div style="position:absolute;left:92.18px;top:262.97px" class="cls_006"><span class="cls_006">korisničke procesne komponente koji rade sa </span><span class="cls_010">UI elementima</span></div>
+<div style="position:absolute;left:92.18px;top:286.99px" class="cls_006"><span class="cls_006">i u interakciji je sa korisničkim kontrolama</span></div>
+<div style="position:absolute;left:55.20px;top:344.59px" class="cls_005"><span class="cls_005"></span><span class="cls_006">  Korisničke procesne komponente su specijalno korisne kada</span></div>
+<div style="position:absolute;left:92.18px;top:368.59px" class="cls_006"><span class="cls_006">postoje specifični procesi kojima se može pristupiti preko</span></div>
+<div style="position:absolute;left:92.18px;top:392.57px" class="cls_011"><span class="cls_011">različitih procesa u zavisnosti od korisnika</span></div>
+<div style="position:absolute;left:651.10px;top:495.58px" class="cls_002"><span class="cls_002">3</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-360px;top:1650px;width:720px;height:540px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="b52baf0a-95ca-11ea-8b25-0cc47a792c0a_id_b52baf0a-95ca-11ea-8b25-0cc47a792c0a_files/background04.jpg" width=720 height=540></div>
+<div style="position:absolute;left:144.55px;top:39.50px" class="cls_004"><span class="cls_004">Ulazi za dizajn prezentacionog sloja</span></div>
+<div style="position:absolute;left:55.20px;top:93.02px" class="cls_005"><span class="cls_005"></span><span class="cls_006">  Informacije koje su istražene, analizirane i optimizovane u fazi</span></div>
+<div style="position:absolute;left:92.18px;top:117.02px" class="cls_006"><span class="cls_006">predviđanja i planiranja su ulazi za dizajn prezentacionog sloja:</span></div>
+<div style="position:absolute;left:55.20px;top:174.65px" class="cls_012"><span class="cls_012">1.</span><span class="cls_006">  Zahtjevano rješenje i ograničenja</span></div>
+<div style="position:absolute;left:55.20px;top:203.45px" class="cls_012"><span class="cls_012">2.</span><span class="cls_006">  Korisnički scenario</span></div>
+<div style="position:absolute;left:55.20px;top:232.25px" class="cls_012"><span class="cls_012">3.</span><span class="cls_006">  Modele radnog toka</span></div>
+<div style="position:absolute;left:55.20px;top:261.05px" class="cls_012"><span class="cls_012">4.</span><span class="cls_006">  Korisničke profile</span></div>
+<div style="position:absolute;left:55.20px;top:289.87px" class="cls_012"><span class="cls_012">5.</span><span class="cls_006">  Opis aktivnosti</span></div>
+<div style="position:absolute;left:651.10px;top:495.58px" class="cls_002"><span class="cls_002">4</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-360px;top:2200px;width:720px;height:540px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="b52baf0a-95ca-11ea-8b25-0cc47a792c0a_id_b52baf0a-95ca-11ea-8b25-0cc47a792c0a_files/background05.jpg" width=720 height=540></div>
+<div style="position:absolute;left:150.34px;top:39.50px" class="cls_004"><span class="cls_004">Komponenta korisničkog interfejsa</span></div>
+<div style="position:absolute;left:55.20px;top:93.02px" class="cls_005"><span class="cls_005"></span><span class="cls_006">  Prva oblast prezentacionog sloja koju ćete naučiti ovdje je </span><span class="cls_010">korisnički</span></div>
+<div style="position:absolute;left:92.18px;top:117.02px" class="cls_010"><span class="cls_010">interfejs</span></div>
+<div style="position:absolute;left:55.20px;top:174.65px" class="cls_005"><span class="cls_005"></span><span class="cls_006">  Na neki način ovaj interfejs bi trebao razmotriti najvažnij dio</span></div>
+<div style="position:absolute;left:92.18px;top:198.65px" class="cls_006"><span class="cls_006">poslovne aplikacije zato što najveći broj korsnika koristi aplikaciju</span></div>
+<div style="position:absolute;left:55.20px;top:256.25px" class="cls_005"><span class="cls_005"></span><span class="cls_006">  Dobro dizajnirani korisnički interfejs pomaže da dođete do uspjeha i</span></div>
+<div style="position:absolute;left:92.18px;top:280.23px" class="cls_011"><span class="cls_011">stvara mogućnost prihvatanja poslovne aplikacije</span></div>
+<div style="position:absolute;left:55.20px;top:337.87px" class="cls_005"><span class="cls_005"></span><span class="cls_006">  Komponente korisničkog interfejsa upravljaju interakcijama korisnika</span></div>
+<div style="position:absolute;left:55.20px;top:395.45px" class="cls_013"><span class="cls_013"></span><span class="cls_011">  Oni ispisuju podatke o korisniku, sakuplja podatke od korisnika,</span></div>
+<div style="position:absolute;left:92.18px;top:419.50px" class="cls_006"><span class="cls_006">interpretira događaje koji su proizveli korisničke aktivnosti, mijenjaju</span></div>
+<div style="position:absolute;left:92.18px;top:443.50px" class="cls_006"><span class="cls_006">stanje korisničkog interfejsa i pomaže korisniku da sagleda progres</span></div>
+<div style="position:absolute;left:92.18px;top:467.50px" class="cls_006"><span class="cls_006">u njihovim aktivnostima</span></div>
+<div style="position:absolute;left:651.10px;top:495.58px" class="cls_002"><span class="cls_002">5</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-360px;top:2750px;width:720px;height:540px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="b52baf0a-95ca-11ea-8b25-0cc47a792c0a_id_b52baf0a-95ca-11ea-8b25-0cc47a792c0a_files/background06.jpg" width=720 height=540></div>
+<div style="position:absolute;left:89.95px;top:39.50px" class="cls_004"><span class="cls_004">Funkcije komponenata korisničkog interfejsa</span></div>
+<div style="position:absolute;left:55.20px;top:93.02px" class="cls_005"><span class="cls_005"></span><span class="cls_006">  Komponente korisničkog interfejsa:</span></div>
+<div style="position:absolute;left:92.30px;top:121.10px" class="cls_008"><span class="cls_008">◼</span><span class="cls_009">   ispisuje podatke korisniku,</span></div>
+<div style="position:absolute;left:92.30px;top:144.14px" class="cls_008"><span class="cls_008">◼</span><span class="cls_009">   prikuplja i vrednuje podatke sa korisničkog ulaza, i</span></div>
+<div style="position:absolute;left:92.30px;top:167.21px" class="cls_008"><span class="cls_008">◼</span><span class="cls_009">   interpretira korisničke akcije koje uključuje šta korisnik želi da predstavi sa</span></div>
+<div style="position:absolute;left:126.74px;top:186.41px" class="cls_009"><span class="cls_009">operacijama na podacima.</span></div>
+<div style="position:absolute;left:55.20px;top:233.21px" class="cls_005"><span class="cls_005"></span><span class="cls_006">  Dodatno, korisnički inetrfejs bi trebao da </span><span class="cls_010">filtrira moguće akcije </span><span class="cls_006">koje</span></div>
+<div style="position:absolute;left:92.18px;top:257.33px" class="cls_006"><span class="cls_006">korisnik bi mogao da koristi u toj tački aplikacije</span></div>
+<div style="position:absolute;left:651.10px;top:495.58px" class="cls_002"><span class="cls_002">6</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-360px;top:3300px;width:720px;height:540px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="b52baf0a-95ca-11ea-8b25-0cc47a792c0a_id_b52baf0a-95ca-11ea-8b25-0cc47a792c0a_files/background07.jpg" width=720 height=540></div>
+<div style="position:absolute;left:89.95px;top:39.50px" class="cls_004"><span class="cls_004">Funkcije komponenata korisničkog interfejsa</span></div>
+<div style="position:absolute;left:55.20px;top:93.02px" class="cls_005"><span class="cls_005"></span><span class="cls_006">  Funkcije - Komponente korisničkog interfejsa predstavljaju sljedeće</span></div>
+<div style="position:absolute;left:92.18px;top:117.02px" class="cls_006"><span class="cls_006">funkcije:</span></div>
+<div style="position:absolute;left:92.30px;top:145.10px" class="cls_008"><span class="cls_008">◼</span><span class="cls_009">   Prikupljanje podataka od korisnika i asistiranje prilikom unosa podataka preko</span></div>
+<div style="position:absolute;left:126.74px;top:164.33px" class="cls_009"><span class="cls_009">ispitivanje validacije odgovarajućih akcija na kontrolama</span></div>
+<div style="position:absolute;left:92.30px;top:187.37px" class="cls_008"><span class="cls_008">◼</span><span class="cls_009">   Hvatanje događaja korisnika i pozivanje funkcija kontrolera za beleženje</span></div>
+<div style="position:absolute;left:126.74px;top:206.57px" class="cls_009"><span class="cls_009">komponenata korisničkog interfejsa za promjenu načina ispisa podataka na</span></div>
+<div style="position:absolute;left:126.74px;top:225.77px" class="cls_009"><span class="cls_009">tekućem korisničkom procesu ili preko mijenjanja podataka tekućeg korisničkog</span></div>
+<div style="position:absolute;left:126.74px;top:244.97px" class="cls_009"><span class="cls_009">procesa</span></div>
+<div style="position:absolute;left:92.30px;top:268.01px" class="cls_008"><span class="cls_008">◼</span><span class="cls_009">   Zabrane tipa podataka za unos koje korisnik može unijeti</span></div>
+<div style="position:absolute;left:92.30px;top:291.07px" class="cls_008"><span class="cls_008">◼</span><span class="cls_009">   Predstavljanje vrednovanje unosa podataka</span></div>
+<div style="position:absolute;left:92.30px;top:314.11px" class="cls_008"><span class="cls_008">◼</span><span class="cls_009">   Predstavljanje jednostavnog mapiranja i transformisanje informacija koje su</span></div>
+<div style="position:absolute;left:126.74px;top:333.31px" class="cls_009"><span class="cls_009">omogućene preko kontrola korisnika za vrijednosti koje su potrebne</span></div>
+<div style="position:absolute;left:126.74px;top:352.51px" class="cls_009"><span class="cls_009">komponentama za njihov rad</span></div>
+<div style="position:absolute;left:651.10px;top:495.58px" class="cls_002"><span class="cls_002">7</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-360px;top:3850px;width:720px;height:540px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="b52baf0a-95ca-11ea-8b25-0cc47a792c0a_id_b52baf0a-95ca-11ea-8b25-0cc47a792c0a_files/background08.jpg" width=720 height=540></div>
+<div style="position:absolute;left:92.71px;top:33.50px" class="cls_004"><span class="cls_004">Funkcije komponenata korisničkog interfejsa</span></div>
+<div style="position:absolute;left:55.20px;top:93.02px" class="cls_005"><span class="cls_005"></span><span class="cls_006">  Predstavlja fomatirane vrijednosti</span></div>
+<div style="position:absolute;left:55.20px;top:150.60px" class="cls_013"><span class="cls_013"></span><span class="cls_011">  Predstavlja bilo koji lokalni rad na redudatnim podacima</span></div>
+<div style="position:absolute;left:55.20px;top:208.25px" class="cls_005"><span class="cls_005"></span><span class="cls_006">  Omogućava korisniku informacije o statusu</span></div>
+<div style="position:absolute;left:55.20px;top:265.85px" class="cls_005"><span class="cls_005"></span><span class="cls_006">  Izbor pojavljivanja aplikacije baziranom na korisničkim</span></div>
+<div style="position:absolute;left:92.18px;top:289.87px" class="cls_006"><span class="cls_006">pravima ili vrsti klijentskih uređaja koji se koriste</span></div>
+<div style="position:absolute;left:651.10px;top:495.58px" class="cls_002"><span class="cls_002">8</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-360px;top:4400px;width:720px;height:540px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="b52baf0a-95ca-11ea-8b25-0cc47a792c0a_id_b52baf0a-95ca-11ea-8b25-0cc47a792c0a_files/background09.jpg" width=720 height=540></div>
+<div style="position:absolute;left:114.55px;top:39.50px" class="cls_004"><span class="cls_004">Uputstvo za dizajn korisničkog interfejsa</span></div>
+<div style="position:absolute;left:55.20px;top:93.02px" class="cls_005"><span class="cls_005"></span><span class="cls_006">  Dizajniranje korisničkog interfejsa omogućava iskusnom korisniku</span></div>
+<div style="position:absolute;left:92.18px;top:117.02px" class="cls_006"><span class="cls_006">da zahtjeva znanje i razumjevanje korisničkih potreba i radnog toka</span></div>
+<div style="position:absolute;left:55.20px;top:174.65px" class="cls_005"><span class="cls_005"></span><span class="cls_006">  Vi akumulirate ove informacije za vrijeme faza predviđanja i</span></div>
+<div style="position:absolute;left:92.18px;top:198.65px" class="cls_006"><span class="cls_006">planiranja.</span></div>
+<div style="position:absolute;left:651.10px;top:495.58px" class="cls_002"><span class="cls_002">9</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-360px;top:4950px;width:720px;height:540px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="b52baf0a-95ca-11ea-8b25-0cc47a792c0a_id_b52baf0a-95ca-11ea-8b25-0cc47a792c0a_files/background10.jpg" width=720 height=540></div>
+<div style="position:absolute;left:311.14px;top:39.50px" class="cls_004"><span class="cls_004">Upustva</span></div>
+<div style="position:absolute;left:55.20px;top:93.02px" class="cls_005"><span class="cls_005"></span><span class="cls_006">  Dizajn interfejsa mora </span><span class="cls_010">implementirati </span><span class="cls_006">korisničke aktivnosti na način</span></div>
+<div style="position:absolute;left:92.18px;top:117.02px" class="cls_006"><span class="cls_006">koji je pogodan za korisnika</span></div>
+<div style="position:absolute;left:55.20px;top:174.65px" class="cls_005"><span class="cls_005"></span><span class="cls_006">  Ovaj cilj je ostvariv preko uključivanja korisnika u sve djelove dizajna</span></div>
+<div style="position:absolute;left:92.18px;top:198.65px" class="cls_006"><span class="cls_006">korisničkog interfejsa</span></div>
+<div style="position:absolute;left:55.20px;top:256.25px" class="cls_005"><span class="cls_005"></span><span class="cls_006">  Prototipovi, beta testiranja, i rani programi su metode za uključivanje</span></div>
+<div style="position:absolute;left:92.18px;top:280.23px" class="cls_011"><span class="cls_011">korisnika za vrijeme dizajna i primjenu UI</span></div>
+<div style="position:absolute;left:55.20px;top:337.87px" class="cls_005"><span class="cls_005"></span><span class="cls_006">  Uspjeh ili neuspjeh aplikacije može zavisiti od korisničkog interfejsa</span></div>
+<div style="position:absolute;left:55.20px;top:395.45px" class="cls_013"><span class="cls_013"></span><span class="cls_011">  Ako korisnici imaju teškoća prilikom korišćenja interfejsa, oni to vide</span></div>
+<div style="position:absolute;left:92.18px;top:419.50px" class="cls_006"><span class="cls_006">kao neuspjeh aplikacije</span></div>
+<div style="position:absolute;left:643.42px;top:495.58px" class="cls_002"><span class="cls_002">10</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-360px;top:5500px;width:720px;height:540px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="b52baf0a-95ca-11ea-8b25-0cc47a792c0a_id_b52baf0a-95ca-11ea-8b25-0cc47a792c0a_files/background11.jpg" width=720 height=540></div>
+<div style="position:absolute;left:254.26px;top:39.50px" class="cls_004"><span class="cls_004">Pitanja za dizajn?</span></div>
+<div style="position:absolute;left:55.20px;top:87.02px" class="cls_012"><span class="cls_012">1.</span><span class="cls_006">  Kako će korisnici da budu u interakciji sa sistemom?</span></div>
+<div style="position:absolute;left:55.20px;top:115.82px" class="cls_012"><span class="cls_012">2.</span><span class="cls_006">  Da li interfejs predstavlja koncepte i terminologiju korisnika?</span></div>
+<div style="position:absolute;left:55.20px;top:144.60px" class="cls_014"><span class="cls_014">3.</span><span class="cls_011">  Da li je odgovarajuća metafora iskorišćena prilikom dizajna</span></div>
+<div style="position:absolute;left:92.18px;top:168.65px" class="cls_006"><span class="cls_006">korisničkog interfejsa?</span></div>
+<div style="position:absolute;left:55.20px;top:197.45px" class="cls_012"><span class="cls_012">4.</span><span class="cls_006">  Da li korisnici imaju kontrolu da zahtjevaju ponovno iščitavanje</span></div>
+<div style="position:absolute;left:92.18px;top:221.45px" class="cls_006"><span class="cls_006">automatskih procesa kada im je potrebno?</span></div>
+<div style="position:absolute;left:55.20px;top:250.25px" class="cls_012"><span class="cls_012">5.</span><span class="cls_006">  Mogu li korisnici lako pronaći zahtjevane osobine za kompletiranje</span></div>
+<div style="position:absolute;left:92.18px;top:274.23px" class="cls_011"><span class="cls_011">zajedničkih aktivnosti?</span></div>
+<div style="position:absolute;left:55.20px;top:303.07px" class="cls_012"><span class="cls_012">6.</span><span class="cls_006">  Da li je radni tok korektan i kompletan?</span></div>
+<div style="position:absolute;left:55.20px;top:331.87px" class="cls_012"><span class="cls_012">7.</span><span class="cls_006">  Da li je interfejs optimizovan za radni tok korisnika?</span></div>
+<div style="position:absolute;left:55.20px;top:360.67px" class="cls_012"><span class="cls_012">8.</span><span class="cls_006">  Mogu li korisnici lako pristupiti Help-u za specifični problem?</span></div>
+<div style="position:absolute;left:55.20px;top:389.45px" class="cls_014"><span class="cls_014">9.</span><span class="cls_011">  Da li je korisnicima omogućeno mijenjanje UI za njihove pojedinačne</span></div>
+<div style="position:absolute;left:92.18px;top:413.50px" class="cls_006"><span class="cls_006">potrebe?</span></div>
+<div style="position:absolute;left:55.20px;top:442.30px" class="cls_012"><span class="cls_012">10.</span><span class="cls_006"> Postoji li alternativni načini za predstavljanje specifičnih aktivnosti u</span></div>
+<div style="position:absolute;left:92.18px;top:466.30px" class="cls_006"><span class="cls_006">slučaju povećanja problema?</span></div>
+<div style="position:absolute;left:643.42px;top:495.58px" class="cls_002"><span class="cls_002">11</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-360px;top:6050px;width:720px;height:540px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="b52baf0a-95ca-11ea-8b25-0cc47a792c0a_id_b52baf0a-95ca-11ea-8b25-0cc47a792c0a_files/background12.jpg" width=720 height=540></div>
+<div style="position:absolute;left:204.70px;top:39.02px" class="cls_007"><span class="cls_007">Elementi interfesja i metafore</span></div>
+<div style="position:absolute;left:55.20px;top:93.02px" class="cls_005"><span class="cls_005"></span><span class="cls_006">  Koristeći familijarne metafore za predstavljanje elemenata</span></div>
+<div style="position:absolute;left:92.18px;top:117.02px" class="cls_006"><span class="cls_006">korisničkog interfejsa, omogućava se način prenosa korisničkog</span></div>
+<div style="position:absolute;left:92.18px;top:141.02px" class="cls_006"><span class="cls_006">znanja i iskustva za dizajn korisničkog interfejsa</span></div>
+<div style="position:absolute;left:55.20px;top:198.65px" class="cls_005"><span class="cls_005"></span><span class="cls_006">  Metafore se oslanjaju na korisničkom prepoznavanju prije nego</span></div>
+<div style="position:absolute;left:92.18px;top:222.65px" class="cls_006"><span class="cls_006">na ponovnom sakupljanju</span></div>
+<div style="position:absolute;left:55.20px;top:280.23px" class="cls_013"><span class="cls_013"></span><span class="cls_011">  Korisnici prepoznaju glavne osobine srodnih objekata i to je lakše</span></div>
+<div style="position:absolute;left:92.18px;top:304.27px" class="cls_006"><span class="cls_006">nego da pamte ime pojedinačnih komandi</span></div>
+<div style="position:absolute;left:643.42px;top:495.58px" class="cls_002"><span class="cls_002">12</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-360px;top:6600px;width:720px;height:540px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="b52baf0a-95ca-11ea-8b25-0cc47a792c0a_id_b52baf0a-95ca-11ea-8b25-0cc47a792c0a_files/background13.jpg" width=720 height=540></div>
+<div style="position:absolute;left:103.15px;top:39.02px" class="cls_007"><span class="cls_007">Osobine koje dobro dizajnirani interfejs uključuje</span></div>
+<div style="position:absolute;left:55.20px;top:93.02px" class="cls_005"><span class="cls_005"></span><span class="cls_006">  Ako interfejs nije dobar za rad iskusnog korisnika, onda je vrijeme</span></div>
+<div style="position:absolute;left:92.18px;top:117.02px" class="cls_006"><span class="cls_006">za razvoj aplikacije izgubljeno</span></div>
+<div style="position:absolute;left:55.20px;top:174.65px" class="cls_005"><span class="cls_005"></span><span class="cls_006">  Međutim ne pravite kompromis sa funkcionalnošću čineći</span></div>
+<div style="position:absolute;left:92.18px;top:198.65px" class="cls_006"><span class="cls_006">aplikacijski interfejs korisnički prihvatljivim</span></div>
+<div style="position:absolute;left:55.20px;top:256.25px" class="cls_005"><span class="cls_005"></span><span class="cls_006">  Uzimajući u obzir korisnike i zahtjevani korisnički interfejs i radni</span></div>
+<div style="position:absolute;left:92.18px;top:280.23px" class="cls_011"><span class="cls_011">tok bi trebalo uzeti u razmatranje za vrijeme dizajna i razvoja</span></div>
+<div style="position:absolute;left:643.42px;top:495.58px" class="cls_002"><span class="cls_002">13</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-360px;top:7150px;width:720px;height:540px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="b52baf0a-95ca-11ea-8b25-0cc47a792c0a_id_b52baf0a-95ca-11ea-8b25-0cc47a792c0a_files/background14.jpg" width=720 height=540></div>
+<div style="position:absolute;left:103.15px;top:39.02px" class="cls_007"><span class="cls_007">Osobine koje dobro dizajnirani interfejs uključuje</span></div>
+<div style="position:absolute;left:55.20px;top:93.02px" class="cls_005"><span class="cls_005"></span><span class="cls_006">  Sledeće osobine pomažu da napravite dobar interfejs:</span></div>
+<div style="position:absolute;left:55.20px;top:121.82px" class="cls_012"><span class="cls_012">1.</span><span class="cls_006">  Da je intuitivno dizajniran</span></div>
+<div style="position:absolute;left:55.20px;top:150.60px" class="cls_014"><span class="cls_014">2.</span><span class="cls_011">  Da je optimalno iskorišćeni prostor na ekranu</span></div>
+<div style="position:absolute;left:55.20px;top:179.45px" class="cls_012"><span class="cls_012">3.</span><span class="cls_006">  Da ima odgovarjuće pojavljivanje</span></div>
+<div style="position:absolute;left:55.20px;top:208.25px" class="cls_012"><span class="cls_012">4.</span><span class="cls_006">  Da ima laku navigaciju</span></div>
+<div style="position:absolute;left:55.20px;top:237.05px" class="cls_012"><span class="cls_012">5.</span><span class="cls_006">  Da ima kontrolisanu navigaciju</span></div>
+<div style="position:absolute;left:55.20px;top:265.85px" class="cls_012"><span class="cls_012">6.</span><span class="cls_006">  Da su postavljene tekuće vrijednosti</span></div>
+<div style="position:absolute;left:55.20px;top:294.67px" class="cls_012"><span class="cls_012">7.</span><span class="cls_006">  Da ima ulaznu validaciju</span></div>
+<div style="position:absolute;left:55.20px;top:323.47px" class="cls_012"><span class="cls_012">8.</span><span class="cls_006">  Da posjeduje menije, tolbarove i help</span></div>
+<div style="position:absolute;left:55.20px;top:352.27px" class="cls_012"><span class="cls_012">9.</span><span class="cls_006">  Da prihvata efikasno događe</span></div>
+<div style="position:absolute;left:643.42px;top:495.58px" class="cls_002"><span class="cls_002">14</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-360px;top:7700px;width:720px;height:540px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="b52baf0a-95ca-11ea-8b25-0cc47a792c0a_id_b52baf0a-95ca-11ea-8b25-0cc47a792c0a_files/background15.jpg" width=720 height=540></div>
+<div style="position:absolute;left:75.91px;top:153.48px" class="cls_003"><span class="cls_003">PROJEKTOVANJE INFORMACIONIM SISTEMIMA</span></div>
+<div style="position:absolute;left:643.42px;top:495.58px" class="cls_002"><span class="cls_002">15</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-360px;top:8250px;width:720px;height:540px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="b52baf0a-95ca-11ea-8b25-0cc47a792c0a_id_b52baf0a-95ca-11ea-8b25-0cc47a792c0a_files/background16.jpg" width=720 height=540></div>
+<div style="position:absolute;left:184.54px;top:39.02px" class="cls_007"><span class="cls_007">Dizajniranje korsničkog interfejsa</span></div>
+<div style="position:absolute;left:55.20px;top:93.02px" class="cls_005"><span class="cls_005"></span><span class="cls_006">  Prvi dio dizajniranja korisničkog interfejsa je </span><span class="cls_010">kreiranje početnog</span></div>
+<div style="position:absolute;left:92.18px;top:117.02px" class="cls_010"><span class="cls_010">dizajna </span><span class="cls_006">koje korisnik može da pregleda</span></div>
+<div style="position:absolute;left:55.20px;top:174.65px" class="cls_005"><span class="cls_005"></span><span class="cls_006">  Početni dizajn može biti napravljen sa niskom vjernošću ( na</span></div>
+<div style="position:absolute;left:92.18px;top:198.65px" class="cls_006"><span class="cls_006">primjer kreiranjem sa olovkom na papiru) ili visoko vjerno (na</span></div>
+<div style="position:absolute;left:92.18px;top:222.65px" class="cls_006"><span class="cls_006">primer kreiranje prototipa sa alatom kao što je Microsoft Visual</span></div>
+<div style="position:absolute;left:92.18px;top:246.65px" class="cls_006"><span class="cls_006">basic)</span></div>
+<div style="position:absolute;left:643.42px;top:495.58px" class="cls_002"><span class="cls_002">16</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-360px;top:8800px;width:720px;height:540px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="b52baf0a-95ca-11ea-8b25-0cc47a792c0a_id_b52baf0a-95ca-11ea-8b25-0cc47a792c0a_files/background17.jpg" width=720 height=540></div>
+<div style="position:absolute;left:150.67px;top:39.02px" class="cls_007"><span class="cls_007">Visoko vjerno i nisko vjerno dizajniranje</span></div>
+<div style="position:absolute;left:61.20px;top:99.14px" class="cls_015"><span class="cls_015">Nisko vjerno</span></div>
+<div style="position:absolute;left:349.25px;top:99.14px" class="cls_015"><span class="cls_015">Visoko verno</span></div>
+<div style="position:absolute;left:61.20px;top:136.66px" class="cls_016"><span class="cls_016">Pokazuje glavne osobine, strukture i</span></div>
+<div style="position:absolute;left:349.25px;top:136.66px" class="cls_016"><span class="cls_016">Pokazuje detaljni izgled ekrana i elemente</span></div>
+<div style="position:absolute;left:61.20px;top:153.46px" class="cls_016"><span class="cls_016">navigaciju.</span></div>
+<div style="position:absolute;left:349.25px;top:153.46px" class="cls_016"><span class="cls_016">interfejsa</span></div>
+<div style="position:absolute;left:61.20px;top:177.46px" class="cls_016"><span class="cls_016">Omogućuje brzo i lako istraživanje</span></div>
+<div style="position:absolute;left:349.25px;top:177.46px" class="cls_016"><span class="cls_016">Brza primjena i izmjena ali zahtjeva</span></div>
+<div style="position:absolute;left:61.20px;top:194.26px" class="cls_016"><span class="cls_016">alternativnog dizajna</span></div>
+<div style="position:absolute;left:349.25px;top:194.26px" class="cls_016"><span class="cls_016">kompjuter i softver</span></div>
+<div style="position:absolute;left:61.20px;top:235.08px" class="cls_016"><span class="cls_016">Odličan za razmišljanje i brzapovratna</span></div>
+<div style="position:absolute;left:349.25px;top:235.08px" class="cls_016"><span class="cls_016">Tipično razvijen iz nisko vjernog dizajna</span></div>
+<div style="position:absolute;left:61.20px;top:251.88px" class="cls_016"><span class="cls_016">informacija. Omogućava uglavnom</span></div>
+<div style="position:absolute;left:61.20px;top:268.68px" class="cls_016"><span class="cls_016">jesno indentifikaciju problema dizajna</span></div>
+<div style="position:absolute;left:55.20px;top:333.55px" class="cls_017"><span class="cls_017">❑</span></div>
+<div style="position:absolute;left:128.42px;top:333.55px" class="cls_018"><span class="cls_018">Dizajn  početnog  interfejsa  bi  trebao  da  koristi  metafore  i</span></div>
+<div style="position:absolute;left:127.22px;top:355.15px" class="cls_018"><span class="cls_018">elemente koje su usaglašene sa korisnicima.</span></div>
+<div style="position:absolute;left:129.50px;top:376.75px" class="cls_018"><span class="cls_018">Oni bi trebalo takoÿe da uključe terminologiju i</span></div>
+<div style="position:absolute;left:127.22px;top:398.33px" class="cls_019"><span class="cls_019">koncepte korisnika</span></div>
+<div style="position:absolute;left:643.42px;top:495.58px" class="cls_002"><span class="cls_002">17</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-360px;top:9350px;width:720px;height:540px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="b52baf0a-95ca-11ea-8b25-0cc47a792c0a_id_b52baf0a-95ca-11ea-8b25-0cc47a792c0a_files/background18.jpg" width=720 height=540></div>
+<div style="position:absolute;left:179.26px;top:39.02px" class="cls_007"><span class="cls_007">Kreiranje navigacione i mape toka</span></div>
+<div style="position:absolute;left:55.20px;top:93.02px" class="cls_005"><span class="cls_005"></span><span class="cls_006">  Navigaciona mapa za korisnički interfejs pokazuje koje</span></div>
+<div style="position:absolute;left:92.18px;top:117.02px" class="cls_006"><span class="cls_006">komponente su pozvane kada je događaj u korisničkom</span></div>
+<div style="position:absolute;left:92.18px;top:141.02px" class="cls_006"><span class="cls_006">interfejsu je aktiviran</span></div>
+<div style="position:absolute;left:55.20px;top:198.65px" class="cls_005"><span class="cls_005"></span><span class="cls_006">  Zadržavati pažnju na toku korisničkog interfejsa, ne uključuje</span></div>
+<div style="position:absolute;left:92.18px;top:222.65px" class="cls_006"><span class="cls_006">greške validacije ili greške procesiranja</span></div>
+<div style="position:absolute;left:643.42px;top:495.58px" class="cls_002"><span class="cls_002">18</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-360px;top:9900px;width:720px;height:540px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="b52baf0a-95ca-11ea-8b25-0cc47a792c0a_id_b52baf0a-95ca-11ea-8b25-0cc47a792c0a_files/background19.jpg" width=720 height=540></div>
+<div style="position:absolute;left:178.06px;top:39.02px" class="cls_007"><span class="cls_007">Omogućavanje korisničkih pomoći</span></div>
+<div style="position:absolute;left:55.20px;top:93.02px" class="cls_005"><span class="cls_005"></span><span class="cls_006">  Korisničke pomoći su često zanemarljive, ili malo primjenjene u</span></div>
+<div style="position:absolute;left:92.18px;top:117.02px" class="cls_006"><span class="cls_006">kompjuterskim aplikacijama</span></div>
+<div style="position:absolute;left:55.20px;top:174.65px" class="cls_005"><span class="cls_005"></span><span class="cls_006">  Postoje nekoliko mogućnosti za omogućavanje korisničkih</span></div>
+<div style="position:absolute;left:92.18px;top:198.65px" class="cls_006"><span class="cls_006">pomoći u aplikacijama.</span></div>
+<div style="position:absolute;left:643.42px;top:495.58px" class="cls_002"><span class="cls_002">19</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-360px;top:10450px;width:720px;height:540px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="b52baf0a-95ca-11ea-8b25-0cc47a792c0a_id_b52baf0a-95ca-11ea-8b25-0cc47a792c0a_files/background20.jpg" width=720 height=540></div>
+<div style="position:absolute;left:282.94px;top:39.02px" class="cls_007"><span class="cls_007">Pomoć na liniji</span></div>
+<div style="position:absolute;left:55.20px;top:93.02px" class="cls_005"><span class="cls_005"></span><span class="cls_006">  Pomoć na liniji podrazumjeva bilo koju pomoć koja se</span></div>
+<div style="position:absolute;left:92.18px;top:117.02px" class="cls_006"><span class="cls_006">istovremeno dobija čim korisnik pošalje zahtjev i dok je u</span></div>
+<div style="position:absolute;left:92.18px;top:141.02px" class="cls_006"><span class="cls_006">interakciji sa sistemom</span></div>
+<div style="position:absolute;left:55.20px;top:198.65px" class="cls_005"><span class="cls_005"></span><span class="cls_006">  Ova pomoć može biti instalirana sa aplikacijom, da je locirana na</span></div>
+<div style="position:absolute;left:92.18px;top:222.65px" class="cls_006"><span class="cls_006">CD-u ili da je locirana na intranetu</span></div>
+<div style="position:absolute;left:55.20px;top:280.23px" class="cls_013"><span class="cls_013"></span><span class="cls_011">  Pomoć na liniji je važan dio svih aplikacija i omogućava efektivan</span></div>
+<div style="position:absolute;left:92.18px;top:304.27px" class="cls_006"><span class="cls_006">način za odgovor na sva pitanja</span></div>
+<div style="position:absolute;left:643.42px;top:495.58px" class="cls_002"><span class="cls_002">20</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-360px;top:11000px;width:720px;height:540px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="b52baf0a-95ca-11ea-8b25-0cc47a792c0a_id_b52baf0a-95ca-11ea-8b25-0cc47a792c0a_files/background21.jpg" width=720 height=540></div>
+<div style="position:absolute;left:266.86px;top:39.02px" class="cls_007"><span class="cls_007">ToolTips (Savjeti)</span></div>
+<div style="position:absolute;left:55.20px;top:93.02px" class="cls_005"><span class="cls_005"></span><span class="cls_006">  Savjeti su male labele koje ispisuju kada korisnik pomeri miša</span></div>
+<div style="position:absolute;left:92.18px;top:117.02px" class="cls_006"><span class="cls_006">preko kontrole ili opcije na korisničkom interfejsu</span></div>
+<div style="position:absolute;left:55.20px;top:174.65px" class="cls_005"><span class="cls_005"></span><span class="cls_006">  Savjeti se normalno koriste u konjukciji sa tulbarovima, ali oni</span></div>
+<div style="position:absolute;left:92.18px;top:198.65px" class="cls_006"><span class="cls_006">takođe dobro rade i u mnogim drugim delovima interfejsa</span></div>
+<div style="position:absolute;left:643.42px;top:495.58px" class="cls_002"><span class="cls_002">21</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-360px;top:11550px;width:720px;height:540px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="b52baf0a-95ca-11ea-8b25-0cc47a792c0a_id_b52baf0a-95ca-11ea-8b25-0cc47a792c0a_files/background22.jpg" width=720 height=540></div>
+<div style="position:absolute;left:206.14px;top:39.02px" class="cls_007"><span class="cls_007">Status Display (ispis statusa)</span></div>
+<div style="position:absolute;left:55.20px;top:93.02px" class="cls_005"><span class="cls_005"></span><span class="cls_006">  Ispis statusa je koristan način za omogućavane uputstava ili</span></div>
+<div style="position:absolute;left:92.18px;top:117.02px" class="cls_006"><span class="cls_006">poruka koje se ne mogu lako unijeti u savjete (ToolTips)</span></div>
+<div style="position:absolute;left:55.20px;top:174.65px" class="cls_005"><span class="cls_005"></span><span class="cls_006">  Omogućava ispis statusa i možete ga koristiti za kontrolu</span></div>
+<div style="position:absolute;left:92.18px;top:198.65px" class="cls_006"><span class="cls_006">statunog dijela ili kontrolu labela</span></div>
+<div style="position:absolute;left:643.42px;top:495.58px" class="cls_002"><span class="cls_002">22</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-360px;top:12100px;width:720px;height:540px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="b52baf0a-95ca-11ea-8b25-0cc47a792c0a_id_b52baf0a-95ca-11ea-8b25-0cc47a792c0a_files/background23.jpg" width=720 height=540></div>
+<div style="position:absolute;left:302.98px;top:39.02px" class="cls_007"><span class="cls_007">Čarobnjaci</span></div>
+<div style="position:absolute;left:55.20px;top:93.02px" class="cls_005"><span class="cls_005"></span><span class="cls_006">  Čarobnjaci su korisnički pomoćni uređaji koji vode korisnika</span></div>
+<div style="position:absolute;left:92.18px;top:117.02px" class="cls_006"><span class="cls_006">korak po korak kroz proceduru</span></div>
+<div style="position:absolute;left:55.20px;top:174.65px" class="cls_005"><span class="cls_005"></span><span class="cls_006">  Čarobnjaci se takođe koriste za naprednije informacije</span></div>
+<div style="position:absolute;left:92.18px;top:198.65px" class="cls_006"><span class="cls_006">korisnicima koji nemaju dovoljno iskustava sa osnovnim</span></div>
+<div style="position:absolute;left:92.18px;top:222.65px" class="cls_006"><span class="cls_006">koracima ali žele dodatne ili napredne informacije</span></div>
+<div style="position:absolute;left:643.42px;top:495.58px" class="cls_002"><span class="cls_002">23</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-360px;top:12650px;width:720px;height:540px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="b52baf0a-95ca-11ea-8b25-0cc47a792c0a_id_b52baf0a-95ca-11ea-8b25-0cc47a792c0a_files/background24.jpg" width=720 height=540></div>
+<div style="position:absolute;left:258.22px;top:39.02px" class="cls_007"><span class="cls_007">Pomoći pristupanju</span></div>
+<div style="position:absolute;left:55.20px;top:93.02px" class="cls_005"><span class="cls_005"></span><span class="cls_006">  Pomoći pristupanju su </span><span class="cls_010">specijalizovani programi </span><span class="cls_006">i uređaji koji</span></div>
+<div style="position:absolute;left:92.18px;top:117.02px" class="cls_006"><span class="cls_006">pomažu ljudima sa nemogućnošću korišćenja aplikacija da</span></div>
+<div style="position:absolute;left:92.18px;top:141.02px" class="cls_006"><span class="cls_006">budu efikasniji</span></div>
+<div style="position:absolute;left:92.30px;top:197.93px" class="cls_020"><span class="cls_020">1.</span></div>
+<div style="position:absolute;left:126.74px;top:197.93px" class="cls_009"><span class="cls_009">Povećanje ekrana na najveći dio ekrana</span></div>
+<div style="position:absolute;left:92.30px;top:220.97px" class="cls_020"><span class="cls_020">2.</span></div>
+<div style="position:absolute;left:126.74px;top:220.97px" class="cls_009"><span class="cls_009">Softver čitanja sa ekrana predstavlja grafike i tekst kao govor</span></div>
+<div style="position:absolute;left:92.30px;top:244.01px" class="cls_020"><span class="cls_020">3.</span></div>
+<div style="position:absolute;left:126.74px;top:244.01px" class="cls_009"><span class="cls_009">Sistem za prepoznavanje govora za omogućavanje ulaza korišćenjem</span></div>
+<div style="position:absolute;left:126.74px;top:263.21px" class="cls_009"><span class="cls_009">govora umjesto tastature ili miša.</span></div>
+<div style="position:absolute;left:55.20px;top:310.03px" class="cls_005"><span class="cls_005"></span><span class="cls_006">  Kada se vrši dizajniranje pristupanje aplikacijama, trebalo bi</span></div>
+<div style="position:absolute;left:92.18px;top:334.03px" class="cls_006"><span class="cls_006">da se pridržavate sledećih uputstava</span></div>
+<div style="position:absolute;left:92.30px;top:390.91px" class="cls_020"><span class="cls_020">1.</span></div>
+<div style="position:absolute;left:126.74px;top:390.91px" class="cls_009"><span class="cls_009">Aplikacija bi trebalo da bude kompatibilna sa specifičnim sistemskim</span></div>
+<div style="position:absolute;left:126.74px;top:410.14px" class="cls_009"><span class="cls_009">bojama, veličinom, fontovima, zvukom i ulaznim podešavanjima.</span></div>
+<div style="position:absolute;left:92.30px;top:433.18px" class="cls_020"><span class="cls_020">2.</span></div>
+<div style="position:absolute;left:126.74px;top:433.18px" class="cls_009"><span class="cls_009">Aplikacija nesmije prenijeti informacije jedino preko zvuka.</span></div>
+<div style="position:absolute;left:643.42px;top:495.58px" class="cls_002"><span class="cls_002">24</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-360px;top:13200px;width:720px;height:540px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="b52baf0a-95ca-11ea-8b25-0cc47a792c0a_id_b52baf0a-95ca-11ea-8b25-0cc47a792c0a_files/background25.jpg" width=720 height=540></div>
+<div style="position:absolute;left:175.30px;top:39.02px" class="cls_007"><span class="cls_007">Izbor modela korisničkog interfejsa</span></div>
+<div style="position:absolute;left:55.20px;top:93.02px" class="cls_005"><span class="cls_005"></span><span class="cls_006">  Priliko dizajniranja aplikacije važno je da izaberete najbolji model</span></div>
+<div style="position:absolute;left:92.18px;top:117.02px" class="cls_006"><span class="cls_006">korisničkog interfejsa, zato što korisnički interfejs može da djeluje</span></div>
+<div style="position:absolute;left:92.18px;top:141.02px" class="cls_006"><span class="cls_006">na razvoj, kako interakcije korisnika i relacionih podataka, tako i</span></div>
+<div style="position:absolute;left:92.18px;top:165.05px" class="cls_006"><span class="cls_006">održavanje stanja aplikacija:</span></div>
+<div style="position:absolute;left:55.20px;top:222.65px" class="cls_012"><span class="cls_012">1.</span><span class="cls_006">  Korisnički interfejs baziran na Windows-u</span></div>
+<div style="position:absolute;left:55.20px;top:251.45px" class="cls_012"><span class="cls_012">2.</span><span class="cls_006">  Korisnički interfejs baziran na Web-u</span></div>
+<div style="position:absolute;left:55.20px;top:280.23px" class="cls_014"><span class="cls_014">3.</span><span class="cls_011">  Korisnički interfejs mobilnih uređaja</span></div>
+<div style="position:absolute;left:55.20px;top:309.07px" class="cls_012"><span class="cls_012">4.</span><span class="cls_006">  Korisnički interfejs baziran na dokumentu</span></div>
+<div style="position:absolute;left:643.42px;top:495.58px" class="cls_002"><span class="cls_002">25</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-360px;top:13750px;width:720px;height:540px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="b52baf0a-95ca-11ea-8b25-0cc47a792c0a_id_b52baf0a-95ca-11ea-8b25-0cc47a792c0a_files/background26.jpg" width=720 height=540></div>
+<div style="position:absolute;left:195.58px;top:39.02px" class="cls_007"><span class="cls_007">Interfejs baziran na Windows-u</span></div>
+<div style="position:absolute;left:55.20px;top:93.02px" class="cls_005"><span class="cls_005"></span><span class="cls_006">  Windows bazirani interfejs se koristi kada želite da omogućite</span></div>
+<div style="position:absolute;left:92.18px;top:117.02px" class="cls_006"><span class="cls_006">korisnicima, koji nisu u konekciji ili rade offline, mogućnosti i pristup</span></div>
+<div style="position:absolute;left:92.18px;top:141.02px" class="cls_006"><span class="cls_006">korisničkoj interakciji</span></div>
+<div style="position:absolute;left:55.20px;top:198.65px" class="cls_005"><span class="cls_005"></span><span class="cls_006">  Ovaj interfejs omogučava širok opseg upravljanja stanja i prisutnih</span></div>
+<div style="position:absolute;left:92.18px;top:222.65px" class="cls_006"><span class="cls_006">mogućnosti</span></div>
+<div style="position:absolute;left:55.20px;top:280.23px" class="cls_014"><span class="cls_014">1.</span><span class="cls_011">  Puna istaknuta radna stanica/ stoni PC korisnički interfejs kreiran</span></div>
+<div style="position:absolute;left:92.18px;top:304.27px" class="cls_006"><span class="cls_006">pomoću Windows formi.</span></div>
+<div style="position:absolute;left:55.20px;top:333.07px" class="cls_012"><span class="cls_012">2.</span><span class="cls_006">  Ugrađeni HTML</span></div>
+<div style="position:absolute;left:55.20px;top:361.87px" class="cls_012"><span class="cls_012">3.</span><span class="cls_006">  Aplikacijski dodaci</span></div>
+<div style="position:absolute;left:643.42px;top:495.58px" class="cls_002"><span class="cls_002">26</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-360px;top:14300px;width:720px;height:540px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="b52baf0a-95ca-11ea-8b25-0cc47a792c0a_id_b52baf0a-95ca-11ea-8b25-0cc47a792c0a_files/background27.jpg" width=720 height=540></div>
+<div style="position:absolute;left:55.01px;top:10.20px" class="cls_007"><span class="cls_007">Puna istaknuta radna stanica/ stoni PC korisnički interfejs</span></div>
+<div style="position:absolute;left:195.07px;top:39.02px" class="cls_007"><span class="cls_007">kreiran pomoću Windows formi</span></div>
+<div style="position:absolute;left:55.20px;top:93.02px" class="cls_005"><span class="cls_005"></span><span class="cls_006">  Ovaj UI uključuje kreiranje aplikacija sa Windows formama i</span></div>
+<div style="position:absolute;left:92.18px;top:117.02px" class="cls_006"><span class="cls_006">Windows kontrolama</span></div>
+<div style="position:absolute;left:55.20px;top:174.65px" class="cls_005"><span class="cls_005"></span><span class="cls_006">  U ovim aplikacijama, aplikacija omogućava sve ili najveći broj</span></div>
+<div style="position:absolute;left:92.18px;top:198.65px" class="cls_006"><span class="cls_006">podataka funkcionalnosti</span></div>
+<div style="position:absolute;left:643.42px;top:495.58px" class="cls_002"><span class="cls_002">27</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-360px;top:14850px;width:720px;height:540px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="b52baf0a-95ca-11ea-8b25-0cc47a792c0a_id_b52baf0a-95ca-11ea-8b25-0cc47a792c0a_files/background28.jpg" width=720 height=540></div>
+<div style="position:absolute;left:275.50px;top:39.02px" class="cls_007"><span class="cls_007">Ugrađeni HTML</span></div>
+<div style="position:absolute;left:55.20px;top:93.02px" class="cls_005"><span class="cls_005"></span><span class="cls_006">  Možete primjeniti unos korisničkog interfejsa korišćenjem</span></div>
+<div style="position:absolute;left:92.18px;top:117.02px" class="cls_006"><span class="cls_006">Windows formi, ili možete koristiti dodatno ugnježden Hpertext</span></div>
+<div style="position:absolute;left:92.18px;top:141.02px" class="cls_006"><span class="cls_006">Markup Language (HTML) u vašoj aplikaciji koja je windows</span></div>
+<div style="position:absolute;left:92.18px;top:165.05px" class="cls_006"><span class="cls_006">bazirana</span></div>
+<div style="position:absolute;left:55.20px;top:222.65px" class="cls_005"><span class="cls_005"></span><span class="cls_006">  Ugnježden HTML omogućuje veće vrijeme fleksibilnosti rada</span></div>
+<div style="position:absolute;left:92.18px;top:246.65px" class="cls_006"><span class="cls_006">(zato što se  HTML može učitati iz spoljnog izvora ili čak baze</span></div>
+<div style="position:absolute;left:92.18px;top:270.63px" class="cls_011"><span class="cls_011">podataka  u spojenom scenariju) i korisničko prilagođavanje</span></div>
+<div style="position:absolute;left:643.42px;top:495.58px" class="cls_002"><span class="cls_002">28</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-360px;top:15400px;width:720px;height:540px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="b52baf0a-95ca-11ea-8b25-0cc47a792c0a_id_b52baf0a-95ca-11ea-8b25-0cc47a792c0a_files/background29.jpg" width=720 height=540></div>
+<div style="position:absolute;left:262.90px;top:39.02px" class="cls_007"><span class="cls_007">Aplikacijski dodaci</span></div>
+<div style="position:absolute;left:55.20px;top:93.02px" class="cls_005"><span class="cls_005"></span><span class="cls_006">  Za neke aplikacije, razvijeni korisnički slučajevi za vrijeme</span></div>
+<div style="position:absolute;left:92.18px;top:117.02px" class="cls_006"><span class="cls_006">faze planiranja mogu sugerisati da korisnički interfejs ili</span></div>
+<div style="position:absolute;left:92.18px;top:141.02px" class="cls_006"><span class="cls_006">aplikacija, bi mogao bolje da se primjeni kao dodatak za</span></div>
+<div style="position:absolute;left:92.18px;top:165.17px" class="cls_006"><span class="cls_006">aplikaciju</span></div>
+<div style="position:absolute;left:643.42px;top:495.58px" class="cls_002"><span class="cls_002">29</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-360px;top:15950px;width:720px;height:540px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="b52baf0a-95ca-11ea-8b25-0cc47a792c0a_id_b52baf0a-95ca-11ea-8b25-0cc47a792c0a_files/background30.jpg" width=720 height=540></div>
+<div style="position:absolute;left:276.10px;top:39.02px" class="cls_007"><span class="cls_007">Daljinski pristup</span></div>
+<div style="position:absolute;left:55.20px;top:93.02px" class="cls_005"><span class="cls_005"></span><span class="cls_006">  Pomoću programa kao što je Windows XP Remote Desktop</span></div>
+<div style="position:absolute;left:92.18px;top:117.02px" class="cls_006"><span class="cls_006">Connection i Windows terminal Services, udaljeni korisnici  mogu</span></div>
+<div style="position:absolute;left:92.18px;top:141.02px" class="cls_006"><span class="cls_006">pristupiti udaljenom kompjuteru i da udaljeno startuju aplikacije</span></div>
+<div style="position:absolute;left:55.20px;top:198.65px" class="cls_005"><span class="cls_005"></span><span class="cls_006">  Jedina informacija koja prolazi između klijentskog kompjutera i</span></div>
+<div style="position:absolute;left:92.18px;top:222.65px" class="cls_006"><span class="cls_006">udaljenog korisnika je korisnički interfejs</span></div>
+<div style="position:absolute;left:55.20px;top:280.23px" class="cls_013"><span class="cls_013"></span><span class="cls_011">  Sve druge funkcionalnosti, kao što su validacija podataka i</span></div>
+<div style="position:absolute;left:92.18px;top:304.27px" class="cls_006"><span class="cls_006">izvršenje programa pomoću CPU je predstavljeno na udaljenom</span></div>
+<div style="position:absolute;left:92.18px;top:328.39px" class="cls_006"><span class="cls_006">kompjuteru</span></div>
+<div style="position:absolute;left:643.42px;top:495.58px" class="cls_002"><span class="cls_002">30</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-360px;top:16500px;width:720px;height:540px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="b52baf0a-95ca-11ea-8b25-0cc47a792c0a_id_b52baf0a-95ca-11ea-8b25-0cc47a792c0a_files/background31.jpg" width=720 height=540></div>
+<div style="position:absolute;left:165.34px;top:39.02px" class="cls_007"><span class="cls_007">Korisnički interfejs baziran na Web-u</span></div>
+<div style="position:absolute;left:55.20px;top:93.02px" class="cls_005"><span class="cls_005"></span><span class="cls_006">  U Microsoft .NET vi razvijate Web baziran korisnički interfejs</span></div>
+<div style="position:absolute;left:92.18px;top:117.02px" class="cls_006"><span class="cls_006">pomoću ASP.NET</span></div>
+<div style="position:absolute;left:55.20px;top:174.65px" class="cls_012"><span class="cls_012">1.</span><span class="cls_006">  Dosledno razvojno okruženje</span></div>
+<div style="position:absolute;left:55.20px;top:203.45px" class="cls_012"><span class="cls_012">2.</span><span class="cls_006">  Korisnički interfejs izgradnje podataka</span></div>
+<div style="position:absolute;left:55.20px;top:232.25px" class="cls_012"><span class="cls_012">3.</span><span class="cls_006">  Komponentno bazirani UI sa kontrolama</span></div>
+<div style="position:absolute;left:55.20px;top:261.05px" class="cls_012"><span class="cls_012">4.</span><span class="cls_006">  Integrisani .NET model sigurnosti</span></div>
+<div style="position:absolute;left:55.20px;top:289.87px" class="cls_012"><span class="cls_012">5.</span><span class="cls_006">  Puno keširanje i opcije upravljanja stanjem</span></div>
+<div style="position:absolute;left:55.20px;top:318.67px" class="cls_012"><span class="cls_012">6.</span><span class="cls_006">  Mogućnost, performanse i uklopljivost Web procesiranja</span></div>
+<div style="position:absolute;left:643.42px;top:495.58px" class="cls_002"><span class="cls_002">31</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-360px;top:17050px;width:720px;height:540px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="b52baf0a-95ca-11ea-8b25-0cc47a792c0a_id_b52baf0a-95ca-11ea-8b25-0cc47a792c0a_files/background32.jpg" width=720 height=540></div>
+<div style="position:absolute;left:171.94px;top:39.02px" class="cls_007"><span class="cls_007">Korisnički interfejs mobilnih uređaja</span></div>
+<div style="position:absolute;left:55.20px;top:93.02px" class="cls_005"><span class="cls_005"></span><span class="cls_006">  Mobilni uređaji su :računari u ruci, protokoli bežične aplikacije</span></div>
+<div style="position:absolute;left:92.18px;top:117.02px" class="cls_006"><span class="cls_006">(WAP), telefoni</span></div>
+<div style="position:absolute;left:55.20px;top:174.65px" class="cls_005"><span class="cls_005"></span><span class="cls_006">  Računari u ruci postaju sve više popularni i izgrađivanjem</span></div>
+<div style="position:absolute;left:92.18px;top:198.65px" class="cls_006"><span class="cls_006">korisničkog interfejsa za mobilne uređaje postavlja nekoliko izazova</span></div>
+<div style="position:absolute;left:55.20px;top:256.25px" class="cls_005"><span class="cls_005"></span><span class="cls_006">  Zajedničko rješenje da se omogući korisnicima pre registraciju</span></div>
+<div style="position:absolute;left:92.18px;top:280.23px" class="cls_011"><span class="cls_011">podataka preko znanih klijenata baziranih na radnim stanicama i</span></div>
+<div style="position:absolute;left:92.18px;top:304.27px" class="cls_006"><span class="cls_006">onda izabrati podatke kada se koristi mobilni klijent</span></div>
+<div style="position:absolute;left:55.20px;top:361.87px" class="cls_005"><span class="cls_005"></span><span class="cls_006">  Korisnički interfejs za mobilne uređaje neophodno je da omogući</span></div>
+<div style="position:absolute;left:92.18px;top:385.87px" class="cls_006"><span class="cls_006">ispis informacija na mnogo manjem ekranu od drugih interfejsa</span></div>
+<div style="position:absolute;left:92.18px;top:409.90px" class="cls_006"><span class="cls_006">aplikacija i mora ponuditi mogućnost korišćenja za uređaje na licu</span></div>
+<div style="position:absolute;left:92.18px;top:433.90px" class="cls_006"><span class="cls_006">mesta</span></div>
+<div style="position:absolute;left:643.42px;top:495.58px" class="cls_002"><span class="cls_002">32</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-360px;top:17600px;width:720px;height:540px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="b52baf0a-95ca-11ea-8b25-0cc47a792c0a_id_b52baf0a-95ca-11ea-8b25-0cc47a792c0a_files/background33.jpg" width=720 height=540></div>
+<div style="position:absolute;left:141.31px;top:39.02px" class="cls_007"><span class="cls_007">Korisnički interfejs baziran na dokumentu</span></div>
+<div style="position:absolute;left:55.20px;top:93.02px" class="cls_005"><span class="cls_005"></span><span class="cls_006">  U nekim aplikacijama, možete imati pogodnosti od uzimanja</span></div>
+<div style="position:absolute;left:92.18px;top:117.02px" class="cls_006"><span class="cls_006">korisničkih unosa ili pogleda podataka u obluki dokumenta</span></div>
+<div style="position:absolute;left:55.20px;top:145.80px" class="cls_014"><span class="cls_014">1.</span><span class="cls_011">  Prikazivanje podataka</span></div>
+<div style="position:absolute;left:55.20px;top:174.65px" class="cls_012"><span class="cls_012">2.</span><span class="cls_006">  Sakupljanje podataka</span></div>
+<div style="position:absolute;left:643.42px;top:495.58px" class="cls_002"><span class="cls_002">33</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-360px;top:18150px;width:720px;height:540px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="b52baf0a-95ca-11ea-8b25-0cc47a792c0a_id_b52baf0a-95ca-11ea-8b25-0cc47a792c0a_files/background34.jpg" width=720 height=540></div>
+<div style="position:absolute;left:242.86px;top:39.02px" class="cls_007"><span class="cls_007">Prikazivanje podataka</span></div>
+<div style="position:absolute;left:55.20px;top:93.02px" class="cls_005"><span class="cls_005"></span><span class="cls_006">  Aplikacija omogućuje korisnicima da pogledaju njihove</span></div>
+<div style="position:absolute;left:92.18px;top:117.02px" class="cls_006"><span class="cls_006">podatke u dokumentu, kao što su izveštaji za Word, Excel ili</span></div>
+<div style="position:absolute;left:92.18px;top:141.14px" class="cls_006"><span class="cls_006">Project</span></div>
+<div style="position:absolute;left:643.42px;top:495.58px" class="cls_002"><span class="cls_002">34</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-360px;top:18700px;width:720px;height:540px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="b52baf0a-95ca-11ea-8b25-0cc47a792c0a_id_b52baf0a-95ca-11ea-8b25-0cc47a792c0a_files/background35.jpg" width=720 height=540></div>
+<div style="position:absolute;left:245.38px;top:39.02px" class="cls_007"><span class="cls_007">Sakupljanje podataka</span></div>
+<div style="position:absolute;left:55.20px;top:93.02px" class="cls_005"><span class="cls_005"></span><span class="cls_006">  Vi možete omogućiti predstavljanje prodaje u obliku Word</span></div>
+<div style="position:absolute;left:92.18px;top:117.02px" class="cls_006"><span class="cls_006">forme sa informacijama o kupcu, čiji unos podataka se radi u</span></div>
+<div style="position:absolute;left:92.18px;top:141.14px" class="cls_006"><span class="cls_006">Excel-u</span></div>
+<div style="position:absolute;left:643.42px;top:495.58px" class="cls_002"><span class="cls_002">35</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-360px;top:19250px;width:720px;height:540px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="b52baf0a-95ca-11ea-8b25-0cc47a792c0a_id_b52baf0a-95ca-11ea-8b25-0cc47a792c0a_files/background36.jpg" width=720 height=540></div>
+<div style="position:absolute;left:218.74px;top:39.02px" class="cls_007"><span class="cls_007">Izbor klijentskog okruženja</span></div>
+<div style="position:absolute;left:55.20px;top:93.02px" class="cls_005"><span class="cls_005"></span><span class="cls_006">  Izbor klijentskog okruženja za korisnički interfejs poslovne aplikacije</span></div>
+<div style="position:absolute;left:92.18px;top:117.02px" class="cls_006"><span class="cls_006">je definisanje preko toga kako korisnik će da koristi aplikaciju, i</span></div>
+<div style="position:absolute;left:92.18px;top:141.02px" class="cls_006"><span class="cls_006">dodatno kako će korisnik biti u vezi sa sistemima koji podržavaju</span></div>
+<div style="position:absolute;left:92.18px;top:165.05px" class="cls_006"><span class="cls_006">aplikaciju</span></div>
+<div style="position:absolute;left:55.20px;top:222.65px" class="cls_005"><span class="cls_005"></span><span class="cls_006">  Kada korisnici su na lokalnoj mreži (LAN) ili na (WAN) najveći broj</span></div>
+<div style="position:absolute;left:92.18px;top:246.65px" class="cls_006"><span class="cls_006">izabranih klijenta ima osobinu bogatog okruženja poznatu kao</span></div>
+<div style="position:absolute;left:92.18px;top:270.63px" class="cls_021"><span class="cls_021">debeli klijent</span></div>
+<div style="position:absolute;left:55.20px;top:299.47px" class="cls_005"><span class="cls_005"></span><span class="cls_006">  Za ove korisnike brzina komunikacije između njihovih kompjutera i</span></div>
+<div style="position:absolute;left:92.18px;top:323.47px" class="cls_006"><span class="cls_006">sistema nije na prvom mestu</span></div>
+<div style="position:absolute;left:55.20px;top:352.27px" class="cls_005"><span class="cls_005"></span><span class="cls_006">  Drugi izbor clijenta je </span><span class="cls_010">tanki klijent</span></div>
+<div style="position:absolute;left:55.20px;top:409.90px" class="cls_005"><span class="cls_005"></span><span class="cls_006">  Međutim tanki klijent kao što su Web browser-i i udaljene desktop</span></div>
+<div style="position:absolute;left:92.18px;top:433.90px" class="cls_006"><span class="cls_006">konekcije, su najčešće upotrebljene za udaljene ili distribuirane</span></div>
+<div style="position:absolute;left:92.18px;top:457.90px" class="cls_006"><span class="cls_006">korisnike, ili za korisnike sa sporijom konekcijama kao što su</span></div>
+<div style="position:absolute;left:92.18px;top:481.90px" class="cls_006"><span class="cls_006">modemi</span></div>
+<div style="position:absolute;left:643.42px;top:495.58px" class="cls_002"><span class="cls_002">36</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-360px;top:19800px;width:720px;height:540px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="b52baf0a-95ca-11ea-8b25-0cc47a792c0a_id_b52baf0a-95ca-11ea-8b25-0cc47a792c0a_files/background37.jpg" width=720 height=540></div>
+<div style="position:absolute;left:151.90px;top:39.02px" class="cls_007"><span class="cls_007">Validacija dizajna korisničkog interfejsa</span></div>
+<div style="position:absolute;left:55.20px;top:93.02px" class="cls_005"><span class="cls_005"></span><span class="cls_006">  Kao deo procesa dizajna, validacija korisničkog interfejsa je</span></div>
+<div style="position:absolute;left:92.18px;top:117.02px" class="cls_006"><span class="cls_006">okrenuta ka zahtevima kupaca.</span></div>
+<div style="position:absolute;left:643.42px;top:495.58px" class="cls_002"><span class="cls_002">37</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-360px;top:20350px;width:720px;height:540px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="b52baf0a-95ca-11ea-8b25-0cc47a792c0a_id_b52baf0a-95ca-11ea-8b25-0cc47a792c0a_files/background38.jpg" width=720 height=540></div>
+<div style="position:absolute;left:270.34px;top:39.02px" class="cls_007"><span class="cls_007">Proces validacije</span></div>
+<div style="position:absolute;left:55.20px;top:93.02px" class="cls_005"><span class="cls_005"></span><span class="cls_006">  Posle kreiranja UI prototipova, neophodno je da poredite:</span></div>
+<div style="position:absolute;left:92.30px;top:121.10px" class="cls_008"><span class="cls_008">◼</span><span class="cls_009">   UI zahtjeve,</span></div>
+<div style="position:absolute;left:92.30px;top:144.14px" class="cls_008"><span class="cls_008">◼</span><span class="cls_009">   korisničke slučajeve,</span></div>
+<div style="position:absolute;left:92.30px;top:167.21px" class="cls_008"><span class="cls_008">◼</span><span class="cls_009">   korisničke scenarije i</span></div>
+<div style="position:absolute;left:92.30px;top:190.25px" class="cls_008"><span class="cls_008">◼</span><span class="cls_009">   logički dizajn</span></div>
+<div style="position:absolute;left:55.20px;top:242.81px" class="cls_005"><span class="cls_005"></span><span class="cls_006">  Ako zahtjevi nisu bili ciljani na korisničkom interfejsu,</span></div>
+<div style="position:absolute;left:92.18px;top:266.81px" class="cls_006"><span class="cls_006">neophodno je da adresirate ih i unesete u dizajn prije nego</span></div>
+<div style="position:absolute;left:92.18px;top:290.83px" class="cls_006"><span class="cls_006">tekući prototip prosledite kupcu</span></div>
+<div style="position:absolute;left:55.20px;top:348.43px" class="cls_005"><span class="cls_005"></span><span class="cls_006">  Proces validacije takođe uključuje ocenjivanje izabranih</span></div>
+<div style="position:absolute;left:92.18px;top:372.43px" class="cls_006"><span class="cls_006">metafora i kontrola elemenata koji su iskorišćeni za</span></div>
+<div style="position:absolute;left:92.18px;top:396.41px" class="cls_011"><span class="cls_011">predstavljanje ovih metafora</span></div>
+<div style="position:absolute;left:643.42px;top:495.58px" class="cls_002"><span class="cls_002">38</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-360px;top:20900px;width:720px;height:540px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="b52baf0a-95ca-11ea-8b25-0cc47a792c0a_id_b52baf0a-95ca-11ea-8b25-0cc47a792c0a_files/background39.jpg" width=720 height=540></div>
+<div style="position:absolute;left:218.14px;top:39.02px" class="cls_007"><span class="cls_007">Isporuke UI dizajn procesa</span></div>
+<div style="position:absolute;left:55.20px;top:93.02px" class="cls_012"><span class="cls_012">1.</span><span class="cls_006">  Projektni tim, kupac, i korisnici bi trebalo da se slože oko uputstva</span></div>
+<div style="position:absolute;left:92.18px;top:117.02px" class="cls_006"><span class="cls_006">za dizajn, uključujući elemente koji su bili korišćeni u aplikaciji.</span></div>
+<div style="position:absolute;left:92.18px;top:141.02px" class="cls_006"><span class="cls_006">Uputstva i indentifikacija glavnih interfejs elemenata, trebalo bi da</span></div>
+<div style="position:absolute;left:92.18px;top:165.05px" class="cls_006"><span class="cls_006">se dokumentuje za razvojni tim</span></div>
+<div style="position:absolute;left:55.20px;top:222.65px" class="cls_012"><span class="cls_012">2.</span><span class="cls_006">  Dizajn bi trebao da uključi opise kako će interfejs omogućiti</span></div>
+<div style="position:absolute;left:92.18px;top:246.65px" class="cls_006"><span class="cls_006">odgovarajuću povratnu spregu (kao što je progres bar) i</span></div>
+<div style="position:absolute;left:92.18px;top:270.63px" class="cls_011"><span class="cls_011">korisničku pomoć (kao što su ToolTips) za korisnika</span></div>
+<div style="position:absolute;left:55.20px;top:328.27px" class="cls_012"><span class="cls_012">3.</span><span class="cls_006">  Dizajn proizvoda trebalo bi da budu iztestiran preko poređenja sa</span></div>
+<div style="position:absolute;left:92.18px;top:352.27px" class="cls_006"><span class="cls_006">korisničkim scenariom budućeg stanja</span></div>
+<div style="position:absolute;left:643.42px;top:495.58px" class="cls_002"><span class="cls_002">39</span></div>
+</div>
+
+</body>
+</html>
