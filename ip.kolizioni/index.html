@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>fit.mreze #kolizioni</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="./main.css">
+  <script type="text/javascript" src="./initial.js"></script>
+  <script type="text/javascript" src="./system.js"></script>
+  <script type="text/javascript" src="./ip.js"></script>
+  <script type="text/javascript" src="./subnet.js"></script>
+  <script type="text/javascript" src="./kip.js"></script>
+  <script type="text/javascript" src="./ip.extensions.js"></script>
+  <script type="text/javascript" src="./ext.subnet.js"></script>
+
+  <script type="text/javascript" src="./main.js"></script>
+
+</head>
+<body>
+
+  <div>
+    <button id="btnReset">Reset</button>
+    <button id="addRuter">Dodaj ruter</button>
+    <button id="addBridge">Dodaj bridge</button>
+    <button id="addSwitch">Dodaj switch</button>
+    <button id="addHub">Dodaj hub</button>
+    <button id="addKomp">Dodaj kompjuter</button>
+  </div>
+
+  <div id="stats">
+    <div><span id="sUkupno" class="stat_result">0</span> Ukupno</div>
+    <div><span id="sRuteri" class="stat_result">0</span> Ruteri</div>
+    <div><span id="sBridzevi" class="stat_result">0</span> Bridges</div>
+    <div><span id="sSvic" class="stat_result">0</span> Svicevi</div>
+    <div><span id="sHubovi" class="stat_result">0</span> Hubovi</div>
+    <div><span id="sKomp" class="stat_result">0</span> Kompjuteri</div>
+    <br>
+    <div><span id="sBroadcast" class="stat_result">0</span> Broadcast</div>
+    <div><span id="sKolizion" class="stat_result">0</span> Kolizioni</div>
+  </div>
+
+  <div id="template">
+    
+    <div class="item ruter">
+      <button class="btnConnect">C</button><button class="btnRemove">X</button> <button class="btnMove">M</button> <br>
+      <div class="icon" style="background-image: url('./ruter.png')"></div>
+      <div class="host_name">#RUTER</div>
+    </div>
+
+    <div class="item switch">
+      <button class="btnConnect">C</button><button class="btnRemove">X</button> <button class="btnMove">M</button> <br>
+      <div class="icon" style="background-image: url('./switch.png')"></div>
+      <div class="host_name">#SWITCH</div>
+    </div>
+
+    <div class="item hub">
+      <button class="btnConnect">C</button><button class="btnRemove">X</button> <button class="btnMove">M</button> <br>
+      <div class="icon" style="background-image: url('./hub.png')"></div>
+      <div class="host_name">#HUB</div>
+    </div>
+
+    <div class="item bridge">
+      <button class="btnConnect">C</button><button class="btnRemove">X</button> <button class="btnMove">M</button> <br>
+      <div class="icon" style="background-image: url('./bridge.png')"></div>
+      <div class="host_name">#BRIDGE</div>
+    </div>
+
+    <div class="item comp">
+      <button class="btnConnect">C</button><button class="btnRemove">X</button> <button class="btnMove">M</button> <button class="btnPlus">+</button><button class="btnMinus">-</button> <br>
+      <div class="icon" style="background-image: url('./pc.png')"></div>
+      <div class="host_name">#KOMP</div>
+      <input type="number" value="1">
+    </div>
+
+  </div>
+
+  <div id="content"> </div>
+
+  <div id="result">
+    <input type="text" value="10.0.0.0" id="ipaddress"/> <button id="btnUpdate">Update</button><br>
+    <div>
+      Broj podmreza je <span id="brojPodmreza"></span>
+    </div>
+    <div>
+      Prefix <span id="rPrefix"></span>
+    </div>
+    <div>
+      <table>
+        <thead>
+          <tr>
+            <td>Mreza</td>
+            <td>Broj adresa</td>
+            <td>Adresa mreze</td>
+            <td>Broadcast</td>
+            <td>Opseg</td>
+          </tr>
+        </thead>
+        <tbody id="resultTable"></tbody>
+      </table>
+    </div>
+    <table>
+
+    </table>
+  </div>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      init();
+      $('#addRuter').click(function(){ addElemenet('.ruter'); });
+      $('#addBridge').click(function(){ addElemenet('.bridge'); });
+      $('#addKomp').click(function(){ addElemenet('.comp'); });
+      $('#addSwitch').click(function(){ addElemenet('.switch'); });
+      $('#addHub').click(function(){ addElemenet('.hub'); });
+    });
+
+    /*
+    adjustLine(
+      document.getElementById('div1'), 
+      document.getElementById('div2'),
+      document.getElementById('line')
+    );*/
+
+    //dragElement(document.getElementById('div1'));
+  </script>
+
+</body>
+</html>
