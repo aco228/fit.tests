@@ -359,7 +359,7 @@ function onUpdate(){
   for(var i = 1; i <= result.sorted.length; i++){
     var row = $('<tr></tr>');
     var newIPAddress = ip.addressBinarySolid.substr(0, 32 - (result.networkBits + result.deviceBits)) + system.intToBin(i, result.networkBits) + '0'.repeat(result.deviceBits);
-    var newIP = new IP(newIPAddress);
+    var newIP = new IP(newIPAddress, '/' + result.subnetPrefix);
     result.networks.push(newIP);
 
     row.append(`<td>${i}</td>`);
@@ -463,7 +463,7 @@ function saveComps(){
 
 
 function initialState(){
-  var INDEX = 3;
+  var INDEX = 2;
   connections = initial[INDEX].connections;
   $('#content').html(initial[INDEX].data);
   
